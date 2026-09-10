@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "EHDSMedicationAdministration"] ; # 
   fhir:title [ fhir:v "Medication administration model"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-09-10T07:26:30+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-09-10T07:42:24+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "EC"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "EC" ] ;
