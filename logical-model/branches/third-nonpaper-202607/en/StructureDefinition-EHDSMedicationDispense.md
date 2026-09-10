@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSMedicationDis
   "name" : "EHDSMedicationDispense",
   "title" : "Medication dispense model.",
   "status" : "draft",
-  "date" : "2026-09-10T07:01:17+00:00",
+  "date" : "2026-09-10T07:07:00+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
