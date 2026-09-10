@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDischargeRepo
   "name" : "EHDSDischargeReport",
   "title" : "Discharge report model",
   "status" : "draft",
-  "date" : "2026-09-10T06:54:27+00:00",
+  "date" : "2026-09-10T07:01:17+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
