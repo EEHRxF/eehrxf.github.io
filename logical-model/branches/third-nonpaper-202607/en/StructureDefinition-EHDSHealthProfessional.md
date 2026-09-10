@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSHealthProfess
   "name" : "EHDSHealthProfessional",
   "title" : "Health professional model",
   "status" : "draft",
-  "date" : "2026-09-10T07:42:24+00:00",
+  "date" : "2026-09-10T07:52:32+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",

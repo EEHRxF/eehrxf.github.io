@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "EHDSAllergyIntolerance"] ; # 
   fhir:title [ fhir:v "Allergy intolerance model"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-09-10T07:42:24+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-09-10T07:52:32+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "EC"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "EC" ] ;
