@@ -14,7 +14,7 @@
   "name" : "EHDSModels",
   "title" : "EHDS Logical Information Models",
   "status" : "draft",
-  "date" : "2026-09-10T07:07:00+00:00",
+  "date" : "2026-09-10T07:15:06+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",

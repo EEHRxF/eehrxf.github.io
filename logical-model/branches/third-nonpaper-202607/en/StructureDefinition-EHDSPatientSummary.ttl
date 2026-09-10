@@ -19,7 +19,7 @@
   fhir:name [ fhir:v "EHDSPatientSummary"] ; # 
   fhir:title [ fhir:v "Patient summary model"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-09-10T07:07:00+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-09-10T07:15:06+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "EC"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "EC" ] ;
