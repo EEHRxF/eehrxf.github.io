@@ -1,4 +1,4 @@
-# eu.ehds.models#0.1.0: EHDS Logical Information Models(en)
+# eu.ehds.models#0.3.0: EHDS Logical Information Models(en)
 
 ## Pages
 

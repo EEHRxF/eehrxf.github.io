@@ -15,11 +15,11 @@
      fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide eu.ehds.models</b></p><a name=\"eu.ehds.models\"> </a><a name=\"hceu.ehds.models\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: en</p></div><h2>EHDSModels</h2><p>The official URL for this implementation guide is: </p><pre>http://ehds.eu/fhir/models/ImplementationGuide/eu.ehds.models</pre><div><p>EHDS Logical Information Models</p>\n</div></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:url [ fhir:v "http://ehds.eu/fhir/models/ImplementationGuide/eu.ehds.models"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:version [ fhir:v "0.3.0"] ; # 
   fhir:name [ fhir:v "EHDSModels"] ; # 
   fhir:title [ fhir:v "EHDS Logical Information Models"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-09-10T07:15:06+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-09-10T07:26:30+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "EC"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "EC" ] ;

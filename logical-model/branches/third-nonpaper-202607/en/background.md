@@ -1,4 +1,4 @@
-# Background - EHDS Logical Information Models v0.1.0
+# Background - EHDS Logical Information Models v0.3.0
 
 ## Background
 

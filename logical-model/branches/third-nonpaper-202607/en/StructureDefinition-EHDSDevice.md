@@ -1,4 +1,4 @@
-# Device or implant model - EHDS Logical Information Models v0.1.0
+# Device or implant model - EHDS Logical Information Models v0.3.0
 
 ## Logical Model: Device or implant model 
 
@@ -28,11 +28,11 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDevice.csv), 
   "resourceType" : "StructureDefinition",
   "id" : "EHDSDevice",
   "url" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice",
-  "version" : "0.1.0",
+  "version" : "0.3.0",
   "name" : "EHDSDevice",
   "title" : "Device or implant model",
   "status" : "draft",
-  "date" : "2026-09-10T07:15:06+00:00",
+  "date" : "2026-09-10T07:26:30+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",

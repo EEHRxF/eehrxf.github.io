@@ -1,4 +1,4 @@
-# How to read this guide - EHDS Logical Information Models v0.1.0
+# How to read this guide - EHDS Logical Information Models v0.3.0
 
 ## How to read this guide
 

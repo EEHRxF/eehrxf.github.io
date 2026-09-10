@@ -10,11 +10,11 @@
   "id" : "eu.ehds.models",
   "language" : "en",
   "url" : "http://ehds.eu/fhir/models/ImplementationGuide/eu.ehds.models",
-  "version" : "0.1.0",
+  "version" : "0.3.0",
   "name" : "EHDSModels",
   "title" : "EHDS Logical Information Models",
   "status" : "draft",
-  "date" : "2026-09-10T07:15:06+00:00",
+  "date" : "2026-09-10T07:26:30+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",

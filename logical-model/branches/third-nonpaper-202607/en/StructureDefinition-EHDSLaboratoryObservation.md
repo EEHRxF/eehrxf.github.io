@@ -1,4 +1,4 @@
-# Model for observation performed by laboratory - EHDS Logical Information Models v0.1.0
+# Model for observation performed by laboratory - EHDS Logical Information Models v0.3.0
 
 ## Logical Model: Model for observation performed by laboratory 
 
@@ -95,11 +95,11 @@ Use **relationships between observations** when the related observations:
   "resourceType" : "StructureDefinition",
   "id" : "EHDSLaboratoryObservation",
   "url" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSLaboratoryObservation",
-  "version" : "0.1.0",
+  "version" : "0.3.0",
   "name" : "EHDSLaboratoryObservation",
   "title" : "Model for observation performed by laboratory",
   "status" : "draft",
-  "date" : "2026-09-10T07:15:06+00:00",
+  "date" : "2026-09-10T07:26:30+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",

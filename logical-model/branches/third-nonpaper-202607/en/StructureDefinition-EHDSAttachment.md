@@ -1,4 +1,4 @@
-# Attachment model - EHDS Logical Information Models v0.1.0
+# Attachment model - EHDS Logical Information Models v0.3.0
 
 ## Logical Model: Attachment model 
 
@@ -28,11 +28,11 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAttachment.cs
   "resourceType" : "StructureDefinition",
   "id" : "EHDSAttachment",
   "url" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSAttachment",
-  "version" : "0.1.0",
+  "version" : "0.3.0",
   "name" : "EHDSAttachment",
   "title" : "Attachment model",
   "status" : "draft",
-  "date" : "2026-09-10T07:15:06+00:00",
+  "date" : "2026-09-10T07:26:30+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",

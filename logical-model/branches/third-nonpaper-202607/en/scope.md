@@ -1,4 +1,4 @@
-# Scope and Content - EHDS Logical Information Models v0.1.0
+# Scope and Content - EHDS Logical Information Models v0.3.0
 
 ## Scope and Content
 

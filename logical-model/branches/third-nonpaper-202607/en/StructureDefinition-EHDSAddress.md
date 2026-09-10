@@ -1,4 +1,4 @@
-# Address model - EHDS Logical Information Models v0.1.0
+# Address model - EHDS Logical Information Models v0.3.0
 
 ## Logical Model: Address model 
 
@@ -28,11 +28,11 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAddress.csv),
   "resourceType" : "StructureDefinition",
   "id" : "EHDSAddress",
   "url" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSAddress",
-  "version" : "0.1.0",
+  "version" : "0.3.0",
   "name" : "EHDSAddress",
   "title" : "Address model",
   "status" : "draft",
-  "date" : "2026-09-10T07:15:06+00:00",
+  "date" : "2026-09-10T07:26:30+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",

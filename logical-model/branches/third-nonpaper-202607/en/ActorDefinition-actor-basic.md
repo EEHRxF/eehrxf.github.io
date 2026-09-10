@@ -1,4 +1,4 @@
-# Basic - EHDS Logical Information Models v0.1.0
+# Basic - EHDS Logical Information Models v0.3.0
 
 ## ActorDefinition: Basic 
 
@@ -11,10 +11,10 @@
   "resourceType" : "ActorDefinition",
   "id" : "actor-basic",
   "url" : "https://ehds.eu/specifications/fhir/actor-basic",
-  "version" : "0.1.0",
+  "version" : "0.3.0",
   "name" : "Basic",
   "status" : "active",
-  "date" : "2026-09-10T07:15:06+00:00",
+  "date" : "2026-09-10T07:26:30+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",

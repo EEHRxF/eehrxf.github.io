@@ -1,4 +1,4 @@
-# Discharge Report - EHDS Logical Information Models v0.1.0
+# Discharge Report - EHDS Logical Information Models v0.3.0
 
 ## Discharge Report
 

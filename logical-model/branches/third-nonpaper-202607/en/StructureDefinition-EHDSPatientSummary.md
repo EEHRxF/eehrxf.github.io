@@ -1,4 +1,4 @@
-# Patient summary model - EHDS Logical Information Models v0.1.0
+# Patient summary model - EHDS Logical Information Models v0.3.0
 
 ## Logical Model: Patient summary model 
 
@@ -28,11 +28,11 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSPatientSummar
   "resourceType" : "StructureDefinition",
   "id" : "EHDSPatientSummary",
   "url" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSPatientSummary",
-  "version" : "0.1.0",
+  "version" : "0.3.0",
   "name" : "EHDSPatientSummary",
   "title" : "Patient summary model",
   "status" : "draft",
-  "date" : "2026-09-10T07:15:06+00:00",
+  "date" : "2026-09-10T07:26:30+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",

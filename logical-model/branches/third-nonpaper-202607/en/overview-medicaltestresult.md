@@ -1,4 +1,4 @@
-# Medical Test Results and Laboratory Report - EHDS Logical Information Models v0.1.0
+# Medical Test Results and Laboratory Report - EHDS Logical Information Models v0.3.0
 
 ## Medical Test Results and Laboratory Report
 

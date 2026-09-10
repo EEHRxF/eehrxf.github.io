@@ -1,4 +1,4 @@
-# Imaging report model. - EHDS Logical Information Models v0.1.0
+# Imaging report model. - EHDS Logical Information Models v0.3.0
 
 ## Logical Model: Imaging report model. 
 
@@ -28,11 +28,11 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingReport
   "resourceType" : "StructureDefinition",
   "id" : "EHDSImagingReport",
   "url" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSImagingReport",
-  "version" : "0.1.0",
+  "version" : "0.3.0",
   "name" : "EHDSImagingReport",
   "title" : "Imaging report model.",
   "status" : "draft",
-  "date" : "2026-09-10T07:15:06+00:00",
+  "date" : "2026-09-10T07:26:30+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
