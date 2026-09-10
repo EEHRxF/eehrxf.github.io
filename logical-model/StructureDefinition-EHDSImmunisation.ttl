@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "EHDSImmunisation"] ; # 
   fhir:title [ fhir:v "Immunisation model"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-09-10T07:58:57+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-09-10T07:59:04+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "EC"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "EC" ] ;
