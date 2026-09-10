@@ -1,4 +1,4 @@
-# Body structure model - EHDS Logical Information Models v0.1.0
+# Body structure model - EHDS Logical Information Models v0.3.0
 
 ## Logical Model: Body structure model 
 
@@ -7,7 +7,7 @@ EHDSBodyStructure means a structured set of data elements describing an anatomic
 
 **Usages:**
 
-* Use this Logical Model: [Condition model](StructureDefinition-EHDSCondition.md), [Device use model](StructureDefinition-EHDSDeviceUse.md), [Dosage model](StructureDefinition-EHDSDosage.md), [Imaging report model](StructureDefinition-EHDSImagingReport.md)... Show 5 more, [Imaging study model](StructureDefinition-EHDSImagingStudy.md), [Observation model](StructureDefinition-EHDSObservation.md), [Procedure model](StructureDefinition-EHDSProcedure.md), [Service request model](StructureDefinition-EHDSServiceRequest.md) and [Specimen model](StructureDefinition-EHDSSpecimen.md)
+* Use this Logical Model: [Condition model](StructureDefinition-EHDSCondition.md), [Device use model](StructureDefinition-EHDSDeviceUse.md), [Dosage model](StructureDefinition-EHDSDosage.md), [Imaging report model.](StructureDefinition-EHDSImagingReport.md)... Show 5 more, [Imaging study model.](StructureDefinition-EHDSImagingStudy.md), [Observation model](StructureDefinition-EHDSObservation.md), [Procedure model](StructureDefinition-EHDSProcedure.md), [Service request model](StructureDefinition-EHDSServiceRequest.md) and [Specimen model](StructureDefinition-EHDSSpecimen.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/eu.ehds.models|current/StructureDefinition/StructureDefinition-EHDSBodyStructure.json)
 
@@ -28,11 +28,11 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSBodyStructure
   "resourceType" : "StructureDefinition",
   "id" : "EHDSBodyStructure",
   "url" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSBodyStructure",
-  "version" : "0.1.0",
+  "version" : "0.3.0",
   "name" : "EHDSBodyStructure",
   "title" : "Body structure model",
   "status" : "draft",
-  "date" : "2026-09-09T07:32:50+00:00",
+  "date" : "2026-09-10T07:58:57+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -62,28 +62,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSBodyStructure
     },
     {
       "id" : "EHDSBodyStructure.morphology",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSBodyStructure.morphology",
       "short" : "The kind of structure being represented by the body structure at BodyStructure.location. This can define both normal and abnormal morphologies.",
       "definition" : "The kind of structure being represented by the body structure at BodyStructure.location. This can define both normal and abnormal morphologies.",
@@ -94,36 +72,14 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSBodyStructure
       }],
       "binding" : {
         "strength" : "required",
-        "description" : "SNOMED CT"
+        "description" : "SNOMED GPS"
       }
     },
     {
       "id" : "EHDSBodyStructure.location",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSBodyStructure.location",
-      "short" : "Body site",
-      "definition" : "Body site",
+      "short" : "Body site.",
+      "definition" : "Body site.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -131,36 +87,14 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSBodyStructure
       }],
       "binding" : {
         "strength" : "required",
-        "description" : "SNOMED CT"
+        "description" : "SNOMED GPS"
       }
     },
     {
       "id" : "EHDSBodyStructure.locationQualifier",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSBodyStructure.locationQualifier",
-      "short" : "Additional qualifier of the body structure (e.g. upper, lower, distal, proximal).",
-      "definition" : "Additional qualifier of the body structure (e.g. upper, lower, distal, proximal).",
+      "short" : "Additional qualifier of the body structure (e.g. upper, lower, left side).",
+      "definition" : "Additional qualifier of the body structure (e.g. upper, lower, left side).",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -168,33 +102,11 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSBodyStructure
       }],
       "binding" : {
         "strength" : "required",
-        "description" : "SNOMED CT"
+        "description" : "SNOMED GPS"
       }
     },
     {
       "id" : "EHDSBodyStructure.laterality",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSBodyStructure.laterality",
       "short" : "Body structure laterality (e.g. left, right).",
       "definition" : "Body structure laterality (e.g. left, right).",
@@ -205,36 +117,14 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSBodyStructure
       }],
       "binding" : {
         "strength" : "required",
-        "description" : "SNOMED CT"
+        "description" : "SNOMED GPS"
       }
     },
     {
       "id" : "EHDSBodyStructure.description",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSBodyStructure.description",
-      "short" : "Textual description of the body structure",
-      "definition" : "Textual description of the body structure",
+      "short" : "Textual description of the body structure.",
+      "definition" : "Textual description of the body structure.",
       "min" : 0,
       "max" : "1",
       "type" : [{

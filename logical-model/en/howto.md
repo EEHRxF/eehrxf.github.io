@@ -1,4 +1,4 @@
-# How to read this guide - EHDS Logical Information Models v0.1.0
+# How to read this guide - EHDS Logical Information Models v0.3.0
 
 ## How to read this guide
 
@@ -6,8 +6,7 @@
 
 Logical information/data models offer a technology-neutral perspective on data. These models are designed to be more accessible and easier for clinical experts to process and validate the structure and content of data exchange. Models can be applied to various data exchange and storage standards. Logical information models define data elements along with their constraints and relationships. This approach enables the description of data requirements from a functional standpoint, without being tied to any specific technology or implementation.
 
-The models approach used by Xt-EHR for EHDS follows the ISO 13972 standard "Health informatics — Clinical information models — Characteristics, structures and requirements."
- While the models are published as HL7 FHIR StructureDefinition resources (HL7 FHIR logical models), the models themselves are technology-agnostic and applicable to any data exchange standard.
+The models approach used by Xt-EHR for EHDS follows the ISO 13972 standard "Health informatics — Clinical information models — Characteristics, structures and requirements." While the models are published as HL7 FHIR StructureDefinition resources (HL7 FHIR logical models), the models themselves are technology-agnostic and applicable to any data exchange standard.
 
 The models use a subset of FHIR data types, but do not imply all the extensions or constraints that the FHIR format defines. Please see [Data types and references page](datatypes.md) for additional information about data types in the logical models.
 
@@ -15,8 +14,9 @@ The implementation guide follows the conventions of HL7 FHIR implementation guid
 
 ### Differential vs Snapshot view
 
-When navigating to a page of a model, the tab may open at the Differential view. This means, that in case the model is derived from another model, only the differences are shown on this page. 
- For example, the Laboratory Observation model is derived from the general Observation model, and adds a few constraints and elements that are specific to the laboratory use case. For derived models:
+When navigating to a page of a model, the tab may open at the Differential view. This means, that in case the model is derived from another model, only the differences are shown on this page.
+
+For example, the Laboratory Observation model is derived from the general Observation model, and adds a few constraints and elements that are specific to the laboratory use case. For derived models:
 
 * The Differential view shows only the differences from the model it’s based on;
 * The Key Elements view shows highlighted elements: this view is more useful for a FHIR profile, but does not provide much extra detail in the case of logical models;

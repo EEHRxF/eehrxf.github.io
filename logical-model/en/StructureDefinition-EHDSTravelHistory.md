@@ -1,4 +1,4 @@
-# Travel history model - EHDS Logical Information Models v0.1.0
+# Travel history model - EHDS Logical Information Models v0.3.0
 
 ## Logical Model: Travel history model 
 
@@ -28,11 +28,11 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSTravelHistory
   "resourceType" : "StructureDefinition",
   "id" : "EHDSTravelHistory",
   "url" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSTravelHistory",
-  "version" : "0.1.0",
+  "version" : "0.3.0",
   "name" : "EHDSTravelHistory",
   "title" : "Travel history model",
   "status" : "draft",
-  "date" : "2026-09-09T07:32:50+00:00",
+  "date" : "2026-09-10T07:58:57+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -61,111 +61,24 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSTravelHistory
       "definition" : "EHDSTravelHistory means a structured set of data elements describing a patient's past travel to a specific country."
     },
     {
-      "id" : "EHDSTravelHistory.header.identifier",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
-      "path" : "EHDSTravelHistory.header.identifier"
-    },
-    {
-      "id" : "EHDSTravelHistory.header.author[x]",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
-      "path" : "EHDSTravelHistory.header.author[x]"
-    },
-    {
       "id" : "EHDSTravelHistory.header.date",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
-      "path" : "EHDSTravelHistory.header.date"
+      "path" : "EHDSTravelHistory.header.date",
+      "short" : "Date and optionally time of authoring/issuing"
+    },
+    {
+      "id" : "EHDSTravelHistory.header.status",
+      "path" : "EHDSTravelHistory.header.status",
+      "short" : "Status of the resource or document",
+      "binding" : {
+        "strength" : "required",
+        "description" : "To be specified"
+      }
     },
     {
       "id" : "EHDSTravelHistory.country",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSTravelHistory.country",
       "short" : "Country visited.",
       "definition" : "Country visited.",
-      "requirements" : "eHN PS Guideline",
       "min" : 1,
       "max" : "1",
       "type" : [{
@@ -173,33 +86,11 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSTravelHistory
       }],
       "binding" : {
         "strength" : "required",
-        "description" : "ISO 3166"
+        "description" : "ISO 3166-1 alpha-2"
       }
     },
     {
       "id" : "EHDSTravelHistory.period",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSTravelHistory.period",
       "short" : "The period during which the patient visited the country.",
       "definition" : "The period during which the patient visited the country.",

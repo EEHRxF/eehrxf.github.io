@@ -1,4 +1,4 @@
-# Organisation model - EHDS Logical Information Models v0.1.0
+# Organisation model - EHDS Logical Information Models v0.3.0
 
 ## Logical Model: Organisation model 
 
@@ -7,7 +7,7 @@ EHDSOrganisation means a structured set of data elements describing an organisat
 
 **Usages:**
 
-* Use this Logical Model: [DataSet model](StructureDefinition-EHDSDataSet.md), [Discharge Report model](StructureDefinition-EHDSDischargeReport.md), [Document model](StructureDefinition-EHDSDocument.md), [Encounter model](StructureDefinition-EHDSEncounter.md)... Show 11 more, [Endpoint model](StructureDefinition-EHDSEndpoint.md), [Health professional model](StructureDefinition-EHDSHealthProfessional.md), [Imaging report model](StructureDefinition-EHDSImagingReport.md), [Imaging study model](StructureDefinition-EHDSImagingStudy.md), [Immunisation model](StructureDefinition-EHDSImmunisation.md), [Location model](StructureDefinition-EHDSLocation.md), [Medical test result and report model](StructureDefinition-EHDSMedicalTestResultAndReport.md), [Medication dispense model](StructureDefinition-EHDSMedicationDispense.md), [Observation model](StructureDefinition-EHDSObservation.md), [Organisation model](StructureDefinition-EHDSOrganisation.md) and [Specimen model](StructureDefinition-EHDSSpecimen.md)
+* Use this Logical Model: [DataSet model](StructureDefinition-EHDSDataSet.md), [Discharge report model](StructureDefinition-EHDSDischargeReport.md), [Document model](StructureDefinition-EHDSDocument.md), [Encounter model](StructureDefinition-EHDSEncounter.md)... Show 11 more, [Endpoint model](StructureDefinition-EHDSEndpoint.md), [Health professional model](StructureDefinition-EHDSHealthProfessional.md), [Imaging report model.](StructureDefinition-EHDSImagingReport.md), [Imaging study model.](StructureDefinition-EHDSImagingStudy.md), [Immunisation model](StructureDefinition-EHDSImmunisation.md), [Location model](StructureDefinition-EHDSLocation.md), [Medical test result and report model](StructureDefinition-EHDSMedicalTestReport.md), [Medication dispense model.](StructureDefinition-EHDSMedicationDispense.md), [Observation model](StructureDefinition-EHDSObservation.md), [Organisation model](StructureDefinition-EHDSOrganisation.md) and [Specimen model](StructureDefinition-EHDSSpecimen.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/eu.ehds.models|current/StructureDefinition/StructureDefinition-EHDSOrganisation.json)
 
@@ -28,11 +28,11 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSOrganisation.
   "resourceType" : "StructureDefinition",
   "id" : "EHDSOrganisation",
   "url" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation",
-  "version" : "0.1.0",
+  "version" : "0.3.0",
   "name" : "EHDSOrganisation",
   "title" : "Organisation model",
   "status" : "draft",
-  "date" : "2026-09-09T07:32:50+00:00",
+  "date" : "2026-09-10T07:58:57+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -62,28 +62,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSOrganisation.
     },
     {
       "id" : "EHDSOrganisation.identifier",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSOrganisation.identifier",
       "short" : "Organisation identifier.",
       "definition" : "Organisation identifier.",
@@ -95,28 +73,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSOrganisation.
     },
     {
       "id" : "EHDSOrganisation.type",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSOrganisation.type",
       "short" : "Kind of organisation.",
       "definition" : "Kind of organisation.",
@@ -132,28 +88,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSOrganisation.
     },
     {
       "id" : "EHDSOrganisation.name",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSOrganisation.name",
       "short" : "Organisation name.",
       "definition" : "Organisation name.",
@@ -165,28 +99,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSOrganisation.
     },
     {
       "id" : "EHDSOrganisation.address",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSOrganisation.address",
       "short" : "Mailing or office address.",
       "definition" : "Mailing or office address.",
@@ -198,28 +110,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSOrganisation.
     },
     {
       "id" : "EHDSOrganisation.telecom",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSOrganisation.telecom",
       "short" : "Telecommunication contact information (address) associated with the organisation, such as phone number, email, or messaging service.",
       "definition" : "Telecommunication contact information (address) associated with the organisation, such as phone number, email, or messaging service.",
@@ -231,28 +121,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSOrganisation.
     },
     {
       "id" : "EHDSOrganisation.partOf",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSOrganisation.partOf",
       "short" : "The organisation of which this organisation forms a part.",
       "definition" : "The organisation of which this organisation forms a part.",

@@ -1,4 +1,4 @@
-# Address model - EHDS Logical Information Models v0.1.0
+# Address model - EHDS Logical Information Models v0.3.0
 
 ## Logical Model: Address model 
 
@@ -28,11 +28,11 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAddress.csv),
   "resourceType" : "StructureDefinition",
   "id" : "EHDSAddress",
   "url" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSAddress",
-  "version" : "0.1.0",
+  "version" : "0.3.0",
   "name" : "EHDSAddress",
   "title" : "Address model",
   "status" : "draft",
-  "date" : "2026-09-09T07:32:50+00:00",
+  "date" : "2026-09-10T07:58:57+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -62,28 +62,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAddress.csv),
     },
     {
       "id" : "EHDSAddress.use",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSAddress.use",
       "short" : "Purpose of the address. If this attribute is not present, the address is assumed to be the default address useful for any purpose.",
       "definition" : "Purpose of the address. If this attribute is not present, the address is assumed to be the default address useful for any purpose.",
@@ -99,28 +77,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAddress.csv),
     },
     {
       "id" : "EHDSAddress.type",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSAddress.type",
       "short" : "Distinguishes between physical addresses (those that can be visited) and mailing addresses. Most addresses are both.",
       "definition" : "Distinguishes between physical addresses (those that can be visited) and mailing addresses. Most addresses are both.",
@@ -136,28 +92,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAddress.csv),
     },
     {
       "id" : "EHDSAddress.text",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSAddress.text",
       "short" : "Text representation of the address.",
       "definition" : "Text representation of the address.",
@@ -169,28 +103,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAddress.csv),
     },
     {
       "id" : "EHDSAddress.street",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSAddress.street",
       "short" : "Name of the street.",
       "definition" : "Name of the street.",
@@ -202,28 +114,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAddress.csv),
     },
     {
       "id" : "EHDSAddress.houseNumber",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSAddress.houseNumber",
       "short" : "House number.",
       "definition" : "House number.",
@@ -235,28 +125,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAddress.csv),
     },
     {
       "id" : "EHDSAddress.postBox",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSAddress.postBox",
       "short" : "Post box.",
       "definition" : "Post box.",
@@ -268,28 +136,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAddress.csv),
     },
     {
       "id" : "EHDSAddress.city",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSAddress.city",
       "short" : "City.",
       "definition" : "City.",
@@ -301,28 +147,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAddress.csv),
     },
     {
       "id" : "EHDSAddress.postalCode",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSAddress.postalCode",
       "short" : "Postal code.",
       "definition" : "Postal code.",
@@ -334,32 +158,10 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAddress.csv),
     },
     {
       "id" : "EHDSAddress.country",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSAddress.country",
       "short" : "Country name and country code.",
       "definition" : "Country name and country code.",
-      "min" : 0,
+      "min" : 1,
       "max" : "1",
       "type" : [{
         "code" : "CodeableConcept"

@@ -2,11 +2,11 @@
 "EHDSSpecimen","EHDSSpecimen","","","",0,*,"","","","null {[]} {[]}
 ","Specimen model","EHDSSpecimen means a structured set of data elements describing a sample collected.","","","","","","","","","",,,,,"",,,,"Base",0,*,"","","n/a"
 "EHDSSpecimen.identifier","EHDSSpecimen.identifier","","","",1,*,"","","","Identifier {[]} {[]}
-","An identifier of the specimen which is unique within in a defined scope. Example: identifier assigned by ordering system, identifier assigned by laboratory etc. Multiple identifiers can be used.","An identifier of the specimen which is unique within in a defined scope. Example: identifier assigned by ordering system, identifier assigned by laboratory etc. Multiple identifiers can be used.","","","","","","","","","",,,,,"",,,,"EHDSSpecimen.identifier",1,*,"",""
+","An identifier of the specimen which is unique within in a defined scope.","An identifier of the specimen which is unique within in a defined scope.","","","","","","","","","",,,,,"",,,,"EHDSSpecimen.identifier",1,*,"",""
 "EHDSSpecimen.status","EHDSSpecimen.status","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Availability of the specimen.","Availability of the specimen.","","","","","","","","","",,"required","HL7 Specimen Status","","",,,,"EHDSSpecimen.status",0,1,"",""
 "EHDSSpecimen.type","EHDSSpecimen.type","","","",0,1,"","","","CodeableConcept {[]} {[]}
-","The kind of material that forms the specimen.","The kind of material that forms the specimen.","","","","","","","","","",,"required","SNOMED CT","","",,,,"EHDSSpecimen.type",0,1,"",""
+","The kind of material that forms the specimen.","The kind of material that forms the specimen.","","","","","","","","","",,"required","SNOMED GPS","","",,,,"EHDSSpecimen.type",0,1,"",""
 "EHDSSpecimen.specimenSource[x]","EHDSSpecimen.specimenSource[x]","","","",0,1,"","","","http://ehds.eu/fhir/models/StructureDefinition/EHDSPatient {[]} {[]}
 http://ehds.eu/fhir/models/StructureDefinition/EHDSLocation {[]} {[]}http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice {[]} {[]}","The source where the specimen came from. This may be from a patient, from a location (e.g., the source of an environmental sample), or from a device.","The source where the specimen came from. This may be from a patient, from a location (e.g., the source of an environmental sample), or from a device.","","","","","","","","","",,,,,"",,,,"EHDSSpecimen.specimenSource[x]",0,1,"",""
 "EHDSSpecimen.parentSpecimen","EHDSSpecimen.parentSpecimen","","","",0,*,"","","","http://ehds.eu/fhir/models/StructureDefinition/EHDSSpecimen {[]} {[]}
@@ -22,7 +22,7 @@ dateTime {[]} {[]}","The period or date and time of specimen collection.","The p
 "EHDSSpecimen.collection.quantity","EHDSSpecimen.collection.quantity","","","",0,1,"","","","Quantity {[]} {[]}
 ","The quantity of specimen collected.","The quantity of specimen collected.","","","","","","","","","",,,,,"",,,,"EHDSSpecimen.collection.quantity",0,1,"",""
 "EHDSSpecimen.collection.method","EHDSSpecimen.collection.method","","","",0,1,"","","","CodeableConcept {[]} {[]}
-","If relevant for the results, the method of obtaining the specimen.","If relevant for the results, the method of obtaining the specimen.","","","","","","","","","",,"required","SNOMED CT","","",,,,"EHDSSpecimen.collection.method",0,1,"",""
+","If relevant for the results, the method of obtaining the specimen.","If relevant for the results, the method of obtaining the specimen.","","","","","","","","","",,"required","SNOMED GPS","","",,,,"EHDSSpecimen.collection.method",0,1,"",""
 "EHDSSpecimen.collection.device","EHDSSpecimen.collection.device","","","",0,1,"","","","http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice {[]} {[]}
 ","Device used to perform specimen collection.","Device used to perform specimen collection.","","","","","","","","","",,,,,"",,,,"EHDSSpecimen.collection.device",0,1,"",""
 "EHDSSpecimen.collection.bodySite","EHDSSpecimen.collection.bodySite","","","",0,1,"","","","http://ehds.eu/fhir/models/StructureDefinition/EHDSBodyStructure {[]} {[]}
@@ -32,10 +32,10 @@ dateTime {[]} {[]}","The period or date and time of specimen collection.","The p
 "EHDSSpecimen.container","EHDSSpecimen.container","","","",0,*,"","","","Base {[]} {[]}
 ","The container holding the specimen.","The container holding the specimen.","","","","","","","","","",,,,,"",,,,"EHDSSpecimen.container",0,*,"",""
 "EHDSSpecimen.container.specimenQuantity","EHDSSpecimen.container.specimenQuantity","","","",0,1,"","","","Quantity {[]} {[]}
-","Quantity of specimen within container.","Quantity of specimen within container.","","","","","","","","","",,,,,"",,,,"EHDSSpecimen.container.specimenQuantity",0,1,"",""
+","Quantity of specimen within container,","Quantity of specimen within container,","","","","","","","","","",,,,,"",,,,"EHDSSpecimen.container.specimenQuantity",0,1,"",""
 "EHDSSpecimen.container.containerDevice","EHDSSpecimen.container.containerDevice","","","",1,1,"","","","http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice {[]} {[]}
-","The device resource for the the container holding the specimen.","The device resource for the the container holding the specimen.","","","","","","","","","",,,,,"",,,,"EHDSSpecimen.container.containerDevice",1,1,"",""
+","The device for the container holding the specimen.","The device for the container holding the specimen.","","","","","","","","","",,,,,"",,,,"EHDSSpecimen.container.containerDevice",1,1,"",""
 "EHDSSpecimen.condition","EHDSSpecimen.condition","","","",0,*,"","","","CodeableConcept {[]} {[]}
-","State of the specimen. State of the speeimen should be alligned with dataAbsentReason element of the Observatiom model.","State of the specimen. State of the speeimen should be alligned with dataAbsentReason element of the Observatiom model.","","","","","","","","","",,"required","HL7 Specimen Condition","","",,,,"EHDSSpecimen.condition",0,*,"",""
+","State of the specimen. State of the specimen should be aligned with dataAbsentReason element of the Observation model.","State of the specimen. State of the specimen should be aligned with dataAbsentReason element of the Observation model.","","","","","","","","","",,"required","HL7 Specimen Condition","","",,,,"EHDSSpecimen.condition",0,*,"",""
 "EHDSSpecimen.note","EHDSSpecimen.note","","","",0,1,"","","","string {[]} {[]}
-","Any details or issues about the specimen or during the specimen collection. (for example: broken vial, sent with patient, frozen).","Any details or issues about the specimen or during the specimen collection. (for example: broken vial, sent with patient, frozen).","","","","","","","","","",,,,,"",,,,"EHDSSpecimen.note",0,1,"",""
+","Any details or issues about the specimen or during the specimen collection (for example: broken vial, sent with patient, frozen).","Any details or issues about the specimen or during the specimen collection (for example: broken vial, sent with patient, frozen).","","","","","","","","","",,,,,"",,,,"EHDSSpecimen.note",0,1,"",""

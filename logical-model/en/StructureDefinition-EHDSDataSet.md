@@ -1,13 +1,13 @@
-# DataSet model - EHDS Logical Information Models v0.1.0
+# DataSet model - EHDS Logical Information Models v0.3.0
 
 ## Logical Model: DataSet model 
 
  
-Data group that is used as a template for deriving other data groups. 
+DataSet model. 
 
 **Usages:**
 
-* Derived from this Logical Model: [Advance directive model](StructureDefinition-EHDSAdvanceDirective.md), [Alert model](StructureDefinition-EHDSAlert.md), [Allergy intolerance model](StructureDefinition-EHDSAllergyIntolerance.md), [Care plan model](StructureDefinition-EHDSCarePlan.md)... Show 16 more, [Condition model](StructureDefinition-EHDSCondition.md), [Current pregnancy status model](StructureDefinition-EHDSCurrentPregnancyStatus.md), [Device use model](StructureDefinition-EHDSDeviceUse.md), [Document model](StructureDefinition-EHDSDocument.md), [Encounter model](StructureDefinition-EHDSEncounter.md), [Imaging study model](StructureDefinition-EHDSImagingStudy.md), [Immunisation model](StructureDefinition-EHDSImmunisation.md), [Medication administration model](StructureDefinition-EHDSMedicationAdministration.md), [Medication dispense model](StructureDefinition-EHDSMedicationDispense.md), [Medication prescription model](StructureDefinition-EHDSMedicationPrescription.md), [Medication use model](StructureDefinition-EHDSMedicationUse.md), [Observation model](StructureDefinition-EHDSObservation.md), [Pregnancy history model](StructureDefinition-EHDSPregnancyHistory.md), [Procedure model](StructureDefinition-EHDSProcedure.md), [Service request model](StructureDefinition-EHDSServiceRequest.md) and [Travel history model](StructureDefinition-EHDSTravelHistory.md)
+* Derived from this Logical Model: [Advance directive model](StructureDefinition-EHDSAdvanceDirective.md), [Alert model](StructureDefinition-EHDSAlert.md), [Allergy intolerance model](StructureDefinition-EHDSAllergyIntolerance.md), [Care plan model](StructureDefinition-EHDSCarePlan.md)... Show 16 more, [Condition model](StructureDefinition-EHDSCondition.md), [Current pregnancy status model](StructureDefinition-EHDSCurrentPregnancyStatus.md), [Device use model](StructureDefinition-EHDSDeviceUse.md), [Document model](StructureDefinition-EHDSDocument.md), [Encounter model](StructureDefinition-EHDSEncounter.md), [Imaging study model.](StructureDefinition-EHDSImagingStudy.md), [Immunisation model](StructureDefinition-EHDSImmunisation.md), [Medication administration model](StructureDefinition-EHDSMedicationAdministration.md), [Medication dispense model.](StructureDefinition-EHDSMedicationDispense.md), [Electronic prescription model](StructureDefinition-EHDSMedicationPrescription.md), [Medication use model](StructureDefinition-EHDSMedicationUse.md), [Observation model](StructureDefinition-EHDSObservation.md), [Pregnancy history model](StructureDefinition-EHDSPregnancyHistory.md), [Procedure model](StructureDefinition-EHDSProcedure.md), [Service request model](StructureDefinition-EHDSServiceRequest.md) and [Travel history model](StructureDefinition-EHDSTravelHistory.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/eu.ehds.models|current/StructureDefinition/StructureDefinition-EHDSDataSet.json)
 
@@ -28,11 +28,11 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDataSet.csv),
   "resourceType" : "StructureDefinition",
   "id" : "EHDSDataSet",
   "url" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSDataSet",
-  "version" : "0.1.0",
+  "version" : "0.3.0",
   "name" : "EHDSDataSet",
   "title" : "DataSet model",
   "status" : "draft",
-  "date" : "2026-09-09T07:32:50+00:00",
+  "date" : "2026-09-10T07:58:57+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDataSet.csv),
       "value" : "http://commission.europa.eu/"
     }]
   }],
-  "description" : "Data group that is used as a template for deriving other data groups.",
+  "description" : "DataSet model.",
   "fhirVersion" : "5.0.0",
   "mapping" : [{
     "identity" : "rim",
@@ -58,32 +58,10 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDataSet.csv),
       "id" : "EHDSDataSet",
       "path" : "EHDSDataSet",
       "short" : "DataSet model",
-      "definition" : "Data group that is used as a template for deriving other data groups."
+      "definition" : "DataSet model."
     },
     {
       "id" : "EHDSDataSet.header",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSDataSet.header",
       "short" : "Basic metadata for this information.",
       "definition" : "Basic metadata for this information.",
@@ -95,28 +73,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDataSet.csv),
     },
     {
       "id" : "EHDSDataSet.header.subject",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSDataSet.header.subject",
       "short" : "Patient/subject information.",
       "definition" : "Patient/subject information.",
@@ -129,8 +85,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDataSet.csv),
     {
       "id" : "EHDSDataSet.header.identifier",
       "path" : "EHDSDataSet.header.identifier",
-      "short" : "Business identifier assigned to the resource or document (not a patient ID and not the technical resource ID).",
-      "definition" : "Business identifier assigned to the resource or document (not a patient ID and not the technical resource ID).",
+      "short" : "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries).",
+      "definition" : "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries).",
       "comment" : "Business identifier is unique within the system that assigns them. The same entity may have different unique identifiers assigned by different systems. Therefore, the identifier is always expected to be a pair of a system and a value.",
       "min" : 0,
       "max" : "*",
@@ -154,45 +110,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDataSet.csv),
       },
       {
         "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice"
-      },
-      {
-        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSPatient"
-      },
-      {
-        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSRelatedPerson"
-      }]
-    },
-    {
-      "id" : "EHDSDataSet.header.patientInsertedData",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
-      "path" : "EHDSDataSet.header.patientInsertedData",
-      "short" : "Indicator that states, when included with value ‘true’, that the contents of this resource represent information inserted by the natural person or their representative. In this case, the contents shall not be considered as verified by a health professional or a healthcare provider, even if digitally signed by them as part of a bigger data set. Details of the person who inserted the information may be provided in the author[x] element.",
-      "definition" : "Indicator that states, when included with value ‘true’, that the contents of this resource represent information inserted by the natural person or their representative. In this case, the contents shall not be considered as verified by a health professional or a healthcare provider, even if digitally signed by them as part of a bigger data set. Details of the person who inserted the information may be provided in the author[x] element.",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "boolean"
       }]
     },
     {
@@ -208,28 +125,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDataSet.csv),
     },
     {
       "id" : "EHDSDataSet.header.status",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSDataSet.header.status",
       "short" : "Status of the resource.",
       "definition" : "Status of the resource.",
@@ -240,33 +135,11 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDataSet.csv),
       }],
       "binding" : {
         "strength" : "required",
-        "description" : "Defined in the individual data set."
+        "description" : "Defined in the individual data set"
       }
     },
     {
       "id" : "EHDSDataSet.header.language",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSDataSet.header.language",
       "short" : "Language in which the resource is written. Language is expressed by the IETF language tag.",
       "definition" : "Language in which the resource is written. Language is expressed by the IETF language tag.",

@@ -1,4 +1,4 @@
-# Specimen model - EHDS Logical Information Models v0.1.0
+# Specimen model - EHDS Logical Information Models v0.3.0
 
 ## Logical Model: Specimen model 
 
@@ -7,7 +7,7 @@ EHDSSpecimen means a structured set of data elements describing a sample collect
 
 **Usages:**
 
-* Use this Logical Model: [Imaging report model](StructureDefinition-EHDSImagingReport.md), [Imaging study model](StructureDefinition-EHDSImagingStudy.md), [Medical test result and report model](StructureDefinition-EHDSMedicalTestResultAndReport.md), [Observation model](StructureDefinition-EHDSObservation.md)... Show 2 more, [Service request model](StructureDefinition-EHDSServiceRequest.md) and [Specimen model](StructureDefinition-EHDSSpecimen.md)
+* Use this Logical Model: [Imaging report model.](StructureDefinition-EHDSImagingReport.md), [Imaging study model.](StructureDefinition-EHDSImagingStudy.md), [Medical test result and report model](StructureDefinition-EHDSMedicalTestReport.md), [Observation model](StructureDefinition-EHDSObservation.md)... Show 2 more, [Service request model](StructureDefinition-EHDSServiceRequest.md) and [Specimen model](StructureDefinition-EHDSSpecimen.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/eu.ehds.models|current/StructureDefinition/StructureDefinition-EHDSSpecimen.json)
 
@@ -28,11 +28,11 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSSpecimen.csv)
   "resourceType" : "StructureDefinition",
   "id" : "EHDSSpecimen",
   "url" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSSpecimen",
-  "version" : "0.1.0",
+  "version" : "0.3.0",
   "name" : "EHDSSpecimen",
   "title" : "Specimen model",
   "status" : "draft",
-  "date" : "2026-09-09T07:32:50+00:00",
+  "date" : "2026-09-10T07:58:57+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -62,31 +62,9 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSSpecimen.csv)
     },
     {
       "id" : "EHDSSpecimen.identifier",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSSpecimen.identifier",
-      "short" : "An identifier of the specimen which is unique within in a defined scope. Example: identifier assigned by ordering system, identifier assigned by laboratory etc. Multiple identifiers can be used.",
-      "definition" : "An identifier of the specimen which is unique within in a defined scope. Example: identifier assigned by ordering system, identifier assigned by laboratory etc. Multiple identifiers can be used.",
+      "short" : "An identifier of the specimen which is unique within in a defined scope.",
+      "definition" : "An identifier of the specimen which is unique within in a defined scope.",
       "min" : 1,
       "max" : "*",
       "type" : [{
@@ -95,28 +73,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSSpecimen.csv)
     },
     {
       "id" : "EHDSSpecimen.status",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSSpecimen.status",
       "short" : "Availability of the specimen.",
       "definition" : "Availability of the specimen.",
@@ -132,28 +88,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSSpecimen.csv)
     },
     {
       "id" : "EHDSSpecimen.type",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSSpecimen.type",
       "short" : "The kind of material that forms the specimen.",
       "definition" : "The kind of material that forms the specimen.",
@@ -164,33 +98,11 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSSpecimen.csv)
       }],
       "binding" : {
         "strength" : "required",
-        "description" : "SNOMED CT"
+        "description" : "SNOMED GPS"
       }
     },
     {
       "id" : "EHDSSpecimen.specimenSource[x]",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSSpecimen.specimenSource[x]",
       "short" : "The source where the specimen came from. This may be from a patient, from a location (e.g., the source of an environmental sample), or from a device.",
       "definition" : "The source where the specimen came from. This may be from a patient, from a location (e.g., the source of an environmental sample), or from a device.",
@@ -208,28 +120,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSSpecimen.csv)
     },
     {
       "id" : "EHDSSpecimen.parentSpecimen",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSSpecimen.parentSpecimen",
       "short" : "Specimen from which this specimen originated.",
       "definition" : "Specimen from which this specimen originated.",
@@ -241,28 +131,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSSpecimen.csv)
     },
     {
       "id" : "EHDSSpecimen.request",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSSpecimen.request",
       "short" : "Service request based on which the specimen was collected.",
       "definition" : "Service request based on which the specimen was collected.",
@@ -274,28 +142,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSSpecimen.csv)
     },
     {
       "id" : "EHDSSpecimen.collection",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSSpecimen.collection",
       "short" : "Collection details.",
       "definition" : "Collection details.",
@@ -307,28 +153,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSSpecimen.csv)
     },
     {
       "id" : "EHDSSpecimen.collection.performer[x]",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSSpecimen.collection.performer[x]",
       "short" : "Person or organisation who collected the specimen.",
       "definition" : "Person or organisation who collected the specimen.",
@@ -349,28 +173,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSSpecimen.csv)
     },
     {
       "id" : "EHDSSpecimen.collection.collected[x]",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSSpecimen.collection.collected[x]",
       "short" : "The period or date and time of specimen collection.",
       "definition" : "The period or date and time of specimen collection.",
@@ -385,28 +187,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSSpecimen.csv)
     },
     {
       "id" : "EHDSSpecimen.collection.quantity",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSSpecimen.collection.quantity",
       "short" : "The quantity of specimen collected.",
       "definition" : "The quantity of specimen collected.",
@@ -418,28 +198,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSSpecimen.csv)
     },
     {
       "id" : "EHDSSpecimen.collection.method",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSSpecimen.collection.method",
       "short" : "If relevant for the results, the method of obtaining the specimen.",
       "definition" : "If relevant for the results, the method of obtaining the specimen.",
@@ -450,33 +208,11 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSSpecimen.csv)
       }],
       "binding" : {
         "strength" : "required",
-        "description" : "SNOMED CT"
+        "description" : "SNOMED GPS"
       }
     },
     {
       "id" : "EHDSSpecimen.collection.device",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSSpecimen.collection.device",
       "short" : "Device used to perform specimen collection.",
       "definition" : "Device used to perform specimen collection.",
@@ -488,28 +224,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSSpecimen.csv)
     },
     {
       "id" : "EHDSSpecimen.collection.bodySite",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSSpecimen.collection.bodySite",
       "short" : "Anatomic location where the material is collected.",
       "definition" : "Anatomic location where the material is collected.",
@@ -521,28 +235,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSSpecimen.csv)
     },
     {
       "id" : "EHDSSpecimen.receivedDate",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSSpecimen.receivedDate",
       "short" : "Date and time when specimen is received by the testing laboratory.",
       "definition" : "Date and time when specimen is received by the testing laboratory.",
@@ -554,28 +246,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSSpecimen.csv)
     },
     {
       "id" : "EHDSSpecimen.container",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSSpecimen.container",
       "short" : "The container holding the specimen.",
       "definition" : "The container holding the specimen.",
@@ -587,31 +257,9 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSSpecimen.csv)
     },
     {
       "id" : "EHDSSpecimen.container.specimenQuantity",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSSpecimen.container.specimenQuantity",
-      "short" : "Quantity of specimen within container.",
-      "definition" : "Quantity of specimen within container.",
+      "short" : "Quantity of specimen within container,",
+      "definition" : "Quantity of specimen within container,",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -620,31 +268,9 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSSpecimen.csv)
     },
     {
       "id" : "EHDSSpecimen.container.containerDevice",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSSpecimen.container.containerDevice",
-      "short" : "The device resource for the the container holding the specimen.",
-      "definition" : "The device resource for the the container holding the specimen.",
+      "short" : "The device for the container holding the specimen.",
+      "definition" : "The device for the container holding the specimen.",
       "min" : 1,
       "max" : "1",
       "type" : [{
@@ -653,31 +279,9 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSSpecimen.csv)
     },
     {
       "id" : "EHDSSpecimen.condition",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSSpecimen.condition",
-      "short" : "State of the specimen. State of the speeimen should be alligned with dataAbsentReason element of the Observatiom model.",
-      "definition" : "State of the specimen. State of the speeimen should be alligned with dataAbsentReason element of the Observatiom model.",
+      "short" : "State of the specimen. State of the specimen should be aligned with dataAbsentReason element of the Observation model.",
+      "definition" : "State of the specimen. State of the specimen should be aligned with dataAbsentReason element of the Observation model.",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -690,31 +294,9 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSSpecimen.csv)
     },
     {
       "id" : "EHDSSpecimen.note",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSSpecimen.note",
-      "short" : "Any details or issues about the specimen or during the specimen collection. (for example: broken vial, sent with patient, frozen).",
-      "definition" : "Any details or issues about the specimen or during the specimen collection. (for example: broken vial, sent with patient, frozen).",
+      "short" : "Any details or issues about the specimen or during the specimen collection (for example: broken vial, sent with patient, frozen).",
+      "definition" : "Any details or issues about the specimen or during the specimen collection (for example: broken vial, sent with patient, frozen).",
       "min" : 0,
       "max" : "1",
       "type" : [{

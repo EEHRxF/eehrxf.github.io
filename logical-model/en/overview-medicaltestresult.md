@@ -1,4 +1,4 @@
-# Medical Test Results and Laboratory Report - EHDS Logical Information Models v0.1.0
+# Medical Test Results and Laboratory Report - EHDS Logical Information Models v0.3.0
 
 ## Medical Test Results and Laboratory Report
 
@@ -16,7 +16,7 @@ Medical test result report could be divided into several parts: document header,
 
 ### Detail EHDS information models for medical test (incl laboratory) report
 
-* [Medical Test Result Report](StructureDefinition-EHDSMedicalTestResultAndReport.md)
+* [Medical Test Result Report](StructureDefinition-EHDSMedicalTestReport.md)
 * [Laboratory Observation](StructureDefinition-EHDSLaboratoryObservation.md)
 
 ### FHIR Implementation Guide

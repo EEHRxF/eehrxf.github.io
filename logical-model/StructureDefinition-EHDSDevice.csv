@@ -8,7 +8,7 @@
 "EHDSDevice.manufacturer","EHDSDevice.manufacturer","","","",0,1,"","","","string {[]} {[]}
 ","Name of device manufacturer. If the manufacturer code is included in an identifier, manufacturer must correspond to that code.","Name of device manufacturer. If the manufacturer code is included in an identifier, manufacturer must correspond to that code.","","","","","","","","","",,,,,"",,,,"EHDSDevice.manufacturer",0,1,"",""
 "EHDSDevice.manufactureDate","EHDSDevice.manufactureDate","","","",0,1,"","","","dateTime {[]} {[]}
-","The date and time when the device was manufactured.","The date and time when the device was manufactured.","","","","","","","","","",,,,,"",,,,"EHDSDevice.manufactureDate",0,1,"",""
+","Date and optionally time when the device was manufactured.","Date and optionally time when the device was manufactured.","","","","","","","","","",,,,,"",,,,"EHDSDevice.manufactureDate",0,1,"",""
 "EHDSDevice.expiryDate","EHDSDevice.expiryDate","","","",0,1,"","","","dateTime {[]} {[]}
 ","The date and time beyond which this device is no longer valid or should not be used (if applicable).","The date and time beyond which this device is no longer valid or should not be used (if applicable).","","","","","","","","","",,,,,"",,,,"EHDSDevice.expiryDate",0,1,"",""
 "EHDSDevice.lotNumber","EHDSDevice.lotNumber","","","",0,1,"","","","string {[]} {[]}
@@ -20,12 +20,12 @@
 "EHDSDevice.name.value","EHDSDevice.name.value","","","",1,1,"","","","string {[]} {[]}
 ","The name of the device as known to e.g. the manufacturer and/or patient.","The name of the device as known to e.g. the manufacturer and/or patient.","","","","","","","","","",,,,,"",,,,"EHDSDevice.name.value",1,1,"",""
 "EHDSDevice.name.type","EHDSDevice.name.type","","","",1,1,"","","","CodeableConcept {[]} {[]}
-","The type of name, e.g. UDI Label name, user friendly name.","The type of name, e.g. UDI Label name, user friendly name.","","","","","","","","","",,,,,"",,,,"EHDSDevice.name.type",1,1,"",""
+","The type of name, e.g. UDI Label name, user friendly name.","The type of name, e.g. UDI Label name, user friendly name.","","","","","","","","","",,"required","HL7 Device name type","","",,,,"EHDSDevice.name.type",1,1,"",""
 "EHDSDevice.modelNumber","EHDSDevice.modelNumber","","","",0,1,"","","","string {[]} {[]}
 ","The manufacturer's model number for the device.","The manufacturer's model number for the device.","","","","","","","","","",,,,,"",,,,"EHDSDevice.modelNumber",0,1,"",""
-"EHDSDevice.version","EHDSDevice.version","","","",1,*,"","","","string {[]} {[]}
-","The actual design of the device and/or software version running on the device.","The actual design of the device and/or software version running on the device.","","","","","","","","","",,,,,"",,,,"EHDSDevice.version",1,*,"",""
+"EHDSDevice.version","EHDSDevice.version","","","",0,*,"","","","string {[]} {[]}
+","The actual design of the device and/or software version running on the device.","The actual design of the device and/or software version running on the device.","","","","","","","","","",,,,,"",,,,"EHDSDevice.version",0,*,"",""
 "EHDSDevice.type","EHDSDevice.type","","","",0,*,"","","","CodeableConcept {[]} {[]}
-","Device type.","Device type.","","","","","","","","","",,"required","SNOMED CT (preferred), EMDN","","",,,,"EHDSDevice.type",0,*,"",""
+","Device type.","Device type.","","","","","","","","","",,"required","SNOMED GPS (preferred), EMDN","","",,,,"EHDSDevice.type",0,*,"",""
 "EHDSDevice.note","EHDSDevice.note","","","",0,1,"","","","string {[]} {[]}
 ","Device note and/or comment.","Device note and/or comment.","","","","","","","","","",,,,,"",,,,"EHDSDevice.note",0,1,"",""

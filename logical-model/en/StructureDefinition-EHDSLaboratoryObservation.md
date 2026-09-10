@@ -1,13 +1,13 @@
-# Laboratory observation model - EHDS Logical Information Models v0.1.0
+# Model for observation performed by laboratory - EHDS Logical Information Models v0.3.0
 
-## Logical Model: Laboratory observation model 
+## Logical Model: Model for observation performed by laboratory 
 
  
-Model for observation performed by laboratory 
+Model for observation performed by laboratory. 
 
 **Usages:**
 
-* Use this Logical Model: [Discharge Report model](StructureDefinition-EHDSDischargeReport.md), [Laboratory observation model](StructureDefinition-EHDSLaboratoryObservation.md), [Medical test result and report model](StructureDefinition-EHDSMedicalTestResultAndReport.md) and [Observation model](StructureDefinition-EHDSObservation.md)
+* Use this Logical Model: [Discharge report model](StructureDefinition-EHDSDischargeReport.md), [Model for observation performed by laboratory](StructureDefinition-EHDSLaboratoryObservation.md), [Medical test result and report model](StructureDefinition-EHDSMedicalTestReport.md) and [Observation model](StructureDefinition-EHDSObservation.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/eu.ehds.models|current/StructureDefinition/StructureDefinition-EHDSLaboratoryObservation.json)
 
@@ -95,11 +95,11 @@ Use **relationships between observations** when the related observations:
   "resourceType" : "StructureDefinition",
   "id" : "EHDSLaboratoryObservation",
   "url" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSLaboratoryObservation",
-  "version" : "0.1.0",
+  "version" : "0.3.0",
   "name" : "EHDSLaboratoryObservation",
-  "title" : "Laboratory observation model",
+  "title" : "Model for observation performed by laboratory",
   "status" : "draft",
-  "date" : "2026-09-09T07:32:50+00:00",
+  "date" : "2026-09-10T07:58:57+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -108,7 +108,7 @@ Use **relationships between observations** when the related observations:
       "value" : "http://commission.europa.eu/"
     }]
   }],
-  "description" : "Model for observation performed by laboratory",
+  "description" : "Model for observation performed by laboratory.",
   "fhirVersion" : "5.0.0",
   "mapping" : [{
     "identity" : "rim",
@@ -124,36 +124,47 @@ Use **relationships between observations** when the related observations:
     "element" : [{
       "id" : "EHDSLaboratoryObservation",
       "path" : "EHDSLaboratoryObservation",
-      "short" : "Laboratory observation model",
-      "definition" : "Model for observation performed by laboratory"
+      "short" : "Model for observation performed by laboratory",
+      "definition" : "Model for observation performed by laboratory."
+    },
+    {
+      "id" : "EHDSLaboratoryObservation.header.directSubject[x]",
+      "path" : "EHDSLaboratoryObservation.header.directSubject[x]",
+      "short" : "The direct subject of the observation if different from the patient (subject of care), e.g. an implanted device, a location, or another person."
+    },
+    {
+      "id" : "EHDSLaboratoryObservation.type",
+      "path" : "EHDSLaboratoryObservation.type",
+      "short" : "Observation type.",
+      "binding" : {
+        "strength" : "required",
+        "description" : "SNOMED GPS, LOINC, NPU"
+      }
+    },
+    {
+      "id" : "EHDSLaboratoryObservation.result.dataAbsentReason",
+      "path" : "EHDSLaboratoryObservation.result.dataAbsentReason",
+      "short" : "Provides a reason why the expected value in the element LaboratoryObservation.result.value[x] is missing."
+    },
+    {
+      "id" : "EHDSLaboratoryObservation.referenceRange.appliesTo",
+      "path" : "EHDSLaboratoryObservation.referenceRange.appliesTo",
+      "short" : "Codes to indicate the target population this reference range applies to."
+    },
+    {
+      "id" : "EHDSLaboratoryObservation.component.type",
+      "path" : "EHDSLaboratoryObservation.component.type",
+      "short" : "Type of the component observation.",
+      "binding" : {
+        "strength" : "required",
+        "description" : "SNOMED GPS, LOINC, NPU"
+      }
     },
     {
       "id" : "EHDSLaboratoryObservation.triggeredBy[x]",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSLaboratoryObservation.triggeredBy[x]",
-      "short" : "References to the observation(s) that triggered the performance of this observation.",
-      "definition" : "References to the observation(s) that triggered the performance of this observation.",
+      "short" : "References to the observation that triggered the performance of this observation.",
+      "definition" : "References to the observation that triggered the performance of this observation.",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -165,28 +176,6 @@ Use **relationships between observations** when the related observations:
     },
     {
       "id" : "EHDSLaboratoryObservation.testKit",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSLaboratoryObservation.testKit",
       "short" : "Laboratory test kit used during measurement.",
       "definition" : "Laboratory test kit used during measurement.",
@@ -198,31 +187,9 @@ Use **relationships between observations** when the related observations:
     },
     {
       "id" : "EHDSLaboratoryObservation.calibrator",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSLaboratoryObservation.calibrator",
-      "short" : "Information about which reference material or calibrator of higher order the laboratory has been used for the measurement to indicate the metrological traceability chain.",
-      "definition" : "Information about which reference material or calibrator of higher order the laboratory has been used for the measurement to indicate the metrological traceability chain.",
+      "short" : "Information about which end-user calibrator the laboratory used for the measurement to indicate the metrological traceability chain.",
+      "definition" : "Information about which end-user calibrator the laboratory used for the measurement to indicate the metrological traceability chain.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -231,28 +198,6 @@ Use **relationships between observations** when the related observations:
     },
     {
       "id" : "EHDSLaboratoryObservation.accreditationStatus",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSLaboratoryObservation.accreditationStatus",
       "short" : "Accreditation status of the laboratory for the observation.",
       "definition" : "Accreditation status of the laboratory for the observation.",
@@ -264,31 +209,9 @@ Use **relationships between observations** when the related observations:
     },
     {
       "id" : "EHDSLaboratoryObservation.previousResults",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSLaboratoryObservation.previousResults",
-      "short" : "Previous results of the same observation.",
-      "definition" : "Previous results of the same observation.",
+      "short" : "Previous results of the same observation",
+      "definition" : "Previous results of the same observation",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -297,28 +220,6 @@ Use **relationships between observations** when the related observations:
     },
     {
       "id" : "EHDSLaboratoryObservation.pointOfCareTest",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSLaboratoryObservation.pointOfCareTest",
       "short" : "Examination performed near or at the site of a patient.",
       "definition" : "Examination performed near or at the site of a patient.",

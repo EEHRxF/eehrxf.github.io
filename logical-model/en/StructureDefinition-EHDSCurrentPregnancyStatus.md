@@ -1,4 +1,4 @@
-# Current pregnancy status model - EHDS Logical Information Models v0.1.0
+# Current pregnancy status model - EHDS Logical Information Models v0.3.0
 
 ## Logical Model: Current pregnancy status model 
 
@@ -7,7 +7,7 @@ EHDSCurrentPregnancyStatus means a structured set of data elements describing a 
 
 **Usages:**
 
-* Use this Logical Model: [Imaging report model](StructureDefinition-EHDSImagingReport.md) and [Patient summary model](StructureDefinition-EHDSPatientSummary.md)
+* Use this Logical Model: [Imaging report model.](StructureDefinition-EHDSImagingReport.md) and [Patient summary model](StructureDefinition-EHDSPatientSummary.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/eu.ehds.models|current/StructureDefinition/StructureDefinition-EHDSCurrentPregnancyStatus.json)
 
@@ -28,11 +28,11 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSCurrentPregna
   "resourceType" : "StructureDefinition",
   "id" : "EHDSCurrentPregnancyStatus",
   "url" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSCurrentPregnancyStatus",
-  "version" : "0.1.0",
+  "version" : "0.3.0",
   "name" : "EHDSCurrentPregnancyStatus",
   "title" : "Current pregnancy status model",
   "status" : "draft",
-  "date" : "2026-09-09T07:32:50+00:00",
+  "date" : "2026-09-10T07:58:57+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -61,89 +61,9 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSCurrentPregna
       "definition" : "EHDSCurrentPregnancyStatus means a structured set of data elements describing a patient's pregnancy status at a given point in time."
     },
     {
-      "id" : "EHDSCurrentPregnancyStatus.header.identifier",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
-      "path" : "EHDSCurrentPregnancyStatus.header.identifier"
-    },
-    {
-      "id" : "EHDSCurrentPregnancyStatus.header.author[x]",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
-      "path" : "EHDSCurrentPregnancyStatus.header.author[x]",
-      "definition" : "The author of this observation."
-    },
-    {
-      "id" : "EHDSCurrentPregnancyStatus.header.date",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
-      "path" : "EHDSCurrentPregnancyStatus.header.date"
-    },
-    {
       "id" : "EHDSCurrentPregnancyStatus.header.status",
       "path" : "EHDSCurrentPregnancyStatus.header.status",
-      "short" : "Status of this observation.",
-      "definition" : "Status of this observation.",
+      "short" : "Status of the condition.",
       "binding" : {
         "strength" : "required",
         "description" : "HL7 Observation Status"
@@ -151,28 +71,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSCurrentPregna
     },
     {
       "id" : "EHDSCurrentPregnancyStatus.currentPregnancyStatus",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSCurrentPregnancyStatus.currentPregnancyStatus",
       "short" : "Pregnancy status of the patient, e.g. pregnant, not pregnant, possible pregnancy.",
       "definition" : "Pregnancy status of the patient, e.g. pregnant, not pregnant, possible pregnancy.",
@@ -183,36 +81,14 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSCurrentPregna
       }],
       "binding" : {
         "strength" : "required",
-        "description" : "SNOMED CT"
+        "description" : "SNOMED GPS"
       }
     },
     {
-      "id" : "EHDSCurrentPregnancyStatus.dateOfStatus",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
-      "path" : "EHDSCurrentPregnancyStatus.dateOfStatus",
-      "short" : "Effective date of the current pregnancy status.",
-      "definition" : "Effective date of the current pregnancy status.",
+      "id" : "EHDSCurrentPregnancyStatus.expectedDateOfDelivery",
+      "path" : "EHDSCurrentPregnancyStatus.expectedDateOfDelivery",
+      "short" : "Date in which the woman is due to give birth. Year, day and month are required.",
+      "definition" : "Date in which the woman is due to give birth. Year, day and month are required.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -220,62 +96,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSCurrentPregna
       }]
     },
     {
-      "id" : "EHDSCurrentPregnancyStatus.expectedDateOfDelivery",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
-      "path" : "EHDSCurrentPregnancyStatus.expectedDateOfDelivery",
-      "short" : "Date in which the woman is due to give birth. Year, day and month are required.",
-      "definition" : "Date in which the woman is due to give birth. Year, day and month are required.",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "date"
-      }]
-    },
-    {
       "id" : "EHDSCurrentPregnancyStatus.gestationalAge",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSCurrentPregnancyStatus.gestationalAge",
       "short" : "Duration of the pregnancy (weeks and/or days) at the time of the observation.",
       "definition" : "Duration of the pregnancy (weeks and/or days) at the time of the observation.",
@@ -286,33 +107,11 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSCurrentPregna
       }],
       "binding" : {
         "strength" : "required",
-        "description" : "UCUM"
+        "description" : "UCUM (units of measurement)"
       }
     },
     {
       "id" : "EHDSCurrentPregnancyStatus.note",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSCurrentPregnancyStatus.note",
       "short" : "Free text notes by the health professional.",
       "definition" : "Free text notes by the health professional.",

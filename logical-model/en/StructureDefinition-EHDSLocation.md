@@ -1,4 +1,4 @@
-# Location model - EHDS Logical Information Models v0.1.0
+# Location model - EHDS Logical Information Models v0.3.0
 
 ## Logical Model: Location model 
 
@@ -28,11 +28,11 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSLocation.csv)
   "resourceType" : "StructureDefinition",
   "id" : "EHDSLocation",
   "url" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSLocation",
-  "version" : "0.1.0",
+  "version" : "0.3.0",
   "name" : "EHDSLocation",
   "title" : "Location model",
   "status" : "draft",
-  "date" : "2026-09-09T07:32:50+00:00",
+  "date" : "2026-09-10T07:58:57+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -62,28 +62,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSLocation.csv)
     },
     {
       "id" : "EHDSLocation.identifier",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSLocation.identifier",
       "short" : "Location identifier.",
       "definition" : "Location identifier.",
@@ -95,28 +73,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSLocation.csv)
     },
     {
       "id" : "EHDSLocation.name",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSLocation.name",
       "short" : "Human-readable name of the location.",
       "definition" : "Human-readable name of the location.",
@@ -128,28 +84,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSLocation.csv)
     },
     {
       "id" : "EHDSLocation.description",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSLocation.description",
       "short" : "Additional details about the location that could be displayed as further information to identify the location beyond its name.",
       "definition" : "Additional details about the location that could be displayed as further information to identify the location beyond its name.",
@@ -161,28 +95,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSLocation.csv)
     },
     {
       "id" : "EHDSLocation.address",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSLocation.address",
       "short" : "Physical location address.",
       "definition" : "Physical location address.",
@@ -194,28 +106,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSLocation.csv)
     },
     {
       "id" : "EHDSLocation.managingOrganisation",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSLocation.managingOrganisation",
       "short" : "The organisation responsible for the provisioning and upkeep of the location.",
       "definition" : "The organisation responsible for the provisioning and upkeep of the location.",

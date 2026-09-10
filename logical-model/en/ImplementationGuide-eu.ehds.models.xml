@@ -8,11 +8,11 @@
 </div></div>
   </text>
   <url value="http://ehds.eu/fhir/models/ImplementationGuide/eu.ehds.models"/>
-  <version value="0.1.0"/>
+  <version value="0.3.0"/>
   <name value="EHDSModels"/>
   <title value="EHDS Logical Information Models"/>
   <status value="draft"/>
-  <date value="2026-09-09T07:32:50+00:00"/>
+  <date value="2026-09-10T07:58:57+00:00"/>
   <publisher value="EC"/>
   <contact>
     <name value="EC"/>
@@ -69,7 +69,7 @@
         <reference value="StructureDefinition/EHDSPatientSummary"/>
       </reference>
       <name value="Patient summary model"/>
-      <description value="The model is a structured document designed to provide an overview of a patient’s most important health information. The model aims to be compatible with the ISO International Patient Summary standard."/>
+      <description value="The model is a structured document designed to provide an overview of a patient's most important health information. The model aims to be compatible with the ISO International Patient Summary standard."/>
       <isExample value="false"/>
       <groupingId value="EHDSPriorityCategories"/>
     </resource>
@@ -80,8 +80,8 @@
       <reference>
         <reference value="StructureDefinition/EHDSMedicationPrescription"/>
       </reference>
-      <name value="Medication prescription model"/>
-      <description value="Logical model for medication prescription. A prescription contains one or more prescription items (medications)."/>
+      <name value="Electronic prescription model"/>
+      <description value="Electronic prescription."/>
       <isExample value="false"/>
       <groupingId value="EHDSPriorityCategories"/>
     </resource>
@@ -92,8 +92,8 @@
       <reference>
         <reference value="StructureDefinition/EHDSMedicationDispense"/>
       </reference>
-      <name value="Medication dispense model"/>
-      <description value="Logical model for medication dispensation (based on a request and dispensed in a pharmacy). Implementers should take into account, if allowed and needed, the calculation of remaining dispensable product based on this information."/>
+      <name value="Medication dispense model."/>
+      <description value="Electronic dispensation."/>
       <isExample value="false"/>
       <groupingId value="EHDSPriorityCategories"/>
     </resource>
@@ -102,10 +102,10 @@
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/EHDSMedicalTestResultAndReport"/>
+        <reference value="StructureDefinition/EHDSMedicalTestReport"/>
       </reference>
       <name value="Medical test result and report model"/>
-      <description value="Medical test result and report model."/>
+      <description value="Medical test results, including laboratory and other diagnostic results and related reports."/>
       <isExample value="false"/>
       <groupingId value="EHDSPriorityCategories"/>
     </resource>
@@ -116,8 +116,8 @@
       <reference>
         <reference value="StructureDefinition/EHDSImagingReport"/>
       </reference>
-      <name value="Imaging report model"/>
-      <description value="Imaging report reflects the observations and interpretations of one or more imaging studies, contains elements such as the reason why the study is requested, relevant contextual medical information, the modality used to acquire images and its settings, procedures and body localisations that were used, a description of the observations and findings, exposure information, conclusion and advice."/>
+      <name value="Imaging report model."/>
+      <description value="Imaging report."/>
       <isExample value="false"/>
       <groupingId value="EHDSPriorityCategories"/>
     </resource>
@@ -128,7 +128,7 @@
       <reference>
         <reference value="StructureDefinition/EHDSImagingStudy"/>
       </reference>
-      <name value="Imaging study model"/>
+      <name value="Imaging study model."/>
       <description value="EHDSImagingStudy means the structured set of data elements for facilitating the exchange of imaging studies. Its goal is to enable the exchange of imaging studies regardless of whether the corresponding imaging report is available. It contains metadata that includes the endpoint where the imaging study is located. EHDSImagingStudy may be represented using DICOM KOS and/or HL7 FHIR, depending on the implementation guide."/>
       <isExample value="false"/>
       <groupingId value="EHDSPriorityCategories"/>
@@ -140,8 +140,8 @@
       <reference>
         <reference value="StructureDefinition/EHDSDischargeReport"/>
       </reference>
-      <name value="Discharge Report model"/>
-      <description value="A generic, flexible model for any kind of discharge report. Different types of encounters may require adding relevant sections and elements, or omitting irrelevant ones, depending on their data needs."/>
+      <name value="Discharge report model"/>
+      <description value="Discharge report."/>
       <isExample value="false"/>
       <groupingId value="EHDSPriorityCategories"/>
     </resource>
@@ -368,8 +368,8 @@
       <reference>
         <reference value="StructureDefinition/EHDSLaboratoryObservation"/>
       </reference>
-      <name value="Laboratory observation model"/>
-      <description value="Model for observation performed by laboratory"/>
+      <name value="Model for observation performed by laboratory"/>
+      <description value="Model for observation performed by laboratory."/>
       <isExample value="false"/>
       <groupingId value="EHDSCommonLogicalModels"/>
     </resource>
@@ -549,7 +549,7 @@
         <reference value="StructureDefinition/EHDSDataSet"/>
       </reference>
       <name value="DataSet model"/>
-      <description value="Data group that is used as a template for deriving other data groups."/>
+      <description value="DataSet model."/>
       <isExample value="false"/>
       <groupingId value="EHDSMetadataModels"/>
     </resource>
@@ -561,7 +561,7 @@
         <reference value="StructureDefinition/EHDSDocument"/>
       </reference>
       <name value="Document model"/>
-      <description value="Structured set of data elements common for all health documents."/>
+      <description value="EHDSDocument means a structured set of data elements common all health documents."/>
       <isExample value="false"/>
       <groupingId value="EHDSMetadataModels"/>
     </resource>
@@ -573,7 +573,7 @@
         <reference value="ActorDefinition/actor-full"/>
       </reference>
       <name value="Full"/>
-      <description value="Support that enables the exchange of personal electronic health data with the focus on unstructured content representation while providing limited support for detailed underlying data structures."/>
+      <description value="Support that enables the exchange of personal electronic health data with the focus on structured content representation."/>
       <isExample value="true"/>
       <groupingId value="EHDSSupportLevels"/>
     </resource>
@@ -585,7 +585,7 @@
         <reference value="ActorDefinition/actor-basic"/>
       </reference>
       <name value="Basic"/>
-      <description value="Support that enables the exchange of personal electronic health data with the focus on structured content representation."/>
+      <description value="Support that enables the exchange of personal electronic health data with the focus on unstructured content representation while providing limited support for detailed underlying data structures."/>
       <isExample value="true"/>
       <groupingId value="EHDSSupportLevels"/>
     </resource>

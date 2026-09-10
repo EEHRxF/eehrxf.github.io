@@ -2,11 +2,11 @@
 "EHDSEndpoint","EHDSEndpoint","","","",0,*,"","","","null {[]} {[]}
 ","Endpoint model","EHDSEndpoint means a structured set of data elements describing the technical details of a connection point for electronic services.","","","","","","","","","",,,,,"",,,,"Base",0,*,"","","n/a"
 "EHDSEndpoint.identifier","EHDSEndpoint.identifier","","","",1,*,"","","","Identifier {[]} {[]}
-","Identifier for the endpoint","Identifier for the endpoint","","","","","","","","","",,,,,"",,,,"EHDSEndpoint.identifier",1,*,"",""
+","Identifier for the endpoint.","Identifier for the endpoint.","","","","","","","","","",,,,,"",,,,"EHDSEndpoint.identifier",1,*,"",""
 "EHDSEndpoint.status","EHDSEndpoint.status","","","",1,1,"","","","CodeableConcept {[]} {[]}
-","Status of the endpoint (e.g. active, limited).","Status of the endpoint (e.g. active, limited).","","","","","","","","","",,"required","HL7 Endpoint Status","","",,,,"EHDSEndpoint.status",1,1,"",""
+","Status of the endpoint, e.g. active, limited.","Status of the endpoint, e.g. active, limited.","","","","","","","","","",,"required","HL7 Endpoint Status","","",,,,"EHDSEndpoint.status",1,1,"",""
 "EHDSEndpoint.connectionType","EHDSEndpoint.connectionType","","","",1,*,"","","","CodeableConcept {[]} {[]}
-","A coded value that represents the technical details of the usage of this endpoint, such as what WSDLs should be used in what way.","A coded value that represents the technical details of the usage of this endpoint, such as what WSDLs should be used in what way.","","","","","","","","","",,,,,"",,,,"EHDSEndpoint.connectionType",1,*,"",""
+","A coded value that represents the technical details of the usage of this endpoint, such as what WSDLs should be used in what way.","A coded value that represents the technical details of the usage of this endpoint, such as what WSDLs should be used in what way.","","","","","","","","","",,"required","HL7 Endpoint Connection Type","","",,,,"EHDSEndpoint.connectionType",1,*,"",""
 "EHDSEndpoint.name","EHDSEndpoint.name","","","",0,1,"","","","string {[]} {[]}
 ","A friendly name that this endpoint can be referred to with.","A friendly name that this endpoint can be referred to with.","","","","","","","","","",,,,,"",,,,"EHDSEndpoint.name",0,1,"",""
 "EHDSEndpoint.managingOrganisation","EHDSEndpoint.managingOrganisation","","","",0,1,"","","","http://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation {[]} {[]}

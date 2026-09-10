@@ -1,4 +1,4 @@
-# Alert model - EHDS Logical Information Models v0.1.0
+# Alert model - EHDS Logical Information Models v0.3.0
 
 ## Logical Model: Alert model 
 
@@ -7,7 +7,7 @@ EHDSAlert means a structured set of data elements describing a clinically releva
 
 **Usages:**
 
-* Use this Logical Model: [Discharge Report model](StructureDefinition-EHDSDischargeReport.md) and [Patient summary model](StructureDefinition-EHDSPatientSummary.md)
+* Use this Logical Model: [Discharge report model](StructureDefinition-EHDSDischargeReport.md) and [Patient summary model](StructureDefinition-EHDSPatientSummary.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/eu.ehds.models|current/StructureDefinition/StructureDefinition-EHDSAlert.json)
 
@@ -28,11 +28,11 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAlert.csv), [
   "resourceType" : "StructureDefinition",
   "id" : "EHDSAlert",
   "url" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSAlert",
-  "version" : "0.1.0",
+  "version" : "0.3.0",
   "name" : "EHDSAlert",
   "title" : "Alert model",
   "status" : "draft",
-  "date" : "2026-09-09T07:32:50+00:00",
+  "date" : "2026-09-10T07:58:57+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -61,8 +61,13 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAlert.csv), [
       "definition" : "EHDSAlert means a structured set of data elements describing a clinically relevant fact about a patient that requires attention during a healthcare encounter in order to ensure patient safety or prevent adverse outcomes, including, but not limited to, intolerances, rare diseases requiring special management, implanted devices, ongoing special treatments, transplanted organs, or participation in a clinical trial."
     },
     {
-      "id" : "EHDSAlert.header",
-      "path" : "EHDSAlert.header",
+      "id" : "EHDSAlert.header.author[x]",
+      "path" : "EHDSAlert.header.author[x]",
+      "definition" : "The author of the alert statement, i.e. the setter of the alert."
+    },
+    {
+      "id" : "EHDSAlert.header.status",
+      "path" : "EHDSAlert.header.status",
       "short" : "Current status of the alert.",
       "definition" : "Current status of the alert, indicates whether this alert is active and needs to be displayed to a user, or whether it is no longer needed.",
       "binding" : {
@@ -71,108 +76,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAlert.csv), [
       }
     },
     {
-      "id" : "EHDSAlert.header.identifier",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
-      "path" : "EHDSAlert.header.identifier"
-    },
-    {
-      "id" : "EHDSAlert.header.author[x]",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
-      "path" : "EHDSAlert.header.author[x]",
-      "definition" : "The author of the alert statement, i.e. the setter of the alert."
-    },
-    {
-      "id" : "EHDSAlert.header.date",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
-      "path" : "EHDSAlert.header.date"
-    },
-    {
       "id" : "EHDSAlert.code",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSAlert.code",
       "short" : "A coded representation of the alert.",
       "definition" : "A coded representation of the alert.",
@@ -183,33 +87,11 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAlert.csv), [
       }],
       "binding" : {
         "strength" : "required",
-        "description" : "SNOMED CT"
+        "description" : "SNOMED GPS"
       }
     },
     {
       "id" : "EHDSAlert.description",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSAlert.description",
       "short" : "Narrative representation of the alert.",
       "definition" : "Narrative representation of the alert.",
@@ -221,28 +103,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAlert.csv), [
     },
     {
       "id" : "EHDSAlert.priority",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSAlert.priority",
       "short" : "A code that identifies the priority of the alert.",
       "definition" : "A code that identifies the priority of the alert.",
@@ -253,33 +113,11 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAlert.csv), [
       }],
       "binding" : {
         "strength" : "required",
-        "description" : "HL7 Flag Priority Code"
+        "description" : "HL7 Flag Priority Codes"
       }
     },
     {
       "id" : "EHDSAlert.period",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSAlert.period",
       "short" : "Time period when alert is active. The period of time from the activation of the alert to inactivation of the alert. If the alert is active, the end of the period should be unspecified.",
       "definition" : "Time period when alert is active. The period of time from the activation of the alert to inactivation of the alert. If the alert is active, the end of the period should be unspecified.",
@@ -287,39 +125,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAlert.csv), [
       "max" : "1",
       "type" : [{
         "code" : "Period"
-      }]
-    },
-    {
-      "id" : "EHDSAlert.sourceReference",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
-      "path" : "EHDSAlert.sourceReference",
-      "short" : "A reference to the resource the alert is about.",
-      "definition" : "A reference to the resource the alert is about.",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "Resource"
       }]
     }]
   }

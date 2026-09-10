@@ -1,4 +1,4 @@
-# eDispensation - EHDS Logical Information Models v0.1.0
+# eDispensation - EHDS Logical Information Models v0.3.0
 
 ## eDispensation
 

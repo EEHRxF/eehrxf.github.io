@@ -1,4 +1,4 @@
-# Endpoint model - EHDS Logical Information Models v0.1.0
+# Endpoint model - EHDS Logical Information Models v0.3.0
 
 ## Logical Model: Endpoint model 
 
@@ -7,7 +7,7 @@ EHDSEndpoint means a structured set of data elements describing the technical de
 
 **Usages:**
 
-* Use this Logical Model: [Imaging study model](StructureDefinition-EHDSImagingStudy.md)
+* Use this Logical Model: [Imaging study model.](StructureDefinition-EHDSImagingStudy.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/eu.ehds.models|current/StructureDefinition/StructureDefinition-EHDSEndpoint.json)
 
@@ -28,11 +28,11 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSEndpoint.csv)
   "resourceType" : "StructureDefinition",
   "id" : "EHDSEndpoint",
   "url" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSEndpoint",
-  "version" : "0.1.0",
+  "version" : "0.3.0",
   "name" : "EHDSEndpoint",
   "title" : "Endpoint model",
   "status" : "draft",
-  "date" : "2026-09-09T07:32:50+00:00",
+  "date" : "2026-09-10T07:58:57+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -62,31 +62,9 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSEndpoint.csv)
     },
     {
       "id" : "EHDSEndpoint.identifier",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSEndpoint.identifier",
-      "short" : "Identifier for the endpoint",
-      "definition" : "Identifier for the endpoint",
+      "short" : "Identifier for the endpoint.",
+      "definition" : "Identifier for the endpoint.",
       "min" : 1,
       "max" : "*",
       "type" : [{
@@ -95,31 +73,9 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSEndpoint.csv)
     },
     {
       "id" : "EHDSEndpoint.status",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSEndpoint.status",
-      "short" : "Status of the endpoint (e.g. active, limited).",
-      "definition" : "Status of the endpoint (e.g. active, limited).",
+      "short" : "Status of the endpoint, e.g. active, limited.",
+      "definition" : "Status of the endpoint, e.g. active, limited.",
       "min" : 1,
       "max" : "1",
       "type" : [{
@@ -132,28 +88,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSEndpoint.csv)
     },
     {
       "id" : "EHDSEndpoint.connectionType",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSEndpoint.connectionType",
       "short" : "A coded value that represents the technical details of the usage of this endpoint, such as what WSDLs should be used in what way.",
       "definition" : "A coded value that represents the technical details of the usage of this endpoint, such as what WSDLs should be used in what way.",
@@ -161,32 +95,14 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSEndpoint.csv)
       "max" : "*",
       "type" : [{
         "code" : "CodeableConcept"
-      }]
+      }],
+      "binding" : {
+        "strength" : "required",
+        "description" : "HL7 Endpoint Connection Type"
+      }
     },
     {
       "id" : "EHDSEndpoint.name",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSEndpoint.name",
       "short" : "A friendly name that this endpoint can be referred to with.",
       "definition" : "A friendly name that this endpoint can be referred to with.",
@@ -198,28 +114,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSEndpoint.csv)
     },
     {
       "id" : "EHDSEndpoint.managingOrganisation",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSEndpoint.managingOrganisation",
       "short" : "The organisation that provides technical management services for this endpoint.",
       "definition" : "The organisation that provides technical management services for this endpoint.",
@@ -231,28 +125,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSEndpoint.csv)
     },
     {
       "id" : "EHDSEndpoint.payload",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSEndpoint.payload",
       "short" : "The set of payloads that are provided/available at this endpoint.",
       "definition" : "The set of payloads that are provided/available at this endpoint.",
@@ -264,28 +136,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSEndpoint.csv)
     },
     {
       "id" : "EHDSEndpoint.payload.mimeType",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSEndpoint.payload.mimeType",
       "short" : "The mime type to send the payload in (e.g. application/fhir+xml, application/fhir+json).",
       "definition" : "The mime type to send the payload in (e.g. application/fhir+xml, application/fhir+json).",
@@ -301,28 +151,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSEndpoint.csv)
     },
     {
       "id" : "EHDSEndpoint.payload.profileCanonical",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSEndpoint.payload.profileCanonical",
       "short" : "The technical profile that is expected at this endpoint. It describes the resources that are handled, or even simply which resource types.",
       "definition" : "The technical profile that is expected at this endpoint. It describes the resources that are handled, or even simply which resource types.",
@@ -334,28 +162,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSEndpoint.csv)
     },
     {
       "id" : "EHDSEndpoint.payload.profileUri",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSEndpoint.payload.profileUri",
       "short" : "The profile (as a URI) that is expected at this endpoint when not represented using a FHIR profile.",
       "definition" : "The profile (as a URI) that is expected at this endpoint when not represented using a FHIR profile.",
@@ -367,28 +173,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSEndpoint.csv)
     },
     {
       "id" : "EHDSEndpoint.address",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSEndpoint.address",
       "short" : "The URI that describes the actual end-point to connect to.",
       "definition" : "The URI that describes the actual end-point to connect to.",
@@ -400,28 +184,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSEndpoint.csv)
     },
     {
       "id" : "EHDSEndpoint.header",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSEndpoint.header",
       "short" : "Additional headers / information to send as part of the notification. Usage depends on the channel type.",
       "definition" : "Additional headers / information to send as part of the notification. Usage depends on the channel type.",

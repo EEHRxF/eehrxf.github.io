@@ -1,4 +1,4 @@
-# Attachment model - EHDS Logical Information Models v0.1.0
+# Attachment model - EHDS Logical Information Models v0.3.0
 
 ## Logical Model: Attachment model 
 
@@ -7,7 +7,7 @@ EHDSAttachment means a structured set of data elements describing additional con
 
 **Usages:**
 
-* Use this Logical Model: [Advance directive model](StructureDefinition-EHDSAdvanceDirective.md), [Discharge Report model](StructureDefinition-EHDSDischargeReport.md), [Document model](StructureDefinition-EHDSDocument.md), [Imaging report model](StructureDefinition-EHDSImagingReport.md)... Show 3 more, [Imaging study model](StructureDefinition-EHDSImagingStudy.md), [Medical test result and report model](StructureDefinition-EHDSMedicalTestResultAndReport.md) and [Medication prescription model](StructureDefinition-EHDSMedicationPrescription.md)
+* Use this Logical Model: [Advance directive model](StructureDefinition-EHDSAdvanceDirective.md), [Discharge report model](StructureDefinition-EHDSDischargeReport.md), [Document model](StructureDefinition-EHDSDocument.md), [Imaging report model.](StructureDefinition-EHDSImagingReport.md)... Show 3 more, [Imaging study model.](StructureDefinition-EHDSImagingStudy.md), [Medical test result and report model](StructureDefinition-EHDSMedicalTestReport.md) and [Electronic prescription model](StructureDefinition-EHDSMedicationPrescription.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/eu.ehds.models|current/StructureDefinition/StructureDefinition-EHDSAttachment.json)
 
@@ -28,11 +28,11 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAttachment.cs
   "resourceType" : "StructureDefinition",
   "id" : "EHDSAttachment",
   "url" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSAttachment",
-  "version" : "0.1.0",
+  "version" : "0.3.0",
   "name" : "EHDSAttachment",
   "title" : "Attachment model",
   "status" : "draft",
-  "date" : "2026-09-09T07:32:50+00:00",
+  "date" : "2026-09-10T07:58:57+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -62,28 +62,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAttachment.cs
     },
     {
       "id" : "EHDSAttachment.contentType",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSAttachment.contentType",
       "short" : "Mime type of the content, with charset etc.",
       "definition" : "Mime type of the content, with charset etc.",
@@ -99,31 +77,9 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAttachment.cs
     },
     {
       "id" : "EHDSAttachment.language",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSAttachment.language",
-      "short" : "Human language of the content",
-      "definition" : "Human language of the content",
+      "short" : "Human language of the content.",
+      "definition" : "Human language of the content.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -136,28 +92,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAttachment.cs
     },
     {
       "id" : "EHDSAttachment.data",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSAttachment.data",
       "short" : "The actual data of the attachment - a sequence of bytes, base64 encoded.",
       "definition" : "The actual data of the attachment - a sequence of bytes, base64 encoded.",
@@ -169,28 +103,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAttachment.cs
     },
     {
       "id" : "EHDSAttachment.url",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSAttachment.url",
       "short" : "A location where the data can be accessed.",
       "definition" : "A location where the data can be accessed.",
@@ -202,61 +114,17 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAttachment.cs
     },
     {
       "id" : "EHDSAttachment.size",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSAttachment.size",
       "short" : "The number of bytes of data that make up this attachment (before base64 encoding).",
       "definition" : "The number of bytes of data that make up this attachment (before base64 encoding).",
       "min" : 0,
       "max" : "1",
       "type" : [{
-        "code" : "integer64"
+        "code" : "integer"
       }]
     },
     {
       "id" : "EHDSAttachment.title",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSAttachment.title",
       "short" : "A label or set of text to display in place of the data.",
       "definition" : "A label or set of text to display in place of the data.",

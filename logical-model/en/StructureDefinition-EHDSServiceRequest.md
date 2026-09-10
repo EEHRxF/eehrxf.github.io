@@ -1,4 +1,4 @@
-# Service request model - EHDS Logical Information Models v0.1.0
+# Service request model - EHDS Logical Information Models v0.3.0
 
 ## Logical Model: Service request model 
 
@@ -7,7 +7,7 @@ EHDSServiceRequest means a structured set of data elements describing one or mor
 
 **Usages:**
 
-* Use this Logical Model: [Encounter model](StructureDefinition-EHDSEncounter.md), [Imaging study model](StructureDefinition-EHDSImagingStudy.md), [Observation model](StructureDefinition-EHDSObservation.md) and [Specimen model](StructureDefinition-EHDSSpecimen.md)
+* Use this Logical Model: [Encounter model](StructureDefinition-EHDSEncounter.md), [Imaging study model.](StructureDefinition-EHDSImagingStudy.md), [Observation model](StructureDefinition-EHDSObservation.md) and [Specimen model](StructureDefinition-EHDSSpecimen.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/eu.ehds.models|current/StructureDefinition/StructureDefinition-EHDSServiceRequest.json)
 
@@ -28,11 +28,11 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSServiceReques
   "resourceType" : "StructureDefinition",
   "id" : "EHDSServiceRequest",
   "url" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSServiceRequest",
-  "version" : "0.1.0",
+  "version" : "0.3.0",
   "name" : "EHDSServiceRequest",
   "title" : "Service request model",
   "status" : "draft",
-  "date" : "2026-09-09T07:32:50+00:00",
+  "date" : "2026-09-10T07:58:57+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -61,118 +61,18 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSServiceReques
       "definition" : "EHDSServiceRequest means a structured set of data elements describing one or more requested services."
     },
     {
-      "id" : "EHDSServiceRequest.header.identifier",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
-      "path" : "EHDSServiceRequest.header.identifier"
-    },
-    {
-      "id" : "EHDSServiceRequest.header.author[x]",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
-      "path" : "EHDSServiceRequest.header.author[x]"
-    },
-    {
-      "id" : "EHDSServiceRequest.header.date",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
-      "path" : "EHDSServiceRequest.header.date"
-    },
-    {
       "id" : "EHDSServiceRequest.header.status",
       "path" : "EHDSServiceRequest.header.status",
       "binding" : {
         "strength" : "required",
-        "description" : "HL7 Request Status"
+        "description" : "HL7 Request status"
       }
     },
     {
       "id" : "EHDSServiceRequest.description",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSServiceRequest.description",
-      "short" : "Textual description of the requested service.",
-      "definition" : "Textual description of the requested service.",
+      "short" : "Textual description of the requested service",
+      "definition" : "Textual description of the requested service",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -181,28 +81,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSServiceReques
     },
     {
       "id" : "EHDSServiceRequest.code",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSServiceRequest.code",
       "short" : "A code and name that identifies a particular service (i.e., procedure, diagnostic investigation, or panel of investigations) that has been requested.",
       "definition" : "A code and name that identifies a particular service (i.e., procedure, diagnostic investigation, or panel of investigations) that has been requested.",
@@ -213,33 +91,11 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSServiceReques
       }],
       "binding" : {
         "strength" : "required",
-        "description" : "LOINC, SNOMED CT"
+        "description" : "SNOMED GPS (preferred), LOINC, NPU, SNOMED GPS"
       }
     },
     {
       "id" : "EHDSServiceRequest.quantity",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSServiceRequest.quantity",
       "short" : "Number of requested services of the same type.",
       "definition" : "Number of requested services of the same type.",
@@ -247,32 +103,14 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSServiceReques
       "max" : "1",
       "type" : [{
         "code" : "Quantity"
-      }]
+      }],
+      "binding" : {
+        "strength" : "required",
+        "description" : "UCUM"
+      }
     },
     {
       "id" : "EHDSServiceRequest.bodySite",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSServiceRequest.bodySite",
       "short" : "Anatomic location and laterality where the procedure should be performed. This is the target site.",
       "definition" : "Anatomic location and laterality where the procedure should be performed. This is the target site.",
@@ -284,28 +122,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSServiceReques
     },
     {
       "id" : "EHDSServiceRequest.reason[x]",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSServiceRequest.reason[x]",
       "short" : "Reason why this service is being requested.",
       "definition" : "Reason why this service is being requested.",
@@ -326,28 +142,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSServiceReques
     },
     {
       "id" : "EHDSServiceRequest.priority",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSServiceRequest.priority",
       "short" : "Indicates how quickly the request should be addressed with respect to other requests.",
       "definition" : "Indicates how quickly the request should be addressed with respect to other requests.",
@@ -363,28 +157,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSServiceReques
     },
     {
       "id" : "EHDSServiceRequest.supportingInformation[x]",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSServiceRequest.supportingInformation[x]",
       "short" : "Health conditions relevant for the results interpretation.",
       "definition" : "Health conditions relevant for the results interpretation.",
@@ -405,28 +177,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSServiceReques
     },
     {
       "id" : "EHDSServiceRequest.specimen",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSServiceRequest.specimen",
       "short" : "Specimen to be used by the laboratory procedure.",
       "definition" : "Specimen to be used by the laboratory procedure.",
@@ -438,28 +188,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSServiceReques
     },
     {
       "id" : "EHDSServiceRequest.encounter",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSServiceRequest.encounter",
       "short" : "The encounter that provides additional information about the healthcare context in which this request is made.",
       "definition" : "The encounter that provides additional information about the healthcare context in which this request is made.",
@@ -471,28 +199,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSServiceReques
     },
     {
       "id" : "EHDSServiceRequest.occurrence[x]",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSServiceRequest.occurrence[x]",
       "short" : "Expected time of the service.",
       "definition" : "Expected time of the service.",
@@ -507,28 +213,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSServiceReques
     },
     {
       "id" : "EHDSServiceRequest.patientInstructions",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSServiceRequest.patientInstructions",
       "short" : "Patient or consumer-oriented instructions.",
       "definition" : "Patient or consumer-oriented instructions.",

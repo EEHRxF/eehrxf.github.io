@@ -1,4 +1,4 @@
-# Human name model - EHDS Logical Information Models v0.1.0
+# Human name model - EHDS Logical Information Models v0.3.0
 
 ## Logical Model: Human name model 
 
@@ -28,11 +28,11 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSHumanName.csv
   "resourceType" : "StructureDefinition",
   "id" : "EHDSHumanName",
   "url" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSHumanName",
-  "version" : "0.1.0",
+  "version" : "0.3.0",
   "name" : "EHDSHumanName",
   "title" : "Human name model",
   "status" : "draft",
-  "date" : "2026-09-09T07:32:50+00:00",
+  "date" : "2026-09-10T07:58:57+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -62,28 +62,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSHumanName.csv
     },
     {
       "id" : "EHDSHumanName.use",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSHumanName.use",
       "short" : "The purpose of this name.",
       "definition" : "The purpose of this name.",
@@ -99,28 +77,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSHumanName.csv
     },
     {
       "id" : "EHDSHumanName.text",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSHumanName.text",
       "short" : "The entire name as it should be displayed e.g. on an application UI.",
       "definition" : "The entire name as it should be displayed e.g. on an application UI.",
@@ -132,28 +88,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSHumanName.csv
     },
     {
       "id" : "EHDSHumanName.family",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSHumanName.family",
       "short" : "The family name/surname/last name.",
       "definition" : "The family name/surname/last name.",
@@ -165,28 +99,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSHumanName.csv
     },
     {
       "id" : "EHDSHumanName.given",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSHumanName.given",
       "short" : "The given name/first name.",
       "definition" : "The given name/first name.",
@@ -198,28 +110,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSHumanName.csv
     },
     {
       "id" : "EHDSHumanName.prefix",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSHumanName.prefix",
       "short" : "Name part that appears at the start of the name. Prefixes shall appear in the correct order for presenting the name.",
       "definition" : "Name part that appears at the start of the name. Prefixes shall appear in the correct order for presenting the name.",
@@ -231,28 +121,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSHumanName.csv
     },
     {
       "id" : "EHDSHumanName.suffix",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSHumanName.suffix",
       "short" : "Name part that appears at the end of the name. Suffixes shall appear in the correct order for presenting the name.",
       "definition" : "Name part that appears at the end of the name. Suffixes shall appear in the correct order for presenting the name.",

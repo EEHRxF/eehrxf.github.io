@@ -17,5 +17,5 @@
 ","City.","City.","","","","","","","","","",,,,,"",,,,"EHDSAddress.city",0,1,"",""
 "EHDSAddress.postalCode","EHDSAddress.postalCode","","","",0,1,"","","","string {[]} {[]}
 ","Postal code.","Postal code.","","","","","","","","","",,,,,"",,,,"EHDSAddress.postalCode",0,1,"",""
-"EHDSAddress.country","EHDSAddress.country","","","",0,1,"","","","CodeableConcept {[]} {[]}
-","Country name and country code.","Country name and country code.","","","","","","","","","",,"required","ISO 3166-1 alpha-2","","",,,,"EHDSAddress.country",0,1,"",""
+"EHDSAddress.country","EHDSAddress.country","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Country name and country code.","Country name and country code.","","","","","","","","","",,"required","ISO 3166-1 alpha-2","","",,,,"EHDSAddress.country",1,1,"",""

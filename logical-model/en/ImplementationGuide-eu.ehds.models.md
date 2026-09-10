@@ -10,11 +10,11 @@
   "id" : "eu.ehds.models",
   "language" : "en",
   "url" : "http://ehds.eu/fhir/models/ImplementationGuide/eu.ehds.models",
-  "version" : "0.1.0",
+  "version" : "0.3.0",
   "name" : "EHDSModels",
   "title" : "EHDS Logical Information Models",
   "status" : "draft",
-  "date" : "2026-09-09T07:32:50+00:00",
+  "date" : "2026-09-10T07:58:57+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -85,7 +85,7 @@
         "reference" : "StructureDefinition/EHDSPatientSummary"
       },
       "name" : "Patient summary model",
-      "description" : "The model is a structured document designed to provide an overview of a patient’s most important health information. The model aims to be compatible with the ISO International Patient Summary standard.",
+      "description" : "The model is a structured document designed to provide an overview of a patient's most important health information. The model aims to be compatible with the ISO International Patient Summary standard.",
       "isExample" : false,
       "groupingId" : "EHDSPriorityCategories"
     },
@@ -101,8 +101,8 @@
       "reference" : {
         "reference" : "StructureDefinition/EHDSMedicationPrescription"
       },
-      "name" : "Medication prescription model",
-      "description" : "Logical model for medication prescription. A prescription contains one or more prescription items (medications).",
+      "name" : "Electronic prescription model",
+      "description" : "Electronic prescription.",
       "isExample" : false,
       "groupingId" : "EHDSPriorityCategories"
     },
@@ -118,8 +118,8 @@
       "reference" : {
         "reference" : "StructureDefinition/EHDSMedicationDispense"
       },
-      "name" : "Medication dispense model",
-      "description" : "Logical model for medication dispensation (based on a request and dispensed in a pharmacy). Implementers should take into account, if allowed and needed, the calculation of remaining dispensable product based on this information.",
+      "name" : "Medication dispense model.",
+      "description" : "Electronic dispensation.",
       "isExample" : false,
       "groupingId" : "EHDSPriorityCategories"
     },
@@ -130,13 +130,13 @@
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-EHDSMedicalTestResultAndReport.html"
+        "valueUri" : "StructureDefinition-EHDSMedicalTestReport.html"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/EHDSMedicalTestResultAndReport"
+        "reference" : "StructureDefinition/EHDSMedicalTestReport"
       },
       "name" : "Medical test result and report model",
-      "description" : "Medical test result and report model.",
+      "description" : "Medical test results, including laboratory and other diagnostic results and related reports.",
       "isExample" : false,
       "groupingId" : "EHDSPriorityCategories"
     },
@@ -152,8 +152,8 @@
       "reference" : {
         "reference" : "StructureDefinition/EHDSImagingReport"
       },
-      "name" : "Imaging report model",
-      "description" : "Imaging report reflects the observations and interpretations of one or more imaging studies, contains elements such as the reason why the study is requested, relevant contextual medical information, the modality used to acquire images and its settings, procedures and body localisations that were used, a description of the observations and findings, exposure information, conclusion and advice.",
+      "name" : "Imaging report model.",
+      "description" : "Imaging report.",
       "isExample" : false,
       "groupingId" : "EHDSPriorityCategories"
     },
@@ -169,7 +169,7 @@
       "reference" : {
         "reference" : "StructureDefinition/EHDSImagingStudy"
       },
-      "name" : "Imaging study model",
+      "name" : "Imaging study model.",
       "description" : "EHDSImagingStudy means the structured set of data elements for facilitating the exchange of imaging studies. Its goal is to enable the exchange of imaging studies regardless of whether the corresponding imaging report is available. It contains metadata that includes the endpoint where the imaging study is located. EHDSImagingStudy may be represented using DICOM KOS and/or HL7 FHIR, depending on the implementation guide.",
       "isExample" : false,
       "groupingId" : "EHDSPriorityCategories"
@@ -186,8 +186,8 @@
       "reference" : {
         "reference" : "StructureDefinition/EHDSDischargeReport"
       },
-      "name" : "Discharge Report model",
-      "description" : "A generic, flexible model for any kind of discharge report. Different types of encounters may require adding relevant sections and elements, or omitting irrelevant ones, depending on their data needs.",
+      "name" : "Discharge report model",
+      "description" : "Discharge report.",
       "isExample" : false,
       "groupingId" : "EHDSPriorityCategories"
     },
@@ -509,8 +509,8 @@
       "reference" : {
         "reference" : "StructureDefinition/EHDSLaboratoryObservation"
       },
-      "name" : "Laboratory observation model",
-      "description" : "Model for observation performed by laboratory",
+      "name" : "Model for observation performed by laboratory",
+      "description" : "Model for observation performed by laboratory.",
       "isExample" : false,
       "groupingId" : "EHDSCommonLogicalModels"
     },
@@ -765,7 +765,7 @@
         "reference" : "StructureDefinition/EHDSDataSet"
       },
       "name" : "DataSet model",
-      "description" : "Data group that is used as a template for deriving other data groups.",
+      "description" : "DataSet model.",
       "isExample" : false,
       "groupingId" : "EHDSMetadataModels"
     },
@@ -782,7 +782,7 @@
         "reference" : "StructureDefinition/EHDSDocument"
       },
       "name" : "Document model",
-      "description" : "Structured set of data elements common for all health documents.",
+      "description" : "EHDSDocument means a structured set of data elements common all health documents.",
       "isExample" : false,
       "groupingId" : "EHDSMetadataModels"
     },
@@ -799,7 +799,7 @@
         "reference" : "ActorDefinition/actor-full"
       },
       "name" : "Full",
-      "description" : "Support that enables the exchange of personal electronic health data with the focus on unstructured content representation while providing limited support for detailed underlying data structures.",
+      "description" : "Support that enables the exchange of personal electronic health data with the focus on structured content representation.",
       "isExample" : true,
       "groupingId" : "EHDSSupportLevels"
     },
@@ -816,7 +816,7 @@
         "reference" : "ActorDefinition/actor-basic"
       },
       "name" : "Basic",
-      "description" : "Support that enables the exchange of personal electronic health data with the focus on structured content representation.",
+      "description" : "Support that enables the exchange of personal electronic health data with the focus on unstructured content representation while providing limited support for detailed underlying data structures.",
       "isExample" : true,
       "groupingId" : "EHDSSupportLevels"
     }],

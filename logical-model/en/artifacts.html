@@ -6,7 +6,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Artifacts Summary - EHDS Logical Information Models v0.1.0</title>
+    <title>Artifacts Summary - EHDS Logical Information Models v0.3.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -80,7 +80,7 @@
         <div id="ig-status" data-fhir="generated">
           <p><span style="font-size:12pt;font-weight:bold">EHDS Logical Information Models</span>
             <br/>
-            <span style="display:inline-block;">0.1.0 - ci-build
+            <span style="display:inline-block;">0.3.0 - ci-build
 
 
             </span>
@@ -215,7 +215,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">EHDS Logical Information Models, published by EC. This guide is not an authorized publication; it is the continuous build for version 0.1.0  built by the FHIR (HL7&reg; FHIR&reg; Standard) CI Build. This version is based on the current content of <a href='https://github.com/EEHRxF/logical-model/tree/main'>https://github.com/EEHRxF/logical-model/tree/main</a> and changes regularly. See the <a href='http://ehds.eu/fhir/models/history.html'>Directory of published versions</a><br/><span data-smart-ci-extra="1" style="font-size:.85em;">Built from commit <a href="https://github.com/EEHRxF/logical-model/commit/84b0dfa48a697451bb170589ed4907d66b83cbd2"><code>84b0dfa4</code></a>.</span></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">EHDS Logical Information Models, published by EC. This guide is not an authorized publication; it is the continuous build for version 0.3.0  built by the FHIR (HL7&reg; FHIR&reg; Standard) CI Build. This version is based on the current content of <a href='https://github.com/EEHRxF/logical-model/tree/main'>https://github.com/EEHRxF/logical-model/tree/main</a> and changes regularly. See the <a href='http://ehds.eu/fhir/models/history.html'>Directory of published versions</a><br/><span data-smart-ci-extra="1" style="font-size:.85em;">Built from commit <a href="https://github.com/EEHRxF/logical-model/commit/ee8bd2c74fdafeb02323b3a076328f9d224a31ac"><code>ee8bd2c7</code></a>.</span></p><!--EndReleaseHeader-->
   <h2>Artifacts Summary</h2>
   
   
@@ -262,62 +262,62 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </a>
             </td>
             <td>
-<p>The model is a structured document designed to provide an overview of a patient’s most important health information. The model aims to be compatible with the ISO International Patient Summary standard.</p>
+<p>The model is a structured document designed to provide an overview of a patient's most important health information. The model aims to be compatible with the ISO International Patient Summary standard.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-EHDSMedicationPrescription.html"
                   title="StructureDefinition/EHDSMedicationPrescription">
-                  <span title="StructureDefinition/EHDSMedicationPrescription">Medication prescription model
+                  <span title="StructureDefinition/EHDSMedicationPrescription">Electronic prescription model
 </span>
                </a>
             </td>
             <td>
-<p>Logical model for medication prescription. A prescription contains one or more prescription items (medications).</p>
+<p>Electronic prescription.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-EHDSMedicationDispense.html"
                   title="StructureDefinition/EHDSMedicationDispense">
-                  <span title="StructureDefinition/EHDSMedicationDispense">Medication dispense model
+                  <span title="StructureDefinition/EHDSMedicationDispense">Medication dispense model.
 </span>
                </a>
             </td>
             <td>
-<p>Logical model for medication dispensation (based on a request and dispensed in a pharmacy). Implementers should take into account, if allowed and needed, the calculation of remaining dispensable product based on this information.</p>
+<p>Electronic dispensation.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-EHDSMedicalTestResultAndReport.html"
-                  title="StructureDefinition/EHDSMedicalTestResultAndReport">
-                  <span title="StructureDefinition/EHDSMedicalTestResultAndReport">Medical test result and report model
+               <a href="StructureDefinition-EHDSMedicalTestReport.html"
+                  title="StructureDefinition/EHDSMedicalTestReport">
+                  <span title="StructureDefinition/EHDSMedicalTestReport">Medical test result and report model
 </span>
                </a>
             </td>
             <td>
-<p>Medical test result and report model.</p>
+<p>Medical test results, including laboratory and other diagnostic results and related reports.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-EHDSImagingReport.html"
                   title="StructureDefinition/EHDSImagingReport">
-                  <span title="StructureDefinition/EHDSImagingReport">Imaging report model
+                  <span title="StructureDefinition/EHDSImagingReport">Imaging report model.
 </span>
                </a>
             </td>
             <td>
-<p>Imaging report reflects the observations and interpretations of one or more imaging studies, contains elements such as the reason why the study is requested, relevant contextual medical information, the modality used to acquire images and its settings, procedures and body localisations that were used, a description of the observations and findings, exposure information, conclusion and advice.</p>
+<p>Imaging report.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-EHDSImagingStudy.html"
                   title="StructureDefinition/EHDSImagingStudy">
-                  <span title="StructureDefinition/EHDSImagingStudy">Imaging study model
+                  <span title="StructureDefinition/EHDSImagingStudy">Imaging study model.
 </span>
                </a>
             </td>
@@ -329,12 +329,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <td style="column-width:30%">
                <a href="StructureDefinition-EHDSDischargeReport.html"
                   title="StructureDefinition/EHDSDischargeReport">
-                  <span title="StructureDefinition/EHDSDischargeReport">Discharge Report model
+                  <span title="StructureDefinition/EHDSDischargeReport">Discharge report model
 </span>
                </a>
             </td>
             <td>
-<p>A generic, flexible model for any kind of discharge report. Different types of encounters may require adding relevant sections and elements, or omitting irrelevant ones, depending on their data needs.</p>
+<p>Discharge report.</p>
 </td>
          </tr>
       </tbody>
@@ -565,12 +565,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <td style="column-width:30%">
                <a href="StructureDefinition-EHDSLaboratoryObservation.html"
                   title="StructureDefinition/EHDSLaboratoryObservation">
-                  <span title="StructureDefinition/EHDSLaboratoryObservation">Laboratory observation model
+                  <span title="StructureDefinition/EHDSLaboratoryObservation">Model for observation performed by laboratory
 </span>
                </a>
             </td>
             <td>
-<p>Model for observation performed by laboratory</p>
+<p>Model for observation performed by laboratory.</p>
 </td>
          </tr>
          <tr>
@@ -758,7 +758,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </a>
             </td>
             <td>
-<p>Data group that is used as a template for deriving other data groups.</p>
+<p>DataSet model.</p>
 </td>
          </tr>
          <tr>
@@ -770,7 +770,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </a>
             </td>
             <td>
-<p>Structured set of data elements common for all health documents.</p>
+<p>EHDSDocument means a structured set of data elements common all health documents.</p>
 </td>
          </tr>
       </tbody>
@@ -790,7 +790,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </a>
             </td>
             <td>
-<p>Support that enables the exchange of personal electronic health data with the focus on unstructured content representation while providing limited support for detailed underlying data structures.</p>
+<p>Support that enables the exchange of personal electronic health data with the focus on structured content representation.</p>
 </td>
          </tr>
          <tr>
@@ -802,7 +802,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </a>
             </td>
             <td>
-<p>Support that enables the exchange of personal electronic health data with the focus on structured content representation.</p>
+<p>Support that enables the exchange of personal electronic health data with the focus on unstructured content representation while providing limited support for detailed underlying data structures.</p>
 </td>
          </tr>
       </tbody>
@@ -832,10 +832,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
           IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="http://commission.europa.eu/">EC</a>.  
-          Package eu.ehds.models#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>.
+          Package eu.ehds.models#0.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>.
           Generated 
-  <span title="2026-09-09 07:32:00 +0000">
-    2026-09-09
+  <span title="2026-09-10 07:58:00 +0000">
+    2026-09-10
   </span>
 
           <br/>

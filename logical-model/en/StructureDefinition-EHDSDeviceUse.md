@@ -1,4 +1,4 @@
-# Device use model - EHDS Logical Information Models v0.1.0
+# Device use model - EHDS Logical Information Models v0.3.0
 
 ## Logical Model: Device use model 
 
@@ -7,7 +7,7 @@ EHDSDeviceUse means a structured set of data elements describing the use of a me
 
 **Usages:**
 
-* Use this Logical Model: [Discharge Report model](StructureDefinition-EHDSDischargeReport.md), [Imaging report model](StructureDefinition-EHDSImagingReport.md) and [Patient summary model](StructureDefinition-EHDSPatientSummary.md)
+* Use this Logical Model: [Discharge report model](StructureDefinition-EHDSDischargeReport.md), [Imaging report model.](StructureDefinition-EHDSImagingReport.md) and [Patient summary model](StructureDefinition-EHDSPatientSummary.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/eu.ehds.models|current/StructureDefinition/StructureDefinition-EHDSDeviceUse.json)
 
@@ -28,11 +28,11 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDeviceUse.csv
   "resourceType" : "StructureDefinition",
   "id" : "EHDSDeviceUse",
   "url" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSDeviceUse",
-  "version" : "0.1.0",
+  "version" : "0.3.0",
   "name" : "EHDSDeviceUse",
   "title" : "Device use model",
   "status" : "draft",
-  "date" : "2026-09-09T07:32:50+00:00",
+  "date" : "2026-09-10T07:58:57+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -61,89 +61,9 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDeviceUse.csv
       "definition" : "EHDSDeviceUse means a structured set of data elements describing the use of a medical device."
     },
     {
-      "id" : "EHDSDeviceUse.header.identifier",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
-      "path" : "EHDSDeviceUse.header.identifier"
-    },
-    {
-      "id" : "EHDSDeviceUse.header.author[x]",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
-      "path" : "EHDSDeviceUse.header.author[x]",
-      "definition" : "The author of the device usage statement."
-    },
-    {
-      "id" : "EHDSDeviceUse.header.date",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
-      "path" : "EHDSDeviceUse.header.date"
-    },
-    {
       "id" : "EHDSDeviceUse.header.status",
       "path" : "EHDSDeviceUse.header.status",
-      "short" : "Current status of the device usage (e.g. active, completed, etc).",
-      "definition" : "Current status of the device usage (e.g. active, completed, etc).",
+      "short" : "Current status of the device usage, e.g. active, completed, etc.",
       "binding" : {
         "strength" : "required",
         "description" : "HL7 Device Use Statement Status"
@@ -151,28 +71,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDeviceUse.csv
     },
     {
       "id" : "EHDSDeviceUse.periodOfUse",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSDeviceUse.periodOfUse",
       "short" : "The period of time during which the device was implanted in the patient or the external device was in use.",
       "definition" : "The period of time during which the device was implanted in the patient or the external device was in use.",
@@ -184,28 +82,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDeviceUse.csv
     },
     {
       "id" : "EHDSDeviceUse.device[x]",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSDeviceUse.device[x]",
       "short" : "The details of the device used.",
       "definition" : "The details of the device used.",
@@ -219,33 +95,11 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDeviceUse.csv
       }],
       "binding" : {
         "strength" : "required",
-        "description" : "SNOMED CT (preferred), EMDN"
+        "description" : "SNOMED GPS (preferred), EMDN"
       }
     },
     {
       "id" : "EHDSDeviceUse.bodySite",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSDeviceUse.bodySite",
       "short" : "Anatomical location of the device. May include laterality.",
       "definition" : "Anatomical location of the device. May include laterality.",
@@ -257,28 +111,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDeviceUse.csv
     },
     {
       "id" : "EHDSDeviceUse.reason[x]",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSDeviceUse.reason[x]",
       "short" : "Reason or justification for the use of the device.",
       "definition" : "Reason or justification for the use of the device.",
@@ -298,33 +130,11 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDeviceUse.csv
       }],
       "binding" : {
         "strength" : "required",
-        "description" : "SNOMED CT (preferred), ICD-10, Orphacode"
+        "description" : "SNOMED GPS (preferred), ICD-10, Orphacode"
       }
     },
     {
       "id" : "EHDSDeviceUse.note",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSDeviceUse.note",
       "short" : "Free text notes by the health professional.",
       "definition" : "Free text notes by the health professional.",

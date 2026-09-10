@@ -1,4 +1,4 @@
-# Telecom model - EHDS Logical Information Models v0.1.0
+# Telecom model - EHDS Logical Information Models v0.3.0
 
 ## Logical Model: Telecom model 
 
@@ -28,11 +28,11 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSTelecom.csv),
   "resourceType" : "StructureDefinition",
   "id" : "EHDSTelecom",
   "url" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSTelecom",
-  "version" : "0.1.0",
+  "version" : "0.3.0",
   "name" : "EHDSTelecom",
   "title" : "Telecom model",
   "status" : "draft",
-  "date" : "2026-09-09T07:32:50+00:00",
+  "date" : "2026-09-10T07:58:57+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -62,28 +62,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSTelecom.csv),
     },
     {
       "id" : "EHDSTelecom.use",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSTelecom.use",
       "short" : "Purpose of the contact point (e.g. home, work).",
       "definition" : "Purpose of the contact point (e.g. home, work).",
@@ -91,65 +69,29 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSTelecom.csv),
       "max" : "1",
       "type" : [{
         "code" : "CodeableConcept"
-      }]
+      }],
+      "binding" : {
+        "strength" : "required",
+        "description" : "HL7 Contact point use"
+      }
     },
     {
-      "id" : "EHDSTelecom.type",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
-      "path" : "EHDSTelecom.type",
+      "id" : "EHDSTelecom.system",
+      "path" : "EHDSTelecom.system",
       "short" : "Type of communication form (e.g. phone, fax, email).",
       "definition" : "Type of communication form (e.g. phone, fax, email).",
       "min" : 0,
       "max" : "1",
       "type" : [{
         "code" : "CodeableConcept"
-      }]
+      }],
+      "binding" : {
+        "strength" : "required",
+        "description" : "HL7 Contact point system"
+      }
     },
     {
       "id" : "EHDSTelecom.value",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSTelecom.value",
       "short" : "The actual contact point details (i.e. phone number or email address).",
       "definition" : "The actual contact point details (i.e. phone number or email address).",

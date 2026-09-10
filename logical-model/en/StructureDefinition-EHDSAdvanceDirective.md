@@ -1,4 +1,4 @@
-# Advance directive model - EHDS Logical Information Models v0.1.0
+# Advance directive model - EHDS Logical Information Models v0.3.0
 
 ## Logical Model: Advance directive model 
 
@@ -28,11 +28,11 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAdvanceDirect
   "resourceType" : "StructureDefinition",
   "id" : "EHDSAdvanceDirective",
   "url" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSAdvanceDirective",
-  "version" : "0.1.0",
+  "version" : "0.3.0",
   "name" : "EHDSAdvanceDirective",
   "title" : "Advance directive model",
   "status" : "draft",
-  "date" : "2026-09-09T07:32:50+00:00",
+  "date" : "2026-09-10T07:58:57+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -61,85 +61,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAdvanceDirect
       "definition" : "EHDSAdvanceDirective means a documented expression of a patient's wishes, preferences or instructions regarding their healthcare, including, but not limited to, decisions concerning life-sustaining treatment or arrangements to take effect after death."
     },
     {
-      "id" : "EHDSAdvanceDirective.header.identifier",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
-      "path" : "EHDSAdvanceDirective.header.identifier"
-    },
-    {
-      "id" : "EHDSAdvanceDirective.header.author[x]",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
-      "path" : "EHDSAdvanceDirective.header.author[x]",
-      "definition" : "Author of the advance directive."
-    },
-    {
-      "id" : "EHDSAdvanceDirective.header.date",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
-      "path" : "EHDSAdvanceDirective.header.date"
-    },
-    {
       "id" : "EHDSAdvanceDirective.header.status",
       "path" : "EHDSAdvanceDirective.header.status",
       "binding" : {
@@ -149,31 +70,9 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAdvanceDirect
     },
     {
       "id" : "EHDSAdvanceDirective.category",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSAdvanceDirective.category",
-      "short" : "Categories of directives related to decisions prior and after death, such as life support, resuscitation or organ donation.",
-      "definition" : "Categories of directives related to decisions prior and after death, such as life support, resuscitation or organ donation.",
+      "short" : "Categories of directives, such as life support, resuscitation or organ donation.",
+      "definition" : "Categories of directives, such as life support, resuscitation or organ donation.",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -181,70 +80,26 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAdvanceDirect
       }],
       "binding" : {
         "strength" : "required",
-        "description" : "SNOMED CT"
+        "description" : "SNOMED GPS"
       }
     },
     {
       "id" : "EHDSAdvanceDirective.directiveType",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSAdvanceDirective.directiveType",
       "short" : "The type of advance directive, indicating whether it applies before or after death.",
       "definition" : "The type of advance directive, indicating whether it applies before or after death.",
       "min" : 0,
-      "max" : "*",
+      "max" : "1",
       "type" : [{
         "code" : "CodeableConcept"
       }],
       "binding" : {
         "strength" : "required",
-        "description" : "SNOMED CT"
+        "description" : "SNOMED GPS"
       }
     },
     {
       "id" : "EHDSAdvanceDirective.note",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSAdvanceDirective.note",
       "short" : "Textual description of the directive.",
       "definition" : "Textual description of the directive.",
@@ -256,31 +111,9 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAdvanceDirect
     },
     {
       "id" : "EHDSAdvanceDirective.attachment",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSAdvanceDirective.attachment",
-      "short" : "Source document, such as a PDF, with the living will and the patient's signature.",
-      "definition" : "Source document, such as a PDF, with the living will and the patient's signature.",
+      "short" : "Source document, such as a PDF, with the advance directive and the patient's signature.",
+      "definition" : "Source document, such as a PDF, with the advance directive and the patient's signature.",
       "min" : 0,
       "max" : "1",
       "type" : [{

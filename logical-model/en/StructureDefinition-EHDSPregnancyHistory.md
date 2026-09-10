@@ -1,4 +1,4 @@
-# Pregnancy history model - EHDS Logical Information Models v0.1.0
+# Pregnancy history model - EHDS Logical Information Models v0.3.0
 
 ## Logical Model: Pregnancy history model 
 
@@ -28,11 +28,11 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSPregnancyHist
   "resourceType" : "StructureDefinition",
   "id" : "EHDSPregnancyHistory",
   "url" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSPregnancyHistory",
-  "version" : "0.1.0",
+  "version" : "0.3.0",
   "name" : "EHDSPregnancyHistory",
   "title" : "Pregnancy history model",
   "status" : "draft",
-  "date" : "2026-09-09T07:32:50+00:00",
+  "date" : "2026-09-10T07:58:57+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -61,89 +61,9 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSPregnancyHist
       "definition" : "EHDSPregnancyHistory means a structured set of data elements describing a single past pregnancy."
     },
     {
-      "id" : "EHDSPregnancyHistory.header.identifier",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
-      "path" : "EHDSPregnancyHistory.header.identifier"
-    },
-    {
-      "id" : "EHDSPregnancyHistory.header.author[x]",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
-      "path" : "EHDSPregnancyHistory.header.author[x]",
-      "definition" : "The author of this observation."
-    },
-    {
-      "id" : "EHDSPregnancyHistory.header.date",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
-      "path" : "EHDSPregnancyHistory.header.date"
-    },
-    {
       "id" : "EHDSPregnancyHistory.header.status",
       "path" : "EHDSPregnancyHistory.header.status",
       "short" : "Status of this observation.",
-      "definition" : "Status of this observation.",
       "binding" : {
         "strength" : "required",
         "description" : "HL7 Observation Status"
@@ -151,28 +71,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSPregnancyHist
     },
     {
       "id" : "EHDSPregnancyHistory.endDate",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSPregnancyHistory.endDate",
       "short" : "The end date of the pregnancy.",
       "definition" : "The end date of the pregnancy.",
@@ -184,28 +82,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSPregnancyHist
     },
     {
       "id" : "EHDSPregnancyHistory.outcome",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSPregnancyHistory.outcome",
       "short" : "The outcome of the pregnancy.",
       "definition" : "The outcome of the pregnancy.",
@@ -216,33 +92,11 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSPregnancyHist
       }],
       "binding" : {
         "strength" : "required",
-        "description" : "SNOMED CT"
+        "description" : "SNOMED GPS"
       }
     },
     {
       "id" : "EHDSPregnancyHistory.note",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSPregnancyHistory.note",
       "short" : "Free text notes by the health professional.",
       "definition" : "Free text notes by the health professional.",

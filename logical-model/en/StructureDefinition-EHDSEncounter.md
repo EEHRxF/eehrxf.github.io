@@ -1,4 +1,4 @@
-# Encounter model - EHDS Logical Information Models v0.1.0
+# Encounter model - EHDS Logical Information Models v0.3.0
 
 ## Logical Model: Encounter model 
 
@@ -7,7 +7,7 @@ EHDSEncounter means a structured set of data elements describing a patient's int
 
 **Usages:**
 
-* Use this Logical Model: [Discharge Report model](StructureDefinition-EHDSDischargeReport.md), [Encounter model](StructureDefinition-EHDSEncounter.md), [Imaging study model](StructureDefinition-EHDSImagingStudy.md) and [Service request model](StructureDefinition-EHDSServiceRequest.md)
+* Use this Logical Model: [Discharge report model](StructureDefinition-EHDSDischargeReport.md), [Encounter model](StructureDefinition-EHDSEncounter.md), [Imaging study model.](StructureDefinition-EHDSImagingStudy.md) and [Service request model](StructureDefinition-EHDSServiceRequest.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/eu.ehds.models|current/StructureDefinition/StructureDefinition-EHDSEncounter.json)
 
@@ -28,11 +28,11 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSEncounter.csv
   "resourceType" : "StructureDefinition",
   "id" : "EHDSEncounter",
   "url" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSEncounter",
-  "version" : "0.1.0",
+  "version" : "0.3.0",
   "name" : "EHDSEncounter",
   "title" : "Encounter model",
   "status" : "draft",
-  "date" : "2026-09-09T07:32:50+00:00",
+  "date" : "2026-09-10T07:58:57+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -61,114 +61,16 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSEncounter.csv
       "definition" : "EHDSEncounter means a structured set of data elements describing a patient's interaction with a healthcare service, but excluding the tracking of broader episodes of care (e.g., a maternity episode from first antenatal visit through delivery and postnatal follow-up) extending beyond individual encounters."
     },
     {
-      "id" : "EHDSEncounter.header.identifier",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
-      "path" : "EHDSEncounter.header.identifier"
-    },
-    {
-      "id" : "EHDSEncounter.header.author[x]",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
-      "path" : "EHDSEncounter.header.author[x]",
-      "definition" : "Author (typically a health professional) who is responsible for this encounter."
-    },
-    {
-      "id" : "EHDSEncounter.header.date",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
-      "path" : "EHDSEncounter.header.date"
-    },
-    {
       "id" : "EHDSEncounter.header.status",
       "path" : "EHDSEncounter.header.status",
       "short" : "Status of the encounter (e.g. discharged, discontinued, completed).",
-      "definition" : "Status of the encounter (e.g. discharged, discontinued, completed)."
+      "binding" : {
+        "strength" : "required",
+        "description" : "HL7 Encounter Status"
+      }
     },
     {
       "id" : "EHDSEncounter.priority",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSEncounter.priority",
       "short" : "Indicates the urgency of the encounter (e.g. urgent, routine).",
       "definition" : "Indicates the urgency of the encounter (e.g. urgent, routine).",
@@ -184,28 +86,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSEncounter.csv
     },
     {
       "id" : "EHDSEncounter.class",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSEncounter.class",
       "short" : "Class of the encounter (inpatient, ambulatory, virtual).",
       "definition" : "Class of the encounter (inpatient, ambulatory, virtual).",
@@ -221,28 +101,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSEncounter.csv
     },
     {
       "id" : "EHDSEncounter.period",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSEncounter.period",
       "short" : "The actual start and end time of the encounter.",
       "definition" : "The actual start and end time of the encounter.",
@@ -254,28 +112,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSEncounter.csv
     },
     {
       "id" : "EHDSEncounter.serviceProvider",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSEncounter.serviceProvider",
       "short" : "The organisation (facility) responsible for this encounter.",
       "definition" : "The organisation (facility) responsible for this encounter.",
@@ -287,28 +123,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSEncounter.csv
     },
     {
       "id" : "EHDSEncounter.referringProfessional",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSEncounter.referringProfessional",
       "short" : "Referring healthcare professional.",
       "definition" : "Referring healthcare professional.",
@@ -320,28 +134,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSEncounter.csv
     },
     {
       "id" : "EHDSEncounter.basedOn[x]",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSEncounter.basedOn[x]",
       "short" : "Reference to the request that initiated this encounter.",
       "definition" : "Reference to the request that initiated this encounter.",
@@ -356,28 +148,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSEncounter.csv
     },
     {
       "id" : "EHDSEncounter.reason[x]",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSEncounter.reason[x]",
       "short" : "Reason for admission, e.g. problem, procedure or finding.",
       "definition" : "Reason for admission, e.g. problem, procedure or finding.",
@@ -400,33 +170,11 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSEncounter.csv
       }],
       "binding" : {
         "strength" : "required",
-        "description" : "SNOMED CT (preferred), ICD-10, Orphacode"
+        "description" : "SNOMED GPS (preferred), ICD-10, Orphacode"
       }
     },
     {
       "id" : "EHDSEncounter.admission",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSEncounter.admission",
       "short" : "Details about the admission to a healthcare service.",
       "definition" : "Details about the admission to a healthcare service.",
@@ -438,28 +186,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSEncounter.csv
     },
     {
       "id" : "EHDSEncounter.admission.admitter",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSEncounter.admission.admitter",
       "short" : "Admitting healthcare professional.",
       "definition" : "Admitting healthcare professional.",
@@ -471,28 +197,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSEncounter.csv
     },
     {
       "id" : "EHDSEncounter.admission.admitSource",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSEncounter.admission.admitSource",
       "short" : "The type of admission indicating where the patient came in (e.g. born in hospital, from nursing home, physician referral, transferred from another hospital).",
       "definition" : "The type of admission indicating where the patient came in (e.g. born in hospital, from nursing home, physician referral, transferred from another hospital).",
@@ -508,28 +212,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSEncounter.csv
     },
     {
       "id" : "EHDSEncounter.dischargeDiagnosis[x]",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSEncounter.dischargeDiagnosis[x]",
       "short" : "The diagnoses at the time of discharge.",
       "definition" : "The diagnoses at the time of discharge.",
@@ -543,33 +225,11 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSEncounter.csv
       }],
       "binding" : {
         "strength" : "required",
-        "description" : "SNOMED CT (preferred), ICD-10, Orphacode"
+        "description" : "SNOMED GPS (preferred), ICD-10, Orphacode"
       }
     },
     {
       "id" : "EHDSEncounter.dischargeDestination",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSEncounter.dischargeDestination",
       "short" : "Location or organisation to which the patient is going after discharge.",
       "definition" : "Location or organisation to which the patient is going after discharge.",
@@ -581,28 +241,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSEncounter.csv
     },
     {
       "id" : "EHDSEncounter.dischargeDestination.type",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSEncounter.dischargeDestination.type",
       "short" : "Type of location (e.g. home, hospital, nursing home, etc.).",
       "definition" : "Type of location (e.g. home, hospital, nursing home, etc.).",
@@ -618,28 +256,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSEncounter.csv
     },
     {
       "id" : "EHDSEncounter.dischargeDestination.location[x]",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSEncounter.dischargeDestination.location[x]",
       "short" : "The location or organisation (including contact details).",
       "definition" : "The location or organisation (including contact details).",
@@ -654,28 +270,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSEncounter.csv
     },
     {
       "id" : "EHDSEncounter.serviceLocation",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSEncounter.serviceLocation",
       "short" : "List of locations where the patient was present during this encounter.",
       "definition" : "List of locations where the patient was present during this encounter.",
@@ -687,28 +281,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSEncounter.csv
     },
     {
       "id" : "EHDSEncounter.serviceLocation.period",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSEncounter.serviceLocation.period",
       "short" : "Time period during which the patient was present at the organisation.",
       "definition" : "Time period during which the patient was present at the organisation.",
@@ -720,28 +292,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSEncounter.csv
     },
     {
       "id" : "EHDSEncounter.serviceLocation.organisation",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSEncounter.serviceLocation.organisation",
       "short" : "Organisation or part of an organisation (e.g. department) where the patient was present during the encounter.",
       "definition" : "Organisation or part of an organisation (e.g. department) where the patient was present during the encounter.",
@@ -753,28 +303,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSEncounter.csv
     },
     {
       "id" : "EHDSEncounter.subEncounter",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSEncounter.subEncounter",
       "short" : "Reference to encounters that are considered parts of this encounter.",
       "definition" : "Reference to encounters that are considered parts of this encounter.",
@@ -786,31 +314,9 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSEncounter.csv
     },
     {
       "id" : "EHDSEncounter.note",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSEncounter.note",
-      "short" : "Free text notes by the health professional.",
-      "definition" : "Free text notes by the health professional.",
+      "short" : "Free text notes by the health professional",
+      "definition" : "Free text notes by the health professional",
       "min" : 0,
       "max" : "1",
       "type" : [{

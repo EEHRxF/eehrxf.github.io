@@ -6,7 +6,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>How to read this guide - EHDS Logical Information Models v0.1.0</title>
+    <title>How to read this guide - EHDS Logical Information Models v0.3.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -80,7 +80,7 @@
         <div id="ig-status" data-fhir="generated">
           <p><span style="font-size:12pt;font-weight:bold">EHDS Logical Information Models</span>
             <br/>
-            <span style="display:inline-block;">0.1.0 - ci-build
+            <span style="display:inline-block;">0.3.0 - ci-build
 
 
             </span>
@@ -215,7 +215,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">EHDS Logical Information Models, published by EC. This guide is not an authorized publication; it is the continuous build for version 0.1.0  built by the FHIR (HL7&reg; FHIR&reg; Standard) CI Build. This version is based on the current content of <a href='https://github.com/EEHRxF/logical-model/tree/main'>https://github.com/EEHRxF/logical-model/tree/main</a> and changes regularly. See the <a href='http://ehds.eu/fhir/models/history.html'>Directory of published versions</a><br/><span data-smart-ci-extra="1" style="font-size:.85em;">Built from commit <a href="https://github.com/EEHRxF/logical-model/commit/84b0dfa48a697451bb170589ed4907d66b83cbd2"><code>84b0dfa4</code></a>.</span></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">EHDS Logical Information Models, published by EC. This guide is not an authorized publication; it is the continuous build for version 0.3.0  built by the FHIR (HL7&reg; FHIR&reg; Standard) CI Build. This version is based on the current content of <a href='https://github.com/EEHRxF/logical-model/tree/main'>https://github.com/EEHRxF/logical-model/tree/main</a> and changes regularly. See the <a href='http://ehds.eu/fhir/models/history.html'>Directory of published versions</a><br/><span data-smart-ci-extra="1" style="font-size:.85em;">Built from commit <a href="https://github.com/EEHRxF/logical-model/commit/ee8bd2c74fdafeb02323b3a076328f9d224a31ac"><code>ee8bd2c7</code></a>.</span></p><!--EndReleaseHeader-->
   <h2>How to read this guide</h2>
   
 
@@ -247,7 +247,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Logical information/data models offer a technology-neutral perspective on data. These models are designed to be more accessible and easier for clinical experts to process and validate the structure and content of data exchange. Models can be applied to various data exchange and storage standards. Logical information models define data elements along with their constraints and relationships. This approach enables the description of data requirements from a functional standpoint, without being tied to any specific technology or implementation.</p>
 
-<p>The models approach used by Xt-EHR for EHDS follows the ISO 13972 standard "Health informatics — Clinical information models — Characteristics, structures and requirements."<br />
+<p>The models approach used by Xt-EHR for EHDS follows the ISO 13972 standard "Health informatics — Clinical information models — Characteristics, structures and requirements."
 While the models are published as HL7 FHIR StructureDefinition resources (HL7 FHIR logical models), the models themselves are technology-agnostic and applicable to any data exchange standard.</p>
 
 <p>The models use a subset of FHIR data types, but do not imply all the extensions or constraints that the FHIR format defines. Please see <a href="datatypes.html">Data types and references page</a> for additional information about data types in the logical models.</p>
@@ -256,8 +256,9 @@ While the models are published as HL7 FHIR StructureDefinition resources (HL7 FH
 
 <h3 id="differential-vs-snapshot-view">Differential vs Snapshot view</h3>
 
-<p>When navigating to a page of a model, the tab may open at the Differential view. This means, that in case the model is derived from another model, only the differences are shown on this page. <br />
-For example, the Laboratory Observation model is derived from the general Observation model, and adds a few constraints and elements that are specific to the laboratory use case. For derived models:</p>
+<p>When navigating to a page of a model, the tab may open at the Differential view. This means, that in case the model is derived from another model, only the differences are shown on this page.</p>
+
+<p>For example, the Laboratory Observation model is derived from the general Observation model, and adds a few constraints and elements that are specific to the laboratory use case. For derived models:</p>
 <ul>
   <li>The Differential view shows only the differences from the model it’s based on;</li>
   <li>The Key Elements view shows highlighted elements: this view is more useful for a FHIR profile, but does not provide much extra detail in the case of logical models;</li>
@@ -337,10 +338,10 @@ JSON, XML, and TTL are available as tabs on top of the page. Open the one you’
 
 
           IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="http://commission.europa.eu/">EC</a>.  
-          Package eu.ehds.models#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>.
+          Package eu.ehds.models#0.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>.
           Generated 
-  <span title="2026-09-09 07:32:00 +0000">
-    2026-09-09
+  <span title="2026-09-10 07:58:00 +0000">
+    2026-09-10
   </span>
 
           <br/>

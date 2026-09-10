@@ -1,13 +1,13 @@
-# Imaging report model - EHDS Logical Information Models v0.1.0
+# Imaging report model. - EHDS Logical Information Models v0.3.0
 
-## Logical Model: Imaging report model 
+## Logical Model: Imaging report model. 
 
  
-Imaging report reflects the observations and interpretations of one or more imaging studies, contains elements such as the reason why the study is requested, relevant contextual medical information, the modality used to acquire images and its settings, procedures and body localisations that were used, a description of the observations and findings, exposure information, conclusion and advice. 
+Imaging report. 
 
 **Usages:**
 
-* Use this Logical Model: [Imaging report model](StructureDefinition-EHDSImagingReport.md)
+* Use this Logical Model: [Imaging report model.](StructureDefinition-EHDSImagingReport.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/eu.ehds.models|current/StructureDefinition/StructureDefinition-EHDSImagingReport.json)
 
@@ -28,11 +28,11 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingReport
   "resourceType" : "StructureDefinition",
   "id" : "EHDSImagingReport",
   "url" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSImagingReport",
-  "version" : "0.1.0",
+  "version" : "0.3.0",
   "name" : "EHDSImagingReport",
-  "title" : "Imaging report model",
+  "title" : "Imaging report model.",
   "status" : "draft",
-  "date" : "2026-09-09T07:32:50+00:00",
+  "date" : "2026-09-10T07:58:57+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingReport
       "value" : "http://commission.europa.eu/"
     }]
   }],
-  "description" : "Imaging report reflects the observations and interpretations of one or more imaging studies, contains elements such as the reason why the study is requested, relevant contextual medical information, the modality used to acquire images and its settings, procedures and body localisations that were used, a description of the observations and findings, exposure information, conclusion and advice.",
+  "description" : "Imaging report.",
   "fhirVersion" : "5.0.0",
   "mapping" : [{
     "identity" : "rim",
@@ -57,60 +57,78 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingReport
     "element" : [{
       "id" : "EHDSImagingReport",
       "path" : "EHDSImagingReport",
-      "short" : "Imaging report model",
-      "definition" : "Imaging report reflects the observations and interpretations of one or more imaging studies, contains elements such as the reason why the study is requested, relevant contextual medical information, the modality used to acquire images and its settings, procedures and body localisations that were used, a description of the observations and findings, exposure information, conclusion and advice."
+      "short" : "Imaging report model.",
+      "definition" : "Imaging report."
     },
     {
-      "id" : "EHDSImagingReport.header",
-      "path" : "EHDSImagingReport.header",
-      "short" : "Imaging report header."
+      "id" : "EHDSImagingReport.header.identifier",
+      "path" : "EHDSImagingReport.header.identifier",
+      "short" : "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)."
+    },
+    {
+      "id" : "EHDSImagingReport.header.date",
+      "path" : "EHDSImagingReport.header.date",
+      "short" : "Date and optionally time of authoring/issuing"
+    },
+    {
+      "id" : "EHDSImagingReport.header.status",
+      "path" : "EHDSImagingReport.header.status",
+      "binding" : {
+        "strength" : "required",
+        "description" : "HL7 Imaging Study Status"
+      }
+    },
+    {
+      "id" : "EHDSImagingReport.header.language",
+      "path" : "EHDSImagingReport.header.language",
+      "short" : "Language in which the document is written. Language is expressed by the IETF language tag."
     },
     {
       "id" : "EHDSImagingReport.header.documentType",
       "path" : "EHDSImagingReport.header.documentType",
-      "short" : "Type of document (e.g. 18748-4 Diagnostic imaging study).",
-      "definition" : "Type of document (e.g. 18748-4 Diagnostic imaging study)."
+      "short" : "Type of document (e.g. 18748-4 Diagnostic imaging study)."
     },
     {
       "id" : "EHDSImagingReport.header.documentTitle",
       "path" : "EHDSImagingReport.header.documentTitle",
-      "short" : "Human readable document title that can be displayed in search results, etc. This can be documentType's display name, or it can contain further information.",
-      "definition" : "Human readable document title that can be displayed in search results, etc. This can be documentType's display name, or it can contain further information."
+      "short" : "Human readable document title that can be displayed in search results, etc. This can be documentType's display name, or it can contain further information."
+    },
+    {
+      "id" : "EHDSImagingReport.header.period",
+      "path" : "EHDSImagingReport.header.period",
+      "short" : "Time of service (imaging study) that is being documented."
+    },
+    {
+      "id" : "EHDSImagingReport.header.attestation.dateTime",
+      "path" : "EHDSImagingReport.header.attestation.dateTime",
+      "short" : "Date and time of the approval of the document by the attester"
+    },
+    {
+      "id" : "EHDSImagingReport.header.legalAuthentication",
+      "path" : "EHDSImagingReport.header.legalAuthentication",
+      "short" : "Document legal authentication details"
+    },
+    {
+      "id" : "EHDSImagingReport.header.legalAuthentication.dateTime",
+      "path" : "EHDSImagingReport.header.legalAuthentication.dateTime",
+      "short" : "Date and time when the document was authorised"
     },
     {
       "id" : "EHDSImagingReport.header.eventCategory",
       "path" : "EHDSImagingReport.header.eventCategory",
       "short" : "Categorisation of the event covered by the document (e.g. imaging study types, body regions, modality, etc.). Selection of such tags or labels depends on the use case and agreement between data sharing parties. This meta-data element serves primarily for searching and filtering purposes.",
-      "definition" : "Categorisation of the event covered by the document (e.g. imaging study types, body regions, modality, etc.). Selection of such tags or labels depends on the use case and agreement between data sharing parties. This meta-data element serves primarily for searching and filtering purposes.",
       "binding" : {
         "strength" : "required",
-        "description" : "DICOM CID 33 Modality (preferred), SNOMED CT"
+        "description" : "DICOM CID 33 Modality (preferred), SNOMED GPS"
       }
     },
     {
+      "id" : "EHDSImagingReport.header.serviceSpecialty",
+      "path" : "EHDSImagingReport.header.serviceSpecialty",
+      "short" : "Additional details about where the content was created (e.g. clinical specialty)"
+    },
+    {
       "id" : "EHDSImagingReport.header.accessionNumber",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSImagingReport.header.accessionNumber",
       "short" : "Accession number - an identifier, managed by the RIS at the local level, which usually uniquely identifies an imaging procedure request, and links it to imaging study and related imaging report.",
       "definition" : "Accession number - an identifier, managed by the RIS at the local level, which usually uniquely identifies an imaging procedure request, and links it to imaging study and related imaging report.",
@@ -122,31 +140,9 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingReport
     },
     {
       "id" : "EHDSImagingReport.header.intendedRecipient[x]",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSImagingReport.header.intendedRecipient[x]",
-      "short" : "Information recipient (intended recipient of the report, additional recipients might be identified by the ordering party, e.g. GP, other specialist), if applicable.",
-      "definition" : "Information recipient (intended recipient of the report, additional recipients might be identified by the ordering party, e.g. GP, other specialist), if applicable.",
+      "short" : "Intended recipient of the information, i.e. a person or organisation that should be notified or be aware of the content. This element is used to indicate explicit communication intent and does not represent routine storage or passive availability of information (e.g. in portals).",
+      "definition" : "Intended recipient of the information, i.e. a person or organisation that should be notified or be aware of the content. This element is used to indicate explicit communication intent and does not represent routine storage or passive availability of information (e.g. in portals).",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -164,28 +160,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingReport
     },
     {
       "id" : "EHDSImagingReport.body",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSImagingReport.body",
       "short" : "Imaging report structured body.",
       "definition" : "Imaging report structured body.",
@@ -197,28 +171,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingReport
     },
     {
       "id" : "EHDSImagingReport.body.orderInformation",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSImagingReport.body.orderInformation",
       "short" : "Order to which this imaging report is linked.",
       "definition" : "Order to which this imaging report is linked.",
@@ -230,28 +182,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingReport
     },
     {
       "id" : "EHDSImagingReport.body.orderInformation.orderId",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSImagingReport.body.orderInformation.orderId",
       "short" : "Identifier of the imaging service order.",
       "definition" : "Identifier of the imaging service order.",
@@ -263,28 +193,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingReport
     },
     {
       "id" : "EHDSImagingReport.body.orderInformation.orderDateAndTime",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSImagingReport.body.orderInformation.orderDateAndTime",
       "short" : "Date and time of the order placement.",
       "definition" : "Date and time of the order placement.",
@@ -296,28 +204,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingReport
     },
     {
       "id" : "EHDSImagingReport.body.orderInformation.orderPlacer[x]",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSImagingReport.body.orderInformation.orderPlacer[x]",
       "short" : "The person/organisation authorised to place the order.",
       "definition" : "The person/organisation authorised to place the order.",
@@ -335,28 +221,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingReport
     },
     {
       "id" : "EHDSImagingReport.body.orderInformation.orderReason[x]",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSImagingReport.body.orderInformation.orderReason[x]",
       "short" : "An explanation or justification for why this service is being requested.",
       "definition" : "An explanation or justification for why this service is being requested.",
@@ -376,33 +240,11 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingReport
       }],
       "binding" : {
         "strength" : "required",
-        "description" : "SNOMED CT (preferred), ICD-10"
+        "description" : "SNOMED GPS (preferred), ICD-10"
       }
     },
     {
       "id" : "EHDSImagingReport.body.orderInformation.clinicalQuestion",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSImagingReport.body.orderInformation.clinicalQuestion",
       "short" : "Specification of clinical question (goal of the investigation) to be answered by the imaging investigation.",
       "definition" : "Specification of clinical question (goal of the investigation) to be answered by the imaging investigation.",
@@ -414,30 +256,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingReport
     },
     {
       "id" : "EHDSImagingReport.body.supportingInformation",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSImagingReport.body.supportingInformation",
-      "short" : "Additional clinical information about the patient or specimen that may affect service delivery or interpretation (additional types of information may be allowed in implementations).",
+      "short" : "This information includes diagnosis, clinical findings and other observations. This includes observations explicitly requested by the producer (filler) to provide context or supporting information needed to complete the order. For example, reporting the metal implants present in patient's body.",
       "definition" : "This information includes diagnosis, clinical findings and other observations. This includes observations explicitly requested by the producer (filler) to provide context or supporting information needed to complete the order. For example, reporting the metal implants present in patient's body.",
       "min" : 0,
       "max" : "1",
@@ -447,28 +267,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingReport
     },
     {
       "id" : "EHDSImagingReport.body.supportingInformation.observation",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSImagingReport.body.supportingInformation.observation",
       "short" : "Clinical findings and other observations (e.g., height and weight of the patient).",
       "definition" : "Clinical findings and other observations (e.g., height and weight of the patient).",
@@ -480,28 +278,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingReport
     },
     {
       "id" : "EHDSImagingReport.body.supportingInformation.condition",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSImagingReport.body.supportingInformation.condition",
       "short" : "Condition that may influence the service or result interpretation.",
       "definition" : "Condition that may influence the service or result interpretation.",
@@ -513,17 +289,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingReport
     },
     {
       "id" : "EHDSImagingReport.body.supportingInformation.priorMedicationAdministration",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSImagingReport.body.supportingInformation.priorMedicationAdministration",
       "short" : "Medication administered before ordering the service that may influence the service or result interpretation.",
       "definition" : "Medication administered before ordering the service that may influence the service or result interpretation.",
@@ -535,17 +300,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingReport
     },
     {
       "id" : "EHDSImagingReport.body.supportingInformation.device",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSImagingReport.body.supportingInformation.device",
       "short" : "List of implants or devices that affect the course of the examination or its interpretation (e.g. metal implants).",
       "definition" : "List of implants or devices that affect the course of the examination or its interpretation (e.g. metal implants).",
@@ -557,20 +311,9 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingReport
     },
     {
       "id" : "EHDSImagingReport.body.supportingInformation.pregnancyStatus",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSImagingReport.body.supportingInformation.pregnancyStatus",
-      "short" : "Pregnancy status when the imaging examination was performed (e.g., pregnant, not pregnant, unknown).",
-      "definition" : "Pregnancy status when the imaging examination was performed (e.g., pregnant, not pregnant, unknown).",
+      "short" : "Pregnancy status when the imaging examination was performed, e.g., pregnant, not pregnant, unknown.",
+      "definition" : "Pregnancy status when the imaging examination was performed, e.g., pregnant, not pregnant, unknown.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -579,32 +322,9 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingReport
     },
     {
       "id" : "EHDSImagingReport.body.specimen",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSImagingReport.body.specimen",
       "short" : "Specimen information.",
       "definition" : "Specimen information.",
-      "comment" : "A specimen (not attached to a body) can be used for diagnostic, forensic and medical research purposes.",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -613,32 +333,9 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingReport
     },
     {
       "id" : "EHDSImagingReport.body.exposureInformation",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSImagingReport.body.exposureInformation",
       "short" : "Information on total exposure during the imaging investigation to ionising radiation.",
       "definition" : "Information on total exposure during the imaging investigation to ionising radiation.",
-      "comment" : "This information is required by regulations in several EU countries.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -647,31 +344,9 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingReport
     },
     {
       "id" : "EHDSImagingReport.body.exposureInformation.summary",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSImagingReport.body.exposureInformation.summary",
-      "short" : "Summary information about the exposure to ionising radiation.",
-      "definition" : "Summary information about the exposure to ionising radiation.",
+      "short" : "Summary information about the exposure to ionised radiation.",
+      "definition" : "Summary information about the exposure to ionised radiation.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -680,28 +355,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingReport
     },
     {
       "id" : "EHDSImagingReport.body.exposureInformation.structuredDose",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSImagingReport.body.exposureInformation.structuredDose",
       "short" : "Structured representation of the exposure.",
       "definition" : "Structured representation of the exposure.",
@@ -713,28 +366,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingReport
     },
     {
       "id" : "EHDSImagingReport.body.exposureInformation.structuredDose.doseQuantity",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSImagingReport.body.exposureInformation.structuredDose.doseQuantity",
       "short" : "Ionised radiation received during the imaging investigation.",
       "definition" : "Ionised radiation received during the imaging investigation.",
@@ -742,32 +373,14 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingReport
       "max" : "1",
       "type" : [{
         "code" : "Quantity"
-      }]
+      }],
+      "binding" : {
+        "strength" : "required",
+        "description" : "UCUM for units"
+      }
     },
     {
       "id" : "EHDSImagingReport.body.exposureInformation.structuredDose.doseModality",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSImagingReport.body.exposureInformation.structuredDose.doseModality",
       "short" : "Imaging modality used during imaging investigation (DICOM CID029).",
       "definition" : "Imaging modality used during imaging investigation (DICOM CID029).",
@@ -783,28 +396,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingReport
     },
     {
       "id" : "EHDSImagingReport.body.exposureInformation.structuredDose.bodySite",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSImagingReport.body.exposureInformation.structuredDose.bodySite",
       "short" : "Body part investigated.",
       "definition" : "Body part investigated.",
@@ -816,28 +407,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingReport
     },
     {
       "id" : "EHDSImagingReport.body.exposureInformation.structuredDose.numberOfSeries",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSImagingReport.body.exposureInformation.structuredDose.numberOfSeries",
       "short" : "Number of series in the study.",
       "definition" : "Number of series in the study.",
@@ -849,28 +418,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingReport
     },
     {
       "id" : "EHDSImagingReport.body.examinationReport",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSImagingReport.body.examinationReport",
       "short" : "Examination report content.",
       "definition" : "Examination report content.",
@@ -882,28 +429,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingReport
     },
     {
       "id" : "EHDSImagingReport.body.examinationReport.modality",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSImagingReport.body.examinationReport.modality",
       "short" : "Imaging modality used during imaging investigation (DICOM CID029).",
       "definition" : "Imaging modality used during imaging investigation (DICOM CID029).",
@@ -919,28 +444,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingReport
     },
     {
       "id" : "EHDSImagingReport.body.examinationReport.bodySite",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSImagingReport.body.examinationReport.bodySite",
       "short" : "Body part investigated.",
       "definition" : "Body part investigated.",
@@ -952,28 +455,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingReport
     },
     {
       "id" : "EHDSImagingReport.body.examinationReport.imagingProcedure",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSImagingReport.body.examinationReport.imagingProcedure",
       "short" : "Imaging procedure performed during imaging study.",
       "definition" : "Imaging procedure performed during imaging study.",
@@ -985,28 +466,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingReport
     },
     {
       "id" : "EHDSImagingReport.body.examinationReport.medicationAdministration",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSImagingReport.body.examinationReport.medicationAdministration",
       "short" : "Information about medications administered (contrast, sedation, stress agents, etc) to enable the imaging investigation or during it.",
       "definition" : "Information about medications administered (contrast, sedation, stress agents, etc) to enable the imaging investigation or during it.",
@@ -1018,28 +477,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingReport
     },
     {
       "id" : "EHDSImagingReport.body.examinationReport.adverseReaction",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSImagingReport.body.examinationReport.adverseReaction",
       "short" : "Adverse reaction manifested during imaging investigation.",
       "definition" : "Adverse reaction manifested during imaging investigation.",
@@ -1051,28 +488,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingReport
     },
     {
       "id" : "EHDSImagingReport.body.examinationReport.result[x]",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSImagingReport.body.examinationReport.result[x]",
       "short" : "Imaging report result data.",
       "definition" : "Imaging report result data.",
@@ -1087,28 +502,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingReport
     },
     {
       "id" : "EHDSImagingReport.body.examinationReport.conclusion",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSImagingReport.body.examinationReport.conclusion",
       "short" : "A concise and clinically contextualised summary including interpretation/impression of the diagnostic report.",
       "definition" : "A concise and clinically contextualised summary including interpretation/impression of the diagnostic report.",
@@ -1120,28 +513,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingReport
     },
     {
       "id" : "EHDSImagingReport.body.examinationReport.conclusion.impression",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSImagingReport.body.examinationReport.conclusion.impression",
       "short" : "Narrative description of the clinical conclusion (impression).",
       "definition" : "Narrative description of the clinical conclusion (impression).",
@@ -1153,28 +524,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingReport
     },
     {
       "id" : "EHDSImagingReport.body.examinationReport.conclusion.conditionOrFinding[x]",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSImagingReport.body.examinationReport.conclusion.conditionOrFinding[x]",
       "short" : "Condition or finding from imaging investigation.",
       "definition" : "Condition or finding from imaging investigation.",
@@ -1189,28 +538,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingReport
     },
     {
       "id" : "EHDSImagingReport.body.recommendation",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSImagingReport.body.recommendation",
       "short" : "Recommendation section for additional imaging investigations or other actions.",
       "definition" : "Recommendation section for additional imaging investigations or other actions.",
@@ -1222,28 +549,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingReport
     },
     {
       "id" : "EHDSImagingReport.body.recommendation.description",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSImagingReport.body.recommendation.description",
       "short" : "Narrative description of the recommended activities including additional investigation, medication etc.",
       "definition" : "Narrative description of the recommended activities including additional investigation, medication etc.",
@@ -1255,31 +560,9 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingReport
     },
     {
       "id" : "EHDSImagingReport.body.recommendation.carePlan",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSImagingReport.body.recommendation.carePlan",
-      "short" : "A complex and structured information about recommended goals, activities and objectives in the form of one or more formal care plan.",
-      "definition" : "A complex and structured information about recommended goals, activities and objectives in the form of one or more formal care plan.",
+      "short" : "A complex and structured information about recommended goals, activities and objectives in the form of one or more formal care plan to be implemented after this imaging investigation.",
+      "definition" : "A complex and structured information about recommended goals, activities and objectives in the form of one or more formal care plan to be implemented after this imaging investigation.",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -1288,28 +571,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingReport
     },
     {
       "id" : "EHDSImagingReport.body.comparisonStudy",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSImagingReport.body.comparisonStudy",
       "short" : "Documentation (reference) of a prior Imaging Report to which the current images were compared.",
       "definition" : "Documentation (reference) of a prior Imaging Report to which the current images were compared.",
@@ -1321,28 +582,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingReport
     },
     {
       "id" : "EHDSImagingReport.dicomStudyMetadata",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSImagingReport.dicomStudyMetadata",
       "short" : "Metadata of the DICOM study. A study comprises a set of series, each of which includes a set of Service-Object Pair Instances (SOP Instances - images or other data) acquired or produced in a common context. A series is of only one modality (e.g. X-ray, CT, MR, ultrasound), but a study may have multiple series of different modalities.",
       "definition" : "Metadata of the DICOM study. A study comprises a set of series, each of which includes a set of Service-Object Pair Instances (SOP Instances - images or other data) acquired or produced in a common context. A series is of only one modality (e.g. X-ray, CT, MR, ultrasound), but a study may have multiple series of different modalities.",
@@ -1354,31 +593,9 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingReport
     },
     {
       "id" : "EHDSImagingReport.attachments",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSImagingReport.attachments",
-      "short" : "Report attachments",
-      "definition" : "Report attachments",
+      "short" : "Report attachments.",
+      "definition" : "Report attachments.",
       "min" : 0,
       "max" : "*",
       "type" : [{

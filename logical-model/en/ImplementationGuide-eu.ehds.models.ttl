@@ -15,11 +15,11 @@
      fhir:div [ fhir:v "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide eu.ehds.models</b></p><a name=\"eu.ehds.models\"> </a><a name=\"hceu.ehds.models\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: en</p></div><h2>EHDSModels</h2><p>The official URL for this implementation guide is: </p><pre>http://ehds.eu/fhir/models/ImplementationGuide/eu.ehds.models</pre><div><p>EHDS Logical Information Models</p>\n</div></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:url [ fhir:v "http://ehds.eu/fhir/models/ImplementationGuide/eu.ehds.models"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:version [ fhir:v "0.3.0"] ; # 
   fhir:name [ fhir:v "EHDSModels"] ; # 
   fhir:title [ fhir:v "EHDS Logical Information Models"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-09-09T07:32:50+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-09-10T07:58:57+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "EC"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "EC" ] ;
@@ -101,7 +101,7 @@
          fhir:reference [ fhir:v "StructureDefinition/EHDSPatientSummary" ]
        ] ;
        fhir:name [ fhir:v "Patient summary model" ] ;
-       fhir:description [ fhir:v "The model is a structured document designed to provide an overview of a patient’s most important health information. The model aims to be compatible with the ISO International Patient Summary standard." ] ;
+       fhir:description [ fhir:v "The model is a structured document designed to provide an overview of a patient's most important health information. The model aims to be compatible with the ISO International Patient Summary standard." ] ;
        fhir:isExample [ fhir:v false ] ;
        fhir:groupingId [ fhir:v "EHDSPriorityCategories" ]
      ] [
@@ -116,8 +116,8 @@
          fhir:link <http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicationPrescription> ;
          fhir:reference [ fhir:v "StructureDefinition/EHDSMedicationPrescription" ]
        ] ;
-       fhir:name [ fhir:v "Medication prescription model" ] ;
-       fhir:description [ fhir:v "Logical model for medication prescription. A prescription contains one or more prescription items (medications)." ] ;
+       fhir:name [ fhir:v "Electronic prescription model" ] ;
+       fhir:description [ fhir:v "Electronic prescription." ] ;
        fhir:isExample [ fhir:v false ] ;
        fhir:groupingId [ fhir:v "EHDSPriorityCategories" ]
      ] [
@@ -132,8 +132,8 @@
          fhir:link <http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicationDispense> ;
          fhir:reference [ fhir:v "StructureDefinition/EHDSMedicationDispense" ]
        ] ;
-       fhir:name [ fhir:v "Medication dispense model" ] ;
-       fhir:description [ fhir:v "Logical model for medication dispensation (based on a request and dispensed in a pharmacy). Implementers should take into account, if allowed and needed, the calculation of remaining dispensable product based on this information." ] ;
+       fhir:name [ fhir:v "Medication dispense model." ] ;
+       fhir:description [ fhir:v "Electronic dispensation." ] ;
        fhir:isExample [ fhir:v false ] ;
        fhir:groupingId [ fhir:v "EHDSPriorityCategories" ]
      ] [
@@ -145,11 +145,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicalTestResultAndReport> ;
-         fhir:reference [ fhir:v "StructureDefinition/EHDSMedicalTestResultAndReport" ]
+         fhir:link <http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicalTestReport> ;
+         fhir:reference [ fhir:v "StructureDefinition/EHDSMedicalTestReport" ]
        ] ;
        fhir:name [ fhir:v "Medical test result and report model" ] ;
-       fhir:description [ fhir:v "Medical test result and report model." ] ;
+       fhir:description [ fhir:v "Medical test results, including laboratory and other diagnostic results and related reports." ] ;
        fhir:isExample [ fhir:v false ] ;
        fhir:groupingId [ fhir:v "EHDSPriorityCategories" ]
      ] [
@@ -164,8 +164,8 @@
          fhir:link <http://ehds.eu/fhir/models/StructureDefinition/EHDSImagingReport> ;
          fhir:reference [ fhir:v "StructureDefinition/EHDSImagingReport" ]
        ] ;
-       fhir:name [ fhir:v "Imaging report model" ] ;
-       fhir:description [ fhir:v "Imaging report reflects the observations and interpretations of one or more imaging studies, contains elements such as the reason why the study is requested, relevant contextual medical information, the modality used to acquire images and its settings, procedures and body localisations that were used, a description of the observations and findings, exposure information, conclusion and advice." ] ;
+       fhir:name [ fhir:v "Imaging report model." ] ;
+       fhir:description [ fhir:v "Imaging report." ] ;
        fhir:isExample [ fhir:v false ] ;
        fhir:groupingId [ fhir:v "EHDSPriorityCategories" ]
      ] [
@@ -180,7 +180,7 @@
          fhir:link <http://ehds.eu/fhir/models/StructureDefinition/EHDSImagingStudy> ;
          fhir:reference [ fhir:v "StructureDefinition/EHDSImagingStudy" ]
        ] ;
-       fhir:name [ fhir:v "Imaging study model" ] ;
+       fhir:name [ fhir:v "Imaging study model." ] ;
        fhir:description [ fhir:v "EHDSImagingStudy means the structured set of data elements for facilitating the exchange of imaging studies. Its goal is to enable the exchange of imaging studies regardless of whether the corresponding imaging report is available. It contains metadata that includes the endpoint where the imaging study is located. EHDSImagingStudy may be represented using DICOM KOS and/or HL7 FHIR, depending on the implementation guide." ] ;
        fhir:isExample [ fhir:v false ] ;
        fhir:groupingId [ fhir:v "EHDSPriorityCategories" ]
@@ -196,8 +196,8 @@
          fhir:link <http://ehds.eu/fhir/models/StructureDefinition/EHDSDischargeReport> ;
          fhir:reference [ fhir:v "StructureDefinition/EHDSDischargeReport" ]
        ] ;
-       fhir:name [ fhir:v "Discharge Report model" ] ;
-       fhir:description [ fhir:v "A generic, flexible model for any kind of discharge report. Different types of encounters may require adding relevant sections and elements, or omitting irrelevant ones, depending on their data needs." ] ;
+       fhir:name [ fhir:v "Discharge report model" ] ;
+       fhir:description [ fhir:v "Discharge report." ] ;
        fhir:isExample [ fhir:v false ] ;
        fhir:groupingId [ fhir:v "EHDSPriorityCategories" ]
      ] [
@@ -500,8 +500,8 @@
          fhir:link <http://ehds.eu/fhir/models/StructureDefinition/EHDSLaboratoryObservation> ;
          fhir:reference [ fhir:v "StructureDefinition/EHDSLaboratoryObservation" ]
        ] ;
-       fhir:name [ fhir:v "Laboratory observation model" ] ;
-       fhir:description [ fhir:v "Model for observation performed by laboratory" ] ;
+       fhir:name [ fhir:v "Model for observation performed by laboratory" ] ;
+       fhir:description [ fhir:v "Model for observation performed by laboratory." ] ;
        fhir:isExample [ fhir:v false ] ;
        fhir:groupingId [ fhir:v "EHDSCommonLogicalModels" ]
      ] [
@@ -741,7 +741,7 @@
          fhir:reference [ fhir:v "StructureDefinition/EHDSDataSet" ]
        ] ;
        fhir:name [ fhir:v "DataSet model" ] ;
-       fhir:description [ fhir:v "Data group that is used as a template for deriving other data groups." ] ;
+       fhir:description [ fhir:v "DataSet model." ] ;
        fhir:isExample [ fhir:v false ] ;
        fhir:groupingId [ fhir:v "EHDSMetadataModels" ]
      ] [
@@ -757,7 +757,7 @@
          fhir:reference [ fhir:v "StructureDefinition/EHDSDocument" ]
        ] ;
        fhir:name [ fhir:v "Document model" ] ;
-       fhir:description [ fhir:v "Structured set of data elements common for all health documents." ] ;
+       fhir:description [ fhir:v "EHDSDocument means a structured set of data elements common all health documents." ] ;
        fhir:isExample [ fhir:v false ] ;
        fhir:groupingId [ fhir:v "EHDSMetadataModels" ]
      ] [
@@ -773,7 +773,7 @@
          fhir:reference [ fhir:v "ActorDefinition/actor-full" ]
        ] ;
        fhir:name [ fhir:v "Full" ] ;
-       fhir:description [ fhir:v "Support that enables the exchange of personal electronic health data with the focus on unstructured content representation while providing limited support for detailed underlying data structures." ] ;
+       fhir:description [ fhir:v "Support that enables the exchange of personal electronic health data with the focus on structured content representation." ] ;
        fhir:isExample [ fhir:v true ] ;
        fhir:groupingId [ fhir:v "EHDSSupportLevels" ]
      ] [
@@ -789,7 +789,7 @@
          fhir:reference [ fhir:v "ActorDefinition/actor-basic" ]
        ] ;
        fhir:name [ fhir:v "Basic" ] ;
-       fhir:description [ fhir:v "Support that enables the exchange of personal electronic health data with the focus on structured content representation." ] ;
+       fhir:description [ fhir:v "Support that enables the exchange of personal electronic health data with the focus on unstructured content representation while providing limited support for detailed underlying data structures." ] ;
        fhir:isExample [ fhir:v true ] ;
        fhir:groupingId [ fhir:v "EHDSSupportLevels" ]
      ] ) ;

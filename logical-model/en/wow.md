@@ -1,4 +1,4 @@
-# Ways of working - EHDS Logical Information Models v0.1.0
+# Ways of working - EHDS Logical Information Models v0.3.0
 
 ## Ways of working
 

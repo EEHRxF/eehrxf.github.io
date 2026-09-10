@@ -1,9 +1,9 @@
-# Medication dispense model - EHDS Logical Information Models v0.1.0
+# Medication dispense model. - EHDS Logical Information Models v0.3.0
 
-## Logical Model: Medication dispense model 
+## Logical Model: Medication dispense model. 
 
  
-Logical model for medication dispensation (based on a request and dispensed in a pharmacy). Implementers should take into account, if allowed and needed, the calculation of remaining dispensable product based on this information. 
+Electronic dispensation. 
 
 **Usages:**
 
@@ -28,11 +28,11 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSMedicationDis
   "resourceType" : "StructureDefinition",
   "id" : "EHDSMedicationDispense",
   "url" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicationDispense",
-  "version" : "0.1.0",
+  "version" : "0.3.0",
   "name" : "EHDSMedicationDispense",
-  "title" : "Medication dispense model",
+  "title" : "Medication dispense model.",
   "status" : "draft",
-  "date" : "2026-09-09T07:32:50+00:00",
+  "date" : "2026-09-10T07:58:57+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSMedicationDis
       "value" : "http://commission.europa.eu/"
     }]
   }],
-  "description" : "Logical model for medication dispensation (based on a request and dispensed in a pharmacy). Implementers should take into account, if allowed and needed, the calculation of remaining dispensable product based on this information.",
+  "description" : "Electronic dispensation.",
   "fhirVersion" : "5.0.0",
   "mapping" : [{
     "identity" : "rim",
@@ -57,155 +57,48 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSMedicationDis
     "element" : [{
       "id" : "EHDSMedicationDispense",
       "path" : "EHDSMedicationDispense",
-      "short" : "Medication dispense model",
-      "definition" : "Logical model for medication dispensation (based on a request and dispensed in a pharmacy). Implementers should take into account, if allowed and needed, the calculation of remaining dispensable product based on this information."
+      "short" : "Medication dispense model.",
+      "definition" : "Electronic dispensation."
     },
     {
       "id" : "EHDSMedicationDispense.header",
       "path" : "EHDSMedicationDispense.header",
-      "short" : "Dispensation header.",
-      "definition" : "Dispensation header."
-    },
-    {
-      "id" : "EHDSMedicationDispense.header.subject",
-      "path" : "EHDSMedicationDispense.header.subject",
-      "definition" : "The person for whom the medication is prescribed."
+      "short" : "Dispensation header."
     },
     {
       "id" : "EHDSMedicationDispense.header.identifier",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSMedicationDispense.header.identifier",
       "short" : "Business identifier for the dispensation.",
-      "definition" : "Business identifier(s) for the dispense record.",
       "min" : 1
     },
     {
       "id" : "EHDSMedicationDispense.header.author[x]",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSMedicationDispense.header.author[x]",
       "short" : "Author of the document.",
-      "definition" : "The actor who issued the dispense record. Responsibility for the dispense should be traceable from this information.",
-      "min" : 1,
-      "type" : [{
-        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"
-      },
-      {
-        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation"
-      },
-      {
-        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice"
-      }]
-    },
-    {
-      "id" : "EHDSMedicationDispense.header.patientInsertedData",
-      "path" : "EHDSMedicationDispense.header.patientInsertedData",
-      "max" : "0"
+      "min" : 1
     },
     {
       "id" : "EHDSMedicationDispense.header.date",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSMedicationDispense.header.date",
       "short" : "Date and time of issuing the dispense record.",
-      "definition" : "Date and time of issuing the dispense record.",
       "min" : 1
     },
     {
       "id" : "EHDSMedicationDispense.header.status",
       "path" : "EHDSMedicationDispense.header.status",
       "short" : "The status of the dispense, e.g. completed, declined, entered-in-error.",
-      "definition" : "The status of the dispense, e.g. completed, declined, entered-in-error.",
       "binding" : {
         "strength" : "required",
-        "description" : "HL7 MedicationDispense Status Codes"
+        "description" : "HL7 Medication Dispense Status Codes"
       }
     },
     {
+      "id" : "EHDSMedicationDispense.header.language",
+      "path" : "EHDSMedicationDispense.header.language",
+      "short" : "Language in which the document is written. Language is expressed by the IETF language tag."
+    },
+    {
       "id" : "EHDSMedicationDispense.dispenseLocation",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSMedicationDispense.dispenseLocation",
       "short" : "Location of dispense.",
       "definition" : "Location of dispense.",
@@ -217,31 +110,9 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSMedicationDis
     },
     {
       "id" : "EHDSMedicationDispense.receiver[x]",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSMedicationDispense.receiver[x]",
-      "short" : "Identification of the person who received the dispensed medication, especially when it was not the patient. When not present, it is assumed that the patient is the receiver.",
-      "definition" : "Identification of the person who received the dispensed medication, especially when it was not the patient. When not present, it is assumed that the patient is the receiver.",
+      "short" : "Identification of the person who received the dispensed medicinal products, especially when it was not the patient. When not present, it is assumed that the patient is the receiver.",
+      "definition" : "Identification of the person who received the dispensed medicinal products, especially when it was not the patient. When not present, it is assumed that the patient is the receiver.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -256,31 +127,9 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSMedicationDis
     },
     {
       "id" : "EHDSMedicationDispense.relatedRequest",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSMedicationDispense.relatedRequest",
-      "short" : "Identifier of the prescription item the dispense is related to. ",
-      "definition" : "Identifier of the prescription item the dispense is related to. ",
+      "short" : "Identifier of the prescription item the dispense is related to.",
+      "definition" : "Identifier of the prescription item the dispense is related to.",
       "min" : 1,
       "max" : "*",
       "type" : [{
@@ -289,31 +138,9 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSMedicationDis
     },
     {
       "id" : "EHDSMedicationDispense.medication",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSMedicationDispense.medication",
-      "short" : "Exact dispensed product. If multiple medications are dispensed together, multiple dispense records should be created.",
-      "definition" : "Exact dispensed product. If multiple medications are dispensed together, multiple dispense records should be created.",
+      "short" : "Exact dispensed product. If multiple medicinal products are dispensed together, multiple dispense records should be created.",
+      "definition" : "Exact dispensed product. If multiple medicinal products are dispensed together, multiple dispense records should be created.",
       "min" : 1,
       "max" : "1",
       "type" : [{
@@ -322,31 +149,9 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSMedicationDis
     },
     {
       "id" : "EHDSMedicationDispense.dispensedQuantity",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSMedicationDispense.dispensedQuantity",
-      "short" : "Number of dispensed packages if the package size is known, or number of smaller items/units, according to the medication dispensed. A unit shall be provided.",
-      "definition" : "Number of dispensed packages if the package size is known, or number of smaller items/units, according to the medication dispensed. A unit shall be provided.",
+      "short" : "Number of dispensed packages if the package size is known, or number of smaller items/units, according to the medicinal product dispensed. A unit shall be provided.",
+      "definition" : "Number of dispensed packages if the package size is known, or number of smaller items/units, according to the medicinal product dispensed. A unit shall be provided.",
       "min" : 1,
       "max" : "1",
       "type" : [{
@@ -354,7 +159,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSMedicationDis
       }],
       "binding" : {
         "strength" : "required",
-        "description" : "UCUM (preferred), EDQM Standard Terms"
+        "description" : "UCUM for units of measurement, EDQM Standard Terms for units of presentation"
       }
     },
     {
@@ -370,28 +175,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSMedicationDis
     },
     {
       "id" : "EHDSMedicationDispense.dosageInstructions",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSMedicationDispense.dosageInstructions",
       "short" : "Dosage and administration instructions for the dispensed medicinal product. These instructions may deviate from the instructions included in the prescription.",
       "definition" : "Dosage and administration instructions for the dispensed medicinal product. These instructions may deviate from the instructions included in the prescription.",
@@ -403,28 +186,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSMedicationDis
     },
     {
       "id" : "EHDSMedicationDispense.note",
-      "extension" : [{
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHALL:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      },
-      {
-        "extension" : [{
-          "url" : "code",
-          "valueCode" : "SHOULD:process"
-        },
-        {
-          "url" : "actor",
-          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
-        }],
-        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-      }],
       "path" : "EHDSMedicationDispense.note",
       "short" : "Additional information or comments.",
       "definition" : "Additional information or comments.",

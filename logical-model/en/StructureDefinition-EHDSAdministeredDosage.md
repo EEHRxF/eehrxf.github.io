@@ -1,4 +1,4 @@
-# Administered dosage model - EHDS Logical Information Models v0.1.0
+# Administered dosage model - EHDS Logical Information Models v0.3.0
 
 ## Logical Model: Administered dosage model 
 
@@ -28,11 +28,11 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAdministeredD
   "resourceType" : "StructureDefinition",
   "id" : "EHDSAdministeredDosage",
   "url" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSAdministeredDosage",
-  "version" : "0.1.0",
+  "version" : "0.3.0",
   "name" : "EHDSAdministeredDosage",
   "title" : "Administered dosage model",
   "status" : "draft",
-  "date" : "2026-09-09T07:32:50+00:00",
+  "date" : "2026-09-10T07:58:57+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -69,6 +69,21 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAdministeredD
       "id" : "EHDSAdministeredDosage.dosageDetails.sequence",
       "path" : "EHDSAdministeredDosage.dosageDetails.sequence",
       "max" : "0"
+    },
+    {
+      "id" : "EHDSAdministeredDosage.dosageDetails.doseAndRate",
+      "path" : "EHDSAdministeredDosage.dosageDetails.doseAndRate",
+      "short" : "Amount of medication administered per one dose (= one timing)."
+    },
+    {
+      "id" : "EHDSAdministeredDosage.dosageDetails.doseAndRate.dose[x]",
+      "path" : "EHDSAdministeredDosage.dosageDetails.doseAndRate.dose[x]",
+      "short" : "Amount of medication per one dose (1 tablet, 2-3 tablets, 20ml)."
+    },
+    {
+      "id" : "EHDSAdministeredDosage.dosageDetails.doseAndRate.rate[x]",
+      "path" : "EHDSAdministeredDosage.dosageDetails.doseAndRate.rate[x]",
+      "short" : "Amount of medication per time period (e.g. 100mg per 1 hour). When rate is provided per 1 time unit, Quantity data type can be used with a suitable unit (e.g. mg/h, ug/min)."
     },
     {
       "id" : "EHDSAdministeredDosage.dosageDetails.repeat",
