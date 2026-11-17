@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSServiceReques
   "name" : "EHDSServiceRequest",
   "title" : "Service request model",
   "status" : "draft",
-  "date" : "2026-11-17T12:55:20+00:00",
+  "date" : "2026-11-17T21:41:26+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -88,7 +88,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSServiceReques
       }],
       "binding" : {
         "strength" : "required",
-        "description" : "SNOMED GPS (preferred), LOINC, NPU, SNOMED GPS"
+        "description" : "SNOMED GPS (preferred), LOINC, NPU"
       }
     },
     {

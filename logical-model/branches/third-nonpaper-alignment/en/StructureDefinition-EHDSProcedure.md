@@ -4,7 +4,7 @@
 
 **Usages:**
 
-* Use this Logical Model: [Device use model](StructureDefinition-EHDSDeviceUse.md), [Discharge report model](StructureDefinition-EHDSDischargeReport.md), [Encounter model](StructureDefinition-EHDSEncounter.md), [Imaging report model.](StructureDefinition-EHDSImagingReport.md)... Show 3 more, [Patient summary model](StructureDefinition-EHDSPatientSummary.md), [Procedure model](StructureDefinition-EHDSProcedure.md) and [Service request model](StructureDefinition-EHDSServiceRequest.md)
+* Use this Logical Model: [Device use model](StructureDefinition-EHDSDeviceUse.md), [Discharge report model](StructureDefinition-EHDSDischargeReport.md), [Encounter model](StructureDefinition-EHDSEncounter.md), [Imaging report model.](StructureDefinition-EHDSImagingReport.md)... Show 4 more, [Observation model](StructureDefinition-EHDSObservation.md), [Patient summary model](StructureDefinition-EHDSPatientSummary.md), [Procedure model](StructureDefinition-EHDSProcedure.md) and [Service request model](StructureDefinition-EHDSServiceRequest.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/eu.ehds.models|current/StructureDefinition/StructureDefinition-EHDSProcedure.json)
 
@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSProcedure.csv
   "name" : "EHDSProcedure",
   "title" : "Procedure model",
   "status" : "draft",
-  "date" : "2026-11-17T12:55:20+00:00",
+  "date" : "2026-11-17T21:41:26+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",

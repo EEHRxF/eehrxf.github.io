@@ -213,7 +213,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 8" class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">EHDS Logical Information Models, published by EC. This guide is not an authorized publication; it is the continuous build for version 0.3.0  built by the FHIR (HL7&reg; FHIR&reg; Standard) CI Build. This version is based on the current content of <a href='https://github.com/EEHRxF/logical-model/tree/third-nonpaper-alignment'>https://github.com/EEHRxF/logical-model/tree/third-nonpaper-alignment</a> and changes regularly. See the <a href='http://ehds.eu/fhir/models/history.html'>Directory of published versions</a><br/><span data-smart-ci-extra="1" style="font-size:.85em;">Built from commit <a href="https://github.com/EEHRxF/logical-model/commit/ee8bd2c74fdafeb02323b3a076328f9d224a31ac"><code>ee8bd2c7</code></a>. &nbsp; Branch: <a href="https://github.com/EEHRxF/logical-model/tree/third-nonpaper-alignment"><code>third-nonpaper-alignment</code></a>.</span></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">EHDS Logical Information Models, published by EC. This guide is not an authorized publication; it is the continuous build for version 0.3.0  built by the FHIR (HL7&reg; FHIR&reg; Standard) CI Build. This version is based on the current content of <a href='https://github.com/EEHRxF/logical-model/tree/third-nonpaper-alignment'>https://github.com/EEHRxF/logical-model/tree/third-nonpaper-alignment</a> and changes regularly. See the <a href='http://ehds.eu/fhir/models/history.html'>Directory of published versions</a><br/><span data-smart-ci-extra="1" style="font-size:.85em;">Built from commit <a href="https://github.com/EEHRxF/logical-model/commit/20e9edb7fe4d8c3dc428b9770cdb826484641d87"><code>20e9edb7</code></a>. &nbsp; Branch: <a href="https://github.com/EEHRxF/logical-model/tree/third-nonpaper-alignment"><code>third-nonpaper-alignment</code></a>.</span></p><!--EndReleaseHeader-->
   
 
 
@@ -328,7 +328,7 @@ JSON Profile
   "<a href="http://hl7.org/fhir/R5/structuredefinition.html#XStructureDefinition.name">name</a>" : "EHDSDischargeReport",
   "<a href="http://hl7.org/fhir/R5/structuredefinition.html#XStructureDefinition.title">title</a>" : "Discharge report model",
   "<a href="http://hl7.org/fhir/R5/structuredefinition.html#XStructureDefinition.status">status</a>" : "draft",
-  "<a href="http://hl7.org/fhir/R5/structuredefinition.html#XStructureDefinition.date">date</a>" : "2026-11-17T12:55:20+00:00",
+  "<a href="http://hl7.org/fhir/R5/structuredefinition.html#XStructureDefinition.date">date</a>" : "2026-11-17T21:41:26+00:00",
   "<a href="http://hl7.org/fhir/R5/structuredefinition.html#XStructureDefinition.publisher">publisher</a>" : "EC",
   "<a href="http://hl7.org/fhir/R5/structuredefinition.html#XStructureDefinition.contact">contact</a>" : [
     {
@@ -526,6 +526,24 @@ JSON Profile
         }
       },
       {
+        "<a href="http://hl7.org/fhir/R5/types.html#Element#XElementDefinition.id">id</a>" : "EHDSDischargeReport.header.lastUpdate",
+        "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.path">path</a>" : "EHDSDischargeReport.header.lastUpdate",
+        "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.short">short</a>" : "Date and time of the last system-level update to this document or resource (system update instant). This is technical metadata and does not represent a clinical event time.",
+        "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.definition">definition</a>" : "Date and time of the last system-level update to this document or resource (system update instant). This is technical metadata and does not represent a clinical event time.",
+        "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.min">min</a>" : 0,
+        "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.max">max</a>" : "1",
+        "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base">base</a>" : {
+          "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.path">path</a>" : "EHDSDocument.header.lastUpdate",
+          "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.min">min</a>" : 0,
+          "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.max">max</a>" : "1"
+        },
+        "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type">type</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type.code">code</a>" : "dateTime"
+          }
+        ]
+      },
+      {
         "<a href="http://hl7.org/fhir/R5/types.html#Element#XElementDefinition.id">id</a>" : "EHDSDischargeReport.header.documentType",
         "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.path">path</a>" : "EHDSDischargeReport.header.documentType",
         "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.short">short</a>" : "Type of document e.g. 34105-7 Hospital discharge summary.",
@@ -661,8 +679,8 @@ JSON Profile
       {
         "<a href="http://hl7.org/fhir/R5/types.html#Element#XElementDefinition.id">id</a>" : "EHDSDischargeReport.header.legalAuthentication",
         "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.path">path</a>" : "EHDSDischargeReport.header.legalAuthentication",
-        "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.short">short</a>" : "Document legal authentication details.",
-        "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.definition">definition</a>" : "Document legal authentication details.",
+        "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.short">short</a>" : "Document legal authentication details. Legal authentication metadata is included only where required by applicable legal or organisational frameworks. Absence of legal authentication does not affect interoperability conformance under this profile.",
+        "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.definition">definition</a>" : "Document legal authentication details. Legal authentication metadata is included only where required by applicable legal or organisational frameworks. Absence of legal authentication does not affect interoperability conformance under this profile.",
         "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.min">min</a>" : 0,
         "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.max">max</a>" : "*",
         "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base">base</a>" : {
@@ -679,8 +697,8 @@ JSON Profile
       {
         "<a href="http://hl7.org/fhir/R5/types.html#Element#XElementDefinition.id">id</a>" : "EHDSDischargeReport.header.legalAuthentication.legalAuthenticator[x]",
         "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.path">path</a>" : "EHDSDischargeReport.header.legalAuthentication.legalAuthenticator[x]",
-        "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.short">short</a>" : "The person or organisation taking responsibility for the content of the document.",
-        "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.definition">definition</a>" : "The person or organisation taking responsibility for the content of the document.",
+        "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.short">short</a>" : "The person or organisation taking responsibility for the medical content of the document. The legalAuthenticator can be different from the author and attester (e.g. author = junior doctor, attester = senior physician, legalAuthenticator = attending physician).",
+        "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.definition">definition</a>" : "The person or organisation taking responsibility for the medical content of the document. The legalAuthenticator can be different from the author and attester (e.g. author = junior doctor, attester = senior physician, legalAuthenticator = attending physician).",
         "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.min">min</a>" : 1,
         "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.max">max</a>" : "1",
         "<a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base">base</a>" : {
@@ -2273,7 +2291,7 @@ JSON Profile
           IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="http://commission.europa.eu/">EC</a>.  
           Package eu.ehds.models#0.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>.
           Generated 
-  <span title="2026-11-17 12:55:00 +0000">
+  <span title="2026-11-17 21:41:00 +0000">
     2026-11-17
   </span>
 

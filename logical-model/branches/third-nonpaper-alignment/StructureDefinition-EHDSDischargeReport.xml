@@ -72,7 +72,7 @@
   <name value="EHDSDischargeReport"/>
   <title value="Discharge report model"/>
   <status value="draft"/>
-  <date value="2026-11-17T12:55:20+00:00"/>
+  <date value="2026-11-17T21:41:26+00:00"/>
   <publisher value="EC"/>
   <contact>
     <name value="EC"/>
@@ -235,6 +235,21 @@
         <description value="BCP 47"/>
       </binding>
     </element>
+    <element id="EHDSDischargeReport.header.lastUpdate">
+      <path value="EHDSDischargeReport.header.lastUpdate"/>
+      <short value="Date and time of the last system-level update to this document or resource (system update instant). This is technical metadata and does not represent a clinical event time."/>
+      <definition value="Date and time of the last system-level update to this document or resource (system update instant). This is technical metadata and does not represent a clinical event time."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDocument.header.lastUpdate"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
     <element id="EHDSDischargeReport.header.documentType">
       <path value="EHDSDischargeReport.header.documentType"/>
       <short value="Type of document e.g. 34105-7 Hospital discharge summary."/>
@@ -349,8 +364,8 @@
     </element>
     <element id="EHDSDischargeReport.header.legalAuthentication">
       <path value="EHDSDischargeReport.header.legalAuthentication"/>
-      <short value="Document legal authentication details."/>
-      <definition value="Document legal authentication details."/>
+      <short value="Document legal authentication details. Legal authentication metadata is included only where required by applicable legal or organisational frameworks. Absence of legal authentication does not affect interoperability conformance under this profile."/>
+      <definition value="Document legal authentication details. Legal authentication metadata is included only where required by applicable legal or organisational frameworks. Absence of legal authentication does not affect interoperability conformance under this profile."/>
       <min value="0"/>
       <max value="*"/>
       <base>
@@ -364,8 +379,8 @@
     </element>
     <element id="EHDSDischargeReport.header.legalAuthentication.legalAuthenticator[x]">
       <path value="EHDSDischargeReport.header.legalAuthentication.legalAuthenticator[x]"/>
-      <short value="The person or organisation taking responsibility for the content of the document."/>
-      <definition value="The person or organisation taking responsibility for the content of the document."/>
+      <short value="The person or organisation taking responsibility for the medical content of the document. The legalAuthenticator can be different from the author and attester (e.g. author = junior doctor, attester = senior physician, legalAuthenticator = attending physician)."/>
+      <definition value="The person or organisation taking responsibility for the medical content of the document. The legalAuthenticator can be different from the author and attester (e.g. author = junior doctor, attester = senior physician, legalAuthenticator = attending physician)."/>
       <min value="1"/>
       <max value="1"/>
       <base>

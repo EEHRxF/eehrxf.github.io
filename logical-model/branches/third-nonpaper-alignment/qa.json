@@ -6,15 +6,15 @@
   "status" : "draft",
   "package-id" : "eu.ehds.models",
   "ig-ver" : "0.3.0",
-  "date" : "Tue, 17 Nov, 2026 12:55:20 +0000",
-  "dateISO8601" : "2026-11-17T12:55:20+00:00",
-  "errs" : 1,
+  "date" : "Tue, 17 Nov, 2026 21:41:26 +0000",
+  "dateISO8601" : "2026-11-17T21:41:26+00:00",
+  "errs" : 0,
   "warnings" : 0,
-  "hints" : 54,
+  "hints" : 0,
   "broken-links" : 0,
-  "suppressed-hints" : 19,
+  "suppressed-hints" : 73,
   "suppressed-warnings" : 2,
   "version" : "5.0.0",
   "tool" : "6.0.0-snapshot1 (3)",
-  "maxMemory" : 1046096288
+  "maxMemory" : 778756944
 }

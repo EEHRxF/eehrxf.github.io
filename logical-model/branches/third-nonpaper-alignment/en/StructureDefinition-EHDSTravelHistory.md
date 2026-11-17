@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSTravelHistory
   "name" : "EHDSTravelHistory",
   "title" : "Travel history model",
   "status" : "draft",
-  "date" : "2026-11-17T12:55:20+00:00",
+  "date" : "2026-11-17T21:41:26+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -68,7 +68,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSTravelHistory
       "short" : "Status of the resource or document",
       "binding" : {
         "strength" : "required",
-        "description" : "To be specified"
+        "description" : "Not defined"
       }
     },
     {

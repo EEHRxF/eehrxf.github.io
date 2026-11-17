@@ -2,7 +2,7 @@
 
 ## Logical Model: Observation model 
 
-## Scope and Usage
+### Scope and Usage
 
 **Observation** is one of the most complex and versatile structures in the logical model. It is designed to cover many different types of observations across a wide range of use cases, from sharing simple findings (e.g. skin color or pulse rate) to representing complex laboratory and medical test results.
 
@@ -109,7 +109,7 @@ Use **relationships between observations** when the related observations:
   "name" : "EHDSObservation",
   "title" : "Observation model",
   "status" : "draft",
-  "date" : "2026-11-17T12:55:20+00:00",
+  "date" : "2026-11-17T21:41:26+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -162,6 +162,9 @@ Use **relationships between observations** when the related observations:
         "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice"
       },
       {
+        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSProcedure"
+      },
+      {
         "code" : "string"
       }]
     },
@@ -191,7 +194,7 @@ Use **relationships between observations** when the related observations:
       }],
       "binding" : {
         "strength" : "required",
-        "description" : "SNOMED GPS, LOINC"
+        "description" : "SNOMED GPS, LOINC, NPU"
       }
     },
     {
@@ -345,7 +348,7 @@ Use **relationships between observations** when the related observations:
       }],
       "binding" : {
         "strength" : "required",
-        "description" : "HL7 ProbabilityDistributionType"
+        "description" : "HL7 Probability Distribution Type"
       }
     },
     {
@@ -524,7 +527,7 @@ Use **relationships between observations** when the related observations:
       }],
       "binding" : {
         "strength" : "required",
-        "description" : "SNOMED GPS, LOINC"
+        "description" : "SNOMED GPS, LOINC, NPU"
       }
     },
     {
@@ -541,8 +544,8 @@ Use **relationships between observations** when the related observations:
     {
       "id" : "EHDSObservation.component.result",
       "path" : "EHDSObservation.component.result",
-      "short" : "Result of the observation including text, numeric, coded, and other types of results of the measurement and measurement certainty. Content of the observation result will vary according to the type of the observation.",
-      "definition" : "Result of the observation including text, numeric, coded, and other types of results of the measurement and measurement certainty. Content of the observation result will vary according to the type of the observation.",
+      "short" : "Result of the observation including text, numeric, coded, and other types of results of the measurement and measurement uncertainty. Content of the observation result will vary according to the type of the observation.",
+      "definition" : "Result of the observation including text, numeric, coded, and other types of results of the measurement and measurement uncertainty. Content of the observation result will vary according to the type of the observation.",
       "min" : 1,
       "max" : "1",
       "type" : [{
@@ -610,7 +613,7 @@ Use **relationships between observations** when the related observations:
       }],
       "binding" : {
         "strength" : "required",
-        "description" : "HL7 ProbabilityDistributionType"
+        "description" : "HL7 Probability Distribution Type"
       }
     },
     {

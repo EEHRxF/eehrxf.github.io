@@ -19,7 +19,7 @@
   fhir:name [ fhir:v "EHDSImagingReport"] ; # 
   fhir:title [ fhir:v "Imaging report model."] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-11-17T12:55:20+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-11-17T21:41:26+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "EC"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "EC" ] ;
@@ -188,6 +188,21 @@
          fhir:description [ fhir:v "BCP 47" ]
        ]
      ] [
+       fhir:id [ fhir:v "EHDSImagingReport.header.lastUpdate" ] ;
+       fhir:path [ fhir:v "EHDSImagingReport.header.lastUpdate" ] ;
+       fhir:short [ fhir:v "Date and time of the last system-level update to this document or resource (system update instant). This is technical metadata and does not represent a clinical event time." ] ;
+       fhir:definition [ fhir:v "Date and time of the last system-level update to this document or resource (system update instant). This is technical metadata and does not represent a clinical event time." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "EHDSDocument.header.lastUpdate" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "dateTime"^^xsd:anyURI ]
+       ] )
+     ] [
        fhir:id [ fhir:v "EHDSImagingReport.header.documentType" ] ;
        fhir:path [ fhir:v "EHDSImagingReport.header.documentType" ] ;
        fhir:short [ fhir:v "Type of document (e.g. 18748-4 Diagnostic imaging study)." ] ;
@@ -302,7 +317,7 @@
        fhir:id [ fhir:v "EHDSImagingReport.header.legalAuthentication" ] ;
        fhir:path [ fhir:v "EHDSImagingReport.header.legalAuthentication" ] ;
        fhir:short [ fhir:v "Document legal authentication details" ] ;
-       fhir:definition [ fhir:v "Document legal authentication details." ] ;
+       fhir:definition [ fhir:v "Document legal authentication details. Legal authentication metadata is included only where required by applicable legal or organisational frameworks. Absence of legal authentication does not affect interoperability conformance under this profile." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "*" ] ;
        fhir:base [
@@ -316,8 +331,8 @@
      ] [
        fhir:id [ fhir:v "EHDSImagingReport.header.legalAuthentication.legalAuthenticator[x]" ] ;
        fhir:path [ fhir:v "EHDSImagingReport.header.legalAuthentication.legalAuthenticator[x]" ] ;
-       fhir:short [ fhir:v "The person or organisation taking responsibility for the content of the document." ] ;
-       fhir:definition [ fhir:v "The person or organisation taking responsibility for the content of the document." ] ;
+       fhir:short [ fhir:v "The person or organisation taking responsibility for the medical content of the document. The legalAuthenticator can be different from the author and attester (e.g. author = junior doctor, attester = senior physician, legalAuthenticator = attending physician)." ] ;
+       fhir:definition [ fhir:v "The person or organisation taking responsibility for the medical content of the document. The legalAuthenticator can be different from the author and attester (e.g. author = junior doctor, attester = senior physician, legalAuthenticator = attending physician)." ] ;
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:base [

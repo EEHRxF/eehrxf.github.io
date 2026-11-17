@@ -18,7 +18,7 @@ http://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation {[]} {[]}http://
 "EHDSImmunisation.diseaseOrAgentTargeted","EHDSImmunisation.diseaseOrAgentTargeted","","","",0,*,"","","","CodeableConcept {[]} {[]}
 ","Disease or agent that the vaccination provides protection against.","Disease or agent that the vaccination provides protection against.","","","","","","","","","",,"required","SNOMED GPS (preferred), ICD-10","","",,,,"EHDSImmunisation.diseaseOrAgentTargeted",0,*,"",""
 "EHDSImmunisation.vaccine","EHDSImmunisation.vaccine","","","",1,1,"","","","CodeableConcept {[]} {[]}
-","Type of immunisation.","Type of immunisation.","","","","","","","","","",,"required","SNOMED GPS, ATC","","",,,,"EHDSImmunisation.vaccine",1,1,"",""
+","Type of immunisation.","Type of immunisation.","","","","","","","","","",,"required","ATC, SNOMED GPS","","",,,,"EHDSImmunisation.vaccine",1,1,"",""
 "EHDSImmunisation.administeredProduct","EHDSImmunisation.administeredProduct","","","",0,1,"","","","http://ehds.eu/fhir/models/StructureDefinition/EHDSMedication {[]} {[]}
 ","Administered medicinal product, including batch/lot details when necessary.","Administered medicinal product, including batch/lot details when necessary.","","","","","","","","","",,,,,"",,,,"EHDSImmunisation.administeredProduct",0,1,"",""
 "EHDSImmunisation.administrationTime","EHDSImmunisation.administrationTime","","","",1,1,"","","","dateTime {[]} {[]}

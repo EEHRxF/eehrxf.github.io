@@ -96,7 +96,7 @@ Use **relationships between observations** when the related observations:
   "name" : "EHDSLaboratoryObservation",
   "title" : "Model for observation performed by laboratory",
   "status" : "draft",
-  "date" : "2026-11-17T12:55:20+00:00",
+  "date" : "2026-11-17T21:41:26+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -132,11 +132,7 @@ Use **relationships between observations** when the related observations:
     {
       "id" : "EHDSLaboratoryObservation.type",
       "path" : "EHDSLaboratoryObservation.type",
-      "short" : "Observation type.",
-      "binding" : {
-        "strength" : "required",
-        "description" : "SNOMED GPS, LOINC, NPU"
-      }
+      "short" : "Observation type."
     },
     {
       "id" : "EHDSLaboratoryObservation.result.dataAbsentReason",
@@ -151,11 +147,7 @@ Use **relationships between observations** when the related observations:
     {
       "id" : "EHDSLaboratoryObservation.component.type",
       "path" : "EHDSLaboratoryObservation.component.type",
-      "short" : "Type of the component observation.",
-      "binding" : {
-        "strength" : "required",
-        "description" : "SNOMED GPS, LOINC, NPU"
-      }
+      "short" : "Type of the component observation."
     },
     {
       "id" : "EHDSLaboratoryObservation.triggeredBy[x]",

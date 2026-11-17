@@ -214,7 +214,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">EHDS Logical Information Models, published by EC. This guide is not an authorized publication; it is the continuous build for version 0.3.0  built by the FHIR (HL7&reg; FHIR&reg; Standard) CI Build. This version is based on the current content of <a href='https://github.com/EEHRxF/logical-model/tree/third-nonpaper-alignment'>https://github.com/EEHRxF/logical-model/tree/third-nonpaper-alignment</a> and changes regularly. See the <a href='http://ehds.eu/fhir/models/history.html'>Directory of published versions</a><br/><span data-smart-ci-extra="1" style="font-size:.85em;">Built from commit <a href="https://github.com/EEHRxF/logical-model/commit/ee8bd2c74fdafeb02323b3a076328f9d224a31ac"><code>ee8bd2c7</code></a>. &nbsp; Branch: <a href="https://github.com/EEHRxF/logical-model/tree/third-nonpaper-alignment"><code>third-nonpaper-alignment</code></a>.</span></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">EHDS Logical Information Models, published by EC. This guide is not an authorized publication; it is the continuous build for version 0.3.0  built by the FHIR (HL7&reg; FHIR&reg; Standard) CI Build. This version is based on the current content of <a href='https://github.com/EEHRxF/logical-model/tree/third-nonpaper-alignment'>https://github.com/EEHRxF/logical-model/tree/third-nonpaper-alignment</a> and changes regularly. See the <a href='http://ehds.eu/fhir/models/history.html'>Directory of published versions</a><br/><span data-smart-ci-extra="1" style="font-size:.85em;">Built from commit <a href="https://github.com/EEHRxF/logical-model/commit/20e9edb7fe4d8c3dc428b9770cdb826484641d87"><code>20e9edb7</code></a>. &nbsp; Branch: <a href="https://github.com/EEHRxF/logical-model/tree/third-nonpaper-alignment"><code>third-nonpaper-alignment</code></a>.</span></p><!--EndReleaseHeader-->
   <h2>Data types and references</h2>
   
 
@@ -243,7 +243,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="definitions-of-used-data-types">Definitions of used data types</h3>
 
-<table class="table-bordered table-striped thead-light">
+<table>
   <thead>
     <tr>
       <th><strong>Data type name</strong></th>
@@ -277,7 +277,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </tr>
     <tr>
       <td>EHDS[Name of the data group]</td>
-      <td>A reference to the EHDS common data group.</td>
+      <td>A reference to the EHDS common data groups as defined in Annex X.</td>
     </tr>
     <tr>
       <td>Identifier</td>
@@ -307,6 +307,22 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>Ratio</td>
       <td>A relationship between two Quantity values expressed as a numerator and a denominator (e.g. 1 tablet per 4 hours).</td>
     </tr>
+    <tr>
+      <td>string</td>
+      <td>A sequence of Unicode characters.</td>
+    </tr>
+    <tr>
+      <td>uri</td>
+      <td>A Uniform Resource Identifier (URI) reference.</td>
+    </tr>
+    <tr>
+      <td>Narrative</td>
+      <td>A human-readable XHTML summary of a resource, conveying its essential clinical and business information in a form safe to render independently of the resource's structured data. Its status indicates the relationship between the narrative content and the underlying encoded data.</td>
+    </tr>
+    <tr>
+      <td>{:.table-bordered .table-striped .thead-light}</td>
+      <td> </td>
+    </tr>
   </tbody>
 </table>
 
@@ -317,6 +333,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <h3 id="polymorphic-elements">Polymorphic elements</h3>
 
 <p>In some cases a choice between data types is allowed. In that case, the grouper element is marked with [x] and a type-specific element (called "slice" in FHIR) is automatically created for each data type. Only one choice out of the options is allowed to be used at any given time, but when element is repeatable, the repeats may include data of different data types.</p>
+
 
 
 
@@ -345,7 +362,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
           IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="http://commission.europa.eu/">EC</a>.  
           Package eu.ehds.models#0.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>.
           Generated 
-  <span title="2026-11-17 12:55:00 +0000">
+  <span title="2026-11-17 21:41:00 +0000">
     2026-11-17
   </span>
 

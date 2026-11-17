@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSMedicalTestRe
   "name" : "EHDSMedicalTestReport",
   "title" : "Medical test result and report model",
   "status" : "draft",
-  "date" : "2026-11-17T12:55:20+00:00",
+  "date" : "2026-11-17T21:41:26+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -246,8 +246,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSMedicalTestRe
     {
       "id" : "EHDSMedicalTestReport.body.supportingInformation.medicationAdministration",
       "path" : "EHDSMedicalTestReport.body.supportingInformation.medicationAdministration",
-      "short" : "Medication administered before ordering the service that may influence the service or result interpretation.",
-      "definition" : "Medication administered before ordering the service that may influence the service or result interpretation.",
+      "short" : "Medication administered specifically in relation to this test.",
+      "definition" : "Medication administered specifically in relation to this test.",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -313,10 +313,10 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSMedicalTestRe
       }]
     },
     {
-      "id" : "EHDSMedicalTestReport.attachments",
-      "path" : "EHDSMedicalTestReport.attachments",
-      "short" : "Report attachments.",
-      "definition" : "Report attachments.",
+      "id" : "EHDSMedicalTestReport.attachment",
+      "path" : "EHDSMedicalTestReport.attachment",
+      "short" : "Report attachment.",
+      "definition" : "Report attachment.",
       "min" : 0,
       "max" : "*",
       "type" : [{

@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingStudy.
   "name" : "EHDSImagingStudy",
   "title" : "Imaging study model.",
   "status" : "draft",
-  "date" : "2026-11-17T12:55:20+00:00",
+  "date" : "2026-11-17T21:41:26+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -76,7 +76,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingStudy.
     {
       "id" : "EHDSImagingStudy.header.status",
       "path" : "EHDSImagingStudy.header.status",
-      "short" : "Where the source representation does not provide a reliable lifecycle status, unknown may be used. Status available shall only be used where availability has been established.",
+      "short" : "Status of the resource. Where the source representation does not provide a reliable lifecycle status, unknown may be used. Status available shall only be used where availability has been established.",
       "binding" : {
         "strength" : "required",
         "description" : "HL7 Imaging Study Status"
@@ -280,8 +280,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingStudy.
     {
       "id" : "EHDSImagingStudy.series.seriesEndpoint",
       "path" : "EHDSImagingStudy.series.seriesEndpoint",
-      "short" : "Series endpoint describing the technical details of a location that can be connected to for the delivery/retrieval of information. Sufficient information is required to ensure that a connection can be made securely, and appropriate data transmitted as defined by the endpoint owner. These may be locally hosted services, regional services, or national service.",
-      "definition" : "Series endpoint describing the technical details of a location that can be connected to for the delivery/retrieval of information. Sufficient information is required to ensure that a connection can be made securely, and appropriate data transmitted as defined by the endpoint owner. These may be locally hosted services, regional services, or national service.",
+      "short" : "Series endpoint describing the technical details of a location that can be connected to for the delivery/retrieval of an imaging study. Sufficient information is required to ensure that a connection can be made securely, and appropriate data transmitted as defined by the endpoint owner. These may be locally hosted services, regional services, or national service.",
+      "definition" : "Series endpoint describing the technical details of a location that can be connected to for the delivery/retrieval of an imaging study. Sufficient information is required to ensure that a connection can be made securely, and appropriate data transmitted as defined by the endpoint owner. These may be locally hosted services, regional services, or national service.",
       "min" : 0,
       "max" : "1",
       "type" : [{

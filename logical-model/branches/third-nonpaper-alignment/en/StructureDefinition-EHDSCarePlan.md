@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSCarePlan.csv)
   "name" : "EHDSCarePlan",
   "title" : "Care plan model",
   "status" : "draft",
-  "date" : "2026-11-17T12:55:20+00:00",
+  "date" : "2026-11-17T21:41:26+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -105,8 +105,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSCarePlan.csv)
       }]
     },
     {
-      "id" : "EHDSCarePlan.addresses[x]",
-      "path" : "EHDSCarePlan.addresses[x]",
+      "id" : "EHDSCarePlan.conditionAddressed[x]",
+      "path" : "EHDSCarePlan.conditionAddressed[x]",
       "short" : "Conditions/problems/concerns/diagnoses/etc whose management and/or mitigation are handled by this plan.",
       "definition" : "Conditions/problems/concerns/diagnoses/etc whose management and/or mitigation are handled by this plan.",
       "min" : 0,

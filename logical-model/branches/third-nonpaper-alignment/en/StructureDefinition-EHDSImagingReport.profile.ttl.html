@@ -213,7 +213,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 9" class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">EHDS Logical Information Models, published by EC. This guide is not an authorized publication; it is the continuous build for version 0.3.0  built by the FHIR (HL7&reg; FHIR&reg; Standard) CI Build. This version is based on the current content of <a href='https://github.com/EEHRxF/logical-model/tree/third-nonpaper-alignment'>https://github.com/EEHRxF/logical-model/tree/third-nonpaper-alignment</a> and changes regularly. See the <a href='http://ehds.eu/fhir/models/history.html'>Directory of published versions</a><br/><span data-smart-ci-extra="1" style="font-size:.85em;">Built from commit <a href="https://github.com/EEHRxF/logical-model/commit/ee8bd2c74fdafeb02323b3a076328f9d224a31ac"><code>ee8bd2c7</code></a>. &nbsp; Branch: <a href="https://github.com/EEHRxF/logical-model/tree/third-nonpaper-alignment"><code>third-nonpaper-alignment</code></a>.</span></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">EHDS Logical Information Models, published by EC. This guide is not an authorized publication; it is the continuous build for version 0.3.0  built by the FHIR (HL7&reg; FHIR&reg; Standard) CI Build. This version is based on the current content of <a href='https://github.com/EEHRxF/logical-model/tree/third-nonpaper-alignment'>https://github.com/EEHRxF/logical-model/tree/third-nonpaper-alignment</a> and changes regularly. See the <a href='http://ehds.eu/fhir/models/history.html'>Directory of published versions</a><br/><span data-smart-ci-extra="1" style="font-size:.85em;">Built from commit <a href="https://github.com/EEHRxF/logical-model/commit/20e9edb7fe4d8c3dc428b9770cdb826484641d87"><code>20e9edb7</code></a>. &nbsp; Branch: <a href="https://github.com/EEHRxF/logical-model/tree/third-nonpaper-alignment"><code>third-nonpaper-alignment</code></a>.</span></p><!--EndReleaseHeader-->
   
 
 
@@ -337,7 +337,7 @@ TTL Profile
   <a href="http://hl7.org/fhir/R5/structuredefinition.html#XStructureDefinition.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;EHDSImagingReport&quot;] ; # 
   <a href="http://hl7.org/fhir/R5/structuredefinition.html#XStructureDefinition.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Imaging report model.&quot;] ; # 
   <a href="http://hl7.org/fhir/R5/structuredefinition.html#XStructureDefinition.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;draft&quot;] ; # 
-  <a href="http://hl7.org/fhir/R5/structuredefinition.html#XStructureDefinition.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">fhir:v</a> &quot;2026-11-17T12:55:20+00:00&quot;^^xsd:dateTime] ; # 
+  <a href="http://hl7.org/fhir/R5/structuredefinition.html#XStructureDefinition.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">fhir:v</a> &quot;2026-11-17T21:41:26+00:00&quot;^^xsd:dateTime] ; # 
   <a href="http://hl7.org/fhir/R5/structuredefinition.html#XStructureDefinition.publisher">fhir:publisher</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;EC&quot;] ; # 
   <a href="http://hl7.org/fhir/R5/structuredefinition.html#XStructureDefinition.contact">fhir:contact</a> ( [
      <a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;EC&quot; ] ;
@@ -506,6 +506,21 @@ TTL Profile
          <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.binding.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;BCP 47&quot; ]
        ]
      ] [
+       <a href="http://hl7.org/fhir/R5/types.html#Element#XElementDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;EHDSImagingReport.header.lastUpdate&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;EHDSImagingReport.header.lastUpdate&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.short">fhir:short</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Date and time of the last system-level update to this document or resource (system update instant). This is technical metadata and does not represent a clinical event time.&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;Date and time of the last system-level update to this document or resource (system update instant). This is technical metadata and does not represent a clinical event time.&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;0&quot;^^xsd:nonNegativeInteger ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base">fhir:base</a> [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;EHDSDocument.header.lastUpdate&quot; ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;0&quot;^^xsd:nonNegativeInteger ] ;
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1&quot; ]
+       ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type">fhir:type</a> ( [
+         <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.type.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;dateTime&quot;^^xsd:anyURI ]
+       ] )
+     ] [
        <a href="http://hl7.org/fhir/R5/types.html#Element#XElementDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;EHDSImagingReport.header.documentType&quot; ] ;
        <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;EHDSImagingReport.header.documentType&quot; ] ;
        <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.short">fhir:short</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Type of document (e.g. 18748-4 Diagnostic imaging study).&quot; ] ;
@@ -620,7 +635,7 @@ TTL Profile
        <a href="http://hl7.org/fhir/R5/types.html#Element#XElementDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;EHDSImagingReport.header.legalAuthentication&quot; ] ;
        <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;EHDSImagingReport.header.legalAuthentication&quot; ] ;
        <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.short">fhir:short</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Document legal authentication details&quot; ] ;
-       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;Document legal authentication details.&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;Document legal authentication details. Legal authentication metadata is included only where required by applicable legal or organisational frameworks. Absence of legal authentication does not affect interoperability conformance under this profile.&quot; ] ;
        <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;0&quot;^^xsd:nonNegativeInteger ] ;
        <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;*&quot; ] ;
        <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base">fhir:base</a> [
@@ -634,8 +649,8 @@ TTL Profile
      ] [
        <a href="http://hl7.org/fhir/R5/types.html#Element#XElementDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;EHDSImagingReport.header.legalAuthentication.legalAuthenticator[x]&quot; ] ;
        <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;EHDSImagingReport.header.legalAuthentication.legalAuthenticator[x]&quot; ] ;
-       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.short">fhir:short</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;The person or organisation taking responsibility for the content of the document.&quot; ] ;
-       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;The person or organisation taking responsibility for the content of the document.&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.short">fhir:short</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;The person or organisation taking responsibility for the medical content of the document. The legalAuthenticator can be different from the author and attester (e.g. author = junior doctor, attester = senior physician, legalAuthenticator = attending physician).&quot; ] ;
+       <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;The person or organisation taking responsibility for the medical content of the document. The legalAuthenticator can be different from the author and attester (e.g. author = junior doctor, attester = senior physician, legalAuthenticator = attending physician).&quot; ] ;
        <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;1&quot;^^xsd:nonNegativeInteger ] ;
        <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1&quot; ] ;
        <a href="http://hl7.org/fhir/R5/elementdefinition.html#ElementDefinition#XElementDefinition.base">fhir:base</a> [
@@ -1900,7 +1915,7 @@ TTL Profile
           IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="http://commission.europa.eu/">EC</a>.  
           Package eu.ehds.models#0.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>.
           Generated 
-  <span title="2026-11-17 12:55:00 +0000">
+  <span title="2026-11-17 21:41:00 +0000">
     2026-11-17
   </span>
 

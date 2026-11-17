@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSMedication.cs
   "name" : "EHDSMedication",
   "title" : "Medication model",
   "status" : "draft",
-  "date" : "2026-11-17T12:55:20+00:00",
+  "date" : "2026-11-17T21:41:26+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -60,8 +60,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSMedication.cs
     {
       "id" : "EHDSMedication.identifyingCode",
       "path" : "EHDSMedication.identifyingCode",
-      "short" : "An identifier or a code for the product (virtual product, branded product, or package). If several identifiers are specified, they shall not have conflicting meanings or very different granularities. An identifier might not exist e.g. for substance-based prescriptions. For the Identifier variant, use an EMA PMS ID or an identifier from a national identification system.",
-      "definition" : "An identifier or a code for the product (virtual product, branded product, or package). If several identifiers are specified, they shall not have conflicting meanings or very different granularities. An identifier might not exist e.g. for substance-based prescriptions. For the Identifier variant, use an EMA PMS ID or an identifier from a national identification system.",
+      "short" : "An identifier or a code for the product (virtual product, branded product, or package). If several identifiers are specified, they shall not have conflicting meanings or very different granularities. An identifier might not exist e.g. for substance-based prescriptions.",
+      "definition" : "An identifier or a code for the product (virtual product, branded product, or package). If several identifiers are specified, they shall not have conflicting meanings or very different granularities. An identifier might not exist e.g. for substance-based prescriptions.",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -432,7 +432,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSMedication.cs
       }],
       "binding" : {
         "strength" : "required",
-        "description" : "Not defined, UCUM for units of measure"
+        "description" : "UCUM for units of measure"
       }
     },
     {

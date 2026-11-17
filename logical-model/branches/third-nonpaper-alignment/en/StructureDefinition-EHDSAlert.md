@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAlert.csv), [
   "name" : "EHDSAlert",
   "title" : "Alert model",
   "status" : "draft",
-  "date" : "2026-11-17T12:55:20+00:00",
+  "date" : "2026-11-17T21:41:26+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -122,6 +122,17 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAlert.csv), [
       "max" : "1",
       "type" : [{
         "code" : "Period"
+      }]
+    },
+    {
+      "id" : "EHDSAlert.otherSupportingInformation",
+      "path" : "EHDSAlert.otherSupportingInformation",
+      "short" : "A reference to the resource the alert is about.",
+      "definition" : "A reference to the resource the alert is about.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "string"
       }]
     }]
   }
