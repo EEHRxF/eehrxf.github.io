@@ -2,9 +2,6 @@
 
 ## Logical Model: Condition model 
 
- 
-EHDSCondition means a structured set of data elements describing a clinical condition, problem, or diagnosis. 
-
 **Usages:**
 
 * Use this Logical Model: [Care plan model](StructureDefinition-EHDSCarePlan.md), [Device use model](StructureDefinition-EHDSDeviceUse.md), [Discharge report model](StructureDefinition-EHDSDischargeReport.md), [Encounter model](StructureDefinition-EHDSEncounter.md)... Show 6 more, [Imaging report model.](StructureDefinition-EHDSImagingReport.md), [Medical test result and report model](StructureDefinition-EHDSMedicalTestReport.md), [Medication administration model](StructureDefinition-EHDSMedicationAdministration.md), [Patient summary model](StructureDefinition-EHDSPatientSummary.md), [Procedure model](StructureDefinition-EHDSProcedure.md) and [Service request model](StructureDefinition-EHDSServiceRequest.md)
@@ -32,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSCondition.csv
   "name" : "EHDSCondition",
   "title" : "Condition model",
   "status" : "draft",
-  "date" : "2026-09-10T07:59:04+00:00",
+  "date" : "2026-11-17T22:07:14+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",

@@ -14,7 +14,7 @@ EHDS models use FHIR data types for defining data types, but with less constrain
 | CodeableConcept | A coded data type used to designate data fields. |
 | dateTime | A date, time, or partial date (e.g. YYYY, YYYY-MM, YYYY-MM-DD, or YYYY-MM-DDThh:mm:ss+zz:zz). When hours and minutes are included, a time zone offset is required. |
 | decimal | A numerical value consisting of a whole and a fractional part. Precision is determined by the use case. |
-| EHDS[Name of the data group] | A reference to the EHDS common data group. |
+| EHDS[Name of the data group] | A reference to the EHDS common data groups as defined in Annex X. |
 | Identifier | A value that uniquely and unambiguously identifies an entity, coupled with its source system where applicable. |
 | integer | A whole number, positive or negative, as determined by the use case. |
 | integer64 | A signed 64-bit whole number ranging from -9,223,372,036,854,775,808 to +9,223,372,036,854,775,807. Used where very large counts or time values are required. |
@@ -22,6 +22,10 @@ EHDS models use FHIR data types for defining data types, but with less constrain
 | Quantity | A numerical value, integer or decimal, accompanied by a unit of measure, preferably expressed as a coded concept. |
 | Range | An interval defined by a minimum and maximum Quantity (e.g. 2 mg–4 mg). |
 | Ratio | A relationship between two Quantity values expressed as a numerator and a denominator (e.g. 1 tablet per 4 hours). |
+| string | A sequence of Unicode characters. |
+| uri | A Uniform Resource Identifier (URI) reference. |
+| Narrative | A human-readable XHTML summary of a resource, conveying its essential clinical and business information in a form safe to render independently of the resource's structured data. Its status indicates the relationship between the narrative content and the underlying encoded data. |
+| {:.table-bordered .table-striped .thead-light} |   |
 
 ### Reference or contained data
 

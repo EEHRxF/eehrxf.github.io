@@ -2,9 +2,6 @@
 
 ## Logical Model: Administered dosage model 
 
- 
-EHDSAdministeredDosage means the structured set of data elements describing a single instance of medication administration, including the dose given, the route and method of administration, and the time of administration. 
-
 **Usages:**
 
 * Use this Logical Model: [Medication administration model](StructureDefinition-EHDSMedicationAdministration.md)
@@ -32,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAdministeredD
   "name" : "EHDSAdministeredDosage",
   "title" : "Administered dosage model",
   "status" : "draft",
-  "date" : "2026-09-10T07:59:04+00:00",
+  "date" : "2026-11-17T22:07:14+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",

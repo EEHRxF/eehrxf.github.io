@@ -12,7 +12,7 @@ http://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation {[]} {[]}http://
 "EHDSTravelHistory.header.date","EHDSTravelHistory.header.date","","","",0,1,"","","","dateTime {[]} {[]}
 ","Date and optionally time of authoring/issuing","Date and optionally time of authoring/issuing.","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.date",0,1,"",""
 "EHDSTravelHistory.header.status","EHDSTravelHistory.header.status","","","",1,1,"","","","CodeableConcept {[]} {[]}
-","Status of the resource or document","Status of the resource.","","","","","","","","","",,"required","To be specified","","",,,,"EHDSDataSet.header.status",1,1,"",""
+","Status of the resource or document","Status of the resource.","","","","","","","","","",,"required","Not defined","","",,,,"EHDSDataSet.header.status",1,1,"",""
 "EHDSTravelHistory.header.language","EHDSTravelHistory.header.language","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Language in which the resource is written. Language is expressed by the IETF language tag.","Language in which the resource is written. Language is expressed by the IETF language tag.","","","","","","","","","",,"required","BCP 47","","",,,,"EHDSDataSet.header.language",0,1,"",""
 "EHDSTravelHistory.country","EHDSTravelHistory.country","","","",1,1,"","","","CodeableConcept {[]} {[]}

@@ -2,9 +2,6 @@
 
 ## Logical Model: Advance directive model 
 
- 
-EHDSAdvanceDirective means a documented expression of a patient's wishes, preferences or instructions regarding their healthcare, including, but not limited to, decisions concerning life-sustaining treatment or arrangements to take effect after death. 
-
 **Usages:**
 
 * Use this Logical Model: [Patient summary model](StructureDefinition-EHDSPatientSummary.md)
@@ -32,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAdvanceDirect
   "name" : "EHDSAdvanceDirective",
   "title" : "Advance directive model",
   "status" : "draft",
-  "date" : "2026-09-10T07:59:04+00:00",
+  "date" : "2026-11-17T22:07:14+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",

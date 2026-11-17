@@ -2,9 +2,6 @@
 
 ## Logical Model: DataSet model 
 
- 
-DataSet model. 
-
 **Usages:**
 
 * Derived from this Logical Model: [Advance directive model](StructureDefinition-EHDSAdvanceDirective.md), [Alert model](StructureDefinition-EHDSAlert.md), [Allergy intolerance model](StructureDefinition-EHDSAllergyIntolerance.md), [Care plan model](StructureDefinition-EHDSCarePlan.md)... Show 16 more, [Condition model](StructureDefinition-EHDSCondition.md), [Current pregnancy status model](StructureDefinition-EHDSCurrentPregnancyStatus.md), [Device use model](StructureDefinition-EHDSDeviceUse.md), [Document model](StructureDefinition-EHDSDocument.md), [Encounter model](StructureDefinition-EHDSEncounter.md), [Imaging study model.](StructureDefinition-EHDSImagingStudy.md), [Immunisation model](StructureDefinition-EHDSImmunisation.md), [Medication administration model](StructureDefinition-EHDSMedicationAdministration.md), [Medication dispense model.](StructureDefinition-EHDSMedicationDispense.md), [Electronic prescription model](StructureDefinition-EHDSMedicationPrescription.md), [Medication use model](StructureDefinition-EHDSMedicationUse.md), [Observation model](StructureDefinition-EHDSObservation.md), [Pregnancy history model](StructureDefinition-EHDSPregnancyHistory.md), [Procedure model](StructureDefinition-EHDSProcedure.md), [Service request model](StructureDefinition-EHDSServiceRequest.md) and [Travel history model](StructureDefinition-EHDSTravelHistory.md)
@@ -32,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDataSet.csv),
   "name" : "EHDSDataSet",
   "title" : "DataSet model",
   "status" : "draft",
-  "date" : "2026-09-10T07:59:04+00:00",
+  "date" : "2026-11-17T22:07:14+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",

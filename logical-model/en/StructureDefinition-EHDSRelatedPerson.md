@@ -2,9 +2,6 @@
 
 ## Logical Model: Related person model 
 
- 
-EHDSRelatedPerson means a structured set of data elements describing a person related to the patient, such as a guardian, next of kin, or other related person. 
-
 **Usages:**
 
 * Use this Logical Model: [Discharge report model](StructureDefinition-EHDSDischargeReport.md), [Imaging report model.](StructureDefinition-EHDSImagingReport.md), [Medical test result and report model](StructureDefinition-EHDSMedicalTestReport.md), [Medication dispense model.](StructureDefinition-EHDSMedicationDispense.md)... Show 2 more, [Observation model](StructureDefinition-EHDSObservation.md) and [Specimen model](StructureDefinition-EHDSSpecimen.md)
@@ -32,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSRelatedPerson
   "name" : "EHDSRelatedPerson",
   "title" : "Related person model",
   "status" : "draft",
-  "date" : "2026-09-10T07:59:04+00:00",
+  "date" : "2026-11-17T22:07:14+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",

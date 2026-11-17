@@ -2,9 +2,6 @@
 
 ## Logical Model: Discharge report model 
 
- 
-Discharge report. 
-
 **Usages:**
 
 * This Logical Model is not used by any profiles in this Specification
@@ -32,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDischargeRepo
   "name" : "EHDSDischargeReport",
   "title" : "Discharge report model",
   "status" : "draft",
-  "date" : "2026-09-10T07:59:04+00:00",
+  "date" : "2026-11-17T22:07:14+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",

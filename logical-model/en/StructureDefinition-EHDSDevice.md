@@ -2,9 +2,6 @@
 
 ## Logical Model: Device or implant model 
 
- 
-EHDSDevice means a structured set of data elements describing a medical device or implant. 
-
 **Usages:**
 
 * Use this Logical Model: [DataSet model](StructureDefinition-EHDSDataSet.md), [Device use model](StructureDefinition-EHDSDeviceUse.md), [Document model](StructureDefinition-EHDSDocument.md), [Model for observation performed by laboratory](StructureDefinition-EHDSLaboratoryObservation.md)... Show 4 more, [Medical test result and report model](StructureDefinition-EHDSMedicalTestReport.md), [Observation model](StructureDefinition-EHDSObservation.md), [Procedure model](StructureDefinition-EHDSProcedure.md) and [Specimen model](StructureDefinition-EHDSSpecimen.md)
@@ -32,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDevice.csv), 
   "name" : "EHDSDevice",
   "title" : "Device or implant model",
   "status" : "draft",
-  "date" : "2026-09-10T07:59:04+00:00",
+  "date" : "2026-11-17T22:07:14+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",

@@ -2,9 +2,6 @@
 
 ## Logical Model: Location model 
 
- 
-EHDSLocation means a structured set of data elements describing a place where health services are provided or resources and participants are accommodated. 
-
 **Usages:**
 
 * Use this Logical Model: [Observation model](StructureDefinition-EHDSObservation.md) and [Specimen model](StructureDefinition-EHDSSpecimen.md)
@@ -32,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSLocation.csv)
   "name" : "EHDSLocation",
   "title" : "Location model",
   "status" : "draft",
-  "date" : "2026-09-10T07:59:04+00:00",
+  "date" : "2026-11-17T22:07:14+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",

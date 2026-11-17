@@ -2,9 +2,6 @@
 
 ## Logical Model: Health professional model 
 
- 
-EHDSHealthProfessional means a structured set of data elements describing a health professional. 
-
 **Usages:**
 
 * Use this Logical Model: [Condition model](StructureDefinition-EHDSCondition.md), [DataSet model](StructureDefinition-EHDSDataSet.md), [Discharge report model](StructureDefinition-EHDSDischargeReport.md), [Document model](StructureDefinition-EHDSDocument.md)... Show 9 more, [Encounter model](StructureDefinition-EHDSEncounter.md), [Imaging report model.](StructureDefinition-EHDSImagingReport.md), [Immunisation model](StructureDefinition-EHDSImmunisation.md), [Medical test result and report model](StructureDefinition-EHDSMedicalTestReport.md), [Medication dispense model.](StructureDefinition-EHDSMedicationDispense.md), [Electronic prescription model](StructureDefinition-EHDSMedicationPrescription.md), [Observation model](StructureDefinition-EHDSObservation.md), [Procedure model](StructureDefinition-EHDSProcedure.md) and [Specimen model](StructureDefinition-EHDSSpecimen.md)
@@ -32,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSHealthProfess
   "name" : "EHDSHealthProfessional",
   "title" : "Health professional model",
   "status" : "draft",
-  "date" : "2026-09-10T07:59:04+00:00",
+  "date" : "2026-11-17T22:07:14+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",

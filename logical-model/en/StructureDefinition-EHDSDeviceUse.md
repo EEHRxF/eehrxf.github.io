@@ -2,9 +2,6 @@
 
 ## Logical Model: Device use model 
 
- 
-EHDSDeviceUse means a structured set of data elements describing the use of a medical device. 
-
 **Usages:**
 
 * Use this Logical Model: [Discharge report model](StructureDefinition-EHDSDischargeReport.md), [Imaging report model.](StructureDefinition-EHDSImagingReport.md) and [Patient summary model](StructureDefinition-EHDSPatientSummary.md)
@@ -32,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDeviceUse.csv
   "name" : "EHDSDeviceUse",
   "title" : "Device use model",
   "status" : "draft",
-  "date" : "2026-09-10T07:59:04+00:00",
+  "date" : "2026-11-17T22:07:14+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",

@@ -2,9 +2,6 @@
 
 ## Logical Model: Encounter model 
 
- 
-EHDSEncounter means a structured set of data elements describing a patient's interaction with a healthcare service, but excluding the tracking of broader episodes of care (e.g., a maternity episode from first antenatal visit through delivery and postnatal follow-up) extending beyond individual encounters. 
-
 **Usages:**
 
 * Use this Logical Model: [Discharge report model](StructureDefinition-EHDSDischargeReport.md), [Encounter model](StructureDefinition-EHDSEncounter.md), [Imaging study model.](StructureDefinition-EHDSImagingStudy.md) and [Service request model](StructureDefinition-EHDSServiceRequest.md)
@@ -32,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSEncounter.csv
   "name" : "EHDSEncounter",
   "title" : "Encounter model",
   "status" : "draft",
-  "date" : "2026-09-10T07:59:04+00:00",
+  "date" : "2026-11-17T22:07:14+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",

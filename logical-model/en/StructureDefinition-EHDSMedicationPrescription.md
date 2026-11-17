@@ -2,9 +2,6 @@
 
 ## Logical Model: Electronic prescription model 
 
- 
-Electronic prescription. 
-
 **Usages:**
 
 * Use this Logical Model: [Medication use model](StructureDefinition-EHDSMedicationUse.md)
@@ -32,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSMedicationPre
   "name" : "EHDSMedicationPrescription",
   "title" : "Electronic prescription model",
   "status" : "draft",
-  "date" : "2026-09-10T07:59:04+00:00",
+  "date" : "2026-11-17T22:07:14+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -185,7 +182,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSMedicationPre
       }],
       "binding" : {
         "strength" : "required",
-        "description" : "HL7 Medication Request Status Reason"
+        "description" : "Not defined"
       }
     },
     {

@@ -2,9 +2,6 @@
 
 ## Logical Model: Current pregnancy status model 
 
- 
-EHDSCurrentPregnancyStatus means a structured set of data elements describing a patient's pregnancy status at a given point in time. 
-
 **Usages:**
 
 * Use this Logical Model: [Imaging report model.](StructureDefinition-EHDSImagingReport.md) and [Patient summary model](StructureDefinition-EHDSPatientSummary.md)
@@ -32,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSCurrentPregna
   "name" : "EHDSCurrentPregnancyStatus",
   "title" : "Current pregnancy status model",
   "status" : "draft",
-  "date" : "2026-09-10T07:59:04+00:00",
+  "date" : "2026-11-17T22:07:14+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",

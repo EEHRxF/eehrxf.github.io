@@ -2,9 +2,6 @@
 
 ## Logical Model: Document model 
 
- 
-EHDSDocument means a structured set of data elements common all health documents. 
-
 **Usages:**
 
 * Derived from this Logical Model: [Discharge report model](StructureDefinition-EHDSDischargeReport.md), [Imaging report model.](StructureDefinition-EHDSImagingReport.md), [Medical test result and report model](StructureDefinition-EHDSMedicalTestReport.md) and [Patient summary model](StructureDefinition-EHDSPatientSummary.md)
@@ -32,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDocument.csv)
   "name" : "EHDSDocument",
   "title" : "Document model",
   "status" : "draft",
-  "date" : "2026-09-10T07:59:04+00:00",
+  "date" : "2026-11-17T22:07:14+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -91,6 +88,17 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDocument.csv)
         "strength" : "required",
         "description" : "HL7 Composition Status"
       }
+    },
+    {
+      "id" : "EHDSDocument.header.lastUpdate",
+      "path" : "EHDSDocument.header.lastUpdate",
+      "short" : "Date and time of the last system-level update to this document or resource (system update instant). This is technical metadata and does not represent a clinical event time.",
+      "definition" : "Date and time of the last system-level update to this document or resource (system update instant). This is technical metadata and does not represent a clinical event time.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "dateTime"
+      }]
     },
     {
       "id" : "EHDSDocument.header.documentType",
@@ -179,8 +187,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDocument.csv)
     {
       "id" : "EHDSDocument.header.legalAuthentication",
       "path" : "EHDSDocument.header.legalAuthentication",
-      "short" : "Document legal authentication details.",
-      "definition" : "Document legal authentication details.",
+      "short" : "Document legal authentication details. Legal authentication metadata is included only where required by applicable legal or organisational frameworks. Absence of legal authentication does not affect interoperability conformance under this profile.",
+      "definition" : "Document legal authentication details. Legal authentication metadata is included only where required by applicable legal or organisational frameworks. Absence of legal authentication does not affect interoperability conformance under this profile.",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -190,8 +198,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDocument.csv)
     {
       "id" : "EHDSDocument.header.legalAuthentication.legalAuthenticator[x]",
       "path" : "EHDSDocument.header.legalAuthentication.legalAuthenticator[x]",
-      "short" : "The person or organisation taking responsibility for the content of the document.",
-      "definition" : "The person or organisation taking responsibility for the content of the document.",
+      "short" : "The person or organisation taking responsibility for the medical content of the document. The legalAuthenticator can be different from the author and attester (e.g. author = junior doctor, attester = senior physician, legalAuthenticator = attending physician).",
+      "definition" : "The person or organisation taking responsibility for the medical content of the document. The legalAuthenticator can be different from the author and attester (e.g. author = junior doctor, attester = senior physician, legalAuthenticator = attending physician).",
       "min" : 1,
       "max" : "1",
       "type" : [{
@@ -224,7 +232,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDocument.csv)
       }],
       "binding" : {
         "strength" : "required",
-        "description" : "LOINC, SNOMED GPS, DICOM CID 33 Modality"
+        "description" : "SNOMED GPS, LOINC, DICOM CID 33 Modality"
       }
     },
     {

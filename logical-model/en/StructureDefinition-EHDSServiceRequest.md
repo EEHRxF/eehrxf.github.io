@@ -2,9 +2,6 @@
 
 ## Logical Model: Service request model 
 
- 
-EHDSServiceRequest means a structured set of data elements describing one or more requested services. 
-
 **Usages:**
 
 * Use this Logical Model: [Encounter model](StructureDefinition-EHDSEncounter.md), [Imaging study model.](StructureDefinition-EHDSImagingStudy.md), [Observation model](StructureDefinition-EHDSObservation.md) and [Specimen model](StructureDefinition-EHDSSpecimen.md)
@@ -32,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSServiceReques
   "name" : "EHDSServiceRequest",
   "title" : "Service request model",
   "status" : "draft",
-  "date" : "2026-09-10T07:59:04+00:00",
+  "date" : "2026-11-17T22:07:14+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -91,7 +88,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSServiceReques
       }],
       "binding" : {
         "strength" : "required",
-        "description" : "SNOMED GPS (preferred), LOINC, NPU, SNOMED GPS"
+        "description" : "SNOMED GPS (preferred), LOINC, NPU"
       }
     },
     {

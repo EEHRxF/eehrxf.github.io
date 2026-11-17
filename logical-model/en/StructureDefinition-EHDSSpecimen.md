@@ -2,9 +2,6 @@
 
 ## Logical Model: Specimen model 
 
- 
-EHDSSpecimen means a structured set of data elements describing a sample collected. 
-
 **Usages:**
 
 * Use this Logical Model: [Imaging report model.](StructureDefinition-EHDSImagingReport.md), [Imaging study model.](StructureDefinition-EHDSImagingStudy.md), [Medical test result and report model](StructureDefinition-EHDSMedicalTestReport.md), [Observation model](StructureDefinition-EHDSObservation.md)... Show 2 more, [Service request model](StructureDefinition-EHDSServiceRequest.md) and [Specimen model](StructureDefinition-EHDSSpecimen.md)
@@ -32,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSSpecimen.csv)
   "name" : "EHDSSpecimen",
   "title" : "Specimen model",
   "status" : "draft",
-  "date" : "2026-09-10T07:59:04+00:00",
+  "date" : "2026-11-17T22:07:14+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",

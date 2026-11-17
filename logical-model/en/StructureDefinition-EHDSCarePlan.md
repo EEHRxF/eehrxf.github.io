@@ -2,9 +2,6 @@
 
 ## Logical Model: Care plan model 
 
- 
-EHDSCarePlan means a structured set of data elements describing the intended management of a patient's health conditions but excluding pharmacological treatment plans that are represented through medication model. 
-
 **Usages:**
 
 * Use this Logical Model: [Discharge report model](StructureDefinition-EHDSDischargeReport.md), [Encounter model](StructureDefinition-EHDSEncounter.md), [Imaging report model.](StructureDefinition-EHDSImagingReport.md) and [Patient summary model](StructureDefinition-EHDSPatientSummary.md)
@@ -32,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSCarePlan.csv)
   "name" : "EHDSCarePlan",
   "title" : "Care plan model",
   "status" : "draft",
-  "date" : "2026-09-10T07:59:04+00:00",
+  "date" : "2026-11-17T22:07:14+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -108,8 +105,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSCarePlan.csv)
       }]
     },
     {
-      "id" : "EHDSCarePlan.addresses[x]",
-      "path" : "EHDSCarePlan.addresses[x]",
+      "id" : "EHDSCarePlan.conditionAddressed[x]",
+      "path" : "EHDSCarePlan.conditionAddressed[x]",
       "short" : "Conditions/problems/concerns/diagnoses/etc whose management and/or mitigation are handled by this plan.",
       "definition" : "Conditions/problems/concerns/diagnoses/etc whose management and/or mitigation are handled by this plan.",
       "min" : 0,

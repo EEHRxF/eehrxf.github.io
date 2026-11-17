@@ -2,9 +2,6 @@
 
 ## Logical Model: Patient model 
 
- 
-EHDSPatient means a structured set of data elements describing a subject of care. 
-
 **Usages:**
 
 * Use this Logical Model: [DataSet model](StructureDefinition-EHDSDataSet.md), [Imaging report model.](StructureDefinition-EHDSImagingReport.md), [Medical test result and report model](StructureDefinition-EHDSMedicalTestReport.md), [Medication dispense model.](StructureDefinition-EHDSMedicationDispense.md)... Show 3 more, [Observation model](StructureDefinition-EHDSObservation.md), [Related person model](StructureDefinition-EHDSRelatedPerson.md) and [Specimen model](StructureDefinition-EHDSSpecimen.md)
@@ -32,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSPatient.csv),
   "name" : "EHDSPatient",
   "title" : "Patient model",
   "status" : "draft",
-  "date" : "2026-09-10T07:59:04+00:00",
+  "date" : "2026-11-17T22:07:14+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",

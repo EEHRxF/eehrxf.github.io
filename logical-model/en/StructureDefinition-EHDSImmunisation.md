@@ -2,9 +2,6 @@
 
 ## Logical Model: Immunisation model 
 
- 
-EHDSImmunisation means a structured set of data elements describing the administration of a vaccine or immunoglobulin, but excluding natural immunity, immunisation outcomes, refusals, and administration planning. 
-
 **Usages:**
 
 * Use this Logical Model: [Medical test result and report model](StructureDefinition-EHDSMedicalTestReport.md) and [Patient summary model](StructureDefinition-EHDSPatientSummary.md)
@@ -32,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImmunisation.
   "name" : "EHDSImmunisation",
   "title" : "Immunisation model",
   "status" : "draft",
-  "date" : "2026-09-10T07:59:04+00:00",
+  "date" : "2026-11-17T22:07:14+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -96,7 +93,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImmunisation.
       }],
       "binding" : {
         "strength" : "required",
-        "description" : "SNOMED GPS, ATC"
+        "description" : "ATC, SNOMED GPS"
       }
     },
     {

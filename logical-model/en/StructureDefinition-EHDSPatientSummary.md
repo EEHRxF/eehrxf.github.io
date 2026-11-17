@@ -2,9 +2,6 @@
 
 ## Logical Model: Patient summary model 
 
- 
-The model is a structured document designed to provide an overview of a patient's most important health information. The model aims to be compatible with the ISO International Patient Summary standard. 
-
 **Usages:**
 
 * This Logical Model is not used by any profiles in this Specification
@@ -32,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSPatientSummar
   "name" : "EHDSPatientSummary",
   "title" : "Patient summary model",
   "status" : "draft",
-  "date" : "2026-09-10T07:59:04+00:00",
+  "date" : "2026-11-17T22:07:14+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",

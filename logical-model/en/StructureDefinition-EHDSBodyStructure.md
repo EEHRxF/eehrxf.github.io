@@ -2,9 +2,6 @@
 
 ## Logical Model: Body structure model 
 
- 
-EHDSBodyStructure means a structured set of data elements describing an anatomical structure of a patient. 
-
 **Usages:**
 
 * Use this Logical Model: [Condition model](StructureDefinition-EHDSCondition.md), [Device use model](StructureDefinition-EHDSDeviceUse.md), [Dosage model](StructureDefinition-EHDSDosage.md), [Imaging report model.](StructureDefinition-EHDSImagingReport.md)... Show 5 more, [Imaging study model.](StructureDefinition-EHDSImagingStudy.md), [Observation model](StructureDefinition-EHDSObservation.md), [Procedure model](StructureDefinition-EHDSProcedure.md), [Service request model](StructureDefinition-EHDSServiceRequest.md) and [Specimen model](StructureDefinition-EHDSSpecimen.md)
@@ -32,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSBodyStructure
   "name" : "EHDSBodyStructure",
   "title" : "Body structure model",
   "status" : "draft",
-  "date" : "2026-09-10T07:59:04+00:00",
+  "date" : "2026-11-17T22:07:14+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",

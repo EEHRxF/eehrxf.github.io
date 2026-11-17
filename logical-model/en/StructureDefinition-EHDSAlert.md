@@ -2,9 +2,6 @@
 
 ## Logical Model: Alert model 
 
- 
-EHDSAlert means a structured set of data elements describing a clinically relevant fact about a patient that requires attention during a healthcare encounter in order to ensure patient safety or prevent adverse outcomes, including, but not limited to, intolerances, rare diseases requiring special management, implanted devices, ongoing special treatments, transplanted organs, or participation in a clinical trial. 
-
 **Usages:**
 
 * Use this Logical Model: [Discharge report model](StructureDefinition-EHDSDischargeReport.md) and [Patient summary model](StructureDefinition-EHDSPatientSummary.md)
@@ -32,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAlert.csv), [
   "name" : "EHDSAlert",
   "title" : "Alert model",
   "status" : "draft",
-  "date" : "2026-09-10T07:59:04+00:00",
+  "date" : "2026-11-17T22:07:14+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -125,6 +122,17 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAlert.csv), [
       "max" : "1",
       "type" : [{
         "code" : "Period"
+      }]
+    },
+    {
+      "id" : "EHDSAlert.otherSupportingInformation",
+      "path" : "EHDSAlert.otherSupportingInformation",
+      "short" : "A reference to the resource the alert is about.",
+      "definition" : "A reference to the resource the alert is about.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "string"
       }]
     }]
   }

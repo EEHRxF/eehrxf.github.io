@@ -2,9 +2,6 @@
 
 ## Logical Model: Imaging study model. 
 
- 
-EHDSImagingStudy means the structured set of data elements for facilitating the exchange of imaging studies. Its goal is to enable the exchange of imaging studies regardless of whether the corresponding imaging report is available. It contains metadata that includes the endpoint where the imaging study is located. EHDSImagingStudy may be represented using DICOM KOS and/or HL7 FHIR, depending on the implementation guide. 
-
 **Usages:**
 
 * Use this Logical Model: [Imaging report model.](StructureDefinition-EHDSImagingReport.md) and [Observation model](StructureDefinition-EHDSObservation.md)
@@ -32,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingStudy.
   "name" : "EHDSImagingStudy",
   "title" : "Imaging study model.",
   "status" : "draft",
-  "date" : "2026-09-10T07:59:04+00:00",
+  "date" : "2026-11-17T22:07:14+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -79,7 +76,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingStudy.
     {
       "id" : "EHDSImagingStudy.header.status",
       "path" : "EHDSImagingStudy.header.status",
-      "short" : "Where the source representation does not provide a reliable lifecycle status, unknown may be used. Status available shall only be used where availability has been established.",
+      "short" : "Status of the resource. Where the source representation does not provide a reliable lifecycle status, unknown may be used. Status available shall only be used where availability has been established.",
       "binding" : {
         "strength" : "required",
         "description" : "HL7 Imaging Study Status"
@@ -283,8 +280,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingStudy.
     {
       "id" : "EHDSImagingStudy.series.seriesEndpoint",
       "path" : "EHDSImagingStudy.series.seriesEndpoint",
-      "short" : "Series endpoint describing the technical details of a location that can be connected to for the delivery/retrieval of information. Sufficient information is required to ensure that a connection can be made securely, and appropriate data transmitted as defined by the endpoint owner. These may be locally hosted services, regional services, or national service.",
-      "definition" : "Series endpoint describing the technical details of a location that can be connected to for the delivery/retrieval of information. Sufficient information is required to ensure that a connection can be made securely, and appropriate data transmitted as defined by the endpoint owner. These may be locally hosted services, regional services, or national service.",
+      "short" : "Series endpoint describing the technical details of a location that can be connected to for the delivery/retrieval of an imaging study. Sufficient information is required to ensure that a connection can be made securely, and appropriate data transmitted as defined by the endpoint owner. These may be locally hosted services, regional services, or national service.",
+      "definition" : "Series endpoint describing the technical details of a location that can be connected to for the delivery/retrieval of an imaging study. Sufficient information is required to ensure that a connection can be made securely, and appropriate data transmitted as defined by the endpoint owner. These may be locally hosted services, regional services, or national service.",
       "min" : 0,
       "max" : "1",
       "type" : [{

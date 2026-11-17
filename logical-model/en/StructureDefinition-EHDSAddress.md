@@ -2,9 +2,6 @@
 
 ## Logical Model: Address model 
 
- 
-EHDSAddress means the structured set of data elements identifying a geographical or postal location. 
-
 **Usages:**
 
 * Use this Logical Model: [Health professional model](StructureDefinition-EHDSHealthProfessional.md), [Location model](StructureDefinition-EHDSLocation.md), [Organisation model](StructureDefinition-EHDSOrganisation.md), [Patient model](StructureDefinition-EHDSPatient.md) and [Related person model](StructureDefinition-EHDSRelatedPerson.md)
@@ -32,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAddress.csv),
   "name" : "EHDSAddress",
   "title" : "Address model",
   "status" : "draft",
-  "date" : "2026-09-10T07:59:04+00:00",
+  "date" : "2026-11-17T22:07:14+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",

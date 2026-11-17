@@ -2,9 +2,6 @@
 
 ## Logical Model: Attachment model 
 
- 
-EHDSAttachment means a structured set of data elements describing additional content, in a format identifiable by a MIME type, including images, clinical reports, or other documents. 
-
 **Usages:**
 
 * Use this Logical Model: [Advance directive model](StructureDefinition-EHDSAdvanceDirective.md), [Discharge report model](StructureDefinition-EHDSDischargeReport.md), [Document model](StructureDefinition-EHDSDocument.md), [Imaging report model.](StructureDefinition-EHDSImagingReport.md)... Show 3 more, [Imaging study model.](StructureDefinition-EHDSImagingStudy.md), [Medical test result and report model](StructureDefinition-EHDSMedicalTestReport.md) and [Electronic prescription model](StructureDefinition-EHDSMedicationPrescription.md)
@@ -32,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAttachment.cs
   "name" : "EHDSAttachment",
   "title" : "Attachment model",
   "status" : "draft",
-  "date" : "2026-09-10T07:59:04+00:00",
+  "date" : "2026-11-17T22:07:14+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
