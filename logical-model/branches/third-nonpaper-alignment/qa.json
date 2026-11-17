@@ -1,0 +1,20 @@
+{
+  "url" : "http://ehds.eu/fhir/models/ImplementationGuide/eu.ehds.models",
+  "name" : "EHDSModels",
+  "title" : "EHDS Logical Information Models",
+  "description" : "EHDS Logical Information Models",
+  "status" : "draft",
+  "package-id" : "eu.ehds.models",
+  "ig-ver" : "0.3.0",
+  "date" : "Tue, 17 Nov, 2026 12:55:20 +0000",
+  "dateISO8601" : "2026-11-17T12:55:20+00:00",
+  "errs" : 1,
+  "warnings" : 0,
+  "hints" : 54,
+  "broken-links" : 0,
+  "suppressed-hints" : 19,
+  "suppressed-warnings" : 2,
+  "version" : "5.0.0",
+  "tool" : "6.0.0-snapshot1 (3)",
+  "maxMemory" : 1046096288
+}
