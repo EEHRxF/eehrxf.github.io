@@ -5,16 +5,28 @@
 ","Basic metadata for this information.","Basic metadata for this information.","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header",1,1,"",""
 "EHDSCarePlan.header.subject","EHDSCarePlan.header.subject","","","",1,1,"","","","http://ehds.eu/fhir/models/StructureDefinition/EHDSPatient {[]} {[]}
 ","Patient/subject information.","Patient/subject information.","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.subject",1,1,"",""
-"EHDSCarePlan.header.identifier","EHDSCarePlan.header.identifier","","","",0,*,"","","","Identifier {[]} {[]}
-","Identifier for the care plan.","Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries).","Business identifier is unique within the system that assigns them. The same entity may have different unique identifiers assigned by different systems. Therefore, the identifier is always expected to be a pair of a system and a value.","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.identifier",0,*,"",""
-"EHDSCarePlan.header.author[x]","EHDSCarePlan.header.author[x]","","","",0,*,"","","","http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional {[]} {[]}
-http://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation {[]} {[]}http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice {[]} {[]}","Author of the resource.","Author of the resource.","Author(s) responsible for the provided information. The exact role of the responsible author varies across use cases and is specific to individual models.","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.author[x]",0,*,"",""
+"EHDSCarePlan.header.identifier","EHDSCarePlan.header.identifier","","","",1,*,"","","","Identifier {[]} {[]}
+","Identifier for the care plan.","Unique identifier of the resource.","Business identifier is unique within the system that assigns them. The same entity may have different unique identifiers assigned by different systems. Therefore, the identifier is always expected to be a pair of a system and a value.","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.identifier",1,*,"",""
+"EHDSCarePlan.header.clinicalEventTime[x]","EHDSCarePlan.header.clinicalEventTime[x]","","","",0,1,"","","","dateTime {[]} {[]}
+Period {[]} {[]}","Time or period the clinical content applies to (e.g. specimen collection time, onset of a condition, period a medication was taken).","Time or period the clinical content applies to (e.g. specimen collection time, onset of a condition, period a medication was taken).","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.clinicalEventTime[x]",0,1,"",""
+"EHDSCarePlan.header.version","EHDSCarePlan.header.version","","","",0,1,"","","","string {[]} {[]}
+","Version of the resource.","Version of the resource.","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.version",0,1,"",""
+"EHDSCarePlan.header.author[x]","EHDSCarePlan.header.author[x]","","","",1,*,"","","","http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional {[]} {[]}
+http://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation {[]} {[]}http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice {[]} {[]}","Author of the resource.","Information describing who authored the resource.","Author(s) responsible for the provided information. The exact role of the responsible author varies across use cases and is specific to individual models.","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.author[x]",1,*,"",""
 "EHDSCarePlan.header.date","EHDSCarePlan.header.date","","","",0,1,"","","","dateTime {[]} {[]}
 ","Date and optionally time of authoring/issuing.","Date and optionally time of authoring/issuing.","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.date",0,1,"",""
+"EHDSCarePlan.header.attestation","EHDSCarePlan.header.attestation","","","",0,*,"","","","Base {[]} {[]}
+","Resource attestation details.","Resource attestation details.","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.attestation",0,*,"",""
+"EHDSCarePlan.header.attestation.attester[x]","EHDSCarePlan.header.attestation.attester[x]","","","",1,1,"","","","http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional {[]} {[]}
+http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice {[]} {[]}","Attester who validated the resource.","Attester who validated the resource.","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.attestation.attester[x]",1,1,"",""
+"EHDSCarePlan.header.attestation.dateTime","EHDSCarePlan.header.attestation.dateTime","","","",1,1,"","","","dateTime {[]} {[]}
+","Date and time of the approval of the resource by the attester.","Date and time of the approval of the resource by the attester.","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.attestation.dateTime",1,1,"",""
 "EHDSCarePlan.header.status","EHDSCarePlan.header.status","","","",1,1,"","","","CodeableConcept {[]} {[]}
-","Status of the resource.","Indicates whether the plan is currently being acted upon, represents future intentions, or is now a historical record.","","","","","","","","","",,"required","HL7 Request Status","","",,,,"EHDSDataSet.header.status",1,1,"",""
-"EHDSCarePlan.header.language","EHDSCarePlan.header.language","","","",0,1,"","","","CodeableConcept {[]} {[]}
-","Language in which the resource is written. Language is expressed by the IETF language tag.","Language in which the resource is written. Language is expressed by the IETF language tag.","","","","","","","","","",,"required","BCP 47","","",,,,"EHDSDataSet.header.language",0,1,"",""
+","Status of the resource.","Indicates whether the plan is currently being acted upon, represents future intentions or is now a historical record.","","","","","","","","","",,"required","HL7 Request Status","","",,,,"EHDSDataSet.header.status",1,1,"",""
+"EHDSCarePlan.header.language","EHDSCarePlan.header.language","","","",0,*,"","","","CodeableConcept {[]} {[]}
+","Language in which the resource is written. Language is expressed by the IETF language tag.","Language in which the resource is written. Language is expressed by the IETF language tag.","","","","","","","","","",,"required","BCP 47","","",,,,"EHDSDataSet.header.language",0,*,"",""
+"EHDSCarePlan.header.lastUpdate","EHDSCarePlan.header.lastUpdate","","","",0,1,"","","","dateTime {[]} {[]}
+","Date and time of the last system-level update to this resource (system update instant). This is technical metadata and does not represent a clinical event time.","Date and time of the last system-level update to this resource (system update instant). This is technical metadata and does not represent a clinical event time.","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.lastUpdate",0,1,"",""
 "EHDSCarePlan.title","EHDSCarePlan.title","","","",0,1,"","","","string {[]} {[]}
 ","Human-friendly name for the care plan.","Human-friendly name for the care plan.","","","","","","","","","",,,,,"",,,,"EHDSCarePlan.title",0,1,"",""
 "EHDSCarePlan.description","EHDSCarePlan.description","","","",0,1,"","","","string {[]} {[]}
@@ -22,7 +34,7 @@ http://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation {[]} {[]}http://
 "EHDSCarePlan.period","EHDSCarePlan.period","","","",0,1,"","","","Period {[]} {[]}
 ","Indicates when the plan did (or is intended to) come into effect and end.","Indicates when the plan did (or is intended to) come into effect and end.","","","","","","","","","",,,,,"",,,,"EHDSCarePlan.period",0,1,"",""
 "EHDSCarePlan.conditionAddressed[x]","EHDSCarePlan.conditionAddressed[x]","","","",0,*,"","","","CodeableConcept {[]} {[]}
-http://ehds.eu/fhir/models/StructureDefinition/EHDSCondition {[]} {[]}","Conditions/problems/concerns/diagnoses/etc whose management and/or mitigation are handled by this plan.","Conditions/problems/concerns/diagnoses/etc whose management and/or mitigation are handled by this plan.","","","","","","","","","",,"required","SNOMED GPS (preferred), ICD-10, Orphacode","","",,,,"EHDSCarePlan.conditionAddressed[x]",0,*,"",""
+http://ehds.eu/fhir/models/StructureDefinition/EHDSCondition {[]} {[]}","Conditions, problems, concerns, diagnoses, etc. whose management, mitigation or management and mitigation are handled by this plan.","Conditions, problems, concerns, diagnoses, etc. whose management, mitigation or management and mitigation are handled by this plan.","","","","","","","","","",,"required","SNOMED GPS (preferred), ICD-10, Orphacode","","",,,,"EHDSCarePlan.conditionAddressed[x]",0,*,"",""
 "EHDSCarePlan.activity[x]","EHDSCarePlan.activity[x]","","","",0,*,"","","","CodeableConcept {[]} {[]}
 string {[]} {[]}","The details of the proposed activity represented in a specific resource.","The details of the proposed activity represented in a specific resource.","","","","","","","","","",,"required","SNOMED GPS","","",,,,"EHDSCarePlan.activity[x]",0,*,"",""
 "EHDSCarePlan.goal[x]","EHDSCarePlan.goal[x]","","","",0,*,"","","","CodeableConcept {[]} {[]}

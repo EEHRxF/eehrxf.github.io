@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSHealthProfess
   "name" : "EHDSHealthProfessional",
   "title" : "Health professional model",
   "status" : "draft",
-  "date" : "2026-11-18T18:54:26+00:00",
+  "date" : "2026-11-18T22:37:31+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -60,8 +60,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSHealthProfess
     {
       "id" : "EHDSHealthProfessional.identifier",
       "path" : "EHDSHealthProfessional.identifier",
-      "short" : "An identifier of the health professional that is unique within a defined scope. Example: National health professional ID. Multiple identifiers could be provided.",
-      "definition" : "An identifier of the health professional that is unique within a defined scope. Example: National health professional ID. Multiple identifiers could be provided.",
+      "short" : "An identifier of the health professional that is unique within a defined scope. Example: national health professional ID. Multiple identifiers may be provided.",
+      "definition" : "An identifier of the health professional that is unique within a defined scope. Example: national health professional ID. Multiple identifiers may be provided.",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -71,8 +71,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSHealthProfess
     {
       "id" : "EHDSHealthProfessional.name",
       "path" : "EHDSHealthProfessional.name",
-      "short" : "Name of the health professional..",
-      "definition" : "Name of the health professional..",
+      "short" : "Name of the health professional.",
+      "definition" : "Name of the health professional.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -93,8 +93,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSHealthProfess
     {
       "id" : "EHDSHealthProfessional.telecom",
       "path" : "EHDSHealthProfessional.telecom",
-      "short" : "Telecommunication contact information (address) associated with the health professional, such as phone number, email, or messaging service.",
-      "definition" : "Telecommunication contact information (address) associated with the health professional, such as phone number, email, or messaging service.",
+      "short" : "Telecommunication contact information (address) associated with the health professional, such as phone number, email or messaging service.",
+      "definition" : "Telecommunication contact information (address) associated with the health professional, such as phone number, email or messaging service.",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -104,8 +104,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSHealthProfess
     {
       "id" : "EHDSHealthProfessional.professionalRole",
       "path" : "EHDSHealthProfessional.professionalRole",
-      "short" : "Professional role that the health professional is practicing at a given organisation.",
-      "definition" : "Professional role that the health professional is practicing at a given organisation.",
+      "short" : "Professional role that the health professional is practising in a given organisation.",
+      "definition" : "Professional role that the health professional is practising in a given organisation.",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -141,8 +141,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSHealthProfess
     {
       "id" : "EHDSHealthProfessional.professionalRole.specialty",
       "path" : "EHDSHealthProfessional.professionalRole.specialty",
-      "short" : "The specialty of the health professional they are practicing in the organisation.",
-      "definition" : "The specialty of the health professional they are practicing in the organisation.",
+      "short" : "The speciality of the health professional they are practising in the organisation.",
+      "definition" : "The speciality of the health professional they are practising in the organisation.",
       "min" : 0,
       "max" : "*",
       "type" : [{

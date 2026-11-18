@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDataSet.csv),
   "name" : "EHDSDataSet",
   "title" : "DataSet model",
   "status" : "draft",
-  "date" : "2026-11-18T18:54:26+00:00",
+  "date" : "2026-11-18T22:37:31+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -82,22 +82,47 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDataSet.csv),
     {
       "id" : "EHDSDataSet.header.identifier",
       "path" : "EHDSDataSet.header.identifier",
-      "short" : "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries).",
-      "definition" : "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries).",
+      "short" : "Unique identifier of the resource.",
+      "definition" : "Unique identifier of the resource.",
       "comment" : "Business identifier is unique within the system that assigns them. The same entity may have different unique identifiers assigned by different systems. Therefore, the identifier is always expected to be a pair of a system and a value.",
-      "min" : 0,
+      "min" : 1,
       "max" : "*",
       "type" : [{
         "code" : "Identifier"
       }]
     },
     {
+      "id" : "EHDSDataSet.header.clinicalEventTime[x]",
+      "path" : "EHDSDataSet.header.clinicalEventTime[x]",
+      "short" : "Time or period the clinical content applies to (e.g. specimen collection time, onset of a condition, period a medication was taken).",
+      "definition" : "Time or period the clinical content applies to (e.g. specimen collection time, onset of a condition, period a medication was taken).",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "dateTime"
+      },
+      {
+        "code" : "Period"
+      }]
+    },
+    {
+      "id" : "EHDSDataSet.header.version",
+      "path" : "EHDSDataSet.header.version",
+      "short" : "Version of the resource.",
+      "definition" : "Version of the resource.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
       "id" : "EHDSDataSet.header.author[x]",
       "path" : "EHDSDataSet.header.author[x]",
-      "short" : "Author of the resource.",
-      "definition" : "Author of the resource.",
+      "short" : "Information describing who authored the resource.",
+      "definition" : "Information describing who authored the resource.",
       "comment" : "Author(s) responsible for the provided information. The exact role of the responsible author varies across use cases and is specific to individual models.",
-      "min" : 0,
+      "min" : 1,
       "max" : "*",
       "type" : [{
         "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"
@@ -115,6 +140,42 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDataSet.csv),
       "short" : "Date and optionally time of authoring/issuing.",
       "definition" : "Date and optionally time of authoring/issuing.",
       "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "dateTime"
+      }]
+    },
+    {
+      "id" : "EHDSDataSet.header.attestation",
+      "path" : "EHDSDataSet.header.attestation",
+      "short" : "Resource attestation details.",
+      "definition" : "Resource attestation details.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Base"
+      }]
+    },
+    {
+      "id" : "EHDSDataSet.header.attestation.attester[x]",
+      "path" : "EHDSDataSet.header.attestation.attester[x]",
+      "short" : "Attester who validated the resource.",
+      "definition" : "Attester who validated the resource.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"
+      },
+      {
+        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice"
+      }]
+    },
+    {
+      "id" : "EHDSDataSet.header.attestation.dateTime",
+      "path" : "EHDSDataSet.header.attestation.dateTime",
+      "short" : "Date and time of the approval of the resource by the attester.",
+      "definition" : "Date and time of the approval of the resource by the attester.",
+      "min" : 1,
       "max" : "1",
       "type" : [{
         "code" : "dateTime"
@@ -141,7 +202,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDataSet.csv),
       "short" : "Language in which the resource is written. Language is expressed by the IETF language tag.",
       "definition" : "Language in which the resource is written. Language is expressed by the IETF language tag.",
       "min" : 0,
-      "max" : "1",
+      "max" : "*",
       "type" : [{
         "code" : "CodeableConcept"
       }],
@@ -149,6 +210,17 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDataSet.csv),
         "strength" : "required",
         "description" : "BCP 47"
       }
+    },
+    {
+      "id" : "EHDSDataSet.header.lastUpdate",
+      "path" : "EHDSDataSet.header.lastUpdate",
+      "short" : "Date and time of the last system-level update to this resource (system update instant). This is technical metadata and does not represent a clinical event time.",
+      "definition" : "Date and time of the last system-level update to this resource (system update instant). This is technical metadata and does not represent a clinical event time.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "dateTime"
+      }]
     }]
   }
 }

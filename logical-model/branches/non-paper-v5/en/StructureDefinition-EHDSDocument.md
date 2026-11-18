@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDocument.csv)
   "name" : "EHDSDocument",
   "title" : "Document model",
   "status" : "draft",
-  "date" : "2026-11-18T18:54:26+00:00",
+  "date" : "2026-11-18T22:37:31+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -65,20 +65,39 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDocument.csv)
     {
       "id" : "EHDSDocument.header.identifier",
       "path" : "EHDSDocument.header.identifier",
-      "short" : "Unique identifier of the document.",
+      "short" : "Unique identifier of the document."
+    },
+    {
+      "id" : "EHDSDocument.header.version",
+      "path" : "EHDSDocument.header.version",
+      "short" : "Version of the document.",
       "min" : 1
     },
     {
       "id" : "EHDSDocument.header.author[x]",
       "path" : "EHDSDocument.header.author[x]",
-      "short" : "Author of the document.",
-      "min" : 1
+      "short" : "Information describing who authored the resource or document."
     },
     {
       "id" : "EHDSDocument.header.date",
       "path" : "EHDSDocument.header.date",
       "short" : "Date of finalising/issuing the document.",
       "min" : 1
+    },
+    {
+      "id" : "EHDSDocument.header.attestation",
+      "path" : "EHDSDocument.header.attestation",
+      "short" : "Document attestation details."
+    },
+    {
+      "id" : "EHDSDocument.header.attestation.attester[x]",
+      "path" : "EHDSDocument.header.attestation.attester[x]",
+      "short" : "Attester who validated the document."
+    },
+    {
+      "id" : "EHDSDocument.header.attestation.dateTime",
+      "path" : "EHDSDocument.header.attestation.dateTime",
+      "short" : "Date and time of the approval of the document by the attester."
     },
     {
       "id" : "EHDSDocument.header.status",
@@ -90,21 +109,35 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDocument.csv)
       }
     },
     {
+      "id" : "EHDSDocument.header.language",
+      "path" : "EHDSDocument.header.language",
+      "short" : "Language in which the document is written. Language is expressed by the IETF language tag."
+    },
+    {
       "id" : "EHDSDocument.header.lastUpdate",
       "path" : "EHDSDocument.header.lastUpdate",
-      "short" : "Date and time of the last system-level update to this document or resource (system update instant). This is technical metadata and does not represent a clinical event time.",
-      "definition" : "Date and time of the last system-level update to this document or resource (system update instant). This is technical metadata and does not represent a clinical event time.",
-      "min" : 0,
+      "short" : "Date and time of the last system-level update to this document (system update instant). This is technical metadata and does not represent a clinical event time."
+    },
+    {
+      "id" : "EHDSDocument.header.documentCategory",
+      "path" : "EHDSDocument.header.documentCategory",
+      "short" : "Broad category of document (e.g. 11502-2 Laboratory report).",
+      "definition" : "Broad category of document (e.g. 11502-2 Laboratory report).",
+      "min" : 1,
       "max" : "1",
       "type" : [{
-        "code" : "dateTime"
-      }]
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "description" : "LOINC"
+      }
     },
     {
       "id" : "EHDSDocument.header.documentType",
       "path" : "EHDSDocument.header.documentType",
-      "short" : "Type of document (e.g. 60591-5 Patient summary document).",
-      "definition" : "Type of document (e.g. 60591-5 Patient summary document).",
+      "short" : "Type of document (e.g. 18725-2 Microbiology studies (set)).",
+      "definition" : "Type of document (e.g. 18725-2 Microbiology studies (set)).",
       "min" : 1,
       "max" : "1",
       "type" : [{
@@ -118,8 +151,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDocument.csv)
     {
       "id" : "EHDSDocument.header.documentTitle",
       "path" : "EHDSDocument.header.documentTitle",
-      "short" : "Human readable document title that can be displayed in search results, etc. This can be documentType's display name, or it can be assembled from multiple elements. Examples: 'Laboratory Result Report', 'Patient Summary of Jane Green 10.12.2024'.",
-      "definition" : "Human readable document title that can be displayed in search results, etc. This can be documentType's display name, or it can be assembled from multiple elements. Examples: 'Laboratory Result Report', 'Patient Summary of Jane Green 10.12.2024'.",
+      "short" : "Human-readable document title that may be displayed in search results etc. This may be documentType’s display name, or it may be assembled from multiple elements. Examples: ‘Laboratory result report’, ‘Patient summary of Jane Green 10.12.2024’.",
+      "definition" : "Human-readable document title that may be displayed in search results etc. This may be documentType’s display name, or it may be assembled from multiple elements. Examples: ‘Laboratory result report’, ‘Patient summary of Jane Green 10.12.2024’.",
       "min" : 1,
       "max" : "1",
       "type" : [{
@@ -138,57 +171,10 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDocument.csv)
       }]
     },
     {
-      "id" : "EHDSDocument.header.version",
-      "path" : "EHDSDocument.header.version",
-      "short" : "Version of the document.",
-      "definition" : "Version of the document.",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "string"
-      }]
-    },
-    {
-      "id" : "EHDSDocument.header.attestation",
-      "path" : "EHDSDocument.header.attestation",
-      "short" : "Document attestation details.",
-      "definition" : "Document attestation details.",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "Base"
-      }]
-    },
-    {
-      "id" : "EHDSDocument.header.attestation.attester[x]",
-      "path" : "EHDSDocument.header.attestation.attester[x]",
-      "short" : "Attester who validated the document.",
-      "definition" : "Attester who validated the document.",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"
-      },
-      {
-        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice"
-      }]
-    },
-    {
-      "id" : "EHDSDocument.header.attestation.dateTime",
-      "path" : "EHDSDocument.header.attestation.dateTime",
-      "short" : "Date and time of the approval of the document by the attester.",
-      "definition" : "Date and time of the approval of the document by the attester.",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "dateTime"
-      }]
-    },
-    {
       "id" : "EHDSDocument.header.legalAuthentication",
       "path" : "EHDSDocument.header.legalAuthentication",
-      "short" : "Document legal authentication details. Legal authentication metadata is included only where required by applicable legal or organisational frameworks. Absence of legal authentication does not affect interoperability conformance under this profile.",
-      "definition" : "Document legal authentication details. Legal authentication metadata is included only where required by applicable legal or organisational frameworks. Absence of legal authentication does not affect interoperability conformance under this profile.",
+      "short" : "Document legal authentication details. Legal authentication metadata is included only where required by applicable legal or organisational frameworks. Absence of legal authentication does not affect interoperability compliance under this profile.",
+      "definition" : "Document legal authentication details. Legal authentication metadata is included only where required by applicable legal or organisational frameworks. Absence of legal authentication does not affect interoperability compliance under this profile.",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -198,8 +184,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDocument.csv)
     {
       "id" : "EHDSDocument.header.legalAuthentication.legalAuthenticator[x]",
       "path" : "EHDSDocument.header.legalAuthentication.legalAuthenticator[x]",
-      "short" : "The person or organisation taking responsibility for the medical content of the document. The legalAuthenticator can be different from the author and attester (e.g. author = junior doctor, attester = senior physician, legalAuthenticator = attending physician).",
-      "definition" : "The person or organisation taking responsibility for the medical content of the document. The legalAuthenticator can be different from the author and attester (e.g. author = junior doctor, attester = senior physician, legalAuthenticator = attending physician).",
+      "short" : "The person taking responsibility for the medical content of the document. legalAuthenticator may be different from author and attester (e.g author=junior doctor, attester=senior physician, legalAuthenticator= attending physician).",
+      "definition" : "The person taking responsibility for the medical content of the document. legalAuthenticator may be different from author and attester (e.g author=junior doctor, attester=senior physician, legalAuthenticator= attending physician).",
       "min" : 1,
       "max" : "1",
       "type" : [{
@@ -212,8 +198,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDocument.csv)
     {
       "id" : "EHDSDocument.header.legalAuthentication.dateTime",
       "path" : "EHDSDocument.header.legalAuthentication.dateTime",
-      "short" : "Date and time when the document was authenticated.",
-      "definition" : "Date and time when the document was authenticated.",
+      "short" : "Date and time when the document was authorised.",
+      "definition" : "Date and time when the document was authorised.",
       "min" : 1,
       "max" : "1",
       "type" : [{
@@ -223,8 +209,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDocument.csv)
     {
       "id" : "EHDSDocument.header.eventCategory",
       "path" : "EHDSDocument.header.eventCategory",
-      "short" : "Categorisation of the event covered by the document (e.g. laboratory study types, imaging study types including modality, etc.). Selection of such tags or labels depends on the use case and agreement between data sharing parties. This meta-data element serves primarily for searching and filtering purposes.",
-      "definition" : "Categorisation of the event covered by the document (e.g. laboratory study types, imaging study types including modality, etc.). Selection of such tags or labels depends on the use case and agreement between data sharing parties. This meta-data element serves primarily for searching and filtering purposes.",
+      "short" : "Categorisation of the event covered by the document (e.g. laboratory study types, imaging study types including modality). Selection of such tags or labels depends on the use case and agreement between data-sharing parties. This metadata element serves primarily for searching and filtering purposes.",
+      "definition" : "Categorisation of the event covered by the document (e.g. laboratory study types, imaging study types including modality). Selection of such tags or labels depends on the use case and agreement between data-sharing parties. This metadata element serves primarily for searching and filtering purposes.",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -238,8 +224,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDocument.csv)
     {
       "id" : "EHDSDocument.header.serviceSpecialty",
       "path" : "EHDSDocument.header.serviceSpecialty",
-      "short" : "Additional details about where the content was created (e.g. clinical specialty).",
-      "definition" : "Additional details about where the content was created (e.g. clinical specialty).",
+      "short" : "Additional details about where the content was created (e.g. clinical speciality).",
+      "definition" : "Additional details about where the content was created (e.g. clinical speciality).",
       "min" : 0,
       "max" : "*",
       "type" : [{

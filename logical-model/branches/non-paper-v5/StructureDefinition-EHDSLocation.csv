@@ -6,7 +6,7 @@
 "EHDSLocation.name","EHDSLocation.name","","","",0,1,"","","","string {[]} {[]}
 ","Human-readable name of the location.","Human-readable name of the location.","","","","","","","","","",,,,,"",,,,"EHDSLocation.name",0,1,"",""
 "EHDSLocation.description","EHDSLocation.description","","","",0,1,"","","","string {[]} {[]}
-","Additional details about the location that could be displayed as further information to identify the location beyond its name.","Additional details about the location that could be displayed as further information to identify the location beyond its name.","","","","","","","","","",,,,,"",,,,"EHDSLocation.description",0,1,"",""
+","Additional details about the location that may be displayed as further information to identify the location beyond its name.","Additional details about the location that may be displayed as further information to identify the location beyond its name.","","","","","","","","","",,,,,"",,,,"EHDSLocation.description",0,1,"",""
 "EHDSLocation.address","EHDSLocation.address","","","",0,1,"","","","http://ehds.eu/fhir/models/StructureDefinition/EHDSAddress {[]} {[]}
 ","Physical location address.","Physical location address.","","","","","","","","","",,,,,"",,,,"EHDSLocation.address",0,1,"",""
 "EHDSLocation.managingOrganisation","EHDSLocation.managingOrganisation","","","",0,1,"","","","http://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation {[]} {[]}

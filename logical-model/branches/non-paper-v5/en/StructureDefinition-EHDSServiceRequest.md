@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSServiceReques
   "name" : "EHDSServiceRequest",
   "title" : "Service request model",
   "status" : "draft",
-  "date" : "2026-11-18T18:54:26+00:00",
+  "date" : "2026-11-18T22:37:31+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -58,6 +58,16 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSServiceReques
       "definition" : "EHDSServiceRequest means a structured set of data elements describing one or more requested services."
     },
     {
+      "id" : "EHDSServiceRequest.header.identifier",
+      "path" : "EHDSServiceRequest.header.identifier",
+      "short" : "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)."
+    },
+    {
+      "id" : "EHDSServiceRequest.header.author[x]",
+      "path" : "EHDSServiceRequest.header.author[x]",
+      "short" : "Author of the resource."
+    },
+    {
       "id" : "EHDSServiceRequest.header.status",
       "path" : "EHDSServiceRequest.header.status",
       "binding" : {
@@ -79,8 +89,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSServiceReques
     {
       "id" : "EHDSServiceRequest.code",
       "path" : "EHDSServiceRequest.code",
-      "short" : "A code and name that identifies a particular service (i.e., procedure, diagnostic investigation, or panel of investigations) that has been requested.",
-      "definition" : "A code and name that identifies a particular service (i.e., procedure, diagnostic investigation, or panel of investigations) that has been requested.",
+      "short" : "A code and name that identifies a particular service (i.e. procedure, diagnostic investigation, or panel of investigations) that has been requested.",
+      "definition" : "A code and name that identifies a particular service (i.e. procedure, diagnostic investigation, or panel of investigations) that has been requested.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -109,8 +119,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSServiceReques
     {
       "id" : "EHDSServiceRequest.bodySite",
       "path" : "EHDSServiceRequest.bodySite",
-      "short" : "Anatomic location and laterality where the procedure should be performed. This is the target site.",
-      "definition" : "Anatomic location and laterality where the procedure should be performed. This is the target site.",
+      "short" : "Anatomic location and laterality where the procedure shall be performed. This is the target site.",
+      "definition" : "Anatomic location and laterality where the procedure shall be performed. This is the target site.",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -140,8 +150,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSServiceReques
     {
       "id" : "EHDSServiceRequest.priority",
       "path" : "EHDSServiceRequest.priority",
-      "short" : "Indicates how quickly the request should be addressed with respect to other requests.",
-      "definition" : "Indicates how quickly the request should be addressed with respect to other requests.",
+      "short" : "Indicates how quickly the request shall be addressed with respect to other requests.",
+      "definition" : "Indicates how quickly the request shall be addressed with respect to other requests.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -197,8 +207,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSServiceReques
     {
       "id" : "EHDSServiceRequest.occurrence[x]",
       "path" : "EHDSServiceRequest.occurrence[x]",
-      "short" : "Expected time of the service.",
-      "definition" : "Expected time of the service.",
+      "short" : "Required time of the service.",
+      "definition" : "Required time of the service.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -211,8 +221,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSServiceReques
     {
       "id" : "EHDSServiceRequest.patientInstructions",
       "path" : "EHDSServiceRequest.patientInstructions",
-      "short" : "Patient or consumer-oriented instructions.",
-      "definition" : "Patient or consumer-oriented instructions.",
+      "short" : "Patient- or consumer-oriented instructions.",
+      "definition" : "Patient- or consumer-oriented instructions.",
       "min" : 0,
       "max" : "1",
       "type" : [{

@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSRelatedPerson
   "name" : "EHDSRelatedPerson",
   "title" : "Related person model",
   "status" : "draft",
-  "date" : "2026-11-18T18:54:26+00:00",
+  "date" : "2026-11-18T22:37:31+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -71,8 +71,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSRelatedPerson
     {
       "id" : "EHDSRelatedPerson.identifier.type",
       "path" : "EHDSRelatedPerson.identifier.type",
-      "short" : "Description of identifier.",
-      "definition" : "Description of identifier.",
+      "short" : "Description of identifier consisting of HL7 identifier type extended with: NI (national unique identifier); HI (health identifier); HIN (health insurance number); SS (social security identifier); REGPID (regional person identifier); REGION (region identifier).",
+      "definition" : "Description of identifier consisting of HL7 identifier type extended with: NI (national unique identifier); HI (health identifier); HIN (health insurance number); SS (social security identifier); REGPID (regional person identifier); REGION (region identifier).",
       "min" : 1,
       "max" : "1",
       "type" : [{
@@ -80,7 +80,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSRelatedPerson
       }],
       "binding" : {
         "strength" : "required",
-        "description" : "HL7 Identifier Type, extended with the following: NI (national unique identifier), HI (health identifier), HIN (health insurance number), SS (social security identifier), REGPID (regional person identifier), REGION (region identifier)"
+        "description" : "HL7 Identifier Type with an appropriate extension"
       }
     },
     {
@@ -130,8 +130,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSRelatedPerson
     {
       "id" : "EHDSRelatedPerson.relationship",
       "path" : "EHDSRelatedPerson.relationship",
-      "short" : "Relationship between a patient and a contact person for that patient (e.g., relative, guardian or caring person).",
-      "definition" : "Relationship between a patient and a contact person for that patient (e.g., relative, guardian or caring person).",
+      "short" : "Relationship between a patient and a contact person for that patient (e.g. relative, guardian or caring person).",
+      "definition" : "Relationship between a patient and a contact person for that patient (e.g. relative, guardian or caring person).",
       "min" : 0,
       "max" : "1",
       "type" : [{

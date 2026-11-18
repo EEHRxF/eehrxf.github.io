@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSMedicalTestRe
   "name" : "EHDSMedicalTestReport",
   "title" : "Medical test result and report model",
   "status" : "draft",
-  "date" : "2026-11-18T18:54:26+00:00",
+  "date" : "2026-11-18T22:37:31+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -58,44 +58,64 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSMedicalTestRe
       "definition" : "Medical test results, including laboratory and other diagnostic results and related reports."
     },
     {
+      "id" : "EHDSMedicalTestReport.header.author[x]",
+      "path" : "EHDSMedicalTestReport.header.author[x]",
+      "short" : "Author of the document."
+    },
+    {
       "id" : "EHDSMedicalTestReport.header.date",
       "path" : "EHDSMedicalTestReport.header.date",
       "short" : "Date and optionally time of authoring/issuing."
     },
     {
+      "id" : "EHDSMedicalTestReport.header.language",
+      "path" : "EHDSMedicalTestReport.header.language",
+      "short" : "Language in which the resource is written. Language is expressed by the IETF language tag."
+    },
+    {
+      "id" : "EHDSMedicalTestReport.header.documentCategory",
+      "path" : "EHDSMedicalTestReport.header.documentCategory",
+      "short" : "Broad category of document (e.g. 11502-2 ‘Laboratory report’ or 70004-7 ‘Diagnostic study note’)."
+    },
+    {
       "id" : "EHDSMedicalTestReport.header.documentType",
       "path" : "EHDSMedicalTestReport.header.documentType",
-      "short" : "Type of document (e.g., 11502-2 'Laboratory report' or 18759-1 'Spirometry study')."
+      "short" : "Type of document (e.g. 18725-2 ‘Microbiology studies (set)’ or 18759-1 ‘Spirometry study’)."
     },
     {
       "id" : "EHDSMedicalTestReport.header.documentTitle",
       "path" : "EHDSMedicalTestReport.header.documentTitle",
-      "short" : "Human readable document title that can be displayed in search results, etc. This can be documentType's display name, or it can be assembled from multiple elements. Examples: Medical test report'."
+      "short" : "Human-readable document title that may be displayed in search results etc. This may be documentType’s display name, or it may be assembled from multiple elements. Example: Medical test report."
+    },
+    {
+      "id" : "EHDSMedicalTestReport.header.legalAuthentication",
+      "path" : "EHDSMedicalTestReport.header.legalAuthentication",
+      "short" : "Document legal authentication details."
     },
     {
       "id" : "EHDSMedicalTestReport.header.legalAuthentication.legalAuthenticator[x]",
       "path" : "EHDSMedicalTestReport.header.legalAuthentication.legalAuthenticator[x]",
-      "short" : "The person or organization taking responsibility for the content of the document."
-    },
-    {
-      "id" : "EHDSMedicalTestReport.header.legalAuthentication.dateTime",
-      "path" : "EHDSMedicalTestReport.header.legalAuthentication.dateTime",
-      "short" : "Date and time when the document was authorised."
+      "short" : "The person or organisation taking responsibility for the content of the document."
     },
     {
       "id" : "EHDSMedicalTestReport.header.eventCategory",
       "path" : "EHDSMedicalTestReport.header.eventCategory",
-      "short" : "Categorisation of the event covered by the document (e.g. medical study types etc.). Selection of such tags or labels depends on the use case and agreement between data sharing parties. This meta-data element serves primarily for searching and filtering purposes.",
+      "short" : "Categorisation of the event covered by the document (e.g. medical study types). Selection of such tags or labels depends on the use case and agreement between data-sharing parties. This metadata element serves primarily for searching and filtering purposes.",
       "binding" : {
         "strength" : "required",
         "description" : "LOINC (preferred), SNOMED GPS"
       }
     },
     {
+      "id" : "EHDSMedicalTestReport.presentedForm",
+      "path" : "EHDSMedicalTestReport.presentedForm",
+      "short" : "A narrative easy-to-read representation of the full dataset, e.g. PDF version of a document. At least one of body or presentedForm shall be present."
+    },
+    {
       "id" : "EHDSMedicalTestReport.intendedRecipient[x]",
       "path" : "EHDSMedicalTestReport.intendedRecipient[x]",
-      "short" : "Information recipient of the information, i.e. a person or organisation that should be notified or be aware of the content. This element is used to indicate explicit communication intent and does not represent routine storage or passive availability of information (e.g. in portals).",
-      "definition" : "Information recipient of the information, i.e. a person or organisation that should be notified or be aware of the content. This element is used to indicate explicit communication intent and does not represent routine storage or passive availability of information (e.g. in portals).",
+      "short" : "Details of the recipient of the information, i.e. a person or organisation that shall be notified or be aware of the content. This element is used to indicate explicit communication intent and does not represent routine storage or passive availability of information (e.g. in portals).",
+      "definition" : "Details of the recipient of the information, i.e. a person or organisation that shall be notified or be aware of the content. This element is used to indicate explicit communication intent and does not represent routine storage or passive availability of information (e.g. in portals).",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -117,8 +137,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSMedicalTestRe
     {
       "id" : "EHDSMedicalTestReport.body",
       "path" : "EHDSMedicalTestReport.body",
-      "short" : "Medical test result and report structured body.",
-      "definition" : "Medical test result and report structured body.",
+      "short" : "Medical test result and report structured body. At least one of body or presentedForm shall be present.",
+      "definition" : "Medical test result and report structured body. At least one of body or presentedForm shall be present.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -128,8 +148,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSMedicalTestRe
     {
       "id" : "EHDSMedicalTestReport.body.orderInformation",
       "path" : "EHDSMedicalTestReport.body.orderInformation",
-      "short" : "Order information",
-      "definition" : "Order information",
+      "short" : "Order information.",
+      "definition" : "Order information.",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -213,8 +233,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSMedicalTestRe
     {
       "id" : "EHDSMedicalTestReport.body.supportingInformation",
       "path" : "EHDSMedicalTestReport.body.supportingInformation",
-      "short" : "Additional clinical information about the patient or specimen that may influence the services or their interpretations. This information includes diagnosis, clinical findings and other observations. In medical test ordering these are typically referred to as 'ask at order entry questions (AOEs).' This includes observations explicitly requested by the producer (filler) to provide context or supporting information needed to complete the order. For example, reporting the amount of inspired oxygen for blood gas measurements.",
-      "definition" : "Additional clinical information about the patient or specimen that may influence the services or their interpretations. This information includes diagnosis, clinical findings and other observations. In medical test ordering these are typically referred to as 'ask at order entry questions (AOEs).' This includes observations explicitly requested by the producer (filler) to provide context or supporting information needed to complete the order. For example, reporting the amount of inspired oxygen for blood gas measurements.",
+      "short" : "Additional clinical information about the patient or specimen that may influence the services or their interpretations. This information includes diagnoses, clinical findings and other observations. In medical test ordering, it may include answers to questions asked at order entry (AOE), including observations explicitly requested by the producer (filler) to provide context or supporting information needed to complete the order.",
+      "definition" : "Additional clinical information about the patient or specimen that may influence the services or their interpretations. This information includes diagnoses, clinical findings and other observations. In medical test ordering, it may include answers to questions asked at order entry (AOE), including observations explicitly requested by the producer (filler) to provide context or supporting information needed to complete the order.",
       "min" : 0,
       "max" : "1",
       "type" : [{

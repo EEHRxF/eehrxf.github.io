@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImmunisation.
   "name" : "EHDSImmunisation",
   "title" : "Immunisation model",
   "status" : "draft",
-  "date" : "2026-11-18T18:54:26+00:00",
+  "date" : "2026-11-18T22:37:31+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -58,9 +58,19 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImmunisation.
       "definition" : "EHDSImmunisation means a structured set of data elements describing the administration of a vaccine or immunoglobulin, but excluding natural immunity, immunisation outcomes, refusals, and administration planning."
     },
     {
+      "id" : "EHDSImmunisation.header.identifier",
+      "path" : "EHDSImmunisation.header.identifier",
+      "short" : "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)."
+    },
+    {
+      "id" : "EHDSImmunisation.header.author[x]",
+      "path" : "EHDSImmunisation.header.author[x]",
+      "short" : "Author of the resource."
+    },
+    {
       "id" : "EHDSImmunisation.header.status",
       "path" : "EHDSImmunisation.header.status",
-      "short" : "Status of the immunisation event, e.g., completed, not-done.",
+      "short" : "Status of the immunisation event, e.g. completed, not done.",
       "binding" : {
         "strength" : "required",
         "description" : "HL7 Immunization Status Codes"
@@ -93,14 +103,14 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImmunisation.
       }],
       "binding" : {
         "strength" : "required",
-        "description" : "ATC, SNOMED GPS"
+        "description" : "WHO ATC, SNOMED GPS (preferred)"
       }
     },
     {
       "id" : "EHDSImmunisation.administeredProduct",
       "path" : "EHDSImmunisation.administeredProduct",
-      "short" : "Administered medicinal product, including batch/lot details when necessary.",
-      "definition" : "Administered medicinal product, including batch/lot details when necessary.",
+      "short" : "Administered medicinal product, including batch/lot details",
+      "definition" : "Administered medicinal product, including batch/lot details",
       "min" : 0,
       "max" : "1",
       "type" : [{

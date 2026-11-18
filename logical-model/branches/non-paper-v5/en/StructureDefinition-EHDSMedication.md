@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSMedication.cs
   "name" : "EHDSMedication",
   "title" : "Medication model",
   "status" : "draft",
-  "date" : "2026-11-18T18:54:26+00:00",
+  "date" : "2026-11-18T22:37:31+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -58,14 +58,17 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSMedication.cs
       "definition" : "EHDSMedication means a structured set of data elements describing a medicinal product."
     },
     {
-      "id" : "EHDSMedication.identifyingCode",
-      "path" : "EHDSMedication.identifyingCode",
-      "short" : "An identifier or a code for the product (virtual product, branded product, or package). If several identifiers are specified, they shall not have conflicting meanings or very different granularities. An identifier might not exist e.g. for substance-based prescriptions.",
-      "definition" : "An identifier or a code for the product (virtual product, branded product, or package). If several identifiers are specified, they shall not have conflicting meanings or very different granularities. An identifier might not exist e.g. for substance-based prescriptions.",
+      "id" : "EHDSMedication.identifyingCode[x]",
+      "path" : "EHDSMedication.identifyingCode[x]",
+      "short" : "An identifier or a code for the product (virtual product, branded product or package). If several identifiers are specified, they shall not have conflicting meanings or very different granularities. An identifier may not exist, e.g., for substance-based prescriptions.",
+      "definition" : "An identifier or a code for the product (virtual product, branded product or package). If several identifiers are specified, they shall not have conflicting meanings or very different granularities. An identifier may not exist, e.g., for substance-based prescriptions.",
       "min" : 0,
       "max" : "*",
       "type" : [{
         "code" : "CodeableConcept"
+      },
+      {
+        "code" : "Identifier"
       }],
       "binding" : {
         "strength" : "required",
@@ -75,8 +78,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSMedication.cs
     {
       "id" : "EHDSMedication.classification",
       "path" : "EHDSMedication.classification",
-      "short" : "Anatomical therapeutic chemical classification or another classification (e.g. narcotic/psychotropic; orphan drug).",
-      "definition" : "Anatomical therapeutic chemical classification or another classification (e.g. narcotic/psychotropic; orphan drug).",
+      "short" : "Anatomical therapeutic chemical classification or another classification (e.g. narcotic/psychotropic, orphan drug).",
+      "definition" : "Anatomical therapeutic chemical classification or another classification (e.g. narcotic/psychotropic, orphan drug).",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -123,8 +126,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSMedication.cs
     {
       "id" : "EHDSMedication.marketingAuthorisationHolder.organisationIdentifier",
       "path" : "EHDSMedication.marketingAuthorisationHolder.organisationIdentifier",
-      "short" : "Identifier of the organisation and/or its physical location.",
-      "definition" : "Identifier of the organisation and/or its physical location.",
+      "short" : "Identifier of the organisation, its physical location or both.",
+      "definition" : "Identifier of the organisation, its physical location or both.",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -134,8 +137,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSMedication.cs
     {
       "id" : "EHDSMedication.doseForm",
       "path" : "EHDSMedication.doseForm",
-      "short" : "Dose form at the package level (e.g. authorised dose form), corresponding to IDMP Combined Pharmaceutical Dose Form (this includes terms from EDQM Combination Pack or Combined Dose Form lists). Dose form for a single package item is defined in item.doseForm.",
-      "definition" : "Dose form at the package level (e.g. authorised dose form), corresponding to IDMP Combined Pharmaceutical Dose Form (this includes terms from EDQM Combination Pack or Combined Dose Form lists). Dose form for a single package item is defined in item.doseForm.",
+      "short" : "Dose form at package level (e.g. authorised dose form), corresponding to Combined Pharmaceutical Dose Form under the International Organization for Standardization (ISO) standards for the Identification of Medicinal Products (IDMP). This includes terms from EDQM Combination Pack or combined dose form lists. Dose form for a single package item is defined in item.doseForm.",
+      "definition" : "Dose form at package level (e.g. authorised dose form), corresponding to Combined Pharmaceutical Dose Form under the International Organization for Standardization (ISO) standards for the Identification of Medicinal Products (IDMP). This includes terms from EDQM Combination Pack or combined dose form lists. Dose form for a single package item is defined in item.doseForm.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -160,8 +163,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSMedication.cs
     {
       "id" : "EHDSMedication.item",
       "path" : "EHDSMedication.item",
-      "short" : "A medication item. For combination packs, this can be multiple manufactured items with each item having its own dose form and ingredients+strengths defined.",
-      "definition" : "A medication item. For combination packs, this can be multiple manufactured items with each item having its own dose form and ingredients+strengths defined.",
+      "short" : "A medication item. For combination packs, this may be multiple manufactured items with each item having its own dose form and ingredients + strengths defined.",
+      "definition" : "A medication item. For combination packs, this may be multiple manufactured items with each item having its own dose form and ingredients + strengths defined.",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -171,8 +174,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSMedication.cs
     {
       "id" : "EHDSMedication.item.doseForm",
       "path" : "EHDSMedication.item.doseForm",
-      "short" : "Administrable or manufactured item dose form, depending on the type of medication definition. This should not include combined dose forms.",
-      "definition" : "Administrable or manufactured item dose form, depending on the type of medication definition. This should not include combined dose forms.",
+      "short" : "Administrable or manufactured item dose form, depending on the type of medication definition. This shall not include combined dose forms.",
+      "definition" : "Administrable or manufactured item dose form, depending on the type of medication definition. This shall not include combined dose forms.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -197,8 +200,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSMedication.cs
     {
       "id" : "EHDSMedication.item.ingredient.isActive",
       "path" : "EHDSMedication.item.ingredient.isActive",
-      "short" : "Marks whether the substance is considered an active substance. Excipients are typically not needed, and by default only active ingredients are expected.",
-      "definition" : "Marks whether the substance is considered an active substance. Excipients are typically not needed, and by default only active ingredients are expected.",
+      "short" : "Marks whether the substance is considered an active substance. Excipients are typically not needed, and by default only active ingredients are required.",
+      "definition" : "Marks whether the substance is considered an active substance. Excipients are typically not needed, and by default only active ingredients are required.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -234,8 +237,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSMedication.cs
     {
       "id" : "EHDSMedication.item.ingredient.strengthInfo.strength[x]",
       "path" : "EHDSMedication.item.ingredient.strengthInfo.strength[x]",
-      "short" : "Concentration or presentation strength, e.g '100 mg/1 ml' or '500 mg per 1 tablet'.",
-      "definition" : "Concentration or presentation strength, e.g '100 mg/1 ml' or '500 mg per 1 tablet'.",
+      "short" : "Concentration or presentation strength, e.g ‘100 mg/1 ml’ or ‘500 mg per tablet’.",
+      "definition" : "Concentration or presentation strength, e.g ‘100 mg/1 ml’ or ‘500 mg per tablet’.",
       "min" : 1,
       "max" : "1",
       "type" : [{
@@ -252,8 +255,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSMedication.cs
     {
       "id" : "EHDSMedication.item.ingredient.strengthInfo.basisOfStrengthSubstance",
       "path" : "EHDSMedication.item.ingredient.strengthInfo.basisOfStrengthSubstance",
-      "short" : "Active substance that the strength refers to, especially when different from .item.strength.substance.",
-      "definition" : "Active substance that the strength refers to, especially when different from .item.strength.substance.",
+      "short" : "Active substance that the strength refers to, especially when different from item strength substance.",
+      "definition" : "Active substance that the strength refers to, especially when different from item strength substance.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -282,8 +285,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSMedication.cs
     {
       "id" : "EHDSMedication.item.containedQuantity",
       "path" : "EHDSMedication.item.containedQuantity",
-      "short" : "Packaged item quantity per one item (3 ml / 1 vial)",
-      "definition" : "Packaged item quantity per one item (3 ml / 1 vial)",
+      "short" : "Packaged item quantity per item (3 ml / one vial)",
+      "definition" : "Packaged item quantity per item (3 ml / one vial)",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -309,8 +312,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSMedication.cs
     {
       "id" : "EHDSMedication.item.amount",
       "path" : "EHDSMedication.item.amount",
-      "short" : "Number of such items in this medicinal product (e.g. 5 vials in the package). The combined amount of all items will be considered to be the total package size.",
-      "definition" : "Number of such items in this medicinal product (e.g. 5 vials in the package). The combined amount of all items will be considered to be the total package size.",
+      "short" : "Number of such items in this medicinal product (e.g. five vials in the package). The combined amount of all items shall be considered to be the total package size.",
+      "definition" : "Number of such items in this medicinal product (e.g. five vials in the package). The combined amount of all items shall be considered to be the total package size.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -339,8 +342,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSMedication.cs
     {
       "id" : "EHDSMedication.device",
       "path" : "EHDSMedication.device",
-      "short" : "Administration device included in the medicinal product. Devices that are not inside the package of medicinal product are excluded.",
-      "definition" : "Administration device included in the medicinal product. Devices that are not inside the package of medicinal product are excluded.",
+      "short" : "Administration device included in the medicinal product. Devices that are not inside the package of the medicinal product are excluded.",
+      "definition" : "Administration device included in the medicinal product. Devices that are not inside the package of the medicinal product are excluded.",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -376,8 +379,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSMedication.cs
     {
       "id" : "EHDSMedication.characteristic",
       "path" : "EHDSMedication.characteristic",
-      "short" : "Additional features of the medicinal product (e.g. reimbursable, sugar-free, easy-open cap, score-lined). It is expected that implementers will define a value set supporting their use cases.",
-      "definition" : "Additional features of the medicinal product (e.g. reimbursable, sugar-free, easy-open cap, score-lined). It is expected that implementers will define a value set supporting their use cases.",
+      "short" : "Additional features of the medicinal product (e.g. reimbursable, sugar-free, easy-open cap, score-lined). Implementers shall define a value set supporting their use cases.",
+      "definition" : "Additional features of the medicinal product (e.g. reimbursable, sugar-free, easy-open cap, score-lined). Implementers shall define a value set supporting their use cases.",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -438,8 +441,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSMedication.cs
     {
       "id" : "EHDSMedication.batch",
       "path" : "EHDSMedication.batch",
-      "short" : "Batch information of a medicinal product. Typically recorded during dispense or administration, rarely known or relevant for a prescription/request.",
-      "definition" : "Batch information of a medicinal product. Typically recorded during dispense or administration, rarely known or relevant for a prescription/request.",
+      "short" : "Batch information of a medicinal product. Typically recorded during dispensation or administration, rarely known or relevant for a prescription/request.",
+      "definition" : "Batch information of a medicinal product. Typically recorded during dispensation or administration, rarely known or relevant for a prescription/request.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -460,8 +463,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSMedication.cs
     {
       "id" : "EHDSMedication.batch.expirationDate",
       "path" : "EHDSMedication.batch.expirationDate",
-      "short" : "Batch expiration date of the medicinal product.",
-      "definition" : "Batch expiration date of the medicinal product.",
+      "short" : "Batch expiry date of the medicinal product.",
+      "definition" : "Batch expiry date of the medicinal product.",
       "min" : 0,
       "max" : "1",
       "type" : [{

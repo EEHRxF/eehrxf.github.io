@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSEndpoint.csv)
   "name" : "EHDSEndpoint",
   "title" : "Endpoint model",
   "status" : "draft",
-  "date" : "2026-11-18T18:54:26+00:00",
+  "date" : "2026-11-18T22:37:31+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -86,8 +86,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSEndpoint.csv)
     {
       "id" : "EHDSEndpoint.connectionType",
       "path" : "EHDSEndpoint.connectionType",
-      "short" : "A coded value that represents the technical details of the usage of this endpoint, such as what WSDLs should be used in what way.",
-      "definition" : "A coded value that represents the technical details of the usage of this endpoint, such as what WSDLs should be used in what way.",
+      "short" : "A coded value identifying the technical protocol, profile or standard used to connect to and communicate with the endpoint.",
+      "definition" : "A coded value identifying the technical protocol, profile or standard used to connect to and communicate with the endpoint.",
       "min" : 1,
       "max" : "*",
       "type" : [{
@@ -101,8 +101,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSEndpoint.csv)
     {
       "id" : "EHDSEndpoint.name",
       "path" : "EHDSEndpoint.name",
-      "short" : "A friendly name that this endpoint can be referred to with.",
-      "definition" : "A friendly name that this endpoint can be referred to with.",
+      "short" : "A friendly name that this endpoint may be referred to with.",
+      "definition" : "A friendly name that this endpoint may be referred to with.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -134,8 +134,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSEndpoint.csv)
     {
       "id" : "EHDSEndpoint.payload.mimeType",
       "path" : "EHDSEndpoint.payload.mimeType",
-      "short" : "The mime type to send the payload in (e.g. application/fhir+xml, application/fhir+json).",
-      "definition" : "The mime type to send the payload in (e.g. application/fhir+xml, application/fhir+json).",
+      "short" : "The MIME type to send the payload in (e.g. application/fhir+xml, application/fhir+json).",
+      "definition" : "The MIME type to send the payload in (e.g. application/fhir+xml, application/fhir+json).",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -149,8 +149,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSEndpoint.csv)
     {
       "id" : "EHDSEndpoint.payload.profileCanonical",
       "path" : "EHDSEndpoint.payload.profileCanonical",
-      "short" : "The technical profile that is expected at this endpoint. It describes the resources that are handled, or even simply which resource types.",
-      "definition" : "The technical profile that is expected at this endpoint. It describes the resources that are handled, or even simply which resource types.",
+      "short" : "The technical profile that is required at this endpoint. It describes the resources that are handled, or even simply which resource types.",
+      "definition" : "The technical profile that is required at this endpoint. It describes the resources that are handled, or even simply which resource types.",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -160,8 +160,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSEndpoint.csv)
     {
       "id" : "EHDSEndpoint.payload.profileUri",
       "path" : "EHDSEndpoint.payload.profileUri",
-      "short" : "The profile (as a URI) that is expected at this endpoint when not represented using a FHIR profile.",
-      "definition" : "The profile (as a URI) that is expected at this endpoint when not represented using a FHIR profile.",
+      "short" : "The profile (as a uniform resource identifier (URI)) that is required at this endpoint when not represented using an FHIR profile.",
+      "definition" : "The profile (as a uniform resource identifier (URI)) that is required at this endpoint when not represented using an FHIR profile.",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -171,8 +171,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSEndpoint.csv)
     {
       "id" : "EHDSEndpoint.address",
       "path" : "EHDSEndpoint.address",
-      "short" : "The URI that describes the actual end-point to connect to.",
-      "definition" : "The URI that describes the actual end-point to connect to.",
+      "short" : "The URI that describes the actual endpoint to connect to.",
+      "definition" : "The URI that describes the actual endpoint to connect to.",
       "min" : 1,
       "max" : "1",
       "type" : [{
@@ -182,8 +182,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSEndpoint.csv)
     {
       "id" : "EHDSEndpoint.header",
       "path" : "EHDSEndpoint.header",
-      "short" : "Additional headers / information to send as part of the notification. Usage depends on the channel type.",
-      "definition" : "Additional headers / information to send as part of the notification. Usage depends on the channel type.",
+      "short" : "Additional headers/information to send as part of the notification. Usage depends on the channel type.",
+      "definition" : "Additional headers/information to send as part of the notification. Usage depends on the channel type.",
       "min" : 0,
       "max" : "*",
       "type" : [{

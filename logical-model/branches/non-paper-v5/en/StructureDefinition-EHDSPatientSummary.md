@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSPatientSummar
   "name" : "EHDSPatientSummary",
   "title" : "Patient summary model",
   "status" : "draft",
-  "date" : "2026-11-18T18:54:26+00:00",
+  "date" : "2026-11-18T22:37:31+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -63,14 +63,24 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSPatientSummar
       "short" : "Patient summary header."
     },
     {
-      "id" : "EHDSPatientSummary.header.language",
-      "path" : "EHDSPatientSummary.header.language",
-      "short" : "Language in which the document is written. Language is expressed by the IETF language tag."
+      "id" : "EHDSPatientSummary.header.author[x]",
+      "path" : "EHDSPatientSummary.header.author[x]",
+      "short" : "Author of the document."
+    },
+    {
+      "id" : "EHDSPatientSummary.header.documentCategory",
+      "path" : "EHDSPatientSummary.header.documentCategory",
+      "short" : "Broad category of document (e.g. 60591-5 Patient summary document)."
+    },
+    {
+      "id" : "EHDSPatientSummary.header.documentType",
+      "path" : "EHDSPatientSummary.header.documentType",
+      "short" : "Type of document (e.g. 60591-5 Patient summary document)."
     },
     {
       "id" : "EHDSPatientSummary.header.documentTitle",
       "path" : "EHDSPatientSummary.header.documentTitle",
-      "short" : "Human readable document title that can be displayed in search results, etc. This can be documentType's display name, or it can contain further information. Example: 'Patient Summary of Jane Green 10.12.2024'."
+      "short" : "Human-readable document title that may be displayed in search results etc. This may be documentType’s display name, or it may contain further information. Example: ‘Patient summary of Jane Green 10.12.2024’."
     },
     {
       "id" : "EHDSPatientSummary.header.period",
@@ -78,13 +88,33 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSPatientSummar
       "max" : "0"
     },
     {
+      "id" : "EHDSPatientSummary.header.legalAuthentication",
+      "path" : "EHDSPatientSummary.header.legalAuthentication",
+      "short" : "Document legal authentication details."
+    },
+    {
+      "id" : "EHDSPatientSummary.header.legalAuthentication.legalAuthenticator[x]",
+      "path" : "EHDSPatientSummary.header.legalAuthentication.legalAuthenticator[x]",
+      "short" : "The person or organisation taking responsibility for the content of the document."
+    },
+    {
+      "id" : "EHDSPatientSummary.header.legalAuthentication.dateTime",
+      "path" : "EHDSPatientSummary.header.legalAuthentication.dateTime",
+      "short" : "Date and time when the document was authenticated."
+    },
+    {
       "id" : "EHDSPatientSummary.header.eventCategory",
       "path" : "EHDSPatientSummary.header.eventCategory",
-      "short" : "Categorisation of the event covered by the document (e.g. in case of a partial patient summary related to a specific context). Selection of such tags or labels depends on the use case and agreement between data sharing parties. This meta-data element serves primarily for searching and filtering purposes.",
+      "short" : "Categorisation of the event covered by the document (e.g. in the case of a partial patient summary related to a specific context). Selection of such tags or labels depends on the use case and agreement between data-sharing parties. This metadata element serves primarily for searching and filtering purposes.",
       "binding" : {
         "strength" : "required",
         "description" : "SNOMED GPS (preferred), LOINC"
       }
+    },
+    {
+      "id" : "EHDSPatientSummary.presentedForm",
+      "path" : "EHDSPatientSummary.presentedForm",
+      "short" : "A narrative easy-to-read representation of the full dataset, e.g. PDF version of a document."
     },
     {
       "id" : "EHDSPatientSummary.alerts",
@@ -124,7 +154,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSPatientSummar
       "path" : "EHDSPatientSummary.allergiesAndIntolerances",
       "short" : "Section: Allergies and intolerances.",
       "definition" : "Section: Allergies and intolerances.",
-      "min" : 1,
+      "min" : 0,
       "max" : "1",
       "type" : [{
         "code" : "Base"
@@ -144,8 +174,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSPatientSummar
     {
       "id" : "EHDSPatientSummary.allergiesAndIntolerances.allergyIntolerance",
       "path" : "EHDSPatientSummary.allergiesAndIntolerances.allergyIntolerance",
-      "short" : "Allergies and intolerances.",
-      "definition" : "Allergies and intolerances.",
+      "short" : "Allergy or intolerance.",
+      "definition" : "Allergy or intolerance.",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -155,8 +185,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSPatientSummar
     {
       "id" : "EHDSPatientSummary.allergiesAndIntolerances.emptyReason",
       "path" : "EHDSPatientSummary.allergiesAndIntolerances.emptyReason",
-      "short" : "Reason for absence of data. The field shall be present when no allergy or intolerance entries are present.",
-      "definition" : "Reason for absence of data. The field shall be present when no allergy or intolerance entries are present.",
+      "short" : "Reason for absence of data. The field shall be present when no allergy or intolerance entries are present. Where allergy or intolerance information is available only as unstructured text, emptyReason shall have the value ‘as-text’.",
+      "definition" : "Reason for absence of data. The field shall be present when no allergy or intolerance entries are present. Where allergy or intolerance information is available only as unstructured text, emptyReason shall have the value ‘as-text’.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -172,7 +202,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSPatientSummar
       "path" : "EHDSPatientSummary.problems",
       "short" : "Section: Medical problems.",
       "definition" : "Section: Medical problems.",
-      "min" : 1,
+      "min" : 0,
       "max" : "1",
       "type" : [{
         "code" : "Base"
@@ -192,8 +222,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSPatientSummar
     {
       "id" : "EHDSPatientSummary.problems.emptyReason",
       "path" : "EHDSPatientSummary.problems.emptyReason",
-      "short" : "Reason for absence of data. The field shall be present when no problem entries are present.",
-      "definition" : "Reason for absence of data. The field shall be present when no problem entries are present.",
+      "short" : "Reason for absence of data. The field shall be present when no problem entries are present. Where information on problems is available only as unstructured text, emptyReason shall have the value ‘as-text’.",
+      "definition" : "Reason for absence of data. The field shall be present when no problem entries are present. Where information on problems is available only as unstructured text, emptyReason shall have the value ‘as-text’.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -231,7 +261,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSPatientSummar
       "path" : "EHDSPatientSummary.medicationSummary",
       "short" : "Section: Medication summary.",
       "definition" : "Section: Medication summary.",
-      "min" : 1,
+      "min" : 0,
       "max" : "1",
       "type" : [{
         "code" : "Base"
@@ -251,8 +281,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSPatientSummar
     {
       "id" : "EHDSPatientSummary.medicationSummary.emptyReason",
       "path" : "EHDSPatientSummary.medicationSummary.emptyReason",
-      "short" : "Reason for absence of data. The field shall be present when no medication entries are present.",
-      "definition" : "Reason for absence of data. The field shall be present when no medication entries are present.",
+      "short" : "Reason for absence of data. The field shall be present when no medication entries are present. Where information on medications is available only as unstructured text, emptyReason shall have the value ‘as-text’.",
+      "definition" : "Reason for absence of data. The field shall be present when no medication entries are present. Where information on medications is available only as unstructured text, emptyReason shall have the value ‘as-text’.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -266,8 +296,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSPatientSummar
     {
       "id" : "EHDSPatientSummary.medicationSummary.medicationUse",
       "path" : "EHDSPatientSummary.medicationSummary.medicationUse",
-      "short" : "Use of medicinal product relevant for this patient summary. Typically, medicinal products whose period of time indicated for the treatment has not yet expired whether it has been dispensed or not.",
-      "definition" : "Use of medicinal product relevant for this patient summary. Typically, medicinal products whose period of time indicated for the treatment has not yet expired whether it has been dispensed or not.",
+      "short" : "Use of medicinal product relevant for this patient summary. Typically, medicinal products whose period of time indicated for the treatment has not yet expired, whether it has been dispensed or not.",
+      "definition" : "Use of medicinal product relevant for this patient summary. Typically, medicinal products whose period of time indicated for the treatment has not yet expired, whether it has been dispensed or not.",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -279,7 +309,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSPatientSummar
       "path" : "EHDSPatientSummary.medicalDevicesAndImplants",
       "short" : "Section: Medical devices and implants.",
       "definition" : "Section: Medical devices and implants.",
-      "min" : 1,
+      "min" : 0,
       "max" : "1",
       "type" : [{
         "code" : "Base"
@@ -299,8 +329,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSPatientSummar
     {
       "id" : "EHDSPatientSummary.medicalDevicesAndImplants.emptyReason",
       "path" : "EHDSPatientSummary.medicalDevicesAndImplants.emptyReason",
-      "short" : "Reason for absence of data. The field shall be present when no medical device or implant entries are present.",
-      "definition" : "Reason for absence of data. The field shall be present when no medical device or implant entries are present.",
+      "short" : "Reason for absence of data. The field shall be present when no medical device or implant entries are present. Where information on devices and implants is available only as unstructured text, emptyReason shall have the value ‘as-text’.",
+      "definition" : "Reason for absence of data. The field shall be present when no medical device or implant entries are present. Where information on devices and implants is available only as unstructured text, emptyReason shall have the value ‘as-text’.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -327,7 +357,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSPatientSummar
       "path" : "EHDSPatientSummary.procedures",
       "short" : "Section: Procedures.",
       "definition" : "Section: Procedures.",
-      "min" : 1,
+      "min" : 0,
       "max" : "1",
       "type" : [{
         "code" : "Base"
@@ -347,8 +377,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSPatientSummar
     {
       "id" : "EHDSPatientSummary.procedures.emptyReason",
       "path" : "EHDSPatientSummary.procedures.emptyReason",
-      "short" : "Reason for absence of data. The field shall be present when no procedure entries are present.",
-      "definition" : "Reason for absence of data. The field shall be present when no procedure entries are present.",
+      "short" : "Reason for absence of data. The field shall be present when no procedure entries are present. Where information on procedures is available only as unstructured text, emptyReason shall have the value ‘as-text’.",
+      "definition" : "Reason for absence of data. The field shall be present when no procedure entries are present. Where information on procedures is available only as unstructured text, emptyReason shall have the value ‘as-text’.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -373,9 +403,9 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSPatientSummar
     {
       "id" : "EHDSPatientSummary.immunisations",
       "path" : "EHDSPatientSummary.immunisations",
-      "short" : "Section: Immunisations,",
-      "definition" : "Section: Immunisations,",
-      "min" : 1,
+      "short" : "Section: Immunisations.",
+      "definition" : "Section: Immunisations.",
+      "min" : 0,
       "max" : "1",
       "type" : [{
         "code" : "Base"
@@ -395,8 +425,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSPatientSummar
     {
       "id" : "EHDSPatientSummary.immunisations.emptyReason",
       "path" : "EHDSPatientSummary.immunisations.emptyReason",
-      "short" : "Reason for absence of data. The field shall be present when no immunisation entries are present.",
-      "definition" : "Reason for absence of data. The field shall be present when no immunisation entries are present.",
+      "short" : "Reason for absence of data. The field shall be present when no immunisation entries are present. Where information on immunisations is available only as unstructured text, emptyReason shall have the value ‘as-text’.",
+      "definition" : "Reason for absence of data. The field shall be present when no immunisation entries are present. Where information on immunisations is available only as unstructured text, emptyReason shall have the value ‘as-text’.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -410,8 +440,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSPatientSummar
     {
       "id" : "EHDSPatientSummary.immunisations.immunisation",
       "path" : "EHDSPatientSummary.immunisations.immunisation",
-      "short" : "Immunisations.",
-      "definition" : "Immunisations.",
+      "short" : "Immunisation.",
+      "definition" : "Immunisation.",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -443,8 +473,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSPatientSummar
     {
       "id" : "EHDSPatientSummary.functionalStatus.condition",
       "path" : "EHDSPatientSummary.functionalStatus.condition",
-      "short" : "Last assessment results recorded regarding conditions describing the patient's functional status or disability.",
-      "definition" : "Last assessment results recorded regarding conditions describing the patient's functional status or disability.",
+      "short" : "Last assessment results recorded regarding conditions describing the patient’s functional status or disability.",
+      "definition" : "Last assessment results recorded regarding conditions describing the patient’s functional status or disability.",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -487,8 +517,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSPatientSummar
     {
       "id" : "EHDSPatientSummary.socialHistory.observation",
       "path" : "EHDSPatientSummary.socialHistory.observation",
-      "short" : "Health related lifestyle factors or lifestyle observations and social determinants of health. Example: cigarette smoker, alcohol consumption.",
-      "definition" : "Health related lifestyle factors or lifestyle observations and social determinants of health. Example: cigarette smoker, alcohol consumption.",
+      "short" : "Health-related lifestyle factors or lifestyle observations and social determinants of health. Example: cigarette smoker, alcohol consumption.",
+      "definition" : "Health-related lifestyle factors or lifestyle observations and social determinants of health. Example: cigarette smoker, alcohol consumption.",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -564,8 +594,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSPatientSummar
     {
       "id" : "EHDSPatientSummary.travelHistory.travelHistory",
       "path" : "EHDSPatientSummary.travelHistory.travelHistory",
-      "short" : "Travel history for one country",
-      "definition" : "Travel history for one country",
+      "short" : "Travel history for one country.",
+      "definition" : "Travel history for one country.",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -575,8 +605,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSPatientSummar
     {
       "id" : "EHDSPatientSummary.patientStory",
       "path" : "EHDSPatientSummary.patientStory",
-      "short" : "Section: Patient story. A concise narrative from the patient's perspective about their present health state. This is a record of things that a person feels are important to communicate about their needs, strengths, values, concerns and preferences to others providing support and care.",
-      "definition" : "Section: Patient story. A concise narrative from the patient's perspective about their present health state. This is a record of things that a person feels are important to communicate about their needs, strengths, values, concerns and preferences to others providing support and care.",
+      "short" : "Section: Patient story. A concise narrative from the patient’s perspective about their present health state. This is a record of things that a person feels are important to communicate about their needs, strengths, values, concerns and preferences to others providing support and care.",
+      "definition" : "Section: Patient story. A concise narrative from the patient’s perspective about their present health state. This is a record of things that a person feels are important to communicate about their needs, strengths, values, concerns and preferences to others providing support and care.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -597,8 +627,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSPatientSummar
     {
       "id" : "EHDSPatientSummary.advanceDirectives",
       "path" : "EHDSPatientSummary.advanceDirectives",
-      "short" : "Section: Advance Directives.",
-      "definition" : "Section: Advance Directives.",
+      "short" : "Section: Advance directives.",
+      "definition" : "Section: Advance directives.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -652,8 +682,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSPatientSummar
     {
       "id" : "EHDSPatientSummary.observationResults.result",
       "path" : "EHDSPatientSummary.observationResults.result",
-      "short" : "Observation results pertaining to the patient's health condition.",
-      "definition" : "Observation results pertaining to the patient's health condition.",
+      "short" : "Observation results pertaining to the patient’s health condition.",
+      "definition" : "Observation results pertaining to the patient’s health condition.",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -661,8 +691,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSPatientSummar
       }]
     },
     {
-      "id" : "EHDSPatientSummary.carePlan",
-      "path" : "EHDSPatientSummary.carePlan",
+      "id" : "EHDSPatientSummary.carePlans",
+      "path" : "EHDSPatientSummary.carePlans",
       "short" : "Section: Care plans.",
       "definition" : "Section: Care plans.",
       "min" : 0,
@@ -672,8 +702,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSPatientSummar
       }]
     },
     {
-      "id" : "EHDSPatientSummary.carePlan.generatedNarrative",
-      "path" : "EHDSPatientSummary.carePlan.generatedNarrative",
+      "id" : "EHDSPatientSummary.carePlans.generatedNarrative",
+      "path" : "EHDSPatientSummary.carePlans.generatedNarrative",
       "short" : "Narrative, potentially formatted, content of the whole section.",
       "definition" : "Narrative, potentially formatted, content of the whole section.",
       "min" : 0,
@@ -683,8 +713,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSPatientSummar
       }]
     },
     {
-      "id" : "EHDSPatientSummary.carePlan.carePlan",
-      "path" : "EHDSPatientSummary.carePlan.carePlan",
+      "id" : "EHDSPatientSummary.carePlans.carePlan",
+      "path" : "EHDSPatientSummary.carePlans.carePlan",
       "short" : "Describes the intention of how one or more practitioners intend to deliver care for the patient for a period of time, possibly limited to care for a specific condition or set of conditions.",
       "definition" : "Describes the intention of how one or more practitioners intend to deliver care for the patient for a period of time, possibly limited to care for a specific condition or set of conditions.",
       "min" : 0,

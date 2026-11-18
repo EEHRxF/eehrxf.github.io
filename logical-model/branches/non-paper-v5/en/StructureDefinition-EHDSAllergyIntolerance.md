@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAllergyIntole
   "name" : "EHDSAllergyIntolerance",
   "title" : "Allergy intolerance model",
   "status" : "draft",
-  "date" : "2026-11-18T18:54:26+00:00",
+  "date" : "2026-11-18T22:37:31+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -58,9 +58,19 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAllergyIntole
       "definition" : "EHDSAllergyIntolerance means a structured set of data elements describing a clinically identified predisposition of a patient to an adverse reaction upon exposure to a specific agent or allergen."
     },
     {
+      "id" : "EHDSAllergyIntolerance.header.identifier",
+      "path" : "EHDSAllergyIntolerance.header.identifier",
+      "short" : "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)."
+    },
+    {
+      "id" : "EHDSAllergyIntolerance.header.author[x]",
+      "path" : "EHDSAllergyIntolerance.header.author[x]",
+      "short" : "Author of the resource."
+    },
+    {
       "id" : "EHDSAllergyIntolerance.header.status",
       "path" : "EHDSAllergyIntolerance.header.status",
-      "short" : "Current status of the allergy or intolerance, for example, whether it is active, inactive, or resolved..",
+      "short" : "Current status of the allergy or intolerance, for example whether it is active, inactive or resolved.",
       "binding" : {
         "strength" : "required",
         "description" : "HL7 AllergyIntolerance Clinical Status Codes"
@@ -69,8 +79,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAllergyIntole
     {
       "id" : "EHDSAllergyIntolerance.agentOrAllergen",
       "path" : "EHDSAllergyIntolerance.agentOrAllergen",
-      "short" : "Code that identifies the allergy or intolerance.",
-      "definition" : "Code that identifies the allergy or intolerance.",
+      "short" : "Code that identifies the substance, pharmaceutical product or group of medications the person is allergic or intolerant to.",
+      "definition" : "Code that identifies the substance, pharmaceutical product or group of medications the person is allergic or intolerant to.",
       "comment" : "Code for an allergy or intolerance statement (either a positive or a negated/excluded statement). This may be a code for a substance or pharmaceutical product that is considered to be responsible for the adverse reaction risk (e.g., Latex), an allergy or intolerance condition (e.g., Latex allergy), or a negated/excluded code for a specific substance or class (e.g., No latex allergy). It must be clinically safe to only process the 'code' and ignore the 'reaction.substance'.",
       "min" : 1,
       "max" : "1",
@@ -111,8 +121,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAllergyIntole
     {
       "id" : "EHDSAllergyIntolerance.certainty",
       "path" : "EHDSAllergyIntolerance.certainty",
-      "short" : "Assertion about the certainty associated with a propensity, or potential risk, of a reaction to the identified substance. Diagnostic and /or clinical evidence of condition.",
-      "definition" : "Assertion about the certainty associated with a propensity, or potential risk, of a reaction to the identified substance. Diagnostic and /or clinical evidence of condition.",
+      "short" : "Assertion about the certainty associated with a propensity, or potential risk, of a reaction to the identified substance. Evidence of condition (diagnostic, clinical or both).",
+      "definition" : "Assertion about the certainty associated with a propensity, or potential risk, of a reaction to the identified substance. Evidence of condition (diagnostic, clinical or both).",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -137,8 +147,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAllergyIntole
     {
       "id" : "EHDSAllergyIntolerance.endDate",
       "path" : "EHDSAllergyIntolerance.endDate",
-      "short" : "Date of resolution of the allergy or intolerance (e.g. when the clinician deemed there is no longer any need to track the underlying condition).",
-      "definition" : "Date of resolution of the allergy or intolerance (e.g. when the clinician deemed there is no longer any need to track the underlying condition).",
+      "short" : "Date of resolution of the allergy or intolerance (e.g. when the clinician deemed that there is no longer any need to track the underlying condition).",
+      "definition" : "Date of resolution of the allergy or intolerance (e.g. when the clinician deemed that there is no longer any need to track the underlying condition).",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -155,6 +165,21 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAllergyIntole
       "type" : [{
         "code" : "Base"
       }]
+    },
+    {
+      "id" : "EHDSAllergyIntolerance.reaction.substance",
+      "path" : "EHDSAllergyIntolerance.reaction.substance",
+      "short" : "Specific substance or pharmaceutical product considered responsible for the reaction episode in which the allergy or intolerance was detected.",
+      "definition" : "Specific substance or pharmaceutical product considered responsible for the reaction episode in which the allergy or intolerance was detected.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "description" : "EMA SPOR SMS (preferred for medication), SNOMED GPS (for medication groupings), SNOMED GPS (preferred for other cases)"
+      }
     },
     {
       "id" : "EHDSAllergyIntolerance.reaction.manifestation",

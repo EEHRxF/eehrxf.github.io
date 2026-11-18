@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingReport
   "name" : "EHDSImagingReport",
   "title" : "Imaging report model.",
   "status" : "draft",
-  "date" : "2026-11-18T18:54:26+00:00",
+  "date" : "2026-11-18T22:37:31+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -63,32 +63,29 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingReport
       "short" : "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)."
     },
     {
+      "id" : "EHDSImagingReport.header.author[x]",
+      "path" : "EHDSImagingReport.header.author[x]",
+      "short" : "Author of the document."
+    },
+    {
       "id" : "EHDSImagingReport.header.date",
       "path" : "EHDSImagingReport.header.date",
       "short" : "Date and optionally time of authoring/issuing"
     },
     {
-      "id" : "EHDSImagingReport.header.status",
-      "path" : "EHDSImagingReport.header.status",
-      "binding" : {
-        "strength" : "required",
-        "description" : "HL7 Imaging Study Status"
-      }
-    },
-    {
-      "id" : "EHDSImagingReport.header.language",
-      "path" : "EHDSImagingReport.header.language",
-      "short" : "Language in which the document is written. Language is expressed by the IETF language tag."
+      "id" : "EHDSImagingReport.header.documentCategory",
+      "path" : "EHDSImagingReport.header.documentCategory",
+      "short" : "Broad category of document (e.g. 18748-4 Diagnostic imaging study)."
     },
     {
       "id" : "EHDSImagingReport.header.documentType",
       "path" : "EHDSImagingReport.header.documentType",
-      "short" : "Type of document (e.g. 18748-4 Diagnostic imaging study)."
+      "short" : "Type of document (e.g. 24627-2 Chest CT)."
     },
     {
       "id" : "EHDSImagingReport.header.documentTitle",
       "path" : "EHDSImagingReport.header.documentTitle",
-      "short" : "Human readable document title that can be displayed in search results, etc. This can be documentType's display name, or it can contain further information."
+      "short" : "Human-readable document title that may be displayed in search results etc. This may be documentType’s display name, or it may contain further information."
     },
     {
       "id" : "EHDSImagingReport.header.period",
@@ -96,39 +93,29 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingReport
       "short" : "Time of service (imaging study) that is being documented."
     },
     {
-      "id" : "EHDSImagingReport.header.attestation.dateTime",
-      "path" : "EHDSImagingReport.header.attestation.dateTime",
-      "short" : "Date and time of the approval of the document by the attester"
-    },
-    {
       "id" : "EHDSImagingReport.header.legalAuthentication",
       "path" : "EHDSImagingReport.header.legalAuthentication",
-      "short" : "Document legal authentication details"
+      "short" : "Document legal authentication details."
     },
     {
-      "id" : "EHDSImagingReport.header.legalAuthentication.dateTime",
-      "path" : "EHDSImagingReport.header.legalAuthentication.dateTime",
-      "short" : "Date and time when the document was authorised"
+      "id" : "EHDSImagingReport.header.legalAuthentication.legalAuthenticator[x]",
+      "path" : "EHDSImagingReport.header.legalAuthentication.legalAuthenticator[x]",
+      "short" : "The person or organisation taking responsibility for the content of the document."
     },
     {
       "id" : "EHDSImagingReport.header.eventCategory",
       "path" : "EHDSImagingReport.header.eventCategory",
-      "short" : "Categorisation of the event covered by the document (e.g. imaging study types, body regions, modality, etc.). Selection of such tags or labels depends on the use case and agreement between data sharing parties. This meta-data element serves primarily for searching and filtering purposes.",
+      "short" : "Categorisation of the event covered by the document (e.g. imaging study types, body regions, modality). Selection of such tags or labels depends on the use case and agreement between data-sharing parties. This metadata element serves primarily for searching and filtering purposes.",
       "binding" : {
         "strength" : "required",
         "description" : "DICOM CID 33 Modality (preferred), SNOMED GPS"
       }
     },
     {
-      "id" : "EHDSImagingReport.header.serviceSpecialty",
-      "path" : "EHDSImagingReport.header.serviceSpecialty",
-      "short" : "Additional details about where the content was created (e.g. clinical specialty)"
-    },
-    {
       "id" : "EHDSImagingReport.header.accessionNumber",
       "path" : "EHDSImagingReport.header.accessionNumber",
-      "short" : "Accession number - an identifier, managed by the RIS at the local level, which usually uniquely identifies an imaging procedure request, and links it to imaging study and related imaging report.",
-      "definition" : "Accession number - an identifier, managed by the RIS at the local level, which usually uniquely identifies an imaging procedure request, and links it to imaging study and related imaging report.",
+      "short" : "Accession number – an identifier, managed by the radiology information system at the local level, which usually uniquely identifies an imaging procedure request, and links it to the imaging study and related imaging report.",
+      "definition" : "Accession number – an identifier, managed by the radiology information system at the local level, which usually uniquely identifies an imaging procedure request, and links it to the imaging study and related imaging report.",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -138,8 +125,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingReport
     {
       "id" : "EHDSImagingReport.header.intendedRecipient[x]",
       "path" : "EHDSImagingReport.header.intendedRecipient[x]",
-      "short" : "Intended recipient of the information, i.e. a person or organisation that should be notified or be aware of the content. This element is used to indicate explicit communication intent and does not represent routine storage or passive availability of information (e.g. in portals).",
-      "definition" : "Intended recipient of the information, i.e. a person or organisation that should be notified or be aware of the content. This element is used to indicate explicit communication intent and does not represent routine storage or passive availability of information (e.g. in portals).",
+      "short" : "Intended recipient of the information, i.e. a person or organisation that shall be notified or be aware of the content. This element is used to indicate explicit communication intent and does not represent routine storage or passive availability of information (e.g. in portals).",
+      "definition" : "Intended recipient of the information, i.e. a person or organisation that shall be notified or be aware of the content. This element is used to indicate explicit communication intent and does not represent routine storage or passive availability of information (e.g. in portals).",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -156,10 +143,15 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingReport
       }]
     },
     {
+      "id" : "EHDSImagingReport.presentedForm",
+      "path" : "EHDSImagingReport.presentedForm",
+      "short" : "A narrative easy-to-read representation of the full dataset, e.g. PDF version of a document. At least one of body or presentedForm shall be present."
+    },
+    {
       "id" : "EHDSImagingReport.body",
       "path" : "EHDSImagingReport.body",
-      "short" : "Imaging report structured body.",
-      "definition" : "Imaging report structured body.",
+      "short" : "Imaging report structured body. At least one of body or presentedForm shall be present.",
+      "definition" : "Imaging report structured body. At least one of body or presentedForm shall be present.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -254,8 +246,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingReport
     {
       "id" : "EHDSImagingReport.body.supportingInformation",
       "path" : "EHDSImagingReport.body.supportingInformation",
-      "short" : "This information includes diagnosis, clinical findings and other observations. This includes observations explicitly requested by the producer (filler) to provide context or supporting information needed to complete the order. For example, reporting the metal implants present in patient's body.",
-      "definition" : "This information includes diagnosis, clinical findings and other observations. This includes observations explicitly requested by the producer (filler) to provide context or supporting information needed to complete the order. For example, reporting the metal implants present in patient's body.",
+      "short" : "This information includes diagnosis, clinical findings and other observations. This includes observations explicitly requested by the producer (filler) to provide context or supporting information needed to complete the order. For example, reporting the metal implants present in patient’s body.",
+      "definition" : "This information includes diagnosis, clinical findings and other observations. This includes observations explicitly requested by the producer (filler) to provide context or supporting information needed to complete the order. For example, reporting the metal implants present in patient’s body.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -265,8 +257,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingReport
     {
       "id" : "EHDSImagingReport.body.supportingInformation.observation",
       "path" : "EHDSImagingReport.body.supportingInformation.observation",
-      "short" : "Clinical findings and other observations (e.g., height and weight of the patient).",
-      "definition" : "Clinical findings and other observations (e.g., height and weight of the patient).",
+      "short" : "Clinical findings and other observations (e.g. height and weight of the patient).",
+      "definition" : "Clinical findings and other observations (e.g. height and weight of the patient).",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -309,8 +301,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingReport
     {
       "id" : "EHDSImagingReport.body.supportingInformation.pregnancyStatus",
       "path" : "EHDSImagingReport.body.supportingInformation.pregnancyStatus",
-      "short" : "Pregnancy status when the imaging examination was performed, e.g., pregnant, not pregnant, unknown.",
-      "definition" : "Pregnancy status when the imaging examination was performed, e.g., pregnant, not pregnant, unknown.",
+      "short" : "Pregnancy status when the imaging examination was performed, e.g. pregnant, not pregnant, unknown.",
+      "definition" : "Pregnancy status when the imaging examination was performed, e.g. pregnant, not pregnant, unknown.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -331,8 +323,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingReport
     {
       "id" : "EHDSImagingReport.body.exposureInformation",
       "path" : "EHDSImagingReport.body.exposureInformation",
-      "short" : "Information on total exposure during the imaging investigation to ionising radiation.",
-      "definition" : "Information on total exposure during the imaging investigation to ionising radiation.",
+      "short" : "Information on total exposure to ionised radiation during the imaging investigation.",
+      "definition" : "Information on total exposure to ionised radiation during the imaging investigation.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -464,8 +456,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingReport
     {
       "id" : "EHDSImagingReport.body.examinationReport.medicationAdministration",
       "path" : "EHDSImagingReport.body.examinationReport.medicationAdministration",
-      "short" : "Information about medications administered (contrast, sedation, stress agents, etc) to enable the imaging investigation or during it.",
-      "definition" : "Information about medications administered (contrast, sedation, stress agents, etc) to enable the imaging investigation or during it.",
+      "short" : "Information about medications administered (contrast, sedation, stress agents, etc.) to enable the imaging investigation or during it.",
+      "definition" : "Information about medications administered (contrast, sedation, stress agents, etc.) to enable the imaging investigation or during it.",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -547,8 +539,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingReport
     {
       "id" : "EHDSImagingReport.body.recommendation.description",
       "path" : "EHDSImagingReport.body.recommendation.description",
-      "short" : "Narrative description of the recommended activities including additional investigation, medication etc.",
-      "definition" : "Narrative description of the recommended activities including additional investigation, medication etc.",
+      "short" : "Narrative description of the recommended activities including additional investigation, medication, etc.",
+      "definition" : "Narrative description of the recommended activities including additional investigation, medication, etc.",
       "min" : 1,
       "max" : "1",
       "type" : [{
@@ -558,8 +550,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingReport
     {
       "id" : "EHDSImagingReport.body.recommendation.carePlan",
       "path" : "EHDSImagingReport.body.recommendation.carePlan",
-      "short" : "A complex and structured information about recommended goals, activities and objectives in the form of one or more formal care plan to be implemented after this imaging investigation.",
-      "definition" : "A complex and structured information about recommended goals, activities and objectives in the form of one or more formal care plan to be implemented after this imaging investigation.",
+      "short" : "Complex and structured information about recommended goals, activities and objectives in the form of one or more formal care plans to be implemented after this imaging investigation.",
+      "definition" : "Complex and structured information about recommended goals, activities and objectives in the form of one or more formal care plans to be implemented after this imaging investigation.",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -569,8 +561,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingReport
     {
       "id" : "EHDSImagingReport.body.comparisonStudy",
       "path" : "EHDSImagingReport.body.comparisonStudy",
-      "short" : "Documentation (reference) of a prior Imaging Report to which the current images were compared.",
-      "definition" : "Documentation (reference) of a prior Imaging Report to which the current images were compared.",
+      "short" : "Documentation (reference) of a prior imaging report to which the current images were compared.",
+      "definition" : "Documentation (reference) of a prior imaging report to which the current images were compared.",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -580,8 +572,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingReport
     {
       "id" : "EHDSImagingReport.dicomStudyMetadata",
       "path" : "EHDSImagingReport.dicomStudyMetadata",
-      "short" : "Metadata of the DICOM study. A study comprises a set of series, each of which includes a set of Service-Object Pair Instances (SOP Instances - images or other data) acquired or produced in a common context. A series is of only one modality (e.g. X-ray, CT, MR, ultrasound), but a study may have multiple series of different modalities.",
-      "definition" : "Metadata of the DICOM study. A study comprises a set of series, each of which includes a set of Service-Object Pair Instances (SOP Instances - images or other data) acquired or produced in a common context. A series is of only one modality (e.g. X-ray, CT, MR, ultrasound), but a study may have multiple series of different modalities.",
+      "short" : "Metadata of the DICOM study. A study comprises a set of series, each of which includes a set of Service-Object Pair (SOP) instances (SOP instances – images or other data) acquired or produced in a common context. A series is of only one modality (e.g. X-ray, computed tomography, magnetic resonance or ultrasound), but a study may have multiple series of different modalities.",
+      "definition" : "Metadata of the DICOM study. A study comprises a set of series, each of which includes a set of Service-Object Pair (SOP) instances (SOP instances – images or other data) acquired or produced in a common context. A series is of only one modality (e.g. X-ray, computed tomography, magnetic resonance or ultrasound), but a study may have multiple series of different modalities.",
       "min" : 0,
       "max" : "*",
       "type" : [{

@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSSpecimen.csv)
   "name" : "EHDSSpecimen",
   "title" : "Specimen model",
   "status" : "draft",
-  "date" : "2026-11-18T18:54:26+00:00",
+  "date" : "2026-11-18T22:37:31+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -60,8 +60,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSSpecimen.csv)
     {
       "id" : "EHDSSpecimen.identifier",
       "path" : "EHDSSpecimen.identifier",
-      "short" : "An identifier of the specimen which is unique within in a defined scope.",
-      "definition" : "An identifier of the specimen which is unique within in a defined scope.",
+      "short" : "An identifier of the specimen which is unique within a defined scope.",
+      "definition" : "An identifier of the specimen which is unique within a defined scope.",
       "min" : 1,
       "max" : "*",
       "type" : [{
@@ -101,8 +101,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSSpecimen.csv)
     {
       "id" : "EHDSSpecimen.specimenSource[x]",
       "path" : "EHDSSpecimen.specimenSource[x]",
-      "short" : "The source where the specimen came from. This may be from a patient, from a location (e.g., the source of an environmental sample), or from a device.",
-      "definition" : "The source where the specimen came from. This may be from a patient, from a location (e.g., the source of an environmental sample), or from a device.",
+      "short" : "The source where the specimen came from. This may be from a patient, from a location (e.g. the source of an environmental sample) or from a device.",
+      "definition" : "The source where the specimen came from. This may be from a patient, from a location (e.g. the source of an environmental sample) or from a device.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -129,8 +129,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSSpecimen.csv)
     {
       "id" : "EHDSSpecimen.request",
       "path" : "EHDSSpecimen.request",
-      "short" : "Service request based on which the specimen was collected.",
-      "definition" : "Service request based on which the specimen was collected.",
+      "short" : "Service request on the basis of which the specimen was collected.",
+      "definition" : "Service request on the basis of which the specimen was collected.",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -255,8 +255,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSSpecimen.csv)
     {
       "id" : "EHDSSpecimen.container.specimenQuantity",
       "path" : "EHDSSpecimen.container.specimenQuantity",
-      "short" : "Quantity of specimen within container,",
-      "definition" : "Quantity of specimen within container,",
+      "short" : "Quantity of specimen within the container.",
+      "definition" : "Quantity of specimen within the container.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -277,8 +277,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSSpecimen.csv)
     {
       "id" : "EHDSSpecimen.condition",
       "path" : "EHDSSpecimen.condition",
-      "short" : "State of the specimen. State of the specimen should be aligned with dataAbsentReason element of the Observation model.",
-      "definition" : "State of the specimen. State of the specimen should be aligned with dataAbsentReason element of the Observation model.",
+      "short" : "State of the specimen. State of the specimen shall be aligned with the dataAbsentReason element of the Observation model.",
+      "definition" : "State of the specimen. State of the specimen shall be aligned with the dataAbsentReason element of the Observation model.",
       "min" : 0,
       "max" : "*",
       "type" : [{

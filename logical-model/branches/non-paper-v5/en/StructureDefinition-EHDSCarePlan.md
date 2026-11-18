@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSCarePlan.csv)
   "name" : "EHDSCarePlan",
   "title" : "Care plan model",
   "status" : "draft",
-  "date" : "2026-11-18T18:54:26+00:00",
+  "date" : "2026-11-18T22:37:31+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -63,9 +63,14 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSCarePlan.csv)
       "short" : "Identifier for the care plan."
     },
     {
+      "id" : "EHDSCarePlan.header.author[x]",
+      "path" : "EHDSCarePlan.header.author[x]",
+      "short" : "Author of the resource."
+    },
+    {
       "id" : "EHDSCarePlan.header.status",
       "path" : "EHDSCarePlan.header.status",
-      "definition" : "Indicates whether the plan is currently being acted upon, represents future intentions, or is now a historical record.",
+      "definition" : "Indicates whether the plan is currently being acted upon, represents future intentions or is now a historical record.",
       "binding" : {
         "strength" : "required",
         "description" : "HL7 Request Status"
@@ -107,8 +112,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSCarePlan.csv)
     {
       "id" : "EHDSCarePlan.conditionAddressed[x]",
       "path" : "EHDSCarePlan.conditionAddressed[x]",
-      "short" : "Conditions/problems/concerns/diagnoses/etc whose management and/or mitigation are handled by this plan.",
-      "definition" : "Conditions/problems/concerns/diagnoses/etc whose management and/or mitigation are handled by this plan.",
+      "short" : "Conditions, problems, concerns, diagnoses, etc. whose management, mitigation or management and mitigation are handled by this plan.",
+      "definition" : "Conditions, problems, concerns, diagnoses, etc. whose management, mitigation or management and mitigation are handled by this plan.",
       "min" : 0,
       "max" : "*",
       "type" : [{

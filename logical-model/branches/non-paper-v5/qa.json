@@ -6,8 +6,8 @@
   "status" : "draft",
   "package-id" : "eu.ehds.models",
   "ig-ver" : "0.3.0",
-  "date" : "Wed, 18 Nov, 2026 18:54:26 +0000",
-  "dateISO8601" : "2026-11-18T18:54:26+00:00",
+  "date" : "Wed, 18 Nov, 2026 22:37:31 +0000",
+  "dateISO8601" : "2026-11-18T22:37:31+00:00",
   "errs" : 0,
   "warnings" : 0,
   "hints" : 0,
@@ -16,5 +16,5 @@
   "suppressed-warnings" : 2,
   "version" : "5.0.0",
   "tool" : "6.0.0-snapshot1 (3)",
-  "maxMemory" : 972729952
+  "maxMemory" : 857038448
 }

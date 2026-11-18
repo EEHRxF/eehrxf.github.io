@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSPatient.csv),
   "name" : "EHDSPatient",
   "title" : "Patient model",
   "status" : "draft",
-  "date" : "2026-11-18T18:54:26+00:00",
+  "date" : "2026-11-18T22:37:31+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -71,8 +71,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSPatient.csv),
     {
       "id" : "EHDSPatient.identifier.type",
       "path" : "EHDSPatient.identifier.type",
-      "short" : "Description of identifier.",
-      "definition" : "Description of identifier.",
+      "short" : "Description of identifier consisting of HL7 identifier type extended with: NI (national unique identifier); HI (health identifier); HIN (health insurance number); SS (social security identifier); REGPID (regional person identifier); REGION (region identifier).",
+      "definition" : "Description of identifier consisting of HL7 identifier type extended with: NI (national unique identifier); HI (health identifier); HIN (health insurance number); SS (social security identifier); REGPID (regional person identifier); REGION (region identifier).",
       "min" : 1,
       "max" : "1",
       "type" : [{
@@ -80,7 +80,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSPatient.csv),
       }],
       "binding" : {
         "strength" : "required",
-        "description" : "HL7 Identifier Type, extended with the following: NI (national unique identifier), HI (health identifier), HIN (health insurance number), SS (social security identifier), REGPID (regional person identifier), REGION (region identifier)"
+        "description" : "HL7 Identifier Type with an appropriate extension"
       }
     },
     {
@@ -144,8 +144,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSPatient.csv),
     {
       "id" : "EHDSPatient.administrativeGender",
       "path" : "EHDSPatient.administrativeGender",
-      "short" : "The gender that the patient is considered to have for administration and record keeping purposes.",
-      "definition" : "The gender that the patient is considered to have for administration and record keeping purposes.",
+      "short" : "The gender that the patient is considered to have for administration and record-keeping purposes.",
+      "definition" : "The gender that the patient is considered to have for administration and record-keeping purposes.",
       "min" : 1,
       "max" : "1",
       "type" : [{
@@ -174,8 +174,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSPatient.csv),
     {
       "id" : "EHDSPatient.sexForClinicalUse",
       "path" : "EHDSPatient.sexForClinicalUse",
-      "short" : "A summary parameter that provides guidance on how a receiver should apply settings or reference ranges that are derived from observable information such as an organ inventory, recent hormone lab tests, genetic testing, menstrual status, obstetric history, etc.",
-      "definition" : "A summary parameter that provides guidance on how a receiver should apply settings or reference ranges that are derived from observable information such as an organ inventory, recent hormone lab tests, genetic testing, menstrual status, obstetric history, etc.",
+      "short" : "A summary parameter that provides guidance on how a receiver shall apply settings or reference ranges that are derived from observable information such as an organ inventory, recent hormone lab tests, genetic testing, menstrual status, obstetric history, etc.",
+      "definition" : "A summary parameter that provides guidance on how a receiver shall apply settings or reference ranges that are derived from observable information such as an organ inventory, recent hormone lab tests, genetic testing, menstrual status, obstetric history, etc.",
       "min" : 0,
       "max" : "1",
       "type" : [{

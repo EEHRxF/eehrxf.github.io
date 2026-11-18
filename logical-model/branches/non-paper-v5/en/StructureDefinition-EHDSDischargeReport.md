@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDischargeRepo
   "name" : "EHDSDischargeReport",
   "title" : "Discharge report model",
   "status" : "draft",
-  "date" : "2026-11-18T18:54:26+00:00",
+  "date" : "2026-11-18T22:37:31+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -63,19 +63,29 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDischargeRepo
       "short" : "Discharge report Document header."
     },
     {
-      "id" : "EHDSDischargeReport.header.language",
-      "path" : "EHDSDischargeReport.header.language",
-      "short" : "Language in which the document is written. Language is expressed by the IETF language tag."
+      "id" : "EHDSDischargeReport.header.author[x]",
+      "path" : "EHDSDischargeReport.header.author[x]",
+      "short" : "Author of the document."
+    },
+    {
+      "id" : "EHDSDischargeReport.header.date",
+      "path" : "EHDSDischargeReport.header.date",
+      "short" : "Date of finalisation/issuance of the document."
+    },
+    {
+      "id" : "EHDSDischargeReport.header.documentCategory",
+      "path" : "EHDSDischargeReport.header.documentCategory",
+      "short" : "Broad category of document (e.g. 34105-7 Hospital discharge summary)."
     },
     {
       "id" : "EHDSDischargeReport.header.documentType",
       "path" : "EHDSDischargeReport.header.documentType",
-      "short" : "Type of document e.g. 34105-7 Hospital discharge summary."
+      "short" : "Type of document (e.g. 34106-5 Physician hospital discharge summary)."
     },
     {
       "id" : "EHDSDischargeReport.header.documentTitle",
       "path" : "EHDSDischargeReport.header.documentTitle",
-      "short" : "Human readable document title that can be displayed in search results, etc. This can be documentType's display name or it can contain further information. Example: 'Hospital discharge report. Jane Green. 07.10.2025-10.10.2025')."
+      "short" : "Human-readable document title that may be displayed in search results etc. This may be documentType’s display name or it may contain further information. Example: ‘Hospital discharge report. Jane Green. 7.10.2025-10.10.2025’."
     },
     {
       "id" : "EHDSDischargeReport.header.period",
@@ -83,24 +93,34 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDischargeRepo
       "short" : "Time period of information covered in the document."
     },
     {
+      "id" : "EHDSDischargeReport.header.legalAuthentication",
+      "path" : "EHDSDischargeReport.header.legalAuthentication",
+      "short" : "Document legal authentication details."
+    },
+    {
+      "id" : "EHDSDischargeReport.header.legalAuthentication.legalAuthenticator[x]",
+      "path" : "EHDSDischargeReport.header.legalAuthentication.legalAuthenticator[x]",
+      "short" : "The person or organisation taking responsibility for the content of the document."
+    },
+    {
+      "id" : "EHDSDischargeReport.header.legalAuthentication.dateTime",
+      "path" : "EHDSDischargeReport.header.legalAuthentication.dateTime",
+      "short" : "Date and time when the document was authenticated."
+    },
+    {
       "id" : "EHDSDischargeReport.header.eventCategory",
       "path" : "EHDSDischargeReport.header.eventCategory",
-      "short" : "Categorisation of the event covered by the document (e.g. discharge type). Selection of such tags or labels depends on the use case and agreement between data sharing parties. This meta-data element serves primarily for searching and filtering purposes.",
+      "short" : "Categorisation of the event covered by the document (e.g. discharge type). Selection of such tags or labels depends on the use case and agreement between data-sharing parties. This metadata element serves primarily for searching and filtering purposes.",
       "binding" : {
         "strength" : "required",
         "description" : "SNOMED GPS (preferred), LOINC"
       }
     },
     {
-      "id" : "EHDSDischargeReport.header.serviceSpecialty",
-      "path" : "EHDSDischargeReport.header.serviceSpecialty",
-      "short" : "Additional details about where the content was created (e.g. clinical specialty)"
-    },
-    {
       "id" : "EHDSDischargeReport.header.intendedRecipient[x]",
       "path" : "EHDSDischargeReport.header.intendedRecipient[x]",
-      "short" : "Intended recipient of the information, i.e. a person or organisation that should be notified or be aware of the content. This element is used to indicate explicit communication intent and does not represent routine storage or passive availability of information (e.g. in portals).",
-      "definition" : "Intended recipient of the information, i.e. a person or organisation that should be notified or be aware of the content. This element is used to indicate explicit communication intent and does not represent routine storage or passive availability of information (e.g. in portals).",
+      "short" : "Intended recipient of the information, i.e. a person or organisation that shall be notified or be aware of the content. This element is used to indicate explicit communication intent and does not represent routine storage or passive availability of information (e.g. in portals).",
+      "definition" : "Intended recipient of the information, i.e. a person or organisation that shall be notified or be aware of the content. This element is used to indicate explicit communication intent and does not represent routine storage or passive availability of information (e.g. in portals).",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -114,10 +134,15 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDischargeRepo
       }]
     },
     {
+      "id" : "EHDSDischargeReport.presentedForm",
+      "path" : "EHDSDischargeReport.presentedForm",
+      "short" : "A narrative easy-to-read representation of the full dataset, e.g. PDF version of a document. At least one of body or presentedForm shall be present."
+    },
+    {
       "id" : "EHDSDischargeReport.body",
       "path" : "EHDSDischargeReport.body",
-      "short" : "Discharge report structured body.",
-      "definition" : "Discharge report structured body.",
+      "short" : "Discharge report structured body. At least one of body or presentedForm shall be present.",
+      "definition" : "Discharge report structured body. At least one of body or presentedForm shall be present.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -204,8 +229,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDischargeRepo
     {
       "id" : "EHDSDischargeReport.body.admissionEvaluation",
       "path" : "EHDSDischargeReport.body.admissionEvaluation",
-      "short" : "Section: Admission evaluation. Admission evaluation section should be reported only if it is relevant to ensure continuity of care.",
-      "definition" : "Section: Admission evaluation. Admission evaluation section should be reported only if it is relevant to ensure continuity of care.",
+      "short" : "Section: Admission evaluation. Admission evaluation section shall be reported only if it is relevant to ensure continuity of care.",
+      "definition" : "Section: Admission evaluation. Admission evaluation section shall be reported only if it is relevant to ensure continuity of care.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -226,8 +251,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDischargeRepo
     {
       "id" : "EHDSDischargeReport.body.admissionEvaluation.objectiveFindings",
       "path" : "EHDSDischargeReport.body.admissionEvaluation.objectiveFindings",
-      "short" : "Objective findings, such as anthropometric measurements, vital signs, or objective anatomical findings of physical examination.",
-      "definition" : "Objective findings, such as anthropometric measurements, vital signs, or objective anatomical findings of physical examination.",
+      "short" : "Objective findings, such as anthropometric measurements, vital signs or objective anatomical findings of physical examination.",
+      "definition" : "Objective findings, such as anthropometric measurements, vital signs or objective anatomical findings of physical examination.",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -237,8 +262,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDischargeRepo
     {
       "id" : "EHDSDischargeReport.body.admissionEvaluation.functionalStatus[x]",
       "path" : "EHDSDischargeReport.body.admissionEvaluation.functionalStatus[x]",
-      "short" : "An individual's ability to perform normal daily activities required to meet basic needs, fulfil usual roles and maintain health and well-being.",
-      "definition" : "An individual's ability to perform normal daily activities required to meet basic needs, fulfil usual roles and maintain health and well-being.",
+      "short" : "An individual’s ability to perform normal daily activities required to meet basic needs, fulfil usual roles and maintain health and well-being.",
+      "definition" : "An individual’s ability to perform normal daily activities required to meet basic needs, fulfil usual roles and maintain health and well-being.",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -262,8 +287,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDischargeRepo
     {
       "id" : "EHDSDischargeReport.body.patientHistory",
       "path" : "EHDSDischargeReport.body.patientHistory",
-      "short" : "Section: Patient health history (anamnesis) containing only information that is highly relevant for this specific episode of care. The model is designed with the expectation that patient summary is available.",
-      "definition" : "Section: Patient health history (anamnesis) containing only information that is highly relevant for this specific episode of care. The model is designed with the expectation that patient summary is available.",
+      "short" : "Section: Patient health history (anamnesis) containing only information that is highly relevant to this specific episode of care. The model is designed with the expectation that the patient summary is available.",
+      "definition" : "Section: Patient health history (anamnesis) containing only information that is highly relevant to this specific episode of care. The model is designed with the expectation that the patient summary is available.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -273,8 +298,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDischargeRepo
     {
       "id" : "EHDSDischargeReport.body.patientHistory.generatedNarrative",
       "path" : "EHDSDischargeReport.body.patientHistory.generatedNarrative",
-      "short" : "Narrative, potentially formatted, content of the whole section. In case the section includes structured information, it should also be included in generatedNarrative.",
-      "definition" : "Narrative, potentially formatted, content of the whole section. In case the section includes structured information, it should also be included in generatedNarrative.",
+      "short" : "Narrative, potentially formatted, content of the whole section. If the section includes structured information, it shall also be included in generatedNarrative.",
+      "definition" : "Narrative, potentially formatted, content of the whole section. If the section includes structured information, it shall also be included in generatedNarrative.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -284,8 +309,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDischargeRepo
     {
       "id" : "EHDSDischargeReport.body.patientHistory.pastProblems[x]",
       "path" : "EHDSDischargeReport.body.patientHistory.pastProblems[x]",
-      "short" : "A list of conditions of a patient that the patient suffered in the past or still suffers. Unlike diagnostic summary, medical history is not only a list of problems, but could contain broader description of the condition and its progress, details about treatment including medication and patient response to treatment. Past problem section (unlike the same section of the patient summary) should include only conditions that are important for continuity of care. This section, if provided, complements the diagnostic summary section of the discharge report.",
-      "definition" : "A list of conditions of a patient that the patient suffered in the past or still suffers. Unlike diagnostic summary, medical history is not only a list of problems, but could contain broader description of the condition and its progress, details about treatment including medication and patient response to treatment. Past problem section (unlike the same section of the patient summary) should include only conditions that are important for continuity of care. This section, if provided, complements the diagnostic summary section of the discharge report.",
+      "short" : "A list of conditions that a patient suffered from in the past or still suffers from. Unlike the diagnostic summary, the medical history is not only a list of problems but may also contain a broader description of the condition and its progress, details about treatment, including medication and patient response to treatment. The past problem section (unlike the same section of the patient summary) shall include only conditions that are important for continuity of care. This section, if provided, complements the diagnostic summary section of the discharge report.",
+      "definition" : "A list of conditions that a patient suffered from in the past or still suffers from. Unlike the diagnostic summary, the medical history is not only a list of problems but may also contain a broader description of the condition and its progress, details about treatment, including medication and patient response to treatment. The past problem section (unlike the same section of the patient summary) shall include only conditions that are important for continuity of care. This section, if provided, complements the diagnostic summary section of the discharge report.",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -353,8 +378,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDischargeRepo
     {
       "id" : "EHDSDischargeReport.body.courseOfEncounter.conditionSummary",
       "path" : "EHDSDischargeReport.body.courseOfEncounter.conditionSummary",
-      "short" : "Conditions that were treated or affected provisioning of care (diagnostics, therapy, nursing, monitoring) during the encounter. At least one attended condition should be marked. Other conditions are recorded only if they are important for continuity of care (after discharge).",
-      "definition" : "Conditions that were treated or affected provisioning of care (diagnostics, therapy, nursing, monitoring) during the encounter. At least one attended condition should be marked. Other conditions are recorded only if they are important for continuity of care (after discharge).",
+      "short" : "Conditions that were treated or affected provisioning of care (diagnostics, therapy, nursing, monitoring) during the encounter. At least one attended condition shall be marked. Other conditions are recorded only if they are important for continuity of care (after discharge).",
+      "definition" : "Conditions that were treated or affected provisioning of care (diagnostics, therapy, nursing, monitoring) during the encounter. At least one attended condition shall be marked. Other conditions are recorded only if they are important for continuity of care (after discharge).",
       "min" : 1,
       "max" : "*",
       "type" : [{
@@ -364,8 +389,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDischargeRepo
     {
       "id" : "EHDSDischargeReport.body.courseOfEncounter.procedures",
       "path" : "EHDSDischargeReport.body.courseOfEncounter.procedures",
-      "short" : "Procedures performed during encounter which are significant for continuity of care, e.g. surgeries and other instrumental interventions (endoscopic, intravascular), chemotherapy, radiotherapy, purification methods (dialysis, hemoperfusion), circulation support methods (counterpulsation, etc.), administration of blood derivatives or others. Diagnostic procedures are typically captured as observation results and not repeated here.",
-      "definition" : "Procedures performed during encounter which are significant for continuity of care, e.g. surgeries and other instrumental interventions (endoscopic, intravascular), chemotherapy, radiotherapy, purification methods (dialysis, hemoperfusion), circulation support methods (counterpulsation, etc.), administration of blood derivatives or others. Diagnostic procedures are typically captured as observation results and not repeated here.",
+      "short" : "Procedures performed during encounter which are significant for continuity of care, e.g. surgeries and other instrumental interventions (endoscopic, intravascular), chemotherapy, radiotherapy, purification methods (dialysis, haemoperfusion), circulation support methods (counterpulsation etc.), administration of blood derivatives or others. Diagnostic procedures are typically captured as observation results and not repeated here.",
+      "definition" : "Procedures performed during encounter which are significant for continuity of care, e.g. surgeries and other instrumental interventions (endoscopic, intravascular), chemotherapy, radiotherapy, purification methods (dialysis, haemoperfusion), circulation support methods (counterpulsation etc.), administration of blood derivatives or others. Diagnostic procedures are typically captured as observation results and not repeated here.",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -375,8 +400,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDischargeRepo
     {
       "id" : "EHDSDischargeReport.body.courseOfEncounter.medicalDevicesAndImplants",
       "path" : "EHDSDischargeReport.body.courseOfEncounter.medicalDevicesAndImplants",
-      "short" : "Medical devices (including implants) whose use was started, stopped, or otherwise modified during the encounter.",
-      "definition" : "Medical devices (including implants) whose use was started, stopped, or otherwise modified during the encounter.",
+      "short" : "Medical devices (including implants) whose use was started, stopped or otherwise modified during the encounter.",
+      "definition" : "Medical devices (including implants) whose use was started, stopped or otherwise modified during the encounter.",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -397,8 +422,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDischargeRepo
     {
       "id" : "EHDSDischargeReport.body.courseOfEncounter.objectiveFindings",
       "path" : "EHDSDischargeReport.body.courseOfEncounter.objectiveFindings",
-      "short" : "Objective findings, such as anthropometric measurements, vital signs, or objective anatomical findings of physical examination. The line between objective findings and test results is not clear and it is up to the implementers to decide how to logically display different measurements.",
-      "definition" : "Objective findings, such as anthropometric measurements, vital signs, or objective anatomical findings of physical examination. The line between objective findings and test results is not clear and it is up to the implementers to decide how to logically display different measurements.",
+      "short" : "Objective findings, such as anthropometric measurements, vital signs or objective anatomical findings of physical examination. The line between objective findings and test results is not clear and it is up to the implementers to decide how to logically display different measurements.",
+      "definition" : "Objective findings, such as anthropometric measurements, vital signs or objective anatomical findings of physical examination. The line between objective findings and test results is not clear and it is up to the implementers to decide how to logically display different measurements.",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -408,8 +433,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDischargeRepo
     {
       "id" : "EHDSDischargeReport.body.courseOfEncounter.testResults[x]",
       "path" : "EHDSDischargeReport.body.courseOfEncounter.testResults[x]",
-      "short" : "Significant medical test results of functional, diagnostic (including laboratory), and imaging examinations performed during encounter.",
-      "definition" : "Significant medical test results of functional, diagnostic (including laboratory), and imaging examinations performed during encounter.",
+      "short" : "Significant medical test results of functional, diagnostic (including laboratory) and imaging examinations performed during encounter.",
+      "definition" : "Significant medical test results of functional, diagnostic (including laboratory) and imaging examinations performed during encounter.",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -455,8 +480,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDischargeRepo
     {
       "id" : "EHDSDischargeReport.body.dischargeDetails.objectiveFindings",
       "path" : "EHDSDischargeReport.body.dischargeDetails.objectiveFindings",
-      "short" : "Objective findings, such as anthropometric measurements, vital signs, or objective anatomical findings of physical examination.",
-      "definition" : "Objective findings, such as anthropometric measurements, vital signs, or objective anatomical findings of physical examination.",
+      "short" : "Objective findings, such as anthropometric measurements, vital signs or objective anatomical findings of physical examination.",
+      "definition" : "Objective findings, such as anthropometric measurements, vital signs or objective anatomical findings of physical examination.",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -466,8 +491,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDischargeRepo
     {
       "id" : "EHDSDischargeReport.body.dischargeDetails.functionalStatus[x]",
       "path" : "EHDSDischargeReport.body.dischargeDetails.functionalStatus[x]",
-      "short" : "An individual's ability to perform normal daily activities required to meet basic needs, fulfil usual roles and maintain health and well-being.",
-      "definition" : "An individual's ability to perform normal daily activities required to meet basic needs, fulfil usual roles and maintain health and well-being.",
+      "short" : "An individual’s ability to perform normal daily activities required to meet basic needs, fulfil usual roles and maintain health and well-being.",
+      "definition" : "An individual’s ability to perform normal daily activities required to meet basic needs, fulfil usual roles and maintain health and well-being.",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -568,8 +593,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDischargeRepo
     {
       "id" : "EHDSDischargeReport.body.carePlan.otherRecommendations",
       "path" : "EHDSDischargeReport.body.carePlan.otherRecommendations",
-      "short" : "Other recommendations (advice) after discharge. E.g., recommendation to suggest hip replacement, reduce number of cigarettes, stop smoking, increase physical exercises, etc.",
-      "definition" : "Other recommendations (advice) after discharge. E.g., recommendation to suggest hip replacement, reduce number of cigarettes, stop smoking, increase physical exercises, etc.",
+      "short" : "Other recommendations (advice) after discharge, e.g. recommendation to suggest hip replacement, reduce number of cigarettes, stop smoking, increase physical exercise.",
+      "definition" : "Other recommendations (advice) after discharge, e.g. recommendation to suggest hip replacement, reduce number of cigarettes, stop smoking, increase physical exercise.",
       "min" : 0,
       "max" : "1",
       "type" : [{
