@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAdvanceDirect
   "name" : "EHDSAdvanceDirective",
   "title" : "Advance directive model",
   "status" : "draft",
-  "date" : "2026-11-17T22:07:14+00:00",
+  "date" : "2026-11-18T22:43:22+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -56,6 +56,16 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAdvanceDirect
       "path" : "EHDSAdvanceDirective",
       "short" : "Advance directive model",
       "definition" : "EHDSAdvanceDirective means a documented expression of a patient's wishes, preferences or instructions regarding their healthcare, including, but not limited to, decisions concerning life-sustaining treatment or arrangements to take effect after death."
+    },
+    {
+      "id" : "EHDSAdvanceDirective.header.identifier",
+      "path" : "EHDSAdvanceDirective.header.identifier",
+      "short" : "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)."
+    },
+    {
+      "id" : "EHDSAdvanceDirective.header.author[x]",
+      "path" : "EHDSAdvanceDirective.header.author[x]",
+      "short" : "Author of the resource."
     },
     {
       "id" : "EHDSAdvanceDirective.header.status",
@@ -109,8 +119,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAdvanceDirect
     {
       "id" : "EHDSAdvanceDirective.attachment",
       "path" : "EHDSAdvanceDirective.attachment",
-      "short" : "Source document, such as a PDF, with the advance directive and the patient's signature.",
-      "definition" : "Source document, such as a PDF, with the advance directive and the patient's signature.",
+      "short" : "Source document, such as a PDF, with the advance directive and the patient’s signature.",
+      "definition" : "Source document, such as a PDF, with the advance directive and the patient’s signature.",
       "min" : 0,
       "max" : "1",
       "type" : [{

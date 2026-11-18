@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSProcedure.csv
   "name" : "EHDSProcedure",
   "title" : "Procedure model",
   "status" : "draft",
-  "date" : "2026-11-17T22:07:14+00:00",
+  "date" : "2026-11-18T22:43:22+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -56,6 +56,16 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSProcedure.csv
       "path" : "EHDSProcedure",
       "short" : "Procedure model",
       "definition" : "EHDSProcedure means a structured set of data elements describing a procedure performed on or for a patient, including surgical, therapeutic, and diagnostic procedures and specimen collection, but excluding procedures in the planning stage."
+    },
+    {
+      "id" : "EHDSProcedure.header.identifier",
+      "path" : "EHDSProcedure.header.identifier",
+      "short" : "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)."
+    },
+    {
+      "id" : "EHDSProcedure.header.author[x]",
+      "path" : "EHDSProcedure.header.author[x]",
+      "short" : "Author of the resource."
     },
     {
       "id" : "EHDSProcedure.header.status",
@@ -98,8 +108,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSProcedure.csv
     {
       "id" : "EHDSProcedure.performer",
       "path" : "EHDSProcedure.performer",
-      "short" : "Actors who performed the procedure (only main responsible actors expected).",
-      "definition" : "Actors who performed the procedure (only main responsible actors expected).",
+      "short" : "Actors who performed the procedure (only main responsible actors required).",
+      "definition" : "Actors who performed the procedure (only main responsible actors required).",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -120,8 +130,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSProcedure.csv
     {
       "id" : "EHDSProcedure.reason[x]",
       "path" : "EHDSProcedure.reason[x]",
-      "short" : "The reason the procedure was performed. This may be a concept from a terminology or a reference to a specific instance that describes the reason.",
-      "definition" : "The reason the procedure was performed. This may be a concept from a terminology or a reference to a specific instance that describes the reason.",
+      "short" : "The reason for performing the procedure.This may be expressed as a coded concept or as a reference to a specific condition, observation or procedure that describes the reason.",
+      "definition" : "The reason for performing the procedure.This may be expressed as a coded concept or as a reference to a specific condition, observation or procedure that describes the reason.",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -185,8 +195,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSProcedure.csv
     {
       "id" : "EHDSProcedure.focalDevice",
       "path" : "EHDSProcedure.focalDevice",
-      "short" : "Device that is implanted, removed, or otherwise manipulated (calibration, battery replacement, fitting a prosthesis, attaching a wound-vac, etc.) as a focal portion of the Procedure.",
-      "definition" : "Device that is implanted, removed, or otherwise manipulated (calibration, battery replacement, fitting a prosthesis, attaching a wound-vac, etc.) as a focal portion of the Procedure.",
+      "short" : "Device that is implanted, removed or otherwise manipulated (calibration, battery replacement, fitting a prosthesis, attaching a wound vac, etc.) as a focal portion of the procedure.",
+      "definition" : "Device that is implanted, removed or otherwise manipulated (calibration, battery replacement, fitting a prosthesis, attaching a wound vac, etc.) as a focal portion of the procedure.",
       "min" : 0,
       "max" : "*",
       "type" : [{

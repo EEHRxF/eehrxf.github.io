@@ -4,11 +4,11 @@
 "EHDSHumanName.use","EHDSHumanName.use","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","The purpose of this name.","The purpose of this name.","","","","","","","","","",,"required","HL7 Name Use","","",,,,"EHDSHumanName.use",0,1,"",""
 "EHDSHumanName.text","EHDSHumanName.text","","","",0,1,"","","","string {[]} {[]}
-","The entire name as it should be displayed e.g. on an application UI.","The entire name as it should be displayed e.g. on an application UI.","","","","","","","","","",,,,,"",,,,"EHDSHumanName.text",0,1,"",""
+","The entire name as it shall be displayed, e.g. on an application UI.","The entire name as it shall be displayed, e.g. on an application UI.","","","","","","","","","",,,,,"",,,,"EHDSHumanName.text",0,1,"",""
 "EHDSHumanName.family","EHDSHumanName.family","","","",0,*,"","","","string {[]} {[]}
-","The family name/surname/last name.","The family name/surname/last name.","","","","","","","","","",,,,,"",,,,"EHDSHumanName.family",0,*,"",""
+","The family name / surname / last name.","The family name / surname / last name.","","","","","","","","","",,,,,"",,,,"EHDSHumanName.family",0,*,"",""
 "EHDSHumanName.given","EHDSHumanName.given","","","",0,*,"","","","string {[]} {[]}
-","The given name/first name.","The given name/first name.","","","","","","","","","",,,,,"",,,,"EHDSHumanName.given",0,*,"",""
+","The given name / first name.","The given name / first name.","","","","","","","","","",,,,,"",,,,"EHDSHumanName.given",0,*,"",""
 "EHDSHumanName.prefix","EHDSHumanName.prefix","","","",0,*,"","","","string {[]} {[]}
 ","Name part that appears at the start of the name. Prefixes shall appear in the correct order for presenting the name.","Name part that appears at the start of the name. Prefixes shall appear in the correct order for presenting the name.","","","","","","","","","",,,,,"",,,,"EHDSHumanName.prefix",0,*,"",""
 "EHDSHumanName.suffix","EHDSHumanName.suffix","","","",0,*,"","","","string {[]} {[]}

@@ -100,7 +100,7 @@ The following example repeats dosageDetails block. Rendered dosage information i
   "name" : "EHDSDosage",
   "title" : "Dosage model",
   "status" : "draft",
-  "date" : "2026-11-17T22:07:14+00:00",
+  "date" : "2026-11-18T22:43:22+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -131,8 +131,8 @@ The following example repeats dosageDetails block. Rendered dosage information i
     {
       "id" : "EHDSDosage.renderedDosageInstruction",
       "path" : "EHDSDosage.renderedDosageInstruction",
-      "short" : "Full dosage information as human-readable text covering all dosage steps. Generating the text follows local rules and should include all locally implemented dosage data even when such elements are not present in this model.",
-      "definition" : "Full dosage information as human-readable text covering all dosage steps. Generating the text follows local rules and should include all locally implemented dosage data even when such elements are not present in this model.",
+      "short" : "Full dosage information as human-readable text covering all dosage steps. Generating the text shall follow local rules and shall include all locally implemented dosage data even when such elements are not present in this model.",
+      "definition" : "Full dosage information as human-readable text covering all dosage steps. Generating the text shall follow local rules and shall include all locally implemented dosage data even when such elements are not present in this model.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -142,8 +142,8 @@ The following example repeats dosageDetails block. Rendered dosage information i
     {
       "id" : "EHDSDosage.dosageDetails",
       "path" : "EHDSDosage.dosageDetails",
-      "short" : "Details of single dosage scheme step.",
-      "definition" : "Details of single dosage scheme step.",
+      "short" : "Details of the step in a single dosage scheme.",
+      "definition" : "Details of the step in a single dosage scheme.",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -153,8 +153,8 @@ The following example repeats dosageDetails block. Rendered dosage information i
     {
       "id" : "EHDSDosage.dosageDetails.sequence",
       "path" : "EHDSDosage.dosageDetails.sequence",
-      "short" : "Order of the dosage instruction, in case one treatment consists of several dosage steps. When two schemes share the same sequence number, they are meant to be running in parallel.",
-      "definition" : "Order of the dosage instruction, in case one treatment consists of several dosage steps. When two schemes share the same sequence number, they are meant to be running in parallel.",
+      "short" : "Order of the dosage instruction, if one treatment consists of several dosage steps. When two schemes share the same sequence number, they are meant to run in parallel.",
+      "definition" : "Order of the dosage instruction, if one treatment consists of several dosage steps. When two schemes share the same sequence number, they are meant to run in parallel.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -164,8 +164,8 @@ The following example repeats dosageDetails block. Rendered dosage information i
     {
       "id" : "EHDSDosage.dosageDetails.note",
       "path" : "EHDSDosage.dosageDetails.note",
-      "short" : "Patient oriented instructions as free text for this dosage step.",
-      "definition" : "Patient oriented instructions as free text for this dosage step.",
+      "short" : "Patient-oriented instructions as free text for this dosage step.",
+      "definition" : "Patient-oriented instructions as free text for this dosage step.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -175,10 +175,10 @@ The following example repeats dosageDetails block. Rendered dosage information i
     {
       "id" : "EHDSDosage.dosageDetails.doseAndRate",
       "path" : "EHDSDosage.dosageDetails.doseAndRate",
-      "short" : "Amount of medicinal product administered per one dose (= one timing).",
-      "definition" : "Amount of medicinal product administered per one dose (= one timing).",
+      "short" : "Amount of medicinal product administered per dose (= one timing).",
+      "definition" : "Amount of medicinal product administered per dose (= one timing).",
       "min" : 0,
-      "max" : "*",
+      "max" : "1",
       "type" : [{
         "code" : "Base"
       }]
@@ -186,8 +186,8 @@ The following example repeats dosageDetails block. Rendered dosage information i
     {
       "id" : "EHDSDosage.dosageDetails.doseAndRate.dose[x]",
       "path" : "EHDSDosage.dosageDetails.doseAndRate.dose[x]",
-      "short" : "Amount of medicinal product per one dose (1 tablet, 2-3 tablets, 20ml).",
-      "definition" : "Amount of medicinal product per one dose (1 tablet, 2-3 tablets, 20ml).",
+      "short" : "Amount of medicinal product per one dose (1 tablet, 2-3 tablets, 20 ml).",
+      "definition" : "Amount of medicinal product per one dose (1 tablet, 2-3 tablets, 20 ml).",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -204,8 +204,8 @@ The following example repeats dosageDetails block. Rendered dosage information i
     {
       "id" : "EHDSDosage.dosageDetails.doseAndRate.rate[x]",
       "path" : "EHDSDosage.dosageDetails.doseAndRate.rate[x]",
-      "short" : "Amount of medicinal product per time period (e.g. 100mg per 1 hour). When rate is provided per 1 time unit, Quantity data type can be used with a suitable unit (e.g. mg/h, ug/min).",
-      "definition" : "Amount of medicinal product per time period (e.g. 100mg per 1 hour). When rate is provided per 1 time unit, Quantity data type can be used with a suitable unit (e.g. mg/h, ug/min).",
+      "short" : "Amount of medicinal product per time period (e.g. 100 mg per hour). When rate is provided per time unit, Quantity data type may be used with a suitable unit (e.g. mg/h, μg/min.).",
+      "definition" : "Amount of medicinal product per time period (e.g. 100 mg per hour). When rate is provided per time unit, Quantity data type may be used with a suitable unit (e.g. mg/h, μg/min.).",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -233,8 +233,8 @@ The following example repeats dosageDetails block. Rendered dosage information i
     {
       "id" : "EHDSDosage.dosageDetails.repeat.bounds[x]",
       "path" : "EHDSDosage.dosageDetails.repeat.bounds[x]",
-      "short" : "Time bounds for the treatment (current dosage scheme), Quantity contains a number of time units (e.g. 10 days), Period contains start and end date (e.g. 05.08.2023 - 10.08.2023).",
-      "definition" : "Time bounds for the treatment (current dosage scheme), Quantity contains a number of time units (e.g. 10 days), Period contains start and end date (e.g. 05.08.2023 - 10.08.2023).",
+      "short" : "Time bounds for the treatment (current dosage scheme), Quantity contains a number of time units (e.g. 10 days), Period contains start and end date (e.g. 5.8.2023-10.8.2023).",
+      "definition" : "Time bounds for the treatment (current dosage scheme), Quantity contains a number of time units (e.g. 10 days), Period contains start and end date (e.g. 5.8.2023-10.8.2023).",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -247,8 +247,8 @@ The following example repeats dosageDetails block. Rendered dosage information i
     {
       "id" : "EHDSDosage.dosageDetails.repeat.duration",
       "path" : "EHDSDosage.dosageDetails.repeat.duration",
-      "short" : "Duration of administration (e.g. '5 minutes', '1 hour').",
-      "definition" : "Duration of administration (e.g. '5 minutes', '1 hour').",
+      "short" : "Duration of administration (e.g. ‘five minutes’, ‘one hour’).",
+      "definition" : "Duration of administration (e.g. ‘five minutes’, ‘one hour’).",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -273,8 +273,8 @@ The following example repeats dosageDetails block. Rendered dosage information i
     {
       "id" : "EHDSDosage.dosageDetails.repeat.frequency.numberOfTimes",
       "path" : "EHDSDosage.dosageDetails.repeat.frequency.numberOfTimes",
-      "short" : "Number of times per period (e.g. '3 times').",
-      "definition" : "Number of times per period (e.g. '3 times').",
+      "short" : "Number of times per period (e.g. ‘three times’).",
+      "definition" : "Number of times per period (e.g. ‘three times’).",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -284,8 +284,8 @@ The following example repeats dosageDetails block. Rendered dosage information i
     {
       "id" : "EHDSDosage.dosageDetails.repeat.frequency.period",
       "path" : "EHDSDosage.dosageDetails.repeat.frequency.period",
-      "short" : "Duration to which the frequency applies (e.g. '... / 1 day').",
-      "definition" : "Duration to which the frequency applies (e.g. '... / 1 day').",
+      "short" : "Duration to which the frequency applies (e.g. ‘… / one day’).",
+      "definition" : "Duration to which the frequency applies (e.g. ‘… / one day’).",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -299,8 +299,8 @@ The following example repeats dosageDetails block. Rendered dosage information i
     {
       "id" : "EHDSDosage.dosageDetails.repeat.dayOfWeek",
       "path" : "EHDSDosage.dosageDetails.repeat.dayOfWeek",
-      "short" : "The day of the week of administration, e.g. Mon, Tue, etc.",
-      "definition" : "The day of the week of administration, e.g. Mon, Tue, etc.",
+      "short" : "The day of the week of administration, e.g. Mon., Tue.",
+      "definition" : "The day of the week of administration, e.g. Mon., Tue.",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -314,8 +314,8 @@ The following example repeats dosageDetails block. Rendered dosage information i
     {
       "id" : "EHDSDosage.dosageDetails.repeat.timeOfDay",
       "path" : "EHDSDosage.dosageDetails.repeat.timeOfDay",
-      "short" : "Exact time of day of administration (e.g. '10:00').",
-      "definition" : "Exact time of day of administration (e.g. '10:00').",
+      "short" : "Exact time of day of administration (e.g. ‘10:00’).",
+      "definition" : "Exact time of day of administration (e.g. ‘10:00’).",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -325,8 +325,8 @@ The following example repeats dosageDetails block. Rendered dosage information i
     {
       "id" : "EHDSDosage.dosageDetails.repeat.eventTime",
       "path" : "EHDSDosage.dosageDetails.repeat.eventTime",
-      "short" : "Time period or event when the administration should happen ('before meal', 'immediately', 'morning').",
-      "definition" : "Time period or event when the administration should happen ('before meal', 'immediately', 'morning').",
+      "short" : "Time period or event when the administration shall happen (‘before meal’, ‘immediately’, ‘morning’).",
+      "definition" : "Time period or event when the administration shall happen (‘before meal’, ‘immediately’, ‘morning’).",
       "min" : 0,
       "max" : "*",
       "type" : [{

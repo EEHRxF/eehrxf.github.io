@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSBodyStructure
   "name" : "EHDSBodyStructure",
   "title" : "Body structure model",
   "status" : "draft",
-  "date" : "2026-11-17T22:07:14+00:00",
+  "date" : "2026-11-18T22:43:22+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -60,8 +60,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSBodyStructure
     {
       "id" : "EHDSBodyStructure.morphology",
       "path" : "EHDSBodyStructure.morphology",
-      "short" : "The kind of structure being represented by the body structure at BodyStructure.location. This can define both normal and abnormal morphologies.",
-      "definition" : "The kind of structure being represented by the body structure at BodyStructure.location. This can define both normal and abnormal morphologies.",
+      "short" : "The kind of structure being represented by the body structure at BodyStructure.location. This may define both normal and abnormal morphologies.",
+      "definition" : "The kind of structure being represented by the body structure at BodyStructure.location. This may define both normal and abnormal morphologies.",
       "min" : 0,
       "max" : "1",
       "type" : [{

@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingStudy.
   "name" : "EHDSImagingStudy",
   "title" : "Imaging study model.",
   "status" : "draft",
-  "date" : "2026-11-17T22:07:14+00:00",
+  "date" : "2026-11-18T22:43:22+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -60,12 +60,12 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingStudy.
     {
       "id" : "EHDSImagingStudy.header.identifier",
       "path" : "EHDSImagingStudy.header.identifier",
-      "min" : 1
+      "short" : "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)."
     },
     {
       "id" : "EHDSImagingStudy.header.author[x]",
       "path" : "EHDSImagingStudy.header.author[x]",
-      "min" : 1
+      "short" : "Author of the resource."
     },
     {
       "id" : "EHDSImagingStudy.header.date",
@@ -76,7 +76,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingStudy.
     {
       "id" : "EHDSImagingStudy.header.status",
       "path" : "EHDSImagingStudy.header.status",
-      "short" : "Status of the resource. Where the source representation does not provide a reliable lifecycle status, unknown may be used. Status available shall only be used where availability has been established.",
+      "short" : "Status of the resource. Where the source representation does not provide a reliable life cycle status, ‘unknown’ may be used. Status available shall be used only where availability has been established.",
       "binding" : {
         "strength" : "required",
         "description" : "HL7 Imaging Study Status"
@@ -85,8 +85,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingStudy.
     {
       "id" : "EHDSImagingStudy.presentedForm",
       "path" : "EHDSImagingStudy.presentedForm",
-      "short" : "PDF version of the imaging study to be used where DICOM version is not available.",
-      "definition" : "PDF version of the imaging study to be used where DICOM version is not available.",
+      "short" : "PDF version of the imaging study to be used where DICOM version is not available. This is a fallback option and is not intended to replace the exchange of DICOM imaging studies.",
+      "definition" : "PDF version of the imaging study to be used where DICOM version is not available. This is a fallback option and is not intended to replace the exchange of DICOM imaging studies.",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -96,8 +96,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingStudy.
     {
       "id" : "EHDSImagingStudy.modality",
       "path" : "EHDSImagingStudy.modality",
-      "short" : "All of the distinct values for series' modalities.",
-      "definition" : "All of the distinct values for series' modalities.",
+      "short" : "All of the distinct values for series’ modalities.",
+      "definition" : "All of the distinct values for series’ modalities.",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -111,8 +111,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingStudy.
     {
       "id" : "EHDSImagingStudy.bodySite",
       "path" : "EHDSImagingStudy.bodySite",
-      "short" : "All of the distinct values for series' examined body parts.",
-      "definition" : "All of the distinct values for series' examined body parts.",
+      "short" : "All of the distinct values for series’ examined body parts.",
+      "definition" : "All of the distinct values for series’ examined body parts.",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -166,8 +166,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingStudy.
     {
       "id" : "EHDSImagingStudy.numberOfInstances",
       "path" : "EHDSImagingStudy.numberOfInstances",
-      "short" : "Number of service-object pair (SOP) instances in the study. This value given may be larger than the number of instance elements this resource contains due to resource availability, security, or other factors. This element should be present if any instance elements are present.",
-      "definition" : "Number of service-object pair (SOP) instances in the study. This value given may be larger than the number of instance elements this resource contains due to resource availability, security, or other factors. This element should be present if any instance elements are present.",
+      "short" : "Number of SOP instances in the study. This value given may be larger than the number of instance elements this resource contains due to resource availability, security or other factors. This element shall be present if at least one instance element is present.",
+      "definition" : "Number of SOP instances in the study. This value given may be larger than the number of instance elements this resource contains due to resource availability, security or other factors. This element shall be present if at least one instance element is present.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -199,10 +199,10 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingStudy.
     {
       "id" : "EHDSImagingStudy.endpoint",
       "path" : "EHDSImagingStudy.endpoint",
-      "short" : "Study endpoint describing the technical details of a location that can be connected to for the delivery/retrieval of an imaging study. Sufficient information is required to ensure that a connection can be made securely, and appropriate data transmitted as defined by the endpoint owner. These may be locally hosted services, regional services, or national service.",
-      "definition" : "Study endpoint describing the technical details of a location that can be connected to for the delivery/retrieval of an imaging study. Sufficient information is required to ensure that a connection can be made securely, and appropriate data transmitted as defined by the endpoint owner. These may be locally hosted services, regional services, or national service.",
+      "short" : "Study endpoint describing the technical details of a location that may be connected to for the retrieval of the imaging study or display of the study in a remote viewer. Sufficient information is required to ensure that a connection is made securely, and appropriate data transmitted as defined by the endpoint owner. These may be locally hosted services, regional services or national services.",
+      "definition" : "Study endpoint describing the technical details of a location that may be connected to for the retrieval of the imaging study or display of the study in a remote viewer. Sufficient information is required to ensure that a connection is made securely, and appropriate data transmitted as defined by the endpoint owner. These may be locally hosted services, regional services or national services.",
       "min" : 0,
-      "max" : "1",
+      "max" : "*",
       "type" : [{
         "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSEndpoint"
       }]
@@ -210,9 +210,9 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingStudy.
     {
       "id" : "EHDSImagingStudy.series",
       "path" : "EHDSImagingStudy.series",
-      "short" : "Series. Each study has one or more series of instances, but they may be absent when no series information needs to be conveyed.",
-      "definition" : "Series. Each study has one or more series of instances, but they may be absent when no series information needs to be conveyed.",
-      "min" : 0,
+      "short" : "Series. Each study has one or more series of instances.",
+      "definition" : "Series. Each study has one or more series of instances.",
+      "min" : 1,
       "max" : "*",
       "type" : [{
         "code" : "Base"
@@ -221,8 +221,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingStudy.
     {
       "id" : "EHDSImagingStudy.series.seriesUid",
       "path" : "EHDSImagingStudy.series.seriesUid",
-      "short" : "DICOM Series Instance UID for the series.",
-      "definition" : "DICOM Series Instance UID for the series.",
+      "short" : "DICOM Series Instance Unique Identifier (UID) for the series.",
+      "definition" : "DICOM Series Instance Unique Identifier (UID) for the series.",
       "min" : 1,
       "max" : "1",
       "type" : [{
@@ -258,8 +258,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingStudy.
     {
       "id" : "EHDSImagingStudy.series.description",
       "path" : "EHDSImagingStudy.series.description",
-      "short" : "A short human readable summary of the series.",
-      "definition" : "A short human readable summary of the series.",
+      "short" : "A short human-readable summary of the series.",
+      "definition" : "A short human-readable summary of the series.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -269,8 +269,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingStudy.
     {
       "id" : "EHDSImagingStudy.series.numberOfInstances",
       "path" : "EHDSImagingStudy.series.numberOfInstances",
-      "short" : "Number of series related instances.",
-      "definition" : "Number of series related instances.",
+      "short" : "Number of series-related instances.",
+      "definition" : "Number of series-related instances.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -280,10 +280,10 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingStudy.
     {
       "id" : "EHDSImagingStudy.series.seriesEndpoint",
       "path" : "EHDSImagingStudy.series.seriesEndpoint",
-      "short" : "Series endpoint describing the technical details of a location that can be connected to for the delivery/retrieval of an imaging study. Sufficient information is required to ensure that a connection can be made securely, and appropriate data transmitted as defined by the endpoint owner. These may be locally hosted services, regional services, or national service.",
-      "definition" : "Series endpoint describing the technical details of a location that can be connected to for the delivery/retrieval of an imaging study. Sufficient information is required to ensure that a connection can be made securely, and appropriate data transmitted as defined by the endpoint owner. These may be locally hosted services, regional services, or national service.",
-      "min" : 0,
-      "max" : "1",
+      "short" : "Series endpoint describing the technical details of a location that may be connected to for the retrieval of the series. Sufficient information is required to ensure that a connection is made securely, and appropriate data transmitted as defined by the endpoint owner. These may be locally hosted services, regional services or national services.",
+      "definition" : "Series endpoint describing the technical details of a location that may be connected to for the retrieval of the series. Sufficient information is required to ensure that a connection is made securely, and appropriate data transmitted as defined by the endpoint owner. These may be locally hosted services, regional services or national services.",
+      "min" : 1,
+      "max" : "*",
       "type" : [{
         "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSEndpoint"
       }]
@@ -357,8 +357,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingStudy.
     {
       "id" : "EHDSImagingStudy.series.instanceInTheSeries.sopClass",
       "path" : "EHDSImagingStudy.series.instanceInTheSeries.sopClass",
-      "short" : "SOP class - DICOM class type.",
-      "definition" : "SOP class - DICOM class type.",
+      "short" : "SOP class – DICOM class type.",
+      "definition" : "SOP class – DICOM class type.",
       "min" : 1,
       "max" : "1",
       "type" : [{
@@ -410,7 +410,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingStudy.
       }],
       "binding" : {
         "strength" : "required",
-        "description" : "DICOM PS3.6"
+        "description" : "DICOM PS3.16 CID 7010"
       }
     },
     {

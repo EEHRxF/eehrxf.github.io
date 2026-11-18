@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSLocation.csv)
   "name" : "EHDSLocation",
   "title" : "Location model",
   "status" : "draft",
-  "date" : "2026-11-17T22:07:14+00:00",
+  "date" : "2026-11-18T22:43:22+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -82,8 +82,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSLocation.csv)
     {
       "id" : "EHDSLocation.description",
       "path" : "EHDSLocation.description",
-      "short" : "Additional details about the location that could be displayed as further information to identify the location beyond its name.",
-      "definition" : "Additional details about the location that could be displayed as further information to identify the location beyond its name.",
+      "short" : "Additional details about the location that may be displayed as further information to identify the location beyond its name.",
+      "definition" : "Additional details about the location that may be displayed as further information to identify the location beyond its name.",
       "min" : 0,
       "max" : "1",
       "type" : [{

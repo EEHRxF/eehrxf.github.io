@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSOrganisation.
   "name" : "EHDSOrganisation",
   "title" : "Organisation model",
   "status" : "draft",
-  "date" : "2026-11-17T22:07:14+00:00",
+  "date" : "2026-11-18T22:43:22+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -108,8 +108,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSOrganisation.
     {
       "id" : "EHDSOrganisation.telecom",
       "path" : "EHDSOrganisation.telecom",
-      "short" : "Telecommunication contact information (address) associated with the organisation, such as phone number, email, or messaging service.",
-      "definition" : "Telecommunication contact information (address) associated with the organisation, such as phone number, email, or messaging service.",
+      "short" : "Telecommunication contact information (address) associated with the organisation, such as phone number, email or messaging service.",
+      "definition" : "Telecommunication contact information (address) associated with the organisation, such as phone number, email or messaging service.",
       "min" : 0,
       "max" : "*",
       "type" : [{

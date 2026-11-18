@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAdministeredD
   "name" : "EHDSAdministeredDosage",
   "title" : "Administered dosage model",
   "status" : "draft",
-  "date" : "2026-11-17T22:07:14+00:00",
+  "date" : "2026-11-18T22:43:22+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -58,6 +58,11 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAdministeredD
       "definition" : "EHDSAdministeredDosage means the structured set of data elements describing a single instance of medication administration, including the dose given, the route and method of administration, and the time of administration."
     },
     {
+      "id" : "EHDSAdministeredDosage.renderedDosageInstruction",
+      "path" : "EHDSAdministeredDosage.renderedDosageInstruction",
+      "short" : "Full dosage information as human-readable text covering all dosage steps. Generating the text follows local rules and shall include all locally implemented dosage data even when such elements are not present in this model."
+    },
+    {
       "id" : "EHDSAdministeredDosage.dosageDetails",
       "path" : "EHDSAdministeredDosage.dosageDetails",
       "max" : "1"
@@ -70,17 +75,17 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAdministeredD
     {
       "id" : "EHDSAdministeredDosage.dosageDetails.doseAndRate",
       "path" : "EHDSAdministeredDosage.dosageDetails.doseAndRate",
-      "short" : "Amount of medication administered per one dose (= one timing)."
+      "short" : "Amount of medication administered per dose (= one timing)."
     },
     {
       "id" : "EHDSAdministeredDosage.dosageDetails.doseAndRate.dose[x]",
       "path" : "EHDSAdministeredDosage.dosageDetails.doseAndRate.dose[x]",
-      "short" : "Amount of medication per one dose (1 tablet, 2-3 tablets, 20ml)."
+      "short" : "Amount of medication per dose (1 tablet, 23 tablets, 20 ml)."
     },
     {
       "id" : "EHDSAdministeredDosage.dosageDetails.doseAndRate.rate[x]",
       "path" : "EHDSAdministeredDosage.dosageDetails.doseAndRate.rate[x]",
-      "short" : "Amount of medication per time period (e.g. 100mg per 1 hour). When rate is provided per 1 time unit, Quantity data type can be used with a suitable unit (e.g. mg/h, ug/min)."
+      "short" : "Amount of medication per time period (e.g. 100 mg per hour). When rate is provided per time unit, Quantity data type may be used with a suitable unit (e.g. mg/h, μg/min.)."
     },
     {
       "id" : "EHDSAdministeredDosage.dosageDetails.repeat",

@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDeviceUse.csv
   "name" : "EHDSDeviceUse",
   "title" : "Device use model",
   "status" : "draft",
-  "date" : "2026-11-17T22:07:14+00:00",
+  "date" : "2026-11-18T22:43:22+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -58,9 +58,19 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDeviceUse.csv
       "definition" : "EHDSDeviceUse means a structured set of data elements describing the use of a medical device."
     },
     {
+      "id" : "EHDSDeviceUse.header.identifier",
+      "path" : "EHDSDeviceUse.header.identifier",
+      "short" : "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)."
+    },
+    {
+      "id" : "EHDSDeviceUse.header.author[x]",
+      "path" : "EHDSDeviceUse.header.author[x]",
+      "short" : "Author of the resource."
+    },
+    {
       "id" : "EHDSDeviceUse.header.status",
       "path" : "EHDSDeviceUse.header.status",
-      "short" : "Current status of the device usage, e.g. active, completed, etc.",
+      "short" : "Current status of the device usage, e.g. active, completed.",
       "binding" : {
         "strength" : "required",
         "description" : "HL7 Device Use Statement Status"

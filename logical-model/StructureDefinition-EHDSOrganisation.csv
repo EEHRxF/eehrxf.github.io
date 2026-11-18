@@ -10,6 +10,6 @@
 "EHDSOrganisation.address","EHDSOrganisation.address","","","",0,*,"","","","http://ehds.eu/fhir/models/StructureDefinition/EHDSAddress {[]} {[]}
 ","Mailing or office address.","Mailing or office address.","","","","","","","","","",,,,,"",,,,"EHDSOrganisation.address",0,*,"",""
 "EHDSOrganisation.telecom","EHDSOrganisation.telecom","","","",0,*,"","","","http://ehds.eu/fhir/models/StructureDefinition/EHDSTelecom {[]} {[]}
-","Telecommunication contact information (address) associated with the organisation, such as phone number, email, or messaging service.","Telecommunication contact information (address) associated with the organisation, such as phone number, email, or messaging service.","","","","","","","","","",,,,,"",,,,"EHDSOrganisation.telecom",0,*,"",""
+","Telecommunication contact information (address) associated with the organisation, such as phone number, email or messaging service.","Telecommunication contact information (address) associated with the organisation, such as phone number, email or messaging service.","","","","","","","","","",,,,,"",,,,"EHDSOrganisation.telecom",0,*,"",""
 "EHDSOrganisation.partOf","EHDSOrganisation.partOf","","","",0,1,"","","","http://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation {[]} {[]}
 ","The organisation of which this organisation forms a part.","The organisation of which this organisation forms a part.","","","","","","","","","",,,,,"",,,,"EHDSOrganisation.partOf",0,1,"",""

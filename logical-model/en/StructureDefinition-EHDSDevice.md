@@ -4,7 +4,7 @@
 
 **Usages:**
 
-* Use this Logical Model: [DataSet model](StructureDefinition-EHDSDataSet.md), [Device use model](StructureDefinition-EHDSDeviceUse.md), [Document model](StructureDefinition-EHDSDocument.md), [Model for observation performed by laboratory](StructureDefinition-EHDSLaboratoryObservation.md)... Show 4 more, [Medical test result and report model](StructureDefinition-EHDSMedicalTestReport.md), [Observation model](StructureDefinition-EHDSObservation.md), [Procedure model](StructureDefinition-EHDSProcedure.md) and [Specimen model](StructureDefinition-EHDSSpecimen.md)
+* Use this Logical Model: [DataSet model](StructureDefinition-EHDSDataSet.md), [Device use model](StructureDefinition-EHDSDeviceUse.md), [Model for observation performed by laboratory](StructureDefinition-EHDSLaboratoryObservation.md), [Medical test result and report model](StructureDefinition-EHDSMedicalTestReport.md)... Show 3 more, [Observation model](StructureDefinition-EHDSObservation.md), [Procedure model](StructureDefinition-EHDSProcedure.md) and [Specimen model](StructureDefinition-EHDSSpecimen.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/eu.ehds.models|current/StructureDefinition/StructureDefinition-EHDSDevice.json)
 
@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDevice.csv), 
   "name" : "EHDSDevice",
   "title" : "Device or implant model",
   "status" : "draft",
-  "date" : "2026-11-17T22:07:14+00:00",
+  "date" : "2026-11-18T22:43:22+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -71,8 +71,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDevice.csv), 
     {
       "id" : "EHDSDevice.udiCarrier",
       "path" : "EHDSDevice.udiCarrier",
-      "short" : "Unique Device Identifier (UDI) value.",
-      "definition" : "Unique Device Identifier (UDI) value.",
+      "short" : "Unique device identifier (UDI) value.",
+      "definition" : "Unique device identifier (UDI) value.",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -82,8 +82,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDevice.csv), 
     {
       "id" : "EHDSDevice.manufacturer",
       "path" : "EHDSDevice.manufacturer",
-      "short" : "Name of device manufacturer. If the manufacturer code is included in an identifier, manufacturer must correspond to that code.",
-      "definition" : "Name of device manufacturer. If the manufacturer code is included in an identifier, manufacturer must correspond to that code.",
+      "short" : "Name of device manufacturer. If the manufacturer code is included in an identifier, the manufacturer shall correspond to that code.",
+      "definition" : "Name of device manufacturer. If the manufacturer code is included in an identifier, the manufacturer shall correspond to that code.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -104,8 +104,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDevice.csv), 
     {
       "id" : "EHDSDevice.expiryDate",
       "path" : "EHDSDevice.expiryDate",
-      "short" : "The date and time beyond which this device is no longer valid or should not be used (if applicable).",
-      "definition" : "The date and time beyond which this device is no longer valid or should not be used (if applicable).",
+      "short" : "The date and time beyond which this device is no longer valid or shall not be used (if applicable).",
+      "definition" : "The date and time beyond which this device is no longer valid or shall not be used (if applicable).",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -148,8 +148,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDevice.csv), 
     {
       "id" : "EHDSDevice.name.value",
       "path" : "EHDSDevice.name.value",
-      "short" : "The name of the device as known to e.g. the manufacturer and/or patient.",
-      "definition" : "The name of the device as known to e.g. the manufacturer and/or patient.",
+      "short" : "The name of the device as known to, e.g., the manufacturer, patient or both.",
+      "definition" : "The name of the device as known to, e.g., the manufacturer, patient or both.",
       "min" : 1,
       "max" : "1",
       "type" : [{
@@ -159,8 +159,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDevice.csv), 
     {
       "id" : "EHDSDevice.name.type",
       "path" : "EHDSDevice.name.type",
-      "short" : "The type of name, e.g. UDI Label name, user friendly name.",
-      "definition" : "The type of name, e.g. UDI Label name, user friendly name.",
+      "short" : "The type of name, e.g. UDI label name, user-friendly name.",
+      "definition" : "The type of name, e.g. UDI label name, user-friendly name.",
       "min" : 1,
       "max" : "1",
       "type" : [{
@@ -174,8 +174,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDevice.csv), 
     {
       "id" : "EHDSDevice.modelNumber",
       "path" : "EHDSDevice.modelNumber",
-      "short" : "The manufacturer's model number for the device.",
-      "definition" : "The manufacturer's model number for the device.",
+      "short" : "The manufacturer’s model number for the device.",
+      "definition" : "The manufacturer’s model number for the device.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -185,8 +185,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDevice.csv), 
     {
       "id" : "EHDSDevice.version",
       "path" : "EHDSDevice.version",
-      "short" : "The actual design of the device and/or software version running on the device.",
-      "definition" : "The actual design of the device and/or software version running on the device.",
+      "short" : "The actual design of the device, the software version running on the device or both.",
+      "definition" : "The actual design of the device, the software version running on the device or both.",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -211,8 +211,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDevice.csv), 
     {
       "id" : "EHDSDevice.note",
       "path" : "EHDSDevice.note",
-      "short" : "Device note and/or comment.",
-      "definition" : "Device note and/or comment.",
+      "short" : "Device note, device comment or device note and comment.",
+      "definition" : "Device note, device comment or device note and comment.",
       "min" : 0,
       "max" : "1",
       "type" : [{

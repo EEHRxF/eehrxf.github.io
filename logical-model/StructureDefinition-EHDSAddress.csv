@@ -4,7 +4,7 @@
 "EHDSAddress.use","EHDSAddress.use","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Purpose of the address. If this attribute is not present, the address is assumed to be the default address useful for any purpose.","Purpose of the address. If this attribute is not present, the address is assumed to be the default address useful for any purpose.","","","","","","","","","",,"required","HL7 Address Use","","",,,,"EHDSAddress.use",0,1,"",""
 "EHDSAddress.type","EHDSAddress.type","","","",0,1,"","","","CodeableConcept {[]} {[]}
-","Distinguishes between physical addresses (those that can be visited) and mailing addresses. Most addresses are both.","Distinguishes between physical addresses (those that can be visited) and mailing addresses. Most addresses are both.","","","","","","","","","",,"required","HL7 Address Type","","",,,,"EHDSAddress.type",0,1,"",""
+","Distinguishes between physical addresses (those that may be visited) and mailing addresses. Most addresses are both.","Distinguishes between physical addresses (those that may be visited) and mailing addresses. Most addresses are both.","","","","","","","","","",,"required","HL7 Address Type","","",,,,"EHDSAddress.type",0,1,"",""
 "EHDSAddress.text","EHDSAddress.text","","","",0,1,"","","","string {[]} {[]}
 ","Text representation of the address.","Text representation of the address.","","","","","","","","","",,,,,"",,,,"EHDSAddress.text",0,1,"",""
 "EHDSAddress.street","EHDSAddress.street","","","",0,1,"","","","string {[]} {[]}
@@ -12,7 +12,7 @@
 "EHDSAddress.houseNumber","EHDSAddress.houseNumber","","","",0,1,"","","","string {[]} {[]}
 ","House number.","House number.","","","","","","","","","",,,,,"",,,,"EHDSAddress.houseNumber",0,1,"",""
 "EHDSAddress.postBox","EHDSAddress.postBox","","","",0,1,"","","","string {[]} {[]}
-","Post box.","Post box.","","","","","","","","","",,,,,"",,,,"EHDSAddress.postBox",0,1,"",""
+","Postbox.","Postbox.","","","","","","","","","",,,,,"",,,,"EHDSAddress.postBox",0,1,"",""
 "EHDSAddress.city","EHDSAddress.city","","","",0,1,"","","","string {[]} {[]}
 ","City.","City.","","","","","","","","","",,,,,"",,,,"EHDSAddress.city",0,1,"",""
 "EHDSAddress.postalCode","EHDSAddress.postalCode","","","",0,1,"","","","string {[]} {[]}

@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSEncounter.csv
   "name" : "EHDSEncounter",
   "title" : "Encounter model",
   "status" : "draft",
-  "date" : "2026-11-17T22:07:14+00:00",
+  "date" : "2026-11-18T22:43:22+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -56,6 +56,16 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSEncounter.csv
       "path" : "EHDSEncounter",
       "short" : "Encounter model",
       "definition" : "EHDSEncounter means a structured set of data elements describing a patient's interaction with a healthcare service, but excluding the tracking of broader episodes of care (e.g., a maternity episode from first antenatal visit through delivery and postnatal follow-up) extending beyond individual encounters."
+    },
+    {
+      "id" : "EHDSEncounter.header.identifier",
+      "path" : "EHDSEncounter.header.identifier",
+      "short" : "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)."
+    },
+    {
+      "id" : "EHDSEncounter.header.author[x]",
+      "path" : "EHDSEncounter.header.author[x]",
+      "short" : "Author of the resource."
     },
     {
       "id" : "EHDSEncounter.header.status",
@@ -239,8 +249,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSEncounter.csv
     {
       "id" : "EHDSEncounter.dischargeDestination.type",
       "path" : "EHDSEncounter.dischargeDestination.type",
-      "short" : "Type of location (e.g. home, hospital, nursing home, etc.).",
-      "definition" : "Type of location (e.g. home, hospital, nursing home, etc.).",
+      "short" : "Type of location (e.g. home, hospital, nursing home).",
+      "definition" : "Type of location (e.g. home, hospital, nursing home).",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -312,8 +322,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSEncounter.csv
     {
       "id" : "EHDSEncounter.note",
       "path" : "EHDSEncounter.note",
-      "short" : "Free text notes by the health professional",
-      "definition" : "Free text notes by the health professional",
+      "short" : "Free text notes by the health professional.",
+      "definition" : "Free text notes by the health professional.",
       "min" : 0,
       "max" : "1",
       "type" : [{

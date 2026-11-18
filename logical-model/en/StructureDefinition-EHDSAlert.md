@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAlert.csv), [
   "name" : "EHDSAlert",
   "title" : "Alert model",
   "status" : "draft",
-  "date" : "2026-11-17T22:07:14+00:00",
+  "date" : "2026-11-18T22:43:22+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -58,15 +58,20 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAlert.csv), [
       "definition" : "EHDSAlert means a structured set of data elements describing a clinically relevant fact about a patient that requires attention during a healthcare encounter in order to ensure patient safety or prevent adverse outcomes, including, but not limited to, intolerances, rare diseases requiring special management, implanted devices, ongoing special treatments, transplanted organs, or participation in a clinical trial."
     },
     {
+      "id" : "EHDSAlert.header.identifier",
+      "path" : "EHDSAlert.header.identifier",
+      "short" : "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)."
+    },
+    {
       "id" : "EHDSAlert.header.author[x]",
       "path" : "EHDSAlert.header.author[x]",
-      "definition" : "The author of the alert statement, i.e. the setter of the alert."
+      "definition" : "Author of the resource."
     },
     {
       "id" : "EHDSAlert.header.status",
       "path" : "EHDSAlert.header.status",
       "short" : "Current status of the alert.",
-      "definition" : "Current status of the alert, indicates whether this alert is active and needs to be displayed to a user, or whether it is no longer needed.",
+      "definition" : "Current status of the alert.",
       "binding" : {
         "strength" : "required",
         "description" : "HL7 Flag Status"
@@ -116,8 +121,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAlert.csv), [
     {
       "id" : "EHDSAlert.period",
       "path" : "EHDSAlert.period",
-      "short" : "Time period when alert is active. The period of time from the activation of the alert to inactivation of the alert. If the alert is active, the end of the period should be unspecified.",
-      "definition" : "Time period when alert is active. The period of time from the activation of the alert to inactivation of the alert. If the alert is active, the end of the period should be unspecified.",
+      "short" : "Time period when alert is active. The period of time from activation of the alert to inactivation of the alert. If the alert is active, the end of the period shall not be specified.",
+      "definition" : "Time period when alert is active. The period of time from activation of the alert to inactivation of the alert. If the alert is active, the end of the period shall not be specified.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -125,14 +130,14 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAlert.csv), [
       }]
     },
     {
-      "id" : "EHDSAlert.otherSupportingInformation",
-      "path" : "EHDSAlert.otherSupportingInformation",
+      "id" : "EHDSAlert.sourceReference",
+      "path" : "EHDSAlert.sourceReference",
       "short" : "A reference to the resource the alert is about.",
       "definition" : "A reference to the resource the alert is about.",
       "min" : 0,
       "max" : "*",
       "type" : [{
-        "code" : "string"
+        "code" : "uri"
       }]
     }]
   }

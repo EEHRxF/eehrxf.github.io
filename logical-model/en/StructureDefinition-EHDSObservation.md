@@ -109,7 +109,7 @@ Use **relationships between observations** when the related observations:
   "name" : "EHDSObservation",
   "title" : "Observation model",
   "status" : "draft",
-  "date" : "2026-11-17T22:07:14+00:00",
+  "date" : "2026-11-18T22:43:22+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -138,6 +138,16 @@ Use **relationships between observations** when the related observations:
       "definition" : "EHDSObservation means a structured set of data elements describing a clinical finding or measurement and its results. This includes simple observational findings (e.g., alcohol and tobacco use, blood pressure measurements) and complex medical test results (e.g., cardiopulmonary stress test, Holter monitor), supporting the grouping of related observations and the representation of multi-part results observed under shared or different conditions."
     },
     {
+      "id" : "EHDSObservation.header.identifier",
+      "path" : "EHDSObservation.header.identifier",
+      "short" : "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)."
+    },
+    {
+      "id" : "EHDSObservation.header.author[x]",
+      "path" : "EHDSObservation.header.author[x]",
+      "short" : "Author of the resource."
+    },
+    {
       "id" : "EHDSObservation.header.status",
       "path" : "EHDSObservation.header.status",
       "binding" : {
@@ -148,8 +158,8 @@ Use **relationships between observations** when the related observations:
     {
       "id" : "EHDSObservation.header.directSubject[x]",
       "path" : "EHDSObservation.header.directSubject[x]",
-      "short" : "The direct subject of the observation if different from the patient (subject of care), e.g. an observation of an implanted device. Additional types of subject may be allowed in implementations.",
-      "definition" : "The direct subject of the observation if different from the patient (subject of care), e.g. an observation of an implanted device. Additional types of subject may be allowed in implementations.",
+      "short" : "The direct subject of the observation if different from the patient (subject of care), e.g. an observation of an implanted device. Additional types of subjects may be allowed in implementations.",
+      "definition" : "The direct subject of the observation if different from the patient (subject of care), e.g. an observation of an implanted device. Additional types of subjects may be allowed in implementations.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -194,7 +204,7 @@ Use **relationships between observations** when the related observations:
       }],
       "binding" : {
         "strength" : "required",
-        "description" : "SNOMED GPS, LOINC, NPU"
+        "description" : "SNOMED GPS, LOINC (preferred), NPU"
       }
     },
     {
@@ -279,8 +289,8 @@ Use **relationships between observations** when the related observations:
     {
       "id" : "EHDSObservation.result",
       "path" : "EHDSObservation.result",
-      "short" : "Result of the observation including text, numeric, coded, and other types of results of the measurement and measurement uncertainty. Content of the observation result will vary according to the type of the observation.",
-      "definition" : "Result of the observation including text, numeric, coded, and other types of results of the measurement and measurement uncertainty. Content of the observation result will vary according to the type of the observation.",
+      "short" : "Result of the observation including text, numeric, coded and other types of results of the measurement and measurement uncertainty. Content of the observation result may vary depending on the type of observation.",
+      "definition" : "Result of the observation including text, numeric, coded and other types of results of the measurement and measurement uncertainty. Content of the observation result may vary depending on the type of observation.",
       "min" : 1,
       "max" : "1",
       "type" : [{
@@ -290,8 +300,8 @@ Use **relationships between observations** when the related observations:
     {
       "id" : "EHDSObservation.result.value[x]",
       "path" : "EHDSObservation.result.value[x]",
-      "short" : "Observation result value according to the type of observation.",
-      "definition" : "Observation result value according to the type of observation.",
+      "short" : "Value of the observation result, expressed in a data type appropriate to the observation.",
+      "definition" : "Value of the observation result, expressed in a data type appropriate to the observation.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -317,8 +327,8 @@ Use **relationships between observations** when the related observations:
     {
       "id" : "EHDSObservation.result.uncertainty",
       "path" : "EHDSObservation.result.uncertainty",
-      "short" : "Measurement uncertainty information type and interval if needed about the observation result.",
-      "definition" : "Measurement uncertainty information type and interval if needed about the observation result.",
+      "short" : "Information on the type of measurement uncertainty associated with the observation result and, where needed, the uncertainty interval.",
+      "definition" : "Information on the type of measurement uncertainty associated with the observation result and, where needed, the uncertainty interval.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -339,8 +349,8 @@ Use **relationships between observations** when the related observations:
     {
       "id" : "EHDSObservation.result.uncertainty.type",
       "path" : "EHDSObservation.result.uncertainty.type",
-      "short" : "Probability Distribution Type for uncertainty",
-      "definition" : "Probability Distribution Type for uncertainty",
+      "short" : "Probability Distribution Type for uncertainty.",
+      "definition" : "Probability Distribution Type for uncertainty.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -348,7 +358,7 @@ Use **relationships between observations** when the related observations:
       }],
       "binding" : {
         "strength" : "required",
-        "description" : "HL7 Probability Distribution Type"
+        "description" : "HL7 ProbabilityDistributionType"
       }
     },
     {
@@ -369,8 +379,8 @@ Use **relationships between observations** when the related observations:
     {
       "id" : "EHDSObservation.referenceRange",
       "path" : "EHDSObservation.referenceRange",
-      "short" : "Reference range, multiple reference ranges of different types could be provided. Provides guide for interpretation of the result.",
-      "definition" : "Reference range, multiple reference ranges of different types could be provided. Provides guide for interpretation of the result.",
+      "short" : "Reference range, multiple reference ranges of different types may be provided. Provides guide for interpretation of the result.",
+      "definition" : "Reference range, multiple reference ranges of different types may be provided. Provides guide for interpretation of the result.",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -440,8 +450,8 @@ Use **relationships between observations** when the related observations:
     {
       "id" : "EHDSObservation.referenceRange.appliesTo",
       "path" : "EHDSObservation.referenceRange.appliesTo",
-      "short" : "Codes to indicate the target population (e.g., in case of particular sex or race) this reference range applies to.",
-      "definition" : "Codes to indicate the target population (e.g., in case of particular sex or race) this reference range applies to.",
+      "short" : "Codes to indicate the target population (e.g. in the case of a particular sex or race) to which this reference range applies.",
+      "definition" : "Codes to indicate the target population (e.g. in the case of a particular sex or race) to which this reference range applies.",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -455,8 +465,8 @@ Use **relationships between observations** when the related observations:
     {
       "id" : "EHDSObservation.referenceRange.age",
       "path" : "EHDSObservation.referenceRange.age",
-      "short" : "Age range to which this reference range applies if applicable.",
-      "definition" : "Age range to which this reference range applies if applicable.",
+      "short" : "Age range to which this reference range applies, if applicable.",
+      "definition" : "Age range to which this reference range applies, if applicable.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -470,8 +480,8 @@ Use **relationships between observations** when the related observations:
     {
       "id" : "EHDSObservation.referenceRange.text",
       "path" : "EHDSObservation.referenceRange.text",
-      "short" : "Text based reference range.",
-      "definition" : "Text based reference range.",
+      "short" : "Text-based reference range.",
+      "definition" : "Text-based reference range.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -507,8 +517,8 @@ Use **relationships between observations** when the related observations:
     {
       "id" : "EHDSObservation.component",
       "path" : "EHDSObservation.component",
-      "short" : "Component in case the observation consists of multiple sub-observations (e.g. blood pressure).",
-      "definition" : "Component in case the observation consists of multiple sub-observations (e.g. blood pressure).",
+      "short" : "Component if the observation consists of multiple sub-observations (e.g. blood pressure).",
+      "definition" : "Component if the observation consists of multiple sub-observations (e.g. blood pressure).",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -518,8 +528,8 @@ Use **relationships between observations** when the related observations:
     {
       "id" : "EHDSObservation.component.type",
       "path" : "EHDSObservation.component.type",
-      "short" : "Type of the component observation",
-      "definition" : "Type of the component observation",
+      "short" : "Type of the component observation.",
+      "definition" : "Type of the component observation.",
       "min" : 1,
       "max" : "1",
       "type" : [{
@@ -527,7 +537,7 @@ Use **relationships between observations** when the related observations:
       }],
       "binding" : {
         "strength" : "required",
-        "description" : "SNOMED GPS, LOINC, NPU"
+        "description" : "SNOMED GPS, LOINC (preferred), NPU"
       }
     },
     {
@@ -544,8 +554,8 @@ Use **relationships between observations** when the related observations:
     {
       "id" : "EHDSObservation.component.result",
       "path" : "EHDSObservation.component.result",
-      "short" : "Result of the observation including text, numeric, coded, and other types of results of the measurement and measurement uncertainty. Content of the observation result will vary according to the type of the observation.",
-      "definition" : "Result of the observation including text, numeric, coded, and other types of results of the measurement and measurement uncertainty. Content of the observation result will vary according to the type of the observation.",
+      "short" : "Result of the observation including text, numeric, coded and other types of results of the measurement and measurement certainty. Content of the observation result may vary depending on the type of observation.",
+      "definition" : "Result of the observation including text, numeric, coded and other types of results of the measurement and measurement certainty. Content of the observation result may vary depending on the type of observation.",
       "min" : 1,
       "max" : "1",
       "type" : [{
@@ -555,8 +565,8 @@ Use **relationships between observations** when the related observations:
     {
       "id" : "EHDSObservation.component.result.value[x]",
       "path" : "EHDSObservation.component.result.value[x]",
-      "short" : "Observation result value according to the type of observation.",
-      "definition" : "Observation result value according to the type of observation.",
+      "short" : "Value of the observation result, expressed in a data type appropriate to the observation.",
+      "definition" : "Value of the observation result, expressed in a data type appropriate to the observation.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -582,8 +592,8 @@ Use **relationships between observations** when the related observations:
     {
       "id" : "EHDSObservation.component.result.uncertainty",
       "path" : "EHDSObservation.component.result.uncertainty",
-      "short" : "Measurement uncertainty information type and interval if needed about the observation result.",
-      "definition" : "Measurement uncertainty information type and interval if needed about the observation result.",
+      "short" : "Information on the type of measurement uncertainty associated with the observation result and, where needed, the uncertainty interval.",
+      "definition" : "Information on the type of measurement uncertainty associated with the observation result and, where needed, the uncertainty interval.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -604,8 +614,8 @@ Use **relationships between observations** when the related observations:
     {
       "id" : "EHDSObservation.component.result.uncertainty.type",
       "path" : "EHDSObservation.component.result.uncertainty.type",
-      "short" : "Probability distribution type for uncertainty",
-      "definition" : "Probability distribution type for uncertainty",
+      "short" : "Probability Distribution Type for uncertainty",
+      "definition" : "Probability Distribution Type for uncertainty",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -613,7 +623,7 @@ Use **relationships between observations** when the related observations:
       }],
       "binding" : {
         "strength" : "required",
-        "description" : "HL7 Probability Distribution Type"
+        "description" : "HL7 ProbabilityDistributionType"
       }
     },
     {
@@ -634,8 +644,8 @@ Use **relationships between observations** when the related observations:
     {
       "id" : "EHDSObservation.component.referenceRange",
       "path" : "EHDSObservation.component.referenceRange",
-      "short" : "Reference range, multiple reference ranges of different types could be provided. Provides guide for interpretation of the result.",
-      "definition" : "Reference range, multiple reference ranges of different types could be provided. Provides guide for interpretation of the result.",
+      "short" : "Reference range, multiple reference ranges of different types may be provided. Provides guide for interpretation of the result.",
+      "definition" : "Reference range, multiple reference ranges of different types may be provided. Provides guide for interpretation of the result.",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -705,8 +715,8 @@ Use **relationships between observations** when the related observations:
     {
       "id" : "EHDSObservation.component.referenceRange.appliesTo",
       "path" : "EHDSObservation.component.referenceRange.appliesTo",
-      "short" : "Codes to indicate the target population this reference range applies to.",
-      "definition" : "Codes to indicate the target population this reference range applies to.",
+      "short" : "Codes to indicate the target population to which this reference range applies.",
+      "definition" : "Codes to indicate the target population to which this reference range applies.",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -720,8 +730,8 @@ Use **relationships between observations** when the related observations:
     {
       "id" : "EHDSObservation.component.referenceRange.age",
       "path" : "EHDSObservation.component.referenceRange.age",
-      "short" : "Age range to which this reference range applies if applicable.",
-      "definition" : "Age range to which this reference range applies if applicable.",
+      "short" : "Age range to which this reference range applies, if applicable.",
+      "definition" : "Age range to which this reference range applies, if applicable.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -735,8 +745,8 @@ Use **relationships between observations** when the related observations:
     {
       "id" : "EHDSObservation.component.referenceRange.text",
       "path" : "EHDSObservation.component.referenceRange.text",
-      "short" : "Text based reference range.",
-      "definition" : "Text based reference range.",
+      "short" : "Text-based reference range.",
+      "definition" : "Text-based reference range.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -778,8 +788,8 @@ Use **relationships between observations** when the related observations:
     {
       "id" : "EHDSObservation.hasMember[x]",
       "path" : "EHDSObservation.hasMember[x]",
-      "short" : "Member of the observation group that this observation forms (e.g. in case of a battery, a panel of tests, a set of vital sign measurements).",
-      "definition" : "Member of the observation group that this observation forms (e.g. in case of a battery, a panel of tests, a set of vital sign measurements).",
+      "short" : "Member of the observation group that this observation forms (e.g. in the case of a test battery, a panel of tests, a set of vital sign measurements).",
+      "definition" : "Member of the observation group that this observation forms (e.g. in the case of a test battery, a panel of tests, a set of vital sign measurements).",
       "min" : 0,
       "max" : "*",
       "type" : [{

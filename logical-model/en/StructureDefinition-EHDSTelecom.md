@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSTelecom.csv),
   "name" : "EHDSTelecom",
   "title" : "Telecom model",
   "status" : "draft",
-  "date" : "2026-11-17T22:07:14+00:00",
+  "date" : "2026-11-18T22:43:22+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",

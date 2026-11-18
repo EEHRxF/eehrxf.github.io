@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSTravelHistory
   "name" : "EHDSTravelHistory",
   "title" : "Travel history model",
   "status" : "draft",
-  "date" : "2026-11-17T22:07:14+00:00",
+  "date" : "2026-11-18T22:43:22+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -58,14 +58,19 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSTravelHistory
       "definition" : "EHDSTravelHistory means a structured set of data elements describing a patient's past travel to a specific country."
     },
     {
-      "id" : "EHDSTravelHistory.header.date",
-      "path" : "EHDSTravelHistory.header.date",
-      "short" : "Date and optionally time of authoring/issuing"
+      "id" : "EHDSTravelHistory.header.identifier",
+      "path" : "EHDSTravelHistory.header.identifier",
+      "short" : "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)."
+    },
+    {
+      "id" : "EHDSTravelHistory.header.author[x]",
+      "path" : "EHDSTravelHistory.header.author[x]",
+      "short" : "Author of the resource."
     },
     {
       "id" : "EHDSTravelHistory.header.status",
       "path" : "EHDSTravelHistory.header.status",
-      "short" : "Status of the resource or document",
+      "short" : "Status of the resource or document.",
       "binding" : {
         "strength" : "required",
         "description" : "Not defined"

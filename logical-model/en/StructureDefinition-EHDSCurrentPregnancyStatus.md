@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSCurrentPregna
   "name" : "EHDSCurrentPregnancyStatus",
   "title" : "Current pregnancy status model",
   "status" : "draft",
-  "date" : "2026-11-17T22:07:14+00:00",
+  "date" : "2026-11-18T22:43:22+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -58,6 +58,16 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSCurrentPregna
       "definition" : "EHDSCurrentPregnancyStatus means a structured set of data elements describing a patient's pregnancy status at a given point in time."
     },
     {
+      "id" : "EHDSCurrentPregnancyStatus.header.identifier",
+      "path" : "EHDSCurrentPregnancyStatus.header.identifier",
+      "short" : "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)."
+    },
+    {
+      "id" : "EHDSCurrentPregnancyStatus.header.author[x]",
+      "path" : "EHDSCurrentPregnancyStatus.header.author[x]",
+      "short" : "Author of the resource."
+    },
+    {
       "id" : "EHDSCurrentPregnancyStatus.header.status",
       "path" : "EHDSCurrentPregnancyStatus.header.status",
       "short" : "Status of the condition.",
@@ -84,8 +94,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSCurrentPregna
     {
       "id" : "EHDSCurrentPregnancyStatus.expectedDateOfDelivery",
       "path" : "EHDSCurrentPregnancyStatus.expectedDateOfDelivery",
-      "short" : "Date in which the woman is due to give birth. Year, day and month are required.",
-      "definition" : "Date in which the woman is due to give birth. Year, day and month are required.",
+      "short" : "Date on which the woman is due to give birth. Day, year and month are required.",
+      "definition" : "Date on which the woman is due to give birth. Day, year and month are required.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -95,8 +105,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSCurrentPregna
     {
       "id" : "EHDSCurrentPregnancyStatus.gestationalAge",
       "path" : "EHDSCurrentPregnancyStatus.gestationalAge",
-      "short" : "Duration of the pregnancy (weeks and/or days) at the time of the observation.",
-      "definition" : "Duration of the pregnancy (weeks and/or days) at the time of the observation.",
+      "short" : "Duration of the pregnancy (weeks, days or weeks and days) at the time of the observation.",
+      "definition" : "Duration of the pregnancy (weeks, days or weeks and days) at the time of the observation.",
       "min" : 0,
       "max" : "1",
       "type" : [{

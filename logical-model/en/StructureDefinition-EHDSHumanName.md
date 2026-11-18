@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSHumanName.csv
   "name" : "EHDSHumanName",
   "title" : "Human name model",
   "status" : "draft",
-  "date" : "2026-11-17T22:07:14+00:00",
+  "date" : "2026-11-18T22:43:22+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -75,8 +75,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSHumanName.csv
     {
       "id" : "EHDSHumanName.text",
       "path" : "EHDSHumanName.text",
-      "short" : "The entire name as it should be displayed e.g. on an application UI.",
-      "definition" : "The entire name as it should be displayed e.g. on an application UI.",
+      "short" : "The entire name as it shall be displayed, e.g. on an application UI.",
+      "definition" : "The entire name as it shall be displayed, e.g. on an application UI.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -86,8 +86,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSHumanName.csv
     {
       "id" : "EHDSHumanName.family",
       "path" : "EHDSHumanName.family",
-      "short" : "The family name/surname/last name.",
-      "definition" : "The family name/surname/last name.",
+      "short" : "The family name / surname / last name.",
+      "definition" : "The family name / surname / last name.",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -97,8 +97,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSHumanName.csv
     {
       "id" : "EHDSHumanName.given",
       "path" : "EHDSHumanName.given",
-      "short" : "The given name/first name.",
-      "definition" : "The given name/first name.",
+      "short" : "The given name / first name.",
+      "definition" : "The given name / first name.",
       "min" : 0,
       "max" : "*",
       "type" : [{

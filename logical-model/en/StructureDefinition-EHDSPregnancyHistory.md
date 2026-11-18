@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSPregnancyHist
   "name" : "EHDSPregnancyHistory",
   "title" : "Pregnancy history model",
   "status" : "draft",
-  "date" : "2026-11-17T22:07:14+00:00",
+  "date" : "2026-11-18T22:43:22+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -56,6 +56,16 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSPregnancyHist
       "path" : "EHDSPregnancyHistory",
       "short" : "Pregnancy history model",
       "definition" : "EHDSPregnancyHistory means a structured set of data elements describing a single past pregnancy."
+    },
+    {
+      "id" : "EHDSPregnancyHistory.header.identifier",
+      "path" : "EHDSPregnancyHistory.header.identifier",
+      "short" : "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)."
+    },
+    {
+      "id" : "EHDSPregnancyHistory.header.author[x]",
+      "path" : "EHDSPregnancyHistory.header.author[x]",
+      "short" : "Author of the resource."
     },
     {
       "id" : "EHDSPregnancyHistory.header.status",

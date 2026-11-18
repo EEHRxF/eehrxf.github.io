@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSMedicationUse
   "name" : "EHDSMedicationUse",
   "title" : "Medication use model",
   "status" : "draft",
-  "date" : "2026-11-17T22:07:14+00:00",
+  "date" : "2026-11-18T22:43:22+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -58,9 +58,19 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSMedicationUse
       "definition" : "EHDSMedicationUse means a structured set of data elements describing a use of a single medicinal product as part of a medication summary."
     },
     {
+      "id" : "EHDSMedicationUse.header.identifier",
+      "path" : "EHDSMedicationUse.header.identifier",
+      "short" : "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)."
+    },
+    {
+      "id" : "EHDSMedicationUse.header.author[x]",
+      "path" : "EHDSMedicationUse.header.author[x]",
+      "short" : "Author of the resource."
+    },
+    {
       "id" : "EHDSMedicationUse.header.status",
       "path" : "EHDSMedicationUse.header.status",
-      "short" : "Status of the medicinal product use statement, e.g. 'recorded'.",
+      "short" : "Status of the medicinal product use statement, e.g. ‘recorded’.",
       "binding" : {
         "strength" : "required",
         "description" : "HL7 Medication Status Codes"
@@ -80,8 +90,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSMedicationUse
     {
       "id" : "EHDSMedicationUse.reason[x]",
       "path" : "EHDSMedicationUse.reason[x]",
-      "short" : "Reason for the use of the medicinal product (typically diagnosis, or a procedure).",
-      "definition" : "Reason for the use of the medicinal product (typically diagnosis, or a procedure).",
+      "short" : "Reason for the use of the medicinal product (typically diagnosis or a procedure).",
+      "definition" : "Reason for the use of the medicinal product (typically diagnosis or a procedure).",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -98,8 +108,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSMedicationUse
     {
       "id" : "EHDSMedicationUse.dosageInstructions",
       "path" : "EHDSMedicationUse.dosageInstructions",
-      "short" : "Details of how medicinal product is/was taken or should be taken.",
-      "definition" : "Details of how medicinal product is/was taken or should be taken.",
+      "short" : "Details of how medicinal product is / was / shall be taken.",
+      "definition" : "Details of how medicinal product is / was / shall be taken.",
       "min" : 1,
       "max" : "1",
       "type" : [{
@@ -109,8 +119,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSMedicationUse
     {
       "id" : "EHDSMedicationUse.periodOfUse",
       "path" : "EHDSMedicationUse.periodOfUse",
-      "short" : "Period when the patient took, is taking or is expected to take the medicinal product.",
-      "definition" : "Period when the patient took, is taking or is expected to take the medicinal product.",
+      "short" : "Period when the patient took, is taking or is required to take the medicinal product.",
+      "definition" : "Period when the patient took, is taking or is required to take the medicinal product.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -120,8 +130,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSMedicationUse
     {
       "id" : "EHDSMedicationUse.derivedFrom[x]",
       "path" : "EHDSMedicationUse.derivedFrom[x]",
-      "short" : "Prescriptions, dispenses or administrations that are the basis of this medicinal product use statement.",
-      "definition" : "Prescriptions, dispenses or administrations that are the basis of this medicinal product use statement.",
+      "short" : "Prescriptions, dispensations or administrations that are the basis of this medicinal product use statement.",
+      "definition" : "Prescriptions, dispensations or administrations that are the basis of this medicinal product use statement.",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -137,8 +147,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSMedicationUse
     {
       "id" : "EHDSMedicationUse.note",
       "path" : "EHDSMedicationUse.note",
-      "short" : "Additional information about the medicinal product use statement",
-      "definition" : "Additional information about the medicinal product use statement",
+      "short" : "Additional information about the medicinal product use statement.",
+      "definition" : "Additional information about the medicinal product use statement.",
       "min" : 0,
       "max" : "1",
       "type" : [{

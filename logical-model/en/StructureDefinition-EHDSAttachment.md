@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAttachment.cs
   "name" : "EHDSAttachment",
   "title" : "Attachment model",
   "status" : "draft",
-  "date" : "2026-11-17T22:07:14+00:00",
+  "date" : "2026-11-18T22:43:22+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -60,8 +60,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAttachment.cs
     {
       "id" : "EHDSAttachment.contentType",
       "path" : "EHDSAttachment.contentType",
-      "short" : "Mime type of the content, with charset etc.",
-      "definition" : "Mime type of the content, with charset etc.",
+      "short" : "The Multipurpose Internet Mail Extensions (MIME) type identifying the format of the content in the attachment. Where applicable, it includes a parameter specifying the character encoding used for text content (e.g. “text/plain; charset=UTF-8”).",
+      "definition" : "The Multipurpose Internet Mail Extensions (MIME) type identifying the format of the content in the attachment. Where applicable, it includes a parameter specifying the character encoding used for text content (e.g. “text/plain; charset=UTF-8”).",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -78,7 +78,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAttachment.cs
       "short" : "Human language of the content.",
       "definition" : "Human language of the content.",
       "min" : 0,
-      "max" : "1",
+      "max" : "*",
       "type" : [{
         "code" : "CodeableConcept"
       }],
@@ -90,8 +90,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAttachment.cs
     {
       "id" : "EHDSAttachment.data",
       "path" : "EHDSAttachment.data",
-      "short" : "The actual data of the attachment - a sequence of bytes, base64 encoded.",
-      "definition" : "The actual data of the attachment - a sequence of bytes, base64 encoded.",
+      "short" : "The actual data of the attachment – a sequence of bytes, base64-encoded.",
+      "definition" : "The actual data of the attachment – a sequence of bytes, base64-encoded.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -101,8 +101,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAttachment.cs
     {
       "id" : "EHDSAttachment.url",
       "path" : "EHDSAttachment.url",
-      "short" : "A location where the data can be accessed.",
-      "definition" : "A location where the data can be accessed.",
+      "short" : "A location where the data may be accessed.",
+      "definition" : "A location where the data may be accessed.",
       "min" : 0,
       "max" : "1",
       "type" : [{

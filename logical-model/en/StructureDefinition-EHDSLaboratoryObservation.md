@@ -96,7 +96,7 @@ Use **relationships between observations** when the related observations:
   "name" : "EHDSLaboratoryObservation",
   "title" : "Model for observation performed by laboratory",
   "status" : "draft",
-  "date" : "2026-11-17T22:07:14+00:00",
+  "date" : "2026-11-18T22:43:22+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -127,12 +127,25 @@ Use **relationships between observations** when the related observations:
     {
       "id" : "EHDSLaboratoryObservation.header.directSubject[x]",
       "path" : "EHDSLaboratoryObservation.header.directSubject[x]",
-      "short" : "The direct subject of the observation if different from the patient (subject of care), e.g. an implanted device, a location, or another person."
+      "short" : "The direct subject of the observation if different from the patient (subject of care), e.g. an implanted device, a location or another person."
     },
     {
       "id" : "EHDSLaboratoryObservation.type",
       "path" : "EHDSLaboratoryObservation.type",
       "short" : "Observation type."
+    },
+    {
+      "id" : "EHDSLaboratoryObservation.result.uncertainty",
+      "path" : "EHDSLaboratoryObservation.result.uncertainty",
+      "short" : "Measurement uncertainty information about the observation result."
+    },
+    {
+      "id" : "EHDSLaboratoryObservation.result.uncertainty.type",
+      "path" : "EHDSLaboratoryObservation.result.uncertainty.type",
+      "binding" : {
+        "strength" : "required",
+        "description" : "HL7 Probability Distribution Type"
+      }
     },
     {
       "id" : "EHDSLaboratoryObservation.result.dataAbsentReason",
@@ -147,7 +160,30 @@ Use **relationships between observations** when the related observations:
     {
       "id" : "EHDSLaboratoryObservation.component.type",
       "path" : "EHDSLaboratoryObservation.component.type",
-      "short" : "Type of the component observation."
+      "short" : "Type of component observation."
+    },
+    {
+      "id" : "EHDSLaboratoryObservation.component.result",
+      "path" : "EHDSLaboratoryObservation.component.result",
+      "short" : "Result of the observation including text, numeric, coded and other types of results of the measurement and measurement uncertainty. Content of the observation result may vary depending on the type of observation."
+    },
+    {
+      "id" : "EHDSLaboratoryObservation.component.result.uncertainty",
+      "path" : "EHDSLaboratoryObservation.component.result.uncertainty",
+      "short" : "Measurement uncertainty information about the observation result."
+    },
+    {
+      "id" : "EHDSLaboratoryObservation.component.result.uncertainty.type",
+      "path" : "EHDSLaboratoryObservation.component.result.uncertainty.type",
+      "binding" : {
+        "strength" : "required",
+        "description" : "HL7 Probability Distribution Type"
+      }
+    },
+    {
+      "id" : "EHDSLaboratoryObservation.component.referenceRange.appliesTo",
+      "path" : "EHDSLaboratoryObservation.component.referenceRange.appliesTo",
+      "short" : "Codes to indicate the target population this reference range applies to."
     },
     {
       "id" : "EHDSLaboratoryObservation.triggeredBy[x]",

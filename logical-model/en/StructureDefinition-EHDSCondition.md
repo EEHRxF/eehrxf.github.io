@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSCondition.csv
   "name" : "EHDSCondition",
   "title" : "Condition model",
   "status" : "draft",
-  "date" : "2026-11-17T22:07:14+00:00",
+  "date" : "2026-11-18T22:43:22+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -58,9 +58,19 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSCondition.csv
       "definition" : "EHDSCondition means a structured set of data elements describing a clinical condition, problem, or diagnosis."
     },
     {
+      "id" : "EHDSCondition.header.identifier",
+      "path" : "EHDSCondition.header.identifier",
+      "short" : "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)."
+    },
+    {
+      "id" : "EHDSCondition.header.author[x]",
+      "path" : "EHDSCondition.header.author[x]",
+      "short" : "Author of the resource."
+    },
+    {
       "id" : "EHDSCondition.header.status",
       "path" : "EHDSCondition.header.status",
-      "short" : "Status of the condition/problem, e.g. active, resolved, inactive, etc.",
+      "short" : "Status of the condition/problem, e.g. active, resolved, inactive.",
       "binding" : {
         "strength" : "required",
         "description" : "HL7 Condition Clinical Status Codes"
@@ -106,8 +116,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSCondition.csv
     {
       "id" : "EHDSCondition.category",
       "path" : "EHDSCondition.category",
-      "short" : "Category of the problem (e.g. POA - present on admission, HAC - hospital acquired condition, and other categorisations).",
-      "definition" : "Category of the problem (e.g. POA - present on admission, HAC - hospital acquired condition, and other categorisations).",
+      "short" : "Category of the problem (e.g. POA – present on admission, hospital-acquired condition (HAC) and other categorisations).",
+      "definition" : "Category of the problem (e.g. POA – present on admission, hospital-acquired condition (HAC) and other categorisations).",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -121,8 +131,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSCondition.csv
     {
       "id" : "EHDSCondition.resolutionCircumstances",
       "path" : "EHDSCondition.resolutionCircumstances",
-      "short" : "Describes the reason for which the status of the problem changed from current to inactive (e.g. surgical procedure, medical treatment, etc.).",
-      "definition" : "Describes the reason for which the status of the problem changed from current to inactive (e.g. surgical procedure, medical treatment, etc.).",
+      "short" : "Describes the reason for which the status of the problem changed from current to inactive (e.g. surgical procedure, medical treatment).",
+      "definition" : "Describes the reason for which the status of the problem changed from current to inactive (e.g. surgical procedure, medical treatment).",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -158,8 +168,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSCondition.csv
     {
       "id" : "EHDSCondition.stage",
       "path" : "EHDSCondition.stage",
-      "short" : "Stage/grade usually assessed formally using a specific staging/grading system (e.g., TNM, ICD-O, BI-RADS etc). Multiple assessment systems could be used.",
-      "definition" : "Stage/grade usually assessed formally using a specific staging/grading system (e.g., TNM, ICD-O, BI-RADS etc). Multiple assessment systems could be used.",
+      "short" : "Stage or grade, usually assessed formally using a specific staging, grading or classification system, such as Tumor, Node, Metastasis (TNM), International Classification of Diseases for Oncology (ICD-O) or Breast Imaging Reporting and Data Systems (BI-RADS). Multiple assessment systems may be used.",
+      "definition" : "Stage or grade, usually assessed formally using a specific staging, grading or classification system, such as Tumor, Node, Metastasis (TNM), International Classification of Diseases for Oncology (ICD-O) or Breast Imaging Reporting and Data Systems (BI-RADS). Multiple assessment systems may be used.",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -173,8 +183,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSCondition.csv
     {
       "id" : "EHDSCondition.diagnosisAssertionStatus",
       "path" : "EHDSCondition.diagnosisAssertionStatus",
-      "short" : "Assertion about the certainty associated with a diagnosis. Diagnostic and/or clinical evidence of condition.",
-      "definition" : "Assertion about the certainty associated with a diagnosis. Diagnostic and/or clinical evidence of condition.",
+      "short" : "Assertion about the certainty associated with a diagnosis. Evidence of condition (diagnostic, clinical or both).",
+      "definition" : "Assertion about the certainty associated with a diagnosis. Evidence of condition (diagnostic, clinical or both).",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -188,8 +198,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSCondition.csv
     {
       "id" : "EHDSCondition.specialistContact",
       "path" : "EHDSCondition.specialistContact",
-      "short" : "Health Professional who may be specifically related to the problem, as a preferred contact.",
-      "definition" : "Health Professional who may be specifically related to the problem, as a preferred contact.",
+      "short" : "Health professional who may be specifically related to the problem, as a preferred contact.",
+      "definition" : "Health professional who may be specifically related to the problem, as a preferred contact.",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -199,8 +209,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSCondition.csv
     {
       "id" : "EHDSCondition.externalResource",
       "path" : "EHDSCondition.externalResource",
-      "short" : "External Resource which may be specifically related to the problem, for example a link to a guideline on a specific a rare disease problem.",
-      "definition" : "External Resource which may be specifically related to the problem, for example a link to a guideline on a specific a rare disease problem.",
+      "short" : "External resource which may be specifically related to the problem, for example a link to a guideline on a specific rare disease problem.",
+      "definition" : "External resource which may be specifically related to the problem, for example a link to a guideline on a specific rare disease problem.",
       "min" : 0,
       "max" : "*",
       "type" : [{

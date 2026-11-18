@@ -5,16 +5,28 @@
 ","Basic metadata for this information.","Basic metadata for this information.","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header",1,1,"",""
 "EHDSEncounter.header.subject","EHDSEncounter.header.subject","","","",1,1,"","","","http://ehds.eu/fhir/models/StructureDefinition/EHDSPatient {[]} {[]}
 ","Patient/subject information.","Patient/subject information.","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.subject",1,1,"",""
-"EHDSEncounter.header.identifier","EHDSEncounter.header.identifier","","","",0,*,"","","","Identifier {[]} {[]}
-","Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries).","Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries).","Business identifier is unique within the system that assigns them. The same entity may have different unique identifiers assigned by different systems. Therefore, the identifier is always expected to be a pair of a system and a value.","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.identifier",0,*,"",""
-"EHDSEncounter.header.author[x]","EHDSEncounter.header.author[x]","","","",0,*,"","","","http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional {[]} {[]}
-http://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation {[]} {[]}http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice {[]} {[]}","Author of the resource.","Author of the resource.","Author(s) responsible for the provided information. The exact role of the responsible author varies across use cases and is specific to individual models.","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.author[x]",0,*,"",""
+"EHDSEncounter.header.identifier","EHDSEncounter.header.identifier","","","",1,*,"","","","Identifier {[]} {[]}
+","Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries).","Unique identifier of the resource.","Business identifier is unique within the system that assigns them. The same entity may have different unique identifiers assigned by different systems. Therefore, the identifier is always expected to be a pair of a system and a value.","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.identifier",1,*,"",""
+"EHDSEncounter.header.clinicalEventTime[x]","EHDSEncounter.header.clinicalEventTime[x]","","","",0,1,"","","","dateTime {[]} {[]}
+Period {[]} {[]}","Time or period the clinical content applies to (e.g. specimen collection time, onset of a condition, period a medication was taken).","Time or period the clinical content applies to (e.g. specimen collection time, onset of a condition, period a medication was taken).","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.clinicalEventTime[x]",0,1,"",""
+"EHDSEncounter.header.version","EHDSEncounter.header.version","","","",0,1,"","","","string {[]} {[]}
+","Version of the resource.","Version of the resource.","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.version",0,1,"",""
+"EHDSEncounter.header.author[x]","EHDSEncounter.header.author[x]","","","",1,*,"","","","http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional {[]} {[]}
+http://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation {[]} {[]}http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice {[]} {[]}","Author of the resource.","Information describing who authored the resource.","Author(s) responsible for the provided information. The exact role of the responsible author varies across use cases and is specific to individual models.","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.author[x]",1,*,"",""
 "EHDSEncounter.header.date","EHDSEncounter.header.date","","","",0,1,"","","","dateTime {[]} {[]}
 ","Date and optionally time of authoring/issuing.","Date and optionally time of authoring/issuing.","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.date",0,1,"",""
+"EHDSEncounter.header.attestation","EHDSEncounter.header.attestation","","","",0,*,"","","","Base {[]} {[]}
+","Resource attestation details.","Resource attestation details.","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.attestation",0,*,"",""
+"EHDSEncounter.header.attestation.attester[x]","EHDSEncounter.header.attestation.attester[x]","","","",1,1,"","","","http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional {[]} {[]}
+http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice {[]} {[]}","Attester who validated the resource.","Attester who validated the resource.","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.attestation.attester[x]",1,1,"",""
+"EHDSEncounter.header.attestation.dateTime","EHDSEncounter.header.attestation.dateTime","","","",1,1,"","","","dateTime {[]} {[]}
+","Date and time of the approval of the resource by the attester.","Date and time of the approval of the resource by the attester.","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.attestation.dateTime",1,1,"",""
 "EHDSEncounter.header.status","EHDSEncounter.header.status","","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Status of the encounter (e.g. discharged, discontinued, completed).","Status of the resource.","","","","","","","","","",,"required","HL7 Encounter Status","","",,,,"EHDSDataSet.header.status",1,1,"",""
-"EHDSEncounter.header.language","EHDSEncounter.header.language","","","",0,1,"","","","CodeableConcept {[]} {[]}
-","Language in which the resource is written. Language is expressed by the IETF language tag.","Language in which the resource is written. Language is expressed by the IETF language tag.","","","","","","","","","",,"required","BCP 47","","",,,,"EHDSDataSet.header.language",0,1,"",""
+"EHDSEncounter.header.language","EHDSEncounter.header.language","","","",0,*,"","","","CodeableConcept {[]} {[]}
+","Language in which the resource is written. Language is expressed by the IETF language tag.","Language in which the resource is written. Language is expressed by the IETF language tag.","","","","","","","","","",,"required","BCP 47","","",,,,"EHDSDataSet.header.language",0,*,"",""
+"EHDSEncounter.header.lastUpdate","EHDSEncounter.header.lastUpdate","","","",0,1,"","","","dateTime {[]} {[]}
+","Date and time of the last system-level update to this resource (system update instant). This is technical metadata and does not represent a clinical event time.","Date and time of the last system-level update to this resource (system update instant). This is technical metadata and does not represent a clinical event time.","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.lastUpdate",0,1,"",""
 "EHDSEncounter.priority","EHDSEncounter.priority","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Indicates the urgency of the encounter (e.g. urgent, routine).","Indicates the urgency of the encounter (e.g. urgent, routine).","","","","","","","","","",,"required","HL7 Act Priority","","",,,,"EHDSEncounter.priority",0,1,"",""
 "EHDSEncounter.class","EHDSEncounter.class","","","",1,1,"","","","CodeableConcept {[]} {[]}
@@ -40,7 +52,7 @@ http://ehds.eu/fhir/models/StructureDefinition/EHDSCondition {[]} {[]}","The dia
 "EHDSEncounter.dischargeDestination","EHDSEncounter.dischargeDestination","","","",0,1,"","","","Base {[]} {[]}
 ","Location or organisation to which the patient is going after discharge.","Location or organisation to which the patient is going after discharge.","","","","","","","","","",,,,,"",,,,"EHDSEncounter.dischargeDestination",0,1,"",""
 "EHDSEncounter.dischargeDestination.type","EHDSEncounter.dischargeDestination.type","","","",0,1,"","","","CodeableConcept {[]} {[]}
-","Type of location (e.g. home, hospital, nursing home, etc.).","Type of location (e.g. home, hospital, nursing home, etc.).","","","","","","","","","",,"required","HL7 Discharge Disposition","","",,,,"EHDSEncounter.dischargeDestination.type",0,1,"",""
+","Type of location (e.g. home, hospital, nursing home).","Type of location (e.g. home, hospital, nursing home).","","","","","","","","","",,"required","HL7 Discharge Disposition","","",,,,"EHDSEncounter.dischargeDestination.type",0,1,"",""
 "EHDSEncounter.dischargeDestination.location[x]","EHDSEncounter.dischargeDestination.location[x]","","","",0,1,"","","","http://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation {[]} {[]}
 string {[]} {[]}","The location or organisation (including contact details).","The location or organisation (including contact details).","","","","","","","","","",,,,,"",,,,"EHDSEncounter.dischargeDestination.location[x]",0,1,"",""
 "EHDSEncounter.serviceLocation","EHDSEncounter.serviceLocation","","","",0,*,"","","","Base {[]} {[]}
@@ -52,4 +64,4 @@ string {[]} {[]}","The location or organisation (including contact details).","T
 "EHDSEncounter.subEncounter","EHDSEncounter.subEncounter","","","",0,*,"","","","http://ehds.eu/fhir/models/StructureDefinition/EHDSEncounter {[]} {[]}
 ","Reference to encounters that are considered parts of this encounter.","Reference to encounters that are considered parts of this encounter.","","","","","","","","","",,,,,"",,,,"EHDSEncounter.subEncounter",0,*,"",""
 "EHDSEncounter.note","EHDSEncounter.note","","","",0,1,"","","","string {[]} {[]}
-","Free text notes by the health professional","Free text notes by the health professional","","","","","","","","","",,,,,"",,,,"EHDSEncounter.note",0,1,"",""
+","Free text notes by the health professional.","Free text notes by the health professional.","","","","","","","","","",,,,,"",,,,"EHDSEncounter.note",0,1,"",""
