@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSPregnancyHist
   "name" : "EHDSPregnancyHistory",
   "title" : "Pregnancy history model",
   "status" : "draft",
-  "date" : "2026-11-19T10:05:09+00:00",
+  "date" : "2026-11-19T10:34:40+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
