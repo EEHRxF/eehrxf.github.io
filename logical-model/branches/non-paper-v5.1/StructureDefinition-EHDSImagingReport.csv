@@ -13,12 +13,6 @@
 http://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation {[]} {[]}http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice {[]} {[]}","Author of the document.","Information describing who authored the resource.","Author(s) responsible for the provided information. The exact role of the responsible author varies across use cases and is specific to individual models.","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.author[x]",0,*,"",""
 "EHDSImagingReport.header.date","EHDSImagingReport.header.date","","","",1,1,"","","","dateTime {[]} {[]}
 ","Date and optionally time of authoring/issuing","Date of finalisation/issuance of the resource.","The user explicitly retained content date 0..1 and search date 1..1. The missing-source-date issue remains open; no fallback or derivation rule is defined.","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.date",0,1,"",""
-"EHDSImagingReport.header.attestation","EHDSImagingReport.header.attestation","","","",0,*,"","","","Base {[]} {[]}
-","Document attestation details.","Resource attestation details.","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.attestation",0,*,"",""
-"EHDSImagingReport.header.attestation.attester[x]","EHDSImagingReport.header.attestation.attester[x]","","","",1,1,"","","","http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional {[]} {[]}
-http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice {[]} {[]}","Attester who validated the document.","Attester who validated the resource.","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.attestation.attester[x]",1,1,"",""
-"EHDSImagingReport.header.attestation.dateTime","EHDSImagingReport.header.attestation.dateTime","","","",1,1,"","","","dateTime {[]} {[]}
-","Date and time of the approval of the document by the attester.","Date and time of the approval of the resource by the attester.","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.attestation.dateTime",1,1,"",""
 "EHDSImagingReport.header.status","EHDSImagingReport.header.status","","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Status of the document.","Status of the resource.","","","","","","","","","",,"required","HL7 Composition Status","","",,,,"EHDSDataSet.header.status",1,1,"",""
 "EHDSImagingReport.header.language","EHDSImagingReport.header.language","","","",0,*,"","","","CodeableConcept {[]} {[]}
@@ -31,6 +25,12 @@ http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice {[]} {[]}","Attester w
 ","Human-readable document title that may be displayed in search results etc. This may be documentType’s display name, or it may contain further information.","Human-readable document title that may be displayed in search results etc. This may be documentType’s display name, or it may be assembled from multiple elements. Examples: ‘Laboratory result report’, ‘Patient summary of Jane Green 10.12.2024’.","","","","","","","","","",,,,,"",,,,"EHDSDocument.header.documentTitle",1,1,"",""
 "EHDSImagingReport.header.period","EHDSImagingReport.header.period","","","",0,1,"","","","Period {[]} {[]}
 ","Time of service (imaging study) that is being documented.","Time of service that is being documented.","","","","","","","","","",,,,,"",,,,"EHDSDocument.header.period",0,1,"",""
+"EHDSImagingReport.header.attestation","EHDSImagingReport.header.attestation","","","",0,*,"","","","Base {[]} {[]}
+","Document attestation details.","Document attestation details.","","","","","","","","","",,,,,"",,,,"EHDSDocument.header.attestation",0,*,"",""
+"EHDSImagingReport.header.attestation.attester[x]","EHDSImagingReport.header.attestation.attester[x]","","","",1,1,"","","","http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional {[]} {[]}
+http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice {[]} {[]}","Attester who validated the document.","Attester who validated the document.","","","","","","","","","",,,,,"",,,,"EHDSDocument.header.attestation.attester[x]",1,1,"",""
+"EHDSImagingReport.header.attestation.dateTime","EHDSImagingReport.header.attestation.dateTime","","","",1,1,"","","","dateTime {[]} {[]}
+","Date and time of the approval of the document by the attester.","Date and time of the approval of the document by the attester.","","","","","","","","","",,,,,"",,,,"EHDSDocument.header.attestation.dateTime",1,1,"",""
 "EHDSImagingReport.header.legalAuthentication","EHDSImagingReport.header.legalAuthentication","","","",0,*,"","","","Base {[]} {[]}
 ","Document legal authentication details.","Document legal authentication details. Legal authentication metadata is included only where required by applicable legal or organisational frameworks. Absence of legal authentication does not affect interoperability compliance under this profile.","","","","","","","","","",,,,,"",,,,"EHDSDocument.header.legalAuthentication",0,*,"",""
 "EHDSImagingReport.header.legalAuthentication.legalAuthenticator[x]","EHDSImagingReport.header.legalAuthentication.legalAuthenticator[x]","","","",1,1,"","","","http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional {[]} {[]}

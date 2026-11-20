@@ -55,7 +55,7 @@
   <name value="EHDSMedicalTestReport"/>
   <title value="Medical test result and report model"/>
   <status value="draft"/>
-  <date value="2026-11-20T10:37:29+00:00"/>
+  <date value="2026-11-20T11:13:01+00:00"/>
   <publisher value="EC"/>
   <contact>
     <name value="EC"/>
@@ -196,54 +196,6 @@
         <code value="dateTime"/>
       </type>
     </element>
-    <element id="EHDSMedicalTestReport.header.attestation">
-      <path value="EHDSMedicalTestReport.header.attestation"/>
-      <short value="Document attestation details."/>
-      <definition value="Resource attestation details."/>
-      <min value="0"/>
-      <max value="*"/>
-      <base>
-        <path value="EHDSDataSet.header.attestation"/>
-        <min value="0"/>
-        <max value="*"/>
-      </base>
-      <type>
-        <code value="Base"/>
-      </type>
-    </element>
-    <element id="EHDSMedicalTestReport.header.attestation.attester[x]">
-      <path value="EHDSMedicalTestReport.header.attestation.attester[x]"/>
-      <short value="Attester who validated the document."/>
-      <definition value="Attester who validated the resource."/>
-      <min value="1"/>
-      <max value="1"/>
-      <base>
-        <path value="EHDSDataSet.header.attestation.attester[x]"/>
-        <min value="1"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"/>
-      </type>
-      <type>
-        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice"/>
-      </type>
-    </element>
-    <element id="EHDSMedicalTestReport.header.attestation.dateTime">
-      <path value="EHDSMedicalTestReport.header.attestation.dateTime"/>
-      <short value="Date and time of the approval of the document by the attester."/>
-      <definition value="Date and time of the approval of the resource by the attester."/>
-      <min value="1"/>
-      <max value="1"/>
-      <base>
-        <path value="EHDSDataSet.header.attestation.dateTime"/>
-        <min value="1"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="dateTime"/>
-      </type>
-    </element>
     <element id="EHDSMedicalTestReport.header.status">
       <path value="EHDSMedicalTestReport.header.status"/>
       <short value="Status of the document."/>
@@ -348,6 +300,54 @@
       </base>
       <type>
         <code value="Period"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestReport.header.attestation">
+      <path value="EHDSMedicalTestReport.header.attestation"/>
+      <short value="Document attestation details."/>
+      <definition value="Document attestation details."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSDocument.header.attestation"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestReport.header.attestation.attester[x]">
+      <path value="EHDSMedicalTestReport.header.attestation.attester[x]"/>
+      <short value="Attester who validated the document."/>
+      <definition value="Attester who validated the document."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDocument.header.attestation.attester[x]"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestReport.header.attestation.dateTime">
+      <path value="EHDSMedicalTestReport.header.attestation.dateTime"/>
+      <short value="Date and time of the approval of the document by the attester."/>
+      <definition value="Date and time of the approval of the document by the attester."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDocument.header.attestation.dateTime"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
       </type>
     </element>
     <element id="EHDSMedicalTestReport.header.legalAuthentication">

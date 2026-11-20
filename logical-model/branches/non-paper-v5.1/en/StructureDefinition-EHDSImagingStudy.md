@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingStudy.
   "name" : "EHDSImagingStudy",
   "title" : "Imaging study model.",
   "status" : "draft",
-  "date" : "2026-11-20T10:37:29+00:00",
+  "date" : "2026-11-20T11:13:01+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -79,11 +79,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingStudy.
       "path" : "EHDSImagingStudy.header.date",
       "short" : "Date and optionally time when the imaging study representation or manifest was authored or issued, distinct from the date and time when the imaging study started.",
       "min" : 1
-    },
-    {
-      "id" : "EHDSImagingStudy.header.attestation",
-      "path" : "EHDSImagingStudy.header.attestation",
-      "max" : "0"
     },
     {
       "id" : "EHDSImagingStudy.header.status",

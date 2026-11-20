@@ -13,12 +13,6 @@
 http://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation {[]} {[]}http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice {[]} {[]}","Author of the resource.","Information describing who authored the resource.","Author(s) responsible for the provided information. The exact role of the responsible author varies across use cases and is specific to individual models.","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.author[x]",0,*,"",""
 "EHDSDeviceUse.header.date","EHDSDeviceUse.header.date","","","",0,1,"","","","dateTime {[]} {[]}
 ","Date of finalisation/issuance of the resource.","Date of finalisation/issuance of the resource.","The user explicitly retained content date 0..1 and search date 1..1. The missing-source-date issue remains open; no fallback or derivation rule is defined.","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.date",0,1,"",""
-"EHDSDeviceUse.header.attestation","EHDSDeviceUse.header.attestation","","","",0,0,"","","","Base {[]} {[]}
-","Resource attestation details.","Resource attestation details.","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.attestation",0,*,"",""
-"EHDSDeviceUse.header.attestation.attester[x]","EHDSDeviceUse.header.attestation.attester[x]","","","",1,1,"","","","http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional {[]} {[]}
-http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice {[]} {[]}","Attester who validated the resource.","Attester who validated the resource.","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.attestation.attester[x]",1,1,"",""
-"EHDSDeviceUse.header.attestation.dateTime","EHDSDeviceUse.header.attestation.dateTime","","","",1,1,"","","","dateTime {[]} {[]}
-","Date and time of the approval of the resource by the attester.","Date and time of the approval of the resource by the attester.","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.attestation.dateTime",1,1,"",""
 "EHDSDeviceUse.header.status","EHDSDeviceUse.header.status","","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Current status of the device usage, e.g. active, completed.","Status of the resource.","","","","","","","","","",,"required","HL7 Device Use Statement Status","","",,,,"EHDSDataSet.header.status",1,1,"",""
 "EHDSDeviceUse.header.language","EHDSDeviceUse.header.language","","","",0,*,"","","","CodeableConcept {[]} {[]}

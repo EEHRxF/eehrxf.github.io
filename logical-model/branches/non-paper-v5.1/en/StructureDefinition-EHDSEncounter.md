@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSEncounter.csv
   "name" : "EHDSEncounter",
   "title" : "Encounter model",
   "status" : "draft",
-  "date" : "2026-11-20T10:37:29+00:00",
+  "date" : "2026-11-20T11:13:01+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -71,11 +71,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSEncounter.csv
       "id" : "EHDSEncounter.header.author[x]",
       "path" : "EHDSEncounter.header.author[x]",
       "short" : "Author of the resource."
-    },
-    {
-      "id" : "EHDSEncounter.header.attestation",
-      "path" : "EHDSEncounter.header.attestation",
-      "max" : "0"
     },
     {
       "id" : "EHDSEncounter.header.status",

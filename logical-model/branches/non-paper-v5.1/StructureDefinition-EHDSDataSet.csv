@@ -13,12 +13,6 @@
 http://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation {[]} {[]}http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice {[]} {[]}","Information describing who authored the resource.","Information describing who authored the resource.","Author(s) responsible for the provided information. The exact role of the responsible author varies across use cases and is specific to individual models.","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.author[x]",0,*,"",""
 "EHDSDataSet.header.date","EHDSDataSet.header.date","","","",0,1,"","","","dateTime {[]} {[]}
 ","Date of finalisation/issuance of the resource.","Date of finalisation/issuance of the resource.","The user explicitly retained content date 0..1 and search date 1..1. The missing-source-date issue remains open; no fallback or derivation rule is defined.","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.date",0,1,"",""
-"EHDSDataSet.header.attestation","EHDSDataSet.header.attestation","","","",0,*,"","","","Base {[]} {[]}
-","Resource attestation details.","Resource attestation details.","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.attestation",0,*,"",""
-"EHDSDataSet.header.attestation.attester[x]","EHDSDataSet.header.attestation.attester[x]","","","",1,1,"","","","http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional {[]} {[]}
-http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice {[]} {[]}","Attester who validated the resource.","Attester who validated the resource.","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.attestation.attester[x]",1,1,"",""
-"EHDSDataSet.header.attestation.dateTime","EHDSDataSet.header.attestation.dateTime","","","",1,1,"","","","dateTime {[]} {[]}
-","Date and time of the approval of the resource by the attester.","Date and time of the approval of the resource by the attester.","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.attestation.dateTime",1,1,"",""
 "EHDSDataSet.header.status","EHDSDataSet.header.status","","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Status of the resource.","Status of the resource.","","","","","","","","","",,"required","Defined in the individual data set","","",,,,"EHDSDataSet.header.status",1,1,"",""
 "EHDSDataSet.header.language","EHDSDataSet.header.language","","","",0,*,"","","","CodeableConcept {[]} {[]}

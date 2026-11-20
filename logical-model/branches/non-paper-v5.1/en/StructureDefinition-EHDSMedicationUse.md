@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSMedicationUse
   "name" : "EHDSMedicationUse",
   "title" : "Medication use model",
   "status" : "draft",
-  "date" : "2026-11-20T10:37:29+00:00",
+  "date" : "2026-11-20T11:13:01+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -71,11 +71,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSMedicationUse
       "id" : "EHDSMedicationUse.header.author[x]",
       "path" : "EHDSMedicationUse.header.author[x]",
       "short" : "Author of the resource."
-    },
-    {
-      "id" : "EHDSMedicationUse.header.attestation",
-      "path" : "EHDSMedicationUse.header.attestation",
-      "max" : "0"
     },
     {
       "id" : "EHDSMedicationUse.header.status",

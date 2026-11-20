@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDocument.csv)
   "name" : "EHDSDocument",
   "title" : "Document model",
   "status" : "draft",
-  "date" : "2026-11-20T10:37:29+00:00",
+  "date" : "2026-11-20T11:13:01+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -85,21 +85,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDocument.csv)
       "path" : "EHDSDocument.header.date",
       "short" : "Date of finalisation/issuance of the document.",
       "min" : 1
-    },
-    {
-      "id" : "EHDSDocument.header.attestation",
-      "path" : "EHDSDocument.header.attestation",
-      "short" : "Document attestation details."
-    },
-    {
-      "id" : "EHDSDocument.header.attestation.attester[x]",
-      "path" : "EHDSDocument.header.attestation.attester[x]",
-      "short" : "Attester who validated the document."
-    },
-    {
-      "id" : "EHDSDocument.header.attestation.dateTime",
-      "path" : "EHDSDocument.header.attestation.dateTime",
-      "short" : "Date and time of the approval of the document by the attester."
     },
     {
       "id" : "EHDSDocument.header.status",
@@ -165,6 +150,42 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDocument.csv)
       "max" : "1",
       "type" : [{
         "code" : "Period"
+      }]
+    },
+    {
+      "id" : "EHDSDocument.header.attestation",
+      "path" : "EHDSDocument.header.attestation",
+      "short" : "Document attestation details.",
+      "definition" : "Document attestation details.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Base"
+      }]
+    },
+    {
+      "id" : "EHDSDocument.header.attestation.attester[x]",
+      "path" : "EHDSDocument.header.attestation.attester[x]",
+      "short" : "Attester who validated the document.",
+      "definition" : "Attester who validated the document.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"
+      },
+      {
+        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice"
+      }]
+    },
+    {
+      "id" : "EHDSDocument.header.attestation.dateTime",
+      "path" : "EHDSDocument.header.attestation.dateTime",
+      "short" : "Date and time of the approval of the document by the attester.",
+      "definition" : "Date and time of the approval of the document by the attester.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "dateTime"
       }]
     },
     {
