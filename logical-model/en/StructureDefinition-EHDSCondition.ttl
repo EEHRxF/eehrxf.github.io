@@ -19,7 +19,7 @@
   fhir:name [ fhir:v "EHDSCondition"] ; # 
   fhir:title [ fhir:v "Condition model"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-11-20T07:02:16+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-11-20T10:17:03+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "EC"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "EC" ] ;

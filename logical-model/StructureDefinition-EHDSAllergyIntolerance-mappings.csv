@@ -13,6 +13,7 @@
 "EHDSAllergyIntolerance.header.attestation.dateTime",""
 "EHDSAllergyIntolerance.header.status",""
 "EHDSAllergyIntolerance.header.language",""
+"EHDSAllergyIntolerance.type",""
 "EHDSAllergyIntolerance.agentOrAllergen",""
 "EHDSAllergyIntolerance.note",""
 "EHDSAllergyIntolerance.criticality",""

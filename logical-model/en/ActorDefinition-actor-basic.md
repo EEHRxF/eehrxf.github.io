@@ -14,7 +14,7 @@
   "version" : "0.3.0",
   "name" : "Basic",
   "status" : "active",
-  "date" : "2026-11-20T07:02:16+00:00",
+  "date" : "2026-11-20T10:17:03+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",

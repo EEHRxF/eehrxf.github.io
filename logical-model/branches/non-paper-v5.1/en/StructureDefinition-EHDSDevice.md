@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDevice.csv), 
   "name" : "EHDSDevice",
   "title" : "Device or implant model",
   "status" : "draft",
-  "date" : "2026-11-20T10:07:23+00:00",
+  "date" : "2026-11-20T10:07:51+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
