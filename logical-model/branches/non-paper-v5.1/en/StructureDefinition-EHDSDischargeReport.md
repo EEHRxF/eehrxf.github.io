@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDischargeRepo
   "name" : "EHDSDischargeReport",
   "title" : "Discharge report model",
   "status" : "draft",
-  "date" : "2026-11-20T06:51:49+00:00",
+  "date" : "2026-11-20T06:54:54+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -66,11 +66,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDischargeRepo
       "id" : "EHDSDischargeReport.header.author[x]",
       "path" : "EHDSDischargeReport.header.author[x]",
       "short" : "Author of the document."
-    },
-    {
-      "id" : "EHDSDischargeReport.header.date",
-      "path" : "EHDSDischargeReport.header.date",
-      "short" : "Date of finalisation/issuance of the document."
     },
     {
       "id" : "EHDSDischargeReport.header.documentCategory",

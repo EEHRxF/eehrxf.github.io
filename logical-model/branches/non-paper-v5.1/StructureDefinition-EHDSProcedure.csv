@@ -5,17 +5,17 @@
 ","Basic metadata for this information.","Basic metadata for this information.","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header",1,1,"",""
 "EHDSProcedure.header.subject","EHDSProcedure.header.subject","","","",1,1,"","","","http://ehds.eu/fhir/models/StructureDefinition/EHDSPatient {[]} {[]}
 ","Patient/subject information.","Patient/subject information.","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.subject",1,1,"",""
-"EHDSProcedure.header.identifier","EHDSProcedure.header.identifier","","","",1,*,"","","","Identifier {[]} {[]}
-","Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries).","Unique identifier of the resource.","Business identifier is unique within the system that assigns them. The same entity may have different unique identifiers assigned by different systems. Therefore, the identifier is always expected to be a pair of a system and a value.","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.identifier",1,*,"",""
-"EHDSProcedure.header.clinicalEventTime[x]","EHDSProcedure.header.clinicalEventTime[x]","","","",0,1,"","","","dateTime {[]} {[]}
+"EHDSProcedure.header.identifier","EHDSProcedure.header.identifier","","","",0,*,"","","","Identifier {[]} {[]}
+","Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries).","Unique identifier of the resource.","Business identifier is unique within the system that assigns them. The same entity may have different unique identifiers assigned by different systems. Therefore, the identifier is always expected to be a pair of a system and a value.","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.identifier",0,*,"",""
+"EHDSProcedure.header.clinicalEventTime[x]","EHDSProcedure.header.clinicalEventTime[x]","","","",0,0,"","","","dateTime {[]} {[]}
 Period {[]} {[]}","Time or period the clinical content applies to (e.g. specimen collection time, onset of a condition, period a medication was taken).","Time or period the clinical content applies to (e.g. specimen collection time, onset of a condition, period a medication was taken).","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.clinicalEventTime[x]",0,1,"",""
-"EHDSProcedure.header.version","EHDSProcedure.header.version","","","",0,1,"","","","string {[]} {[]}
+"EHDSProcedure.header.version","EHDSProcedure.header.version","","","",0,0,"","","","string {[]} {[]}
 ","Version of the resource.","Version of the resource.","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.version",0,1,"",""
-"EHDSProcedure.header.author[x]","EHDSProcedure.header.author[x]","","","",1,*,"","","","http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional {[]} {[]}
-http://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation {[]} {[]}http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice {[]} {[]}","Author of the resource.","Information describing who authored the resource.","Author(s) responsible for the provided information. The exact role of the responsible author varies across use cases and is specific to individual models.","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.author[x]",1,*,"",""
+"EHDSProcedure.header.author[x]","EHDSProcedure.header.author[x]","","","",0,*,"","","","http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional {[]} {[]}
+http://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation {[]} {[]}http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice {[]} {[]}","Author of the resource.","Information describing who authored the resource.","Author(s) responsible for the provided information. The exact role of the responsible author varies across use cases and is specific to individual models.","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.author[x]",0,*,"",""
 "EHDSProcedure.header.date","EHDSProcedure.header.date","","","",0,1,"","","","dateTime {[]} {[]}
-","Date and optionally time of authoring/issuing.","Date and optionally time of authoring/issuing.","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.date",0,1,"",""
-"EHDSProcedure.header.attestation","EHDSProcedure.header.attestation","","","",0,*,"","","","Base {[]} {[]}
+","Date of finalisation/issuance of the resource.","Date of finalisation/issuance of the resource.","The user explicitly retained content date 0..1 and search date 1..1. The missing-source-date issue remains open; no fallback or derivation rule is defined.","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.date",0,1,"",""
+"EHDSProcedure.header.attestation","EHDSProcedure.header.attestation","","","",0,0,"","","","Base {[]} {[]}
 ","Resource attestation details.","Resource attestation details.","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.attestation",0,*,"",""
 "EHDSProcedure.header.attestation.attester[x]","EHDSProcedure.header.attestation.attester[x]","","","",1,1,"","","","http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional {[]} {[]}
 http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice {[]} {[]}","Attester who validated the resource.","Attester who validated the resource.","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.attestation.attester[x]",1,1,"",""
@@ -25,8 +25,6 @@ http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice {[]} {[]}","Attester w
 ","Status of the procedure, e.g. completed, on hold, stopped.","Status of the resource.","","","","","","","","","",,"required","HL7 Event Status","","",,,,"EHDSDataSet.header.status",1,1,"",""
 "EHDSProcedure.header.language","EHDSProcedure.header.language","","","",0,*,"","","","CodeableConcept {[]} {[]}
 ","Language in which the resource is written. Language is expressed by the IETF language tag.","Language in which the resource is written. Language is expressed by the IETF language tag.","","","","","","","","","",,"required","BCP 47","","",,,,"EHDSDataSet.header.language",0,*,"",""
-"EHDSProcedure.header.lastUpdate","EHDSProcedure.header.lastUpdate","","","",0,1,"","","","dateTime {[]} {[]}
-","Date and time of the last system-level update to this resource (system update instant). This is technical metadata and does not represent a clinical event time.","Date and time of the last system-level update to this resource (system update instant). This is technical metadata and does not represent a clinical event time.","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.lastUpdate",0,1,"",""
 "EHDSProcedure.code","EHDSProcedure.code","","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Concept code and display name identifying the type of procedure.","Concept code and display name identifying the type of procedure.","","","","","","","","","",,"required","SNOMED GPS","","",,,,"EHDSProcedure.code",1,1,"",""
 "EHDSProcedure.procedureDate[x]","EHDSProcedure.procedureDate[x]","","","",0,1,"","","","dateTime {[]} {[]}

@@ -13,7 +13,6 @@
 "EHDSObservation.header.attestation.dateTime",""
 "EHDSObservation.header.status",""
 "EHDSObservation.header.language",""
-"EHDSObservation.header.lastUpdate",""
 "EHDSObservation.header.directSubject[x]",""
 "EHDSObservation.observationDate[x]",""
 "EHDSObservation.type",""

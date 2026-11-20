@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAlert.csv), [
   "name" : "EHDSAlert",
   "title" : "Alert model",
   "status" : "draft",
-  "date" : "2026-11-20T06:51:49+00:00",
+  "date" : "2026-11-20T06:54:54+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -63,9 +63,24 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAlert.csv), [
       "short" : "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)."
     },
     {
+      "id" : "EHDSAlert.header.clinicalEventTime[x]",
+      "path" : "EHDSAlert.header.clinicalEventTime[x]",
+      "max" : "0"
+    },
+    {
+      "id" : "EHDSAlert.header.version",
+      "path" : "EHDSAlert.header.version",
+      "max" : "0"
+    },
+    {
       "id" : "EHDSAlert.header.author[x]",
       "path" : "EHDSAlert.header.author[x]",
       "definition" : "Author of the resource."
+    },
+    {
+      "id" : "EHDSAlert.header.attestation",
+      "path" : "EHDSAlert.header.attestation",
+      "max" : "0"
     },
     {
       "id" : "EHDSAlert.header.status",

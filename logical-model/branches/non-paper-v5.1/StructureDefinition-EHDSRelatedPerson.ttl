@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "EHDSRelatedPerson"] ; # 
   fhir:title [ fhir:v "Related person model"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-11-20T06:51:49+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-11-20T06:54:54+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "EC"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "EC" ] ;

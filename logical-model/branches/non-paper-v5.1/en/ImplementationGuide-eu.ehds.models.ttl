@@ -19,7 +19,7 @@
   fhir:name [ fhir:v "EHDSModels"] ; # 
   fhir:title [ fhir:v "EHDS Logical Information Models"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-11-20T06:51:49+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-11-20T06:54:54+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "EC"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "EC" ] ;
@@ -81,7 +81,7 @@
      ] [
        fhir:id [ fhir:v "EHDSMetadataModels" ] ;
        fhir:name [ fhir:v "EHDS Metadata Models" ] ;
-       fhir:description [ fhir:v "Information models acting as templates for specialised models." ]
+       fhir:description [ fhir:v "Shared resource-content templates and independent search metadata models." ]
      ] [
        fhir:id [ fhir:v "EHDSSupportLevels" ] ;
        fhir:name [ fhir:v "Support Levels" ] ;
@@ -740,7 +740,7 @@
          fhir:reference [ fhir:v "StructureDefinition/EHDSDataSet" ]
        ] ;
        fhir:name [ fhir:v "DataSet model" ] ;
-       fhir:description [ fhir:v "DataSet model." ] ;
+       fhir:description [ fhir:v "Common resource-content header used as an implementation parent. Additional search metadata is defined separately in EHDSSearchMetadata." ] ;
        fhir:isExample [ fhir:v false ] ;
        fhir:groupingId [ fhir:v "EHDSMetadataModels" ]
      ] [
@@ -756,7 +756,39 @@
          fhir:reference [ fhir:v "StructureDefinition/EHDSDocument" ]
        ] ;
        fhir:name [ fhir:v "Document model" ] ;
-       fhir:description [ fhir:v "EHDSDocument means a structured set of data elements common all health documents." ] ;
+       fhir:description [ fhir:v "EHDSDocument means a structured set of data elements common all health documents. Additional document search metadata is defined separately in EHDSDocumentSearchMetadata." ] ;
+       fhir:isExample [ fhir:v false ] ;
+       fhir:groupingId [ fhir:v "EHDSMetadataModels" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ehds.eu/fhir/models/StructureDefinition/EHDSSearchMetadata> ;
+         fhir:reference [ fhir:v "StructureDefinition/EHDSSearchMetadata" ]
+       ] ;
+       fhir:name [ fhir:v "Data group search metadata model" ] ;
+       fhir:description [ fhir:v "Metadata for searching individual data groups, based on WP v5 Annex III and the final review instructions. This model is independent of the resource-content model EHDSDataSet." ] ;
+       fhir:isExample [ fhir:v false ] ;
+       fhir:groupingId [ fhir:v "EHDSMetadataModels" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://ehds.eu/fhir/models/StructureDefinition/EHDSDocumentSearchMetadata> ;
+         fhir:reference [ fhir:v "StructureDefinition/EHDSDocumentSearchMetadata" ]
+       ] ;
+       fhir:name [ fhir:v "Document search metadata model" ] ;
+       fhir:description [ fhir:v "Metadata for searching documents, based on WP v5 Annex III and the final review instructions. This search-metadata model is separate from EHDSDocument and its resource-content hierarchy." ] ;
        fhir:isExample [ fhir:v false ] ;
        fhir:groupingId [ fhir:v "EHDSMetadataModels" ]
      ] [

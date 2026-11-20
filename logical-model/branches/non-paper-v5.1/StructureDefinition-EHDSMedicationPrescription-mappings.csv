@@ -13,7 +13,6 @@
 "EHDSMedicationPrescription.header.attestation.dateTime",""
 "EHDSMedicationPrescription.header.status",""
 "EHDSMedicationPrescription.header.language",""
-"EHDSMedicationPrescription.header.lastUpdate",""
 "EHDSMedicationPrescription.header.statusReason[x]",""
 "EHDSMedicationPrescription.presentedForm",""
 "EHDSMedicationPrescription.prescriptionItem",""

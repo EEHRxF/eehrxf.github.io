@@ -4,7 +4,7 @@
 
 **Usages:**
 
-* Use this Logical Model: [Condition model](StructureDefinition-EHDSCondition.md), [DataSet model](StructureDefinition-EHDSDataSet.md), [Discharge report model](StructureDefinition-EHDSDischargeReport.md), [Document model](StructureDefinition-EHDSDocument.md)... Show 9 more, [Encounter model](StructureDefinition-EHDSEncounter.md), [Imaging report model.](StructureDefinition-EHDSImagingReport.md), [Immunisation model](StructureDefinition-EHDSImmunisation.md), [Medical test result and report model](StructureDefinition-EHDSMedicalTestReport.md), [Medication dispense model.](StructureDefinition-EHDSMedicationDispense.md), [Electronic prescription model](StructureDefinition-EHDSMedicationPrescription.md), [Observation model](StructureDefinition-EHDSObservation.md), [Procedure model](StructureDefinition-EHDSProcedure.md) and [Specimen model](StructureDefinition-EHDSSpecimen.md)
+* Use this Logical Model: [Condition model](StructureDefinition-EHDSCondition.md), [DataSet model](StructureDefinition-EHDSDataSet.md), [Discharge report model](StructureDefinition-EHDSDischargeReport.md), [Document model](StructureDefinition-EHDSDocument.md)... Show 11 more, [Document search metadata model](StructureDefinition-EHDSDocumentSearchMetadata.md), [Encounter model](StructureDefinition-EHDSEncounter.md), [Imaging report model.](StructureDefinition-EHDSImagingReport.md), [Immunisation model](StructureDefinition-EHDSImmunisation.md), [Medical test result and report model](StructureDefinition-EHDSMedicalTestReport.md), [Medication dispense model.](StructureDefinition-EHDSMedicationDispense.md), [Electronic prescription model](StructureDefinition-EHDSMedicationPrescription.md), [Observation model](StructureDefinition-EHDSObservation.md), [Procedure model](StructureDefinition-EHDSProcedure.md), [Data group search metadata model](StructureDefinition-EHDSSearchMetadata.md) and [Specimen model](StructureDefinition-EHDSSpecimen.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/eu.ehds.models|current/StructureDefinition/StructureDefinition-EHDSHealthProfessional.json)
 
@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSHealthProfess
   "name" : "EHDSHealthProfessional",
   "title" : "Health professional model",
   "status" : "draft",
-  "date" : "2026-11-20T06:51:49+00:00",
+  "date" : "2026-11-20T06:54:54+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",

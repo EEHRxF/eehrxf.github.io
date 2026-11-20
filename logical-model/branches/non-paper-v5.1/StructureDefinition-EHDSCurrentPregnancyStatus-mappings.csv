@@ -13,7 +13,6 @@
 "EHDSCurrentPregnancyStatus.header.attestation.dateTime",""
 "EHDSCurrentPregnancyStatus.header.status",""
 "EHDSCurrentPregnancyStatus.header.language",""
-"EHDSCurrentPregnancyStatus.header.lastUpdate",""
 "EHDSCurrentPregnancyStatus.currentPregnancyStatus",""
 "EHDSCurrentPregnancyStatus.expectedDateOfDelivery",""
 "EHDSCurrentPregnancyStatus.gestationalAge",""

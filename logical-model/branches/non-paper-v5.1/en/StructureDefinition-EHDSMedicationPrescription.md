@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSMedicationPre
   "name" : "EHDSMedicationPrescription",
   "title" : "Electronic prescription model",
   "status" : "draft",
-  "date" : "2026-11-20T06:51:49+00:00",
+  "date" : "2026-11-20T06:54:54+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -70,12 +70,24 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSMedicationPre
     {
       "id" : "EHDSMedicationPrescription.header.identifier",
       "path" : "EHDSMedicationPrescription.header.identifier",
-      "short" : "Business identifier(s) for the prescription."
+      "short" : "Business identifier(s) for the prescription.",
+      "min" : 1
+    },
+    {
+      "id" : "EHDSMedicationPrescription.header.clinicalEventTime[x]",
+      "path" : "EHDSMedicationPrescription.header.clinicalEventTime[x]",
+      "max" : "0"
+    },
+    {
+      "id" : "EHDSMedicationPrescription.header.version",
+      "path" : "EHDSMedicationPrescription.header.version",
+      "max" : "0"
     },
     {
       "id" : "EHDSMedicationPrescription.header.author[x]",
       "path" : "EHDSMedicationPrescription.header.author[x]",
       "short" : "Author of the document.",
+      "min" : 1,
       "type" : [{
         "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"
       }]
@@ -85,6 +97,11 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSMedicationPre
       "path" : "EHDSMedicationPrescription.header.date",
       "short" : "Date and time of issuance (signature) of the prescription by prescriber.",
       "min" : 1
+    },
+    {
+      "id" : "EHDSMedicationPrescription.header.attestation",
+      "path" : "EHDSMedicationPrescription.header.attestation",
+      "max" : "0"
     },
     {
       "id" : "EHDSMedicationPrescription.header.status",

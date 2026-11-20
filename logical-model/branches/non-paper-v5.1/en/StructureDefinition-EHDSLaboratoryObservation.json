@@ -11,7 +11,7 @@
   "name" : "EHDSLaboratoryObservation",
   "title" : "Model for observation performed by laboratory",
   "status" : "draft",
-  "date" : "2026-11-20T06:51:49+00:00",
+  "date" : "2026-11-20T06:54:54+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -93,11 +93,11 @@
       "short" : "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries).",
       "definition" : "Unique identifier of the resource.",
       "comment" : "Business identifier is unique within the system that assigns them. The same entity may have different unique identifiers assigned by different systems. Therefore, the identifier is always expected to be a pair of a system and a value.",
-      "min" : 1,
+      "min" : 0,
       "max" : "*",
       "base" : {
         "path" : "EHDSDataSet.header.identifier",
-        "min" : 1,
+        "min" : 0,
         "max" : "*"
       },
       "type" : [{
@@ -110,7 +110,7 @@
       "short" : "Time or period the clinical content applies to (e.g. specimen collection time, onset of a condition, period a medication was taken).",
       "definition" : "Time or period the clinical content applies to (e.g. specimen collection time, onset of a condition, period a medication was taken).",
       "min" : 0,
-      "max" : "1",
+      "max" : "0",
       "base" : {
         "path" : "EHDSDataSet.header.clinicalEventTime[x]",
         "min" : 0,
@@ -129,7 +129,7 @@
       "short" : "Version of the resource.",
       "definition" : "Version of the resource.",
       "min" : 0,
-      "max" : "1",
+      "max" : "0",
       "base" : {
         "path" : "EHDSDataSet.header.version",
         "min" : 0,
@@ -145,11 +145,11 @@
       "short" : "Author of the resource.",
       "definition" : "Information describing who authored the resource.",
       "comment" : "Author(s) responsible for the provided information. The exact role of the responsible author varies across use cases and is specific to individual models.",
-      "min" : 1,
+      "min" : 0,
       "max" : "*",
       "base" : {
         "path" : "EHDSDataSet.header.author[x]",
-        "min" : 1,
+        "min" : 0,
         "max" : "*"
       },
       "type" : [{
@@ -165,8 +165,9 @@
     {
       "id" : "EHDSLaboratoryObservation.header.date",
       "path" : "EHDSLaboratoryObservation.header.date",
-      "short" : "Date and optionally time of authoring/issuing.",
-      "definition" : "Date and optionally time of authoring/issuing.",
+      "short" : "Date of finalisation/issuance of the resource.",
+      "definition" : "Date of finalisation/issuance of the resource.",
+      "comment" : "The user explicitly retained content date 0..1 and search date 1..1. The missing-source-date issue remains open; no fallback or derivation rule is defined.",
       "min" : 0,
       "max" : "1",
       "base" : {
@@ -184,7 +185,7 @@
       "short" : "Resource attestation details.",
       "definition" : "Resource attestation details.",
       "min" : 0,
-      "max" : "*",
+      "max" : "0",
       "base" : {
         "path" : "EHDSDataSet.header.attestation",
         "min" : 0,
@@ -268,22 +269,6 @@
         "strength" : "required",
         "description" : "BCP 47"
       }
-    },
-    {
-      "id" : "EHDSLaboratoryObservation.header.lastUpdate",
-      "path" : "EHDSLaboratoryObservation.header.lastUpdate",
-      "short" : "Date and time of the last system-level update to this resource (system update instant). This is technical metadata and does not represent a clinical event time.",
-      "definition" : "Date and time of the last system-level update to this resource (system update instant). This is technical metadata and does not represent a clinical event time.",
-      "min" : 0,
-      "max" : "1",
-      "base" : {
-        "path" : "EHDSDataSet.header.lastUpdate",
-        "min" : 0,
-        "max" : "1"
-      },
-      "type" : [{
-        "code" : "dateTime"
-      }]
     },
     {
       "id" : "EHDSLaboratoryObservation.header.directSubject[x]",

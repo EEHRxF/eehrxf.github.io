@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSCurrentPregna
   "name" : "EHDSCurrentPregnancyStatus",
   "title" : "Current pregnancy status model",
   "status" : "draft",
-  "date" : "2026-11-20T06:51:49+00:00",
+  "date" : "2026-11-20T06:54:54+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -63,9 +63,24 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSCurrentPregna
       "short" : "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)."
     },
     {
+      "id" : "EHDSCurrentPregnancyStatus.header.clinicalEventTime[x]",
+      "path" : "EHDSCurrentPregnancyStatus.header.clinicalEventTime[x]",
+      "max" : "0"
+    },
+    {
+      "id" : "EHDSCurrentPregnancyStatus.header.version",
+      "path" : "EHDSCurrentPregnancyStatus.header.version",
+      "max" : "0"
+    },
+    {
       "id" : "EHDSCurrentPregnancyStatus.header.author[x]",
       "path" : "EHDSCurrentPregnancyStatus.header.author[x]",
       "short" : "Author of the resource."
+    },
+    {
+      "id" : "EHDSCurrentPregnancyStatus.header.attestation",
+      "path" : "EHDSCurrentPregnancyStatus.header.attestation",
+      "max" : "0"
     },
     {
       "id" : "EHDSCurrentPregnancyStatus.header.status",
@@ -110,12 +125,8 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSCurrentPregna
       "min" : 0,
       "max" : "1",
       "type" : [{
-        "code" : "Quantity"
-      }],
-      "binding" : {
-        "strength" : "required",
-        "description" : "UCUM (units of measurement)"
-      }
+        "code" : "string"
+      }]
     },
     {
       "id" : "EHDSCurrentPregnancyStatus.note",

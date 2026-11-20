@@ -13,7 +13,6 @@
 "EHDSMedicationUse.header.attestation.dateTime",""
 "EHDSMedicationUse.header.status",""
 "EHDSMedicationUse.header.language",""
-"EHDSMedicationUse.header.lastUpdate",""
 "EHDSMedicationUse.medication",""
 "EHDSMedicationUse.reason[x]",""
 "EHDSMedicationUse.dosageInstructions",""

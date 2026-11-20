@@ -13,7 +13,6 @@
 "EHDSDeviceUse.header.attestation.dateTime",""
 "EHDSDeviceUse.header.status",""
 "EHDSDeviceUse.header.language",""
-"EHDSDeviceUse.header.lastUpdate",""
 "EHDSDeviceUse.periodOfUse",""
 "EHDSDeviceUse.device[x]",""
 "EHDSDeviceUse.bodySite",""

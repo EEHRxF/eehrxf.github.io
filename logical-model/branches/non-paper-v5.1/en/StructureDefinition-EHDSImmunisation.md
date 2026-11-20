@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImmunisation.
   "name" : "EHDSImmunisation",
   "title" : "Immunisation model",
   "status" : "draft",
-  "date" : "2026-11-20T06:51:49+00:00",
+  "date" : "2026-11-20T06:54:54+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -63,9 +63,24 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImmunisation.
       "short" : "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)."
     },
     {
+      "id" : "EHDSImmunisation.header.clinicalEventTime[x]",
+      "path" : "EHDSImmunisation.header.clinicalEventTime[x]",
+      "max" : "0"
+    },
+    {
+      "id" : "EHDSImmunisation.header.version",
+      "path" : "EHDSImmunisation.header.version",
+      "max" : "0"
+    },
+    {
       "id" : "EHDSImmunisation.header.author[x]",
       "path" : "EHDSImmunisation.header.author[x]",
       "short" : "Author of the resource."
+    },
+    {
+      "id" : "EHDSImmunisation.header.attestation",
+      "path" : "EHDSImmunisation.header.attestation",
+      "max" : "0"
     },
     {
       "id" : "EHDSImmunisation.header.status",

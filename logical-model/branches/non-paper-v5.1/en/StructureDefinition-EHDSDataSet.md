@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDataSet.csv),
   "name" : "EHDSDataSet",
   "title" : "DataSet model",
   "status" : "draft",
-  "date" : "2026-11-20T06:51:49+00:00",
+  "date" : "2026-11-20T06:54:54+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -38,7 +38,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDataSet.csv),
       "value" : "http://commission.europa.eu/"
     }]
   }],
-  "description" : "DataSet model.",
+  "description" : "Common resource-content header used as an implementation parent. Additional search metadata is defined separately in EHDSSearchMetadata.",
   "fhirVersion" : "5.0.0",
   "mapping" : [{
     "identity" : "rim",
@@ -55,7 +55,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDataSet.csv),
       "id" : "EHDSDataSet",
       "path" : "EHDSDataSet",
       "short" : "DataSet model",
-      "definition" : "DataSet model."
+      "definition" : "Common resource-content header used as an implementation parent. Additional search metadata is defined separately in EHDSSearchMetadata."
     },
     {
       "id" : "EHDSDataSet.header",
@@ -85,7 +85,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDataSet.csv),
       "short" : "Unique identifier of the resource.",
       "definition" : "Unique identifier of the resource.",
       "comment" : "Business identifier is unique within the system that assigns them. The same entity may have different unique identifiers assigned by different systems. Therefore, the identifier is always expected to be a pair of a system and a value.",
-      "min" : 1,
+      "min" : 0,
       "max" : "*",
       "type" : [{
         "code" : "Identifier"
@@ -122,7 +122,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDataSet.csv),
       "short" : "Information describing who authored the resource.",
       "definition" : "Information describing who authored the resource.",
       "comment" : "Author(s) responsible for the provided information. The exact role of the responsible author varies across use cases and is specific to individual models.",
-      "min" : 1,
+      "min" : 0,
       "max" : "*",
       "type" : [{
         "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"
@@ -137,8 +137,9 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDataSet.csv),
     {
       "id" : "EHDSDataSet.header.date",
       "path" : "EHDSDataSet.header.date",
-      "short" : "Date and optionally time of authoring/issuing.",
-      "definition" : "Date and optionally time of authoring/issuing.",
+      "short" : "Date of finalisation/issuance of the resource.",
+      "definition" : "Date of finalisation/issuance of the resource.",
+      "comment" : "The user explicitly retained content date 0..1 and search date 1..1. The missing-source-date issue remains open; no fallback or derivation rule is defined.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -210,17 +211,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDataSet.csv),
         "strength" : "required",
         "description" : "BCP 47"
       }
-    },
-    {
-      "id" : "EHDSDataSet.header.lastUpdate",
-      "path" : "EHDSDataSet.header.lastUpdate",
-      "short" : "Date and time of the last system-level update to this resource (system update instant). This is technical metadata and does not represent a clinical event time.",
-      "definition" : "Date and time of the last system-level update to this resource (system update instant). This is technical metadata and does not represent a clinical event time.",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "dateTime"
-      }]
     }]
   }
 }

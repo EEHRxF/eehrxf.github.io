@@ -1,6 +1,9 @@
 EHDSModels
 =========================================
 
+/work/fsh-generated/resources/StructureDefinition-EHDSMedication.json: line 0, col 0, Error - This element has a Binding but the types [Ratio] do not make this kind of constraint relevant (BUSINESSRULE)
+/work/fsh-generated/resources/StructureDefinition-EHDSMedication.json: line 0, col 0, Error - This element has a Binding but the types [Ratio] do not make this kind of constraint relevant (BUSINESSRULE)
+/work/fsh-generated/resources/StructureDefinition-EHDSMedication.json: line 0, col 0, Error - The element EHDSMedication.item.containedQuantity has a binding, but no bindable types are present [Ratio] (BUSINESSRULE)
 
-err = 0, warn = 0, info = 0, broken links = 0
+err = 3, warn = 0, info = 0, broken links = 0
 IG Publisher Version: 3.0.5

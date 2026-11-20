@@ -1,7 +1,7 @@
 EHDSModels : Validation Results
 =========================================
 
-err = 0, warn = 0, info = 0, broken links = 0
+err = 3, warn = 0, info = 0, broken links = 0
 $--
 Generated $--. FHIR version $-- for eu.ehds.models#$-- (canonical = http://ehds.eu/fhir/models)
  Build Errors : 0 / 0 / 0
@@ -23,6 +23,7 @@ Generated $--. FHIR version $-- for eu.ehds.models#$-- (canonical = http://ehds.
  /work/fsh-generated/resources/StructureDefinition-EHDSDeviceUse : 0 / 0 / 2
  /work/fsh-generated/resources/StructureDefinition-EHDSDischargeReport : 0 / 0 / 2
  /work/fsh-generated/resources/StructureDefinition-EHDSDocument : 0 / 0 / 2
+ /work/fsh-generated/resources/StructureDefinition-EHDSDocumentSearchMetadata : 0 / 0 / 2
  /work/fsh-generated/resources/StructureDefinition-EHDSDosage : 0 / 0 / 2
  /work/fsh-generated/resources/StructureDefinition-EHDSEncounter : 0 / 0 / 3
  /work/fsh-generated/resources/StructureDefinition-EHDSEndpoint : 0 / 0 / 2
@@ -34,7 +35,7 @@ Generated $--. FHIR version $-- for eu.ehds.models#$-- (canonical = http://ehds.
  /work/fsh-generated/resources/StructureDefinition-EHDSLaboratoryObservation : 0 / 0 / 2
  /work/fsh-generated/resources/StructureDefinition-EHDSLocation : 0 / 0 / 2
  /work/fsh-generated/resources/StructureDefinition-EHDSMedicalTestReport : 0 / 0 / 3
- /work/fsh-generated/resources/StructureDefinition-EHDSMedication : 0 / 0 / 3
+ /work/fsh-generated/resources/StructureDefinition-EHDSMedication : 3 / 0 / 3
  /work/fsh-generated/resources/StructureDefinition-EHDSMedicationAdministration : 0 / 0 / 2
  /work/fsh-generated/resources/StructureDefinition-EHDSMedicationDispense : 0 / 0 / 2
  /work/fsh-generated/resources/StructureDefinition-EHDSMedicationPrescription : 0 / 0 / 7
@@ -46,6 +47,7 @@ Generated $--. FHIR version $-- for eu.ehds.models#$-- (canonical = http://ehds.
  /work/fsh-generated/resources/StructureDefinition-EHDSPregnancyHistory : 0 / 0 / 2
  /work/fsh-generated/resources/StructureDefinition-EHDSProcedure : 0 / 0 / 2
  /work/fsh-generated/resources/StructureDefinition-EHDSRelatedPerson : 0 / 0 / 2
+ /work/fsh-generated/resources/StructureDefinition-EHDSSearchMetadata : 0 / 0 / 2
  /work/fsh-generated/resources/StructureDefinition-EHDSServiceRequest : 0 / 0 / 2
  /work/fsh-generated/resources/StructureDefinition-EHDSSpecimen : 0 / 0 / 2
  /work/fsh-generated/resources/StructureDefinition-EHDSTelecom : 0 / 0 / 2
@@ -109,6 +111,9 @@ Generated $--. FHIR version $-- for eu.ehds.models#$-- (canonical = http://ehds.
 == fsh-generated/resources/StructureDefinition-EHDSDocument.json ==
 
 
+== fsh-generated/resources/StructureDefinition-EHDSDocumentSearchMetadata.json ==
+
+
 == fsh-generated/resources/StructureDefinition-EHDSDosage.json ==
 
 
@@ -143,6 +148,9 @@ Generated $--. FHIR version $-- for eu.ehds.models#$-- (canonical = http://ehds.
 
 
 == fsh-generated/resources/StructureDefinition-EHDSMedication.json ==
+ERROR: StructureDefinition/EHDSMedication: StructureDefinition.differential.element[18]: This element has a Binding but the types [Ratio] do not make this kind of constraint relevant
+ERROR: StructureDefinition/EHDSMedication: StructureDefinition.snapshot.element[18]: This element has a Binding but the types [Ratio] do not make this kind of constraint relevant
+ERROR: StructureDefinition/EHDSMedication: StructureDefinition.snapshot.element[18].binding: The element EHDSMedication.item.containedQuantity has a binding, but no bindable types are present [Ratio]
 
 
 == fsh-generated/resources/StructureDefinition-EHDSMedicationAdministration.json ==
@@ -176,6 +184,9 @@ Generated $--. FHIR version $-- for eu.ehds.models#$-- (canonical = http://ehds.
 
 
 == fsh-generated/resources/StructureDefinition-EHDSRelatedPerson.json ==
+
+
+== fsh-generated/resources/StructureDefinition-EHDSSearchMetadata.json ==
 
 
 == fsh-generated/resources/StructureDefinition-EHDSServiceRequest.json ==

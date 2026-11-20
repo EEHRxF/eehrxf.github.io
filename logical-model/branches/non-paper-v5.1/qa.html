@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 0, errors = 0, warn = 0, info = 0-->
+<!-- broken links = 0, errors = 3, warn = 0, info = 0-->
 <head>
   <title>EHDSModels : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -46,15 +46,15 @@
   </script>
 </head>
 <body style="margin: 20px; background-color: #ffffff">
-<div id="smart-ci-build-banner" style="background:#fff3cd;color:#664d03;border-bottom:1px solid #ffda6a;padding:.5rem 1rem;font-size:.9rem;"><p style="margin:0;">CI build for version <strong>0.3.0</strong>. <br/><span  style="font-size:.85em;">Built from commit <a href="https://github.com/EEHRxF/logical-model/commit/956292b0c26974b81702620f7c9aee25b1a9f260"><code>956292b0</code></a>. &nbsp; Branch: <a href="https://github.com/EEHRxF/logical-model/tree/non-paper-v5.1"><code>non-paper-v5.1</code></a>.</span></p></div>
+<div id="smart-ci-build-banner" style="background:#fff3cd;color:#664d03;border-bottom:1px solid #ffda6a;padding:.5rem 1rem;font-size:.9rem;"><p style="margin:0;">CI build for version <strong>0.3.0</strong>. <br/><span  style="font-size:.85em;">Built from commit <a href="https://github.com/EEHRxF/logical-model/commit/f3722ca04dc59828efda226178ca2453aed26152"><code>f3722ca0</code></a>. &nbsp; Branch: <a href="https://github.com/EEHRxF/logical-model/tree/non-paper-v5.1"><code>non-paper-v5.1</code></a>.</span></p></div>
 
  <h1>Validation Results for EHDSModels</h1>
- <p>Generated Fri Nov 20 06:52:51 UTC 2026, FHIR version 5.0.0 for eu.ehds.models#0.3.0 (canonical = <a href="http://ehds.eu/fhir/models">http://ehds.eu/fhir/models</a> (<a href="http://ehds.eu/fhir/models/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a> &amp; <a href="qa-ipreview.html">IP</a></p>
+ <p>Generated Fri Nov 20 06:56:17 UTC 2026, FHIR version 5.0.0 for eu.ehds.models#0.3.0 (canonical = <a href="http://ehds.eu/fhir/models">http://ehds.eu/fhir/models</a> (<a href="http://ehds.eu/fhir/models/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a> &amp; <a href="qa-ipreview.html">IP</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v3.0.5</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = eu.ehds.models, Canonical = http://ehds.eu/fhir/models</td></tr>
  <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
- <tr><td>Language Info:</td><td>Stated Languages: n/a. IG Resource Lang: en. 1 of 45 (2%) of resources have a language. <a href="https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-resource-language-policy">Population Policy</a>: NONE</td></tr>
+ <tr><td>Language Info:</td><td>Stated Languages: n/a. IG Resource Lang: en. 1 of 47 (2%) of resources have a language. <a href="https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-resource-language-policy">Population Policy</a>: NONE</td></tr>
  <tr><td><a href="https://confluence.hl7.org/spaces/FHIR/pages/144970227/IG+Publication+Request+Documentation">Publication Request</a>:</td><td><ul><li><span title="Not Found">This IG has never been published</span> <img src="information.png" height="16px" width="16px"/></li>
 <li>This IG has never been published, so the version should start with '0.' or include a patch version e.g. '-ballot' <img src="icon-warning.png" alt="WARNING" height="16px" width="16px"/></li>
 <li>No publication request found <img src="information.png" height="16px" width="16px"/></li>
@@ -87,7 +87,7 @@ hl7.fhir.r5.core#5.0.0:     <a href="http://hl7.org/fhir/R5/codesystem-guide-par
  <tr><td>IPA Comparison:</td><td> n/a</td></tr>
  <tr><td>IPS Comparison:</td><td> n/a</td></tr>
  <tr><td>Validation Flags:</td><td> On: autoLoad; Off: hintAboutNonMustSupport, anyExtensionsAllowed, checkAggregation, showReferenceMessages, noExperimentalContent, displayWarnings</td></tr>
- <tr><td>Summary:</td><td> errors = 0, warn = 0, info = 0, broken links = 0, pinned = n/a.  <button onclick="toggleCodes()">Show Message Ids</button></td></tr>
+ <tr><td>Summary:</td><td> errors = 3, warn = 0, info = 0, broken links = 0, pinned = n/a.  <button onclick="toggleCodes()">Show Message Ids</button></td></tr>
 </table>
  <table class="grid">
    <tr>
@@ -157,6 +157,9 @@ hl7.fhir.r5.core#5.0.0:     <a href="http://hl7.org/fhir/R5/codesystem-guide-par
      <td><a href="#_work_fsh-generated_resources_StructureDefinition-EHDSDocument"><b>/work/fsh-generated/resources/StructureDefinition-EHDSDocument</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
+     <td><a href="#_work_fsh-generated_resources_StructureDefinition-EHDSDocumentSearchMetadata"><b>/work/fsh-generated/resources/StructureDefinition-EHDSDocumentSearchMetadata</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
      <td><a href="#_work_fsh-generated_resources_StructureDefinition-EHDSDosage"><b>/work/fsh-generated/resources/StructureDefinition-EHDSDosage</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
@@ -189,8 +192,8 @@ hl7.fhir.r5.core#5.0.0:     <a href="http://hl7.org/fhir/R5/codesystem-guide-par
    <tr style="background-color: #EFFFEF">
      <td><a href="#_work_fsh-generated_resources_StructureDefinition-EHDSMedicalTestReport"><b>/work/fsh-generated/resources/StructureDefinition-EHDSMedicalTestReport</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_work_fsh-generated_resources_StructureDefinition-EHDSMedication"><b>/work/fsh-generated/resources/StructureDefinition-EHDSMedication</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   <tr style="background-color: #ffdddd">
+     <td><a href="#_work_fsh-generated_resources_StructureDefinition-EHDSMedication"><b>/work/fsh-generated/resources/StructureDefinition-EHDSMedication</b></a></td><td><b>3</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_work_fsh-generated_resources_StructureDefinition-EHDSMedicationAdministration"><b>/work/fsh-generated/resources/StructureDefinition-EHDSMedicationAdministration</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
@@ -224,6 +227,9 @@ hl7.fhir.r5.core#5.0.0:     <a href="http://hl7.org/fhir/R5/codesystem-guide-par
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_work_fsh-generated_resources_StructureDefinition-EHDSRelatedPerson"><b>/work/fsh-generated/resources/StructureDefinition-EHDSRelatedPerson</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_work_fsh-generated_resources_StructureDefinition-EHDSSearchMetadata"><b>/work/fsh-generated/resources/StructureDefinition-EHDSSearchMetadata</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_work_fsh-generated_resources_StructureDefinition-EHDSServiceRequest"><b>/work/fsh-generated/resources/StructureDefinition-EHDSServiceRequest</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
@@ -524,8 +530,8 @@ hl7.fhir.r5.core#5.0.0:     <a href="http://hl7.org/fhir/R5/codesystem-guide-par
    </tr>
 </table>
 <hr/>
-<a name="_work_fsh-generated_resources_StructureDefinition-EHDSDosage"> </a>
-<h2><a href="StructureDefinition-EHDSDosage.html">fsh-generated/resources/StructureDefinition-EHDSDosage.json</a> <span id="svi21" class="toggle" onclick="toggle('vi21')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi21')">(1)</span></h2>
+<a name="_work_fsh-generated_resources_StructureDefinition-EHDSDocumentSearchMetadata"> </a>
+<h2><a href="StructureDefinition-EHDSDocumentSearchMetadata.html">fsh-generated/resources/StructureDefinition-EHDSDocumentSearchMetadata.json</a> <span id="svi21" class="toggle" onclick="toggle('vi21')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi21')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi21"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
@@ -534,8 +540,8 @@ hl7.fhir.r5.core#5.0.0:     <a href="http://hl7.org/fhir/R5/codesystem-guide-par
    </tr>
 </table>
 <hr/>
-<a name="_work_fsh-generated_resources_StructureDefinition-EHDSEncounter"> </a>
-<h2><a href="StructureDefinition-EHDSEncounter.html">fsh-generated/resources/StructureDefinition-EHDSEncounter.json</a> <span id="svi22" class="toggle" onclick="toggle('vi22')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi22')">(1)</span></h2>
+<a name="_work_fsh-generated_resources_StructureDefinition-EHDSDosage"> </a>
+<h2><a href="StructureDefinition-EHDSDosage.html">fsh-generated/resources/StructureDefinition-EHDSDosage.json</a> <span id="svi22" class="toggle" onclick="toggle('vi22')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi22')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi22"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
@@ -544,8 +550,8 @@ hl7.fhir.r5.core#5.0.0:     <a href="http://hl7.org/fhir/R5/codesystem-guide-par
    </tr>
 </table>
 <hr/>
-<a name="_work_fsh-generated_resources_StructureDefinition-EHDSEndpoint"> </a>
-<h2><a href="StructureDefinition-EHDSEndpoint.html">fsh-generated/resources/StructureDefinition-EHDSEndpoint.json</a> <span id="svi23" class="toggle" onclick="toggle('vi23')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi23')">(1)</span></h2>
+<a name="_work_fsh-generated_resources_StructureDefinition-EHDSEncounter"> </a>
+<h2><a href="StructureDefinition-EHDSEncounter.html">fsh-generated/resources/StructureDefinition-EHDSEncounter.json</a> <span id="svi23" class="toggle" onclick="toggle('vi23')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi23')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi23"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
@@ -554,8 +560,8 @@ hl7.fhir.r5.core#5.0.0:     <a href="http://hl7.org/fhir/R5/codesystem-guide-par
    </tr>
 </table>
 <hr/>
-<a name="_work_fsh-generated_resources_StructureDefinition-EHDSHealthProfessional"> </a>
-<h2><a href="StructureDefinition-EHDSHealthProfessional.html">fsh-generated/resources/StructureDefinition-EHDSHealthProfessional.json</a> <span id="svi24" class="toggle" onclick="toggle('vi24')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi24')">(1)</span></h2>
+<a name="_work_fsh-generated_resources_StructureDefinition-EHDSEndpoint"> </a>
+<h2><a href="StructureDefinition-EHDSEndpoint.html">fsh-generated/resources/StructureDefinition-EHDSEndpoint.json</a> <span id="svi24" class="toggle" onclick="toggle('vi24')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi24')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi24"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
@@ -564,8 +570,8 @@ hl7.fhir.r5.core#5.0.0:     <a href="http://hl7.org/fhir/R5/codesystem-guide-par
    </tr>
 </table>
 <hr/>
-<a name="_work_fsh-generated_resources_StructureDefinition-EHDSHumanName"> </a>
-<h2><a href="StructureDefinition-EHDSHumanName.html">fsh-generated/resources/StructureDefinition-EHDSHumanName.json</a> <span id="svi25" class="toggle" onclick="toggle('vi25')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi25')">(1)</span></h2>
+<a name="_work_fsh-generated_resources_StructureDefinition-EHDSHealthProfessional"> </a>
+<h2><a href="StructureDefinition-EHDSHealthProfessional.html">fsh-generated/resources/StructureDefinition-EHDSHealthProfessional.json</a> <span id="svi25" class="toggle" onclick="toggle('vi25')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi25')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi25"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
@@ -574,8 +580,8 @@ hl7.fhir.r5.core#5.0.0:     <a href="http://hl7.org/fhir/R5/codesystem-guide-par
    </tr>
 </table>
 <hr/>
-<a name="_work_fsh-generated_resources_StructureDefinition-EHDSImagingReport"> </a>
-<h2><a href="StructureDefinition-EHDSImagingReport.html">fsh-generated/resources/StructureDefinition-EHDSImagingReport.json</a> <span id="svi26" class="toggle" onclick="toggle('vi26')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi26')">(1)</span></h2>
+<a name="_work_fsh-generated_resources_StructureDefinition-EHDSHumanName"> </a>
+<h2><a href="StructureDefinition-EHDSHumanName.html">fsh-generated/resources/StructureDefinition-EHDSHumanName.json</a> <span id="svi26" class="toggle" onclick="toggle('vi26')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi26')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi26"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
@@ -584,8 +590,8 @@ hl7.fhir.r5.core#5.0.0:     <a href="http://hl7.org/fhir/R5/codesystem-guide-par
    </tr>
 </table>
 <hr/>
-<a name="_work_fsh-generated_resources_StructureDefinition-EHDSImagingStudy"> </a>
-<h2><a href="StructureDefinition-EHDSImagingStudy.html">fsh-generated/resources/StructureDefinition-EHDSImagingStudy.json</a> <span id="svi27" class="toggle" onclick="toggle('vi27')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi27')">(1)</span></h2>
+<a name="_work_fsh-generated_resources_StructureDefinition-EHDSImagingReport"> </a>
+<h2><a href="StructureDefinition-EHDSImagingReport.html">fsh-generated/resources/StructureDefinition-EHDSImagingReport.json</a> <span id="svi27" class="toggle" onclick="toggle('vi27')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi27')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi27"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
@@ -594,8 +600,8 @@ hl7.fhir.r5.core#5.0.0:     <a href="http://hl7.org/fhir/R5/codesystem-guide-par
    </tr>
 </table>
 <hr/>
-<a name="_work_fsh-generated_resources_StructureDefinition-EHDSImmunisation"> </a>
-<h2><a href="StructureDefinition-EHDSImmunisation.html">fsh-generated/resources/StructureDefinition-EHDSImmunisation.json</a> <span id="svi28" class="toggle" onclick="toggle('vi28')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi28')">(1)</span></h2>
+<a name="_work_fsh-generated_resources_StructureDefinition-EHDSImagingStudy"> </a>
+<h2><a href="StructureDefinition-EHDSImagingStudy.html">fsh-generated/resources/StructureDefinition-EHDSImagingStudy.json</a> <span id="svi28" class="toggle" onclick="toggle('vi28')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi28')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi28"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
@@ -604,8 +610,8 @@ hl7.fhir.r5.core#5.0.0:     <a href="http://hl7.org/fhir/R5/codesystem-guide-par
    </tr>
 </table>
 <hr/>
-<a name="_work_fsh-generated_resources_StructureDefinition-EHDSLaboratoryObservation"> </a>
-<h2><a href="StructureDefinition-EHDSLaboratoryObservation.html">fsh-generated/resources/StructureDefinition-EHDSLaboratoryObservation.json</a> <span id="svi29" class="toggle" onclick="toggle('vi29')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi29')">(1)</span></h2>
+<a name="_work_fsh-generated_resources_StructureDefinition-EHDSImmunisation"> </a>
+<h2><a href="StructureDefinition-EHDSImmunisation.html">fsh-generated/resources/StructureDefinition-EHDSImmunisation.json</a> <span id="svi29" class="toggle" onclick="toggle('vi29')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi29')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi29"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
@@ -614,8 +620,8 @@ hl7.fhir.r5.core#5.0.0:     <a href="http://hl7.org/fhir/R5/codesystem-guide-par
    </tr>
 </table>
 <hr/>
-<a name="_work_fsh-generated_resources_StructureDefinition-EHDSLocation"> </a>
-<h2><a href="StructureDefinition-EHDSLocation.html">fsh-generated/resources/StructureDefinition-EHDSLocation.json</a> <span id="svi30" class="toggle" onclick="toggle('vi30')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi30')">(1)</span></h2>
+<a name="_work_fsh-generated_resources_StructureDefinition-EHDSLaboratoryObservation"> </a>
+<h2><a href="StructureDefinition-EHDSLaboratoryObservation.html">fsh-generated/resources/StructureDefinition-EHDSLaboratoryObservation.json</a> <span id="svi30" class="toggle" onclick="toggle('vi30')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi30')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi30"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
@@ -624,8 +630,8 @@ hl7.fhir.r5.core#5.0.0:     <a href="http://hl7.org/fhir/R5/codesystem-guide-par
    </tr>
 </table>
 <hr/>
-<a name="_work_fsh-generated_resources_StructureDefinition-EHDSMedicalTestReport"> </a>
-<h2><a href="StructureDefinition-EHDSMedicalTestReport.html">fsh-generated/resources/StructureDefinition-EHDSMedicalTestReport.json</a> <span id="svi31" class="toggle" onclick="toggle('vi31')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi31')">(1)</span></h2>
+<a name="_work_fsh-generated_resources_StructureDefinition-EHDSLocation"> </a>
+<h2><a href="StructureDefinition-EHDSLocation.html">fsh-generated/resources/StructureDefinition-EHDSLocation.json</a> <span id="svi31" class="toggle" onclick="toggle('vi31')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi31')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi31"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
@@ -634,8 +640,8 @@ hl7.fhir.r5.core#5.0.0:     <a href="http://hl7.org/fhir/R5/codesystem-guide-par
    </tr>
 </table>
 <hr/>
-<a name="_work_fsh-generated_resources_StructureDefinition-EHDSMedication"> </a>
-<h2><a href="StructureDefinition-EHDSMedication.html">fsh-generated/resources/StructureDefinition-EHDSMedication.json</a> <span id="svi32" class="toggle" onclick="toggle('vi32')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi32')">(1)</span></h2>
+<a name="_work_fsh-generated_resources_StructureDefinition-EHDSMedicalTestReport"> </a>
+<h2><a href="StructureDefinition-EHDSMedicalTestReport.html">fsh-generated/resources/StructureDefinition-EHDSMedicalTestReport.json</a> <span id="svi32" class="toggle" onclick="toggle('vi32')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi32')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi32"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
@@ -644,18 +650,27 @@ hl7.fhir.r5.core#5.0.0:     <a href="http://hl7.org/fhir/R5/codesystem-guide-par
    </tr>
 </table>
 <hr/>
-<a name="_work_fsh-generated_resources_StructureDefinition-EHDSMedicationAdministration"> </a>
-<h2><a href="StructureDefinition-EHDSMedicationAdministration.html">fsh-generated/resources/StructureDefinition-EHDSMedicationAdministration.json</a> <span id="svi33" class="toggle" onclick="toggle('vi33')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi33')">(1)</span></h2>
+<a name="_work_fsh-generated_resources_StructureDefinition-EHDSMedication"> </a>
+<h2><a href="StructureDefinition-EHDSMedication.html">fsh-generated/resources/StructureDefinition-EHDSMedication.json</a> <span id="svi33" class="toggle" onclick="toggle('vi33')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi33')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi33"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
-     <td>&check;</td>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td><td><b>Validating</b></td>
+   </tr>
+   <tr style="background-color: #ffdddd">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[18]</b></td><td><b>error</b></td><td><b>This element has a Binding but the types [Ratio] do not make this kind of constraint relevant</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_ILLEGAL_CHARACTERISTICS</span></td><td>--</td>
+   </tr>
+   <tr style="background-color: #ffdddd">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[18]</b></td><td><b>error</b></td><td><b>This element has a Binding but the types [Ratio] do not make this kind of constraint relevant</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_ILLEGAL_CHARACTERISTICS</span></td><td>--</td>
+   </tr>
+   <tr style="background-color: #ffdddd">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[18]&#8203;.binding</b></td><td><b>error</b></td><td><b>The element EHDSMedication.item.containedQuantity has a binding, but no bindable types are present [Ratio]</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_ED_BIND_NO_BINDABLE</span></td><td>--</td>
    </tr>
 </table>
 <hr/>
-<a name="_work_fsh-generated_resources_StructureDefinition-EHDSMedicationDispense"> </a>
-<h2><a href="StructureDefinition-EHDSMedicationDispense.html">fsh-generated/resources/StructureDefinition-EHDSMedicationDispense.json</a> <span id="svi34" class="toggle" onclick="toggle('vi34')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi34')">(1)</span></h2>
+<a name="_work_fsh-generated_resources_StructureDefinition-EHDSMedicationAdministration"> </a>
+<h2><a href="StructureDefinition-EHDSMedicationAdministration.html">fsh-generated/resources/StructureDefinition-EHDSMedicationAdministration.json</a> <span id="svi34" class="toggle" onclick="toggle('vi34')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi34')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi34"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
@@ -664,8 +679,8 @@ hl7.fhir.r5.core#5.0.0:     <a href="http://hl7.org/fhir/R5/codesystem-guide-par
    </tr>
 </table>
 <hr/>
-<a name="_work_fsh-generated_resources_StructureDefinition-EHDSMedicationPrescription"> </a>
-<h2><a href="StructureDefinition-EHDSMedicationPrescription.html">fsh-generated/resources/StructureDefinition-EHDSMedicationPrescription.json</a> <span id="svi35" class="toggle" onclick="toggle('vi35')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi35')">(1)</span></h2>
+<a name="_work_fsh-generated_resources_StructureDefinition-EHDSMedicationDispense"> </a>
+<h2><a href="StructureDefinition-EHDSMedicationDispense.html">fsh-generated/resources/StructureDefinition-EHDSMedicationDispense.json</a> <span id="svi35" class="toggle" onclick="toggle('vi35')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi35')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi35"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
@@ -674,8 +689,8 @@ hl7.fhir.r5.core#5.0.0:     <a href="http://hl7.org/fhir/R5/codesystem-guide-par
    </tr>
 </table>
 <hr/>
-<a name="_work_fsh-generated_resources_StructureDefinition-EHDSMedicationUse"> </a>
-<h2><a href="StructureDefinition-EHDSMedicationUse.html">fsh-generated/resources/StructureDefinition-EHDSMedicationUse.json</a> <span id="svi36" class="toggle" onclick="toggle('vi36')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi36')">(1)</span></h2>
+<a name="_work_fsh-generated_resources_StructureDefinition-EHDSMedicationPrescription"> </a>
+<h2><a href="StructureDefinition-EHDSMedicationPrescription.html">fsh-generated/resources/StructureDefinition-EHDSMedicationPrescription.json</a> <span id="svi36" class="toggle" onclick="toggle('vi36')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi36')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi36"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
@@ -684,8 +699,8 @@ hl7.fhir.r5.core#5.0.0:     <a href="http://hl7.org/fhir/R5/codesystem-guide-par
    </tr>
 </table>
 <hr/>
-<a name="_work_fsh-generated_resources_StructureDefinition-EHDSObservation"> </a>
-<h2><a href="StructureDefinition-EHDSObservation.html">fsh-generated/resources/StructureDefinition-EHDSObservation.json</a> <span id="svi37" class="toggle" onclick="toggle('vi37')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi37')">(1)</span></h2>
+<a name="_work_fsh-generated_resources_StructureDefinition-EHDSMedicationUse"> </a>
+<h2><a href="StructureDefinition-EHDSMedicationUse.html">fsh-generated/resources/StructureDefinition-EHDSMedicationUse.json</a> <span id="svi37" class="toggle" onclick="toggle('vi37')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi37')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi37"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
@@ -694,8 +709,8 @@ hl7.fhir.r5.core#5.0.0:     <a href="http://hl7.org/fhir/R5/codesystem-guide-par
    </tr>
 </table>
 <hr/>
-<a name="_work_fsh-generated_resources_StructureDefinition-EHDSOrganisation"> </a>
-<h2><a href="StructureDefinition-EHDSOrganisation.html">fsh-generated/resources/StructureDefinition-EHDSOrganisation.json</a> <span id="svi38" class="toggle" onclick="toggle('vi38')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi38')">(1)</span></h2>
+<a name="_work_fsh-generated_resources_StructureDefinition-EHDSObservation"> </a>
+<h2><a href="StructureDefinition-EHDSObservation.html">fsh-generated/resources/StructureDefinition-EHDSObservation.json</a> <span id="svi38" class="toggle" onclick="toggle('vi38')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi38')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi38"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
@@ -704,8 +719,8 @@ hl7.fhir.r5.core#5.0.0:     <a href="http://hl7.org/fhir/R5/codesystem-guide-par
    </tr>
 </table>
 <hr/>
-<a name="_work_fsh-generated_resources_StructureDefinition-EHDSPatient"> </a>
-<h2><a href="StructureDefinition-EHDSPatient.html">fsh-generated/resources/StructureDefinition-EHDSPatient.json</a> <span id="svi39" class="toggle" onclick="toggle('vi39')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi39')">(1)</span></h2>
+<a name="_work_fsh-generated_resources_StructureDefinition-EHDSOrganisation"> </a>
+<h2><a href="StructureDefinition-EHDSOrganisation.html">fsh-generated/resources/StructureDefinition-EHDSOrganisation.json</a> <span id="svi39" class="toggle" onclick="toggle('vi39')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi39')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi39"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
@@ -714,8 +729,8 @@ hl7.fhir.r5.core#5.0.0:     <a href="http://hl7.org/fhir/R5/codesystem-guide-par
    </tr>
 </table>
 <hr/>
-<a name="_work_fsh-generated_resources_StructureDefinition-EHDSPatientSummary"> </a>
-<h2><a href="StructureDefinition-EHDSPatientSummary.html">fsh-generated/resources/StructureDefinition-EHDSPatientSummary.json</a> <span id="svi40" class="toggle" onclick="toggle('vi40')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi40')">(1)</span></h2>
+<a name="_work_fsh-generated_resources_StructureDefinition-EHDSPatient"> </a>
+<h2><a href="StructureDefinition-EHDSPatient.html">fsh-generated/resources/StructureDefinition-EHDSPatient.json</a> <span id="svi40" class="toggle" onclick="toggle('vi40')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi40')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi40"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
@@ -724,8 +739,8 @@ hl7.fhir.r5.core#5.0.0:     <a href="http://hl7.org/fhir/R5/codesystem-guide-par
    </tr>
 </table>
 <hr/>
-<a name="_work_fsh-generated_resources_StructureDefinition-EHDSPregnancyHistory"> </a>
-<h2><a href="StructureDefinition-EHDSPregnancyHistory.html">fsh-generated/resources/StructureDefinition-EHDSPregnancyHistory.json</a> <span id="svi41" class="toggle" onclick="toggle('vi41')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi41')">(1)</span></h2>
+<a name="_work_fsh-generated_resources_StructureDefinition-EHDSPatientSummary"> </a>
+<h2><a href="StructureDefinition-EHDSPatientSummary.html">fsh-generated/resources/StructureDefinition-EHDSPatientSummary.json</a> <span id="svi41" class="toggle" onclick="toggle('vi41')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi41')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi41"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
@@ -734,8 +749,8 @@ hl7.fhir.r5.core#5.0.0:     <a href="http://hl7.org/fhir/R5/codesystem-guide-par
    </tr>
 </table>
 <hr/>
-<a name="_work_fsh-generated_resources_StructureDefinition-EHDSProcedure"> </a>
-<h2><a href="StructureDefinition-EHDSProcedure.html">fsh-generated/resources/StructureDefinition-EHDSProcedure.json</a> <span id="svi42" class="toggle" onclick="toggle('vi42')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi42')">(1)</span></h2>
+<a name="_work_fsh-generated_resources_StructureDefinition-EHDSPregnancyHistory"> </a>
+<h2><a href="StructureDefinition-EHDSPregnancyHistory.html">fsh-generated/resources/StructureDefinition-EHDSPregnancyHistory.json</a> <span id="svi42" class="toggle" onclick="toggle('vi42')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi42')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi42"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
@@ -744,8 +759,8 @@ hl7.fhir.r5.core#5.0.0:     <a href="http://hl7.org/fhir/R5/codesystem-guide-par
    </tr>
 </table>
 <hr/>
-<a name="_work_fsh-generated_resources_StructureDefinition-EHDSRelatedPerson"> </a>
-<h2><a href="StructureDefinition-EHDSRelatedPerson.html">fsh-generated/resources/StructureDefinition-EHDSRelatedPerson.json</a> <span id="svi43" class="toggle" onclick="toggle('vi43')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi43')">(1)</span></h2>
+<a name="_work_fsh-generated_resources_StructureDefinition-EHDSProcedure"> </a>
+<h2><a href="StructureDefinition-EHDSProcedure.html">fsh-generated/resources/StructureDefinition-EHDSProcedure.json</a> <span id="svi43" class="toggle" onclick="toggle('vi43')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi43')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi43"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
@@ -754,8 +769,8 @@ hl7.fhir.r5.core#5.0.0:     <a href="http://hl7.org/fhir/R5/codesystem-guide-par
    </tr>
 </table>
 <hr/>
-<a name="_work_fsh-generated_resources_StructureDefinition-EHDSServiceRequest"> </a>
-<h2><a href="StructureDefinition-EHDSServiceRequest.html">fsh-generated/resources/StructureDefinition-EHDSServiceRequest.json</a> <span id="svi44" class="toggle" onclick="toggle('vi44')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi44')">(1)</span></h2>
+<a name="_work_fsh-generated_resources_StructureDefinition-EHDSRelatedPerson"> </a>
+<h2><a href="StructureDefinition-EHDSRelatedPerson.html">fsh-generated/resources/StructureDefinition-EHDSRelatedPerson.json</a> <span id="svi44" class="toggle" onclick="toggle('vi44')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi44')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi44"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
@@ -764,8 +779,8 @@ hl7.fhir.r5.core#5.0.0:     <a href="http://hl7.org/fhir/R5/codesystem-guide-par
    </tr>
 </table>
 <hr/>
-<a name="_work_fsh-generated_resources_StructureDefinition-EHDSSpecimen"> </a>
-<h2><a href="StructureDefinition-EHDSSpecimen.html">fsh-generated/resources/StructureDefinition-EHDSSpecimen.json</a> <span id="svi45" class="toggle" onclick="toggle('vi45')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi45')">(1)</span></h2>
+<a name="_work_fsh-generated_resources_StructureDefinition-EHDSSearchMetadata"> </a>
+<h2><a href="StructureDefinition-EHDSSearchMetadata.html">fsh-generated/resources/StructureDefinition-EHDSSearchMetadata.json</a> <span id="svi45" class="toggle" onclick="toggle('vi45')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi45')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi45"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
@@ -774,8 +789,8 @@ hl7.fhir.r5.core#5.0.0:     <a href="http://hl7.org/fhir/R5/codesystem-guide-par
    </tr>
 </table>
 <hr/>
-<a name="_work_fsh-generated_resources_StructureDefinition-EHDSTelecom"> </a>
-<h2><a href="StructureDefinition-EHDSTelecom.html">fsh-generated/resources/StructureDefinition-EHDSTelecom.json</a> <span id="svi46" class="toggle" onclick="toggle('vi46')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi46')">(1)</span></h2>
+<a name="_work_fsh-generated_resources_StructureDefinition-EHDSServiceRequest"> </a>
+<h2><a href="StructureDefinition-EHDSServiceRequest.html">fsh-generated/resources/StructureDefinition-EHDSServiceRequest.json</a> <span id="svi46" class="toggle" onclick="toggle('vi46')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi46')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi46"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
@@ -784,8 +799,8 @@ hl7.fhir.r5.core#5.0.0:     <a href="http://hl7.org/fhir/R5/codesystem-guide-par
    </tr>
 </table>
 <hr/>
-<a name="_work_fsh-generated_resources_StructureDefinition-EHDSTravelHistory"> </a>
-<h2><a href="StructureDefinition-EHDSTravelHistory.html">fsh-generated/resources/StructureDefinition-EHDSTravelHistory.json</a> <span id="svi47" class="toggle" onclick="toggle('vi47')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi47')">(1)</span></h2>
+<a name="_work_fsh-generated_resources_StructureDefinition-EHDSSpecimen"> </a>
+<h2><a href="StructureDefinition-EHDSSpecimen.html">fsh-generated/resources/StructureDefinition-EHDSSpecimen.json</a> <span id="svi47" class="toggle" onclick="toggle('vi47')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi47')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi47"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
@@ -794,26 +809,28 @@ hl7.fhir.r5.core#5.0.0:     <a href="http://hl7.org/fhir/R5/codesystem-guide-par
    </tr>
 </table>
 <hr/>
+<a name="_work_fsh-generated_resources_StructureDefinition-EHDSTelecom"> </a>
+<h2><a href="StructureDefinition-EHDSTelecom.html">fsh-generated/resources/StructureDefinition-EHDSTelecom.json</a> <span id="svi48" class="toggle" onclick="toggle('vi48')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi48')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi48"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_work_fsh-generated_resources_StructureDefinition-EHDSTravelHistory"> </a>
+<h2><a href="StructureDefinition-EHDSTravelHistory.html">fsh-generated/resources/StructureDefinition-EHDSTravelHistory.json</a> <span id="svi49" class="toggle" onclick="toggle('vi49')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi49')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi49"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
 <a name="_work_input_images"> </a>
-<h2><a href="">input/images</a> <span id="svi48" class="toggle" onclick="toggle('vi48')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi48')">(0)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi48"></div>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_work_input_images_24px"> </a>
-<h2><a href="">input/images/24px.svg</a> <span id="svi49" class="toggle" onclick="toggle('vi49')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi49')">(0)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi49"></div>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="_work_input_pagecontent_StructureDefinition-EHDSDosage-notes"> </a>
-<h2><a href="">input/pagecontent/StructureDefinition-EHDSDosage-notes.md</a> <span id="svi50" class="toggle" onclick="toggle('vi50')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi50')">(0)</span></h2>
+<h2><a href="">input/images</a> <span id="svi50" class="toggle" onclick="toggle('vi50')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi50')">(0)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi50"></div>
  <table class="grid">
    <tr>
@@ -821,8 +838,8 @@ hl7.fhir.r5.core#5.0.0:     <a href="http://hl7.org/fhir/R5/codesystem-guide-par
    </tr>
 </table>
 <hr/>
-<a name="_work_input_pagecontent_StructureDefinition-EHDSLaboratoryObservation-notes"> </a>
-<h2><a href="">input/pagecontent/StructureDefinition-EHDSLaboratoryObservation-notes.md</a> <span id="svi51" class="toggle" onclick="toggle('vi51')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi51')">(0)</span></h2>
+<a name="_work_input_images_24px"> </a>
+<h2><a href="">input/images/24px.svg</a> <span id="svi51" class="toggle" onclick="toggle('vi51')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi51')">(0)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi51"></div>
  <table class="grid">
    <tr>
@@ -830,8 +847,8 @@ hl7.fhir.r5.core#5.0.0:     <a href="http://hl7.org/fhir/R5/codesystem-guide-par
    </tr>
 </table>
 <hr/>
-<a name="_work_input_pagecontent_StructureDefinition-EHDSObservation-intro"> </a>
-<h2><a href="">input/pagecontent/StructureDefinition-EHDSObservation-intro.md</a> <span id="svi52" class="toggle" onclick="toggle('vi52')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi52')">(0)</span></h2>
+<a name="_work_input_pagecontent_StructureDefinition-EHDSDosage-notes"> </a>
+<h2><a href="">input/pagecontent/StructureDefinition-EHDSDosage-notes.md</a> <span id="svi52" class="toggle" onclick="toggle('vi52')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi52')">(0)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi52"></div>
  <table class="grid">
    <tr>
@@ -839,8 +856,8 @@ hl7.fhir.r5.core#5.0.0:     <a href="http://hl7.org/fhir/R5/codesystem-guide-par
    </tr>
 </table>
 <hr/>
-<a name="_work_input_pagecontent_StructureDefinition-EHDSObservation-notes"> </a>
-<h2><a href="">input/pagecontent/StructureDefinition-EHDSObservation-notes.md</a> <span id="svi53" class="toggle" onclick="toggle('vi53')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi53')">(0)</span></h2>
+<a name="_work_input_pagecontent_StructureDefinition-EHDSLaboratoryObservation-notes"> </a>
+<h2><a href="">input/pagecontent/StructureDefinition-EHDSLaboratoryObservation-notes.md</a> <span id="svi53" class="toggle" onclick="toggle('vi53')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi53')">(0)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi53"></div>
  <table class="grid">
    <tr>
@@ -848,8 +865,8 @@ hl7.fhir.r5.core#5.0.0:     <a href="http://hl7.org/fhir/R5/codesystem-guide-par
    </tr>
 </table>
 <hr/>
-<a name="_work_input_pagecontent_authoring-process"> </a>
-<h2><a href="">input/pagecontent/authoring-process.md</a> <span id="svi54" class="toggle" onclick="toggle('vi54')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi54')">(0)</span></h2>
+<a name="_work_input_pagecontent_StructureDefinition-EHDSObservation-intro"> </a>
+<h2><a href="">input/pagecontent/StructureDefinition-EHDSObservation-intro.md</a> <span id="svi54" class="toggle" onclick="toggle('vi54')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi54')">(0)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi54"></div>
  <table class="grid">
    <tr>
@@ -857,8 +874,8 @@ hl7.fhir.r5.core#5.0.0:     <a href="http://hl7.org/fhir/R5/codesystem-guide-par
    </tr>
 </table>
 <hr/>
-<a name="_work_input_pagecontent_background"> </a>
-<h2><a href="">input/pagecontent/background.md</a> <span id="svi55" class="toggle" onclick="toggle('vi55')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi55')">(0)</span></h2>
+<a name="_work_input_pagecontent_StructureDefinition-EHDSObservation-notes"> </a>
+<h2><a href="">input/pagecontent/StructureDefinition-EHDSObservation-notes.md</a> <span id="svi55" class="toggle" onclick="toggle('vi55')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi55')">(0)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi55"></div>
  <table class="grid">
    <tr>
@@ -866,8 +883,8 @@ hl7.fhir.r5.core#5.0.0:     <a href="http://hl7.org/fhir/R5/codesystem-guide-par
    </tr>
 </table>
 <hr/>
-<a name="_work_input_pagecontent_changes"> </a>
-<h2><a href="">input/pagecontent/changes.md</a> <span id="svi56" class="toggle" onclick="toggle('vi56')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi56')">(0)</span></h2>
+<a name="_work_input_pagecontent_authoring-process"> </a>
+<h2><a href="">input/pagecontent/authoring-process.md</a> <span id="svi56" class="toggle" onclick="toggle('vi56')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi56')">(0)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi56"></div>
  <table class="grid">
    <tr>
@@ -875,8 +892,8 @@ hl7.fhir.r5.core#5.0.0:     <a href="http://hl7.org/fhir/R5/codesystem-guide-par
    </tr>
 </table>
 <hr/>
-<a name="_work_input_pagecontent_datatypes"> </a>
-<h2><a href="">input/pagecontent/datatypes.md</a> <span id="svi57" class="toggle" onclick="toggle('vi57')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi57')">(0)</span></h2>
+<a name="_work_input_pagecontent_background"> </a>
+<h2><a href="">input/pagecontent/background.md</a> <span id="svi57" class="toggle" onclick="toggle('vi57')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi57')">(0)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi57"></div>
  <table class="grid">
    <tr>
@@ -884,8 +901,8 @@ hl7.fhir.r5.core#5.0.0:     <a href="http://hl7.org/fhir/R5/codesystem-guide-par
    </tr>
 </table>
 <hr/>
-<a name="_work_input_pagecontent_downloads"> </a>
-<h2><a href="">input/pagecontent/downloads.md</a> <span id="svi58" class="toggle" onclick="toggle('vi58')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi58')">(0)</span></h2>
+<a name="_work_input_pagecontent_changes"> </a>
+<h2><a href="">input/pagecontent/changes.md</a> <span id="svi58" class="toggle" onclick="toggle('vi58')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi58')">(0)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi58"></div>
  <table class="grid">
    <tr>
@@ -893,8 +910,8 @@ hl7.fhir.r5.core#5.0.0:     <a href="http://hl7.org/fhir/R5/codesystem-guide-par
    </tr>
 </table>
 <hr/>
-<a name="_work_input_pagecontent_howto"> </a>
-<h2><a href="">input/pagecontent/howto.md</a> <span id="svi59" class="toggle" onclick="toggle('vi59')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi59')">(0)</span></h2>
+<a name="_work_input_pagecontent_datatypes"> </a>
+<h2><a href="">input/pagecontent/datatypes.md</a> <span id="svi59" class="toggle" onclick="toggle('vi59')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi59')">(0)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi59"></div>
  <table class="grid">
    <tr>
@@ -902,8 +919,8 @@ hl7.fhir.r5.core#5.0.0:     <a href="http://hl7.org/fhir/R5/codesystem-guide-par
    </tr>
 </table>
 <hr/>
-<a name="_work_input_pagecontent_index"> </a>
-<h2><a href="">input/pagecontent/index.md</a> <span id="svi60" class="toggle" onclick="toggle('vi60')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi60')">(0)</span></h2>
+<a name="_work_input_pagecontent_downloads"> </a>
+<h2><a href="">input/pagecontent/downloads.md</a> <span id="svi60" class="toggle" onclick="toggle('vi60')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi60')">(0)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi60"></div>
  <table class="grid">
    <tr>
@@ -911,8 +928,8 @@ hl7.fhir.r5.core#5.0.0:     <a href="http://hl7.org/fhir/R5/codesystem-guide-par
    </tr>
 </table>
 <hr/>
-<a name="_work_input_pagecontent_knownIssues"> </a>
-<h2><a href="">input/pagecontent/knownIssues.md</a> <span id="svi61" class="toggle" onclick="toggle('vi61')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi61')">(0)</span></h2>
+<a name="_work_input_pagecontent_howto"> </a>
+<h2><a href="">input/pagecontent/howto.md</a> <span id="svi61" class="toggle" onclick="toggle('vi61')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi61')">(0)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi61"></div>
  <table class="grid">
    <tr>
@@ -920,8 +937,8 @@ hl7.fhir.r5.core#5.0.0:     <a href="http://hl7.org/fhir/R5/codesystem-guide-par
    </tr>
 </table>
 <hr/>
-<a name="_work_input_pagecontent_obligations"> </a>
-<h2><a href="">input/pagecontent/obligations.md</a> <span id="svi62" class="toggle" onclick="toggle('vi62')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi62')">(0)</span></h2>
+<a name="_work_input_pagecontent_index"> </a>
+<h2><a href="">input/pagecontent/index.md</a> <span id="svi62" class="toggle" onclick="toggle('vi62')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi62')">(0)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi62"></div>
  <table class="grid">
    <tr>
@@ -929,8 +946,8 @@ hl7.fhir.r5.core#5.0.0:     <a href="http://hl7.org/fhir/R5/codesystem-guide-par
    </tr>
 </table>
 <hr/>
-<a name="_work_input_pagecontent_overview-dischargereport"> </a>
-<h2><a href="">input/pagecontent/overview-dischargereport.md</a> <span id="svi63" class="toggle" onclick="toggle('vi63')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi63')">(0)</span></h2>
+<a name="_work_input_pagecontent_knownIssues"> </a>
+<h2><a href="">input/pagecontent/knownIssues.md</a> <span id="svi63" class="toggle" onclick="toggle('vi63')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi63')">(0)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi63"></div>
  <table class="grid">
    <tr>
@@ -938,8 +955,8 @@ hl7.fhir.r5.core#5.0.0:     <a href="http://hl7.org/fhir/R5/codesystem-guide-par
    </tr>
 </table>
 <hr/>
-<a name="_work_input_pagecontent_overview-dispensation"> </a>
-<h2><a href="">input/pagecontent/overview-dispensation.md</a> <span id="svi64" class="toggle" onclick="toggle('vi64')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi64')">(0)</span></h2>
+<a name="_work_input_pagecontent_obligations"> </a>
+<h2><a href="">input/pagecontent/obligations.md</a> <span id="svi64" class="toggle" onclick="toggle('vi64')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi64')">(0)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi64"></div>
  <table class="grid">
    <tr>
@@ -947,8 +964,8 @@ hl7.fhir.r5.core#5.0.0:     <a href="http://hl7.org/fhir/R5/codesystem-guide-par
    </tr>
 </table>
 <hr/>
-<a name="_work_input_pagecontent_overview-medicalimages"> </a>
-<h2><a href="">input/pagecontent/overview-medicalimages.md</a> <span id="svi65" class="toggle" onclick="toggle('vi65')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi65')">(0)</span></h2>
+<a name="_work_input_pagecontent_overview-dischargereport"> </a>
+<h2><a href="">input/pagecontent/overview-dischargereport.md</a> <span id="svi65" class="toggle" onclick="toggle('vi65')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi65')">(0)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi65"></div>
  <table class="grid">
    <tr>
@@ -956,8 +973,8 @@ hl7.fhir.r5.core#5.0.0:     <a href="http://hl7.org/fhir/R5/codesystem-guide-par
    </tr>
 </table>
 <hr/>
-<a name="_work_input_pagecontent_overview-medicaltestresult"> </a>
-<h2><a href="">input/pagecontent/overview-medicaltestresult.md</a> <span id="svi66" class="toggle" onclick="toggle('vi66')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi66')">(0)</span></h2>
+<a name="_work_input_pagecontent_overview-dispensation"> </a>
+<h2><a href="">input/pagecontent/overview-dispensation.md</a> <span id="svi66" class="toggle" onclick="toggle('vi66')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi66')">(0)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi66"></div>
  <table class="grid">
    <tr>
@@ -965,8 +982,8 @@ hl7.fhir.r5.core#5.0.0:     <a href="http://hl7.org/fhir/R5/codesystem-guide-par
    </tr>
 </table>
 <hr/>
-<a name="_work_input_pagecontent_overview-patientsummary"> </a>
-<h2><a href="">input/pagecontent/overview-patientsummary.md</a> <span id="svi67" class="toggle" onclick="toggle('vi67')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi67')">(0)</span></h2>
+<a name="_work_input_pagecontent_overview-medicalimages"> </a>
+<h2><a href="">input/pagecontent/overview-medicalimages.md</a> <span id="svi67" class="toggle" onclick="toggle('vi67')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi67')">(0)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi67"></div>
  <table class="grid">
    <tr>
@@ -974,8 +991,8 @@ hl7.fhir.r5.core#5.0.0:     <a href="http://hl7.org/fhir/R5/codesystem-guide-par
    </tr>
 </table>
 <hr/>
-<a name="_work_input_pagecontent_overview-prescription"> </a>
-<h2><a href="">input/pagecontent/overview-prescription.md</a> <span id="svi68" class="toggle" onclick="toggle('vi68')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi68')">(0)</span></h2>
+<a name="_work_input_pagecontent_overview-medicaltestresult"> </a>
+<h2><a href="">input/pagecontent/overview-medicaltestresult.md</a> <span id="svi68" class="toggle" onclick="toggle('vi68')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi68')">(0)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi68"></div>
  <table class="grid">
    <tr>
@@ -983,8 +1000,8 @@ hl7.fhir.r5.core#5.0.0:     <a href="http://hl7.org/fhir/R5/codesystem-guide-par
    </tr>
 </table>
 <hr/>
-<a name="_work_input_pagecontent_scope"> </a>
-<h2><a href="">input/pagecontent/scope.md</a> <span id="svi69" class="toggle" onclick="toggle('vi69')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi69')">(0)</span></h2>
+<a name="_work_input_pagecontent_overview-patientsummary"> </a>
+<h2><a href="">input/pagecontent/overview-patientsummary.md</a> <span id="svi69" class="toggle" onclick="toggle('vi69')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi69')">(0)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi69"></div>
  <table class="grid">
    <tr>
@@ -992,8 +1009,8 @@ hl7.fhir.r5.core#5.0.0:     <a href="http://hl7.org/fhir/R5/codesystem-guide-par
    </tr>
 </table>
 <hr/>
-<a name="_work_input_pagecontent_wow"> </a>
-<h2><a href="">input/pagecontent/wow.md</a> <span id="svi70" class="toggle" onclick="toggle('vi70')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi70')">(0)</span></h2>
+<a name="_work_input_pagecontent_overview-prescription"> </a>
+<h2><a href="">input/pagecontent/overview-prescription.md</a> <span id="svi70" class="toggle" onclick="toggle('vi70')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi70')">(0)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi70"></div>
  <table class="grid">
    <tr>
@@ -1001,8 +1018,8 @@ hl7.fhir.r5.core#5.0.0:     <a href="http://hl7.org/fhir/R5/codesystem-guide-par
    </tr>
 </table>
 <hr/>
-<a name="_work_temp_pages__includes_artifacts"> </a>
-<h2><a href="">temp/pages/_includes/artifacts.xml</a> <span id="svi71" class="toggle" onclick="toggle('vi71')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi71')">(0)</span></h2>
+<a name="_work_input_pagecontent_scope"> </a>
+<h2><a href="">input/pagecontent/scope.md</a> <span id="svi71" class="toggle" onclick="toggle('vi71')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi71')">(0)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi71"></div>
  <table class="grid">
    <tr>
@@ -1010,8 +1027,8 @@ hl7.fhir.r5.core#5.0.0:     <a href="http://hl7.org/fhir/R5/codesystem-guide-par
    </tr>
 </table>
 <hr/>
-<a name="_work_temp_pages__includes_fragment-artifacts-table"> </a>
-<h2><a href="">temp/pages/_includes/fragment-artifacts-table.html</a> <span id="svi72" class="toggle" onclick="toggle('vi72')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi72')">(0)</span></h2>
+<a name="_work_input_pagecontent_wow"> </a>
+<h2><a href="">input/pagecontent/wow.md</a> <span id="svi72" class="toggle" onclick="toggle('vi72')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi72')">(0)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi72"></div>
  <table class="grid">
    <tr>
@@ -1019,8 +1036,8 @@ hl7.fhir.r5.core#5.0.0:     <a href="http://hl7.org/fhir/R5/codesystem-guide-par
    </tr>
 </table>
 <hr/>
-<a name="_work_template_config"> </a>
-<h2><a href="">template/config</a> <span id="svi73" class="toggle" onclick="toggle('vi73')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi73')">(0)</span></h2>
+<a name="_work_temp_pages__includes_artifacts"> </a>
+<h2><a href="">temp/pages/_includes/artifacts.xml</a> <span id="svi73" class="toggle" onclick="toggle('vi73')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi73')">(0)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi73"></div>
  <table class="grid">
    <tr>
@@ -1028,9 +1045,27 @@ hl7.fhir.r5.core#5.0.0:     <a href="http://hl7.org/fhir/R5/codesystem-guide-par
    </tr>
 </table>
 <hr/>
-<a name="_work_template_config__config"> </a>
-<h2><a href="">template/config/_config.yml</a> <span id="svi74" class="toggle" onclick="toggle('vi74')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi74')">(0)</span></h2>
+<a name="_work_temp_pages__includes_fragment-artifacts-table"> </a>
+<h2><a href="">temp/pages/_includes/fragment-artifacts-table.html</a> <span id="svi74" class="toggle" onclick="toggle('vi74')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi74')">(0)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi74"></div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_work_template_config"> </a>
+<h2><a href="">template/config</a> <span id="svi75" class="toggle" onclick="toggle('vi75')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi75')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi75"></div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_work_template_config__config"> </a>
+<h2><a href="">template/config/_config.yml</a> <span id="svi76" class="toggle" onclick="toggle('vi76')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi76')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi76"></div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -1046,12 +1081,31 @@ hl7.fhir.r5.core#5.0.0:     <a href="http://hl7.org/fhir/R5/codesystem-guide-par
  <li>%has a binding, and has multiple types subject to bindings% <span style="color: navy">(14 uses)</span></li>
 </ul>
 <p><b>Ignore resources does not have OID assigned</b></p><ul>
- <li>%could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)% <span style="color: navy">(43 uses)</span></li>
+ <li>%could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)% <span style="color: navy">(45 uses)</span></li>
 </ul>
 <p><b>Reference to experimental CodeSystem</b></p><ul>
  <li>Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0 <span style="color: navy">(16 uses)</span></li>
 </ul>
 <a name="sorted"> </a>
 <p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="SD_ED_BIND_NO_BINDABLE"> </a>
+<h2>SD_ED_BIND_NO_BINDABLE</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-EHDSMedication.html">fsh-generated/resources/StructureDefinition-EHDSMedication.json</a></td><td><b>The element EHDSMedication.item.containedQuantity has a binding, but no bindable types are present [Ratio]</b></td><td>--</td>
+   </tr>
+</table>
+<hr/>
+<a name="SD_ILLEGAL_CHARACTERISTICS"> </a>
+<h2>SD_ILLEGAL_CHARACTERISTICS</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-EHDSMedication.html">fsh-generated/resources/StructureDefinition-EHDSMedication.json</a></td><td><b>This element has a Binding but the types [Ratio] do not make this kind of constraint relevant</b></td><td>--</td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-EHDSMedication.html">fsh-generated/resources/StructureDefinition-EHDSMedication.json</a></td><td><b>This element has a Binding but the types [Ratio] do not make this kind of constraint relevant</b></td><td>--</td>
+   </tr>
+</table>
 </body>
 </html>

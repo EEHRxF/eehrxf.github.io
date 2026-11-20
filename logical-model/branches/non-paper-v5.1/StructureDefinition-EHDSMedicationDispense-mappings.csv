@@ -13,7 +13,6 @@
 "EHDSMedicationDispense.header.attestation.dateTime",""
 "EHDSMedicationDispense.header.status",""
 "EHDSMedicationDispense.header.language",""
-"EHDSMedicationDispense.header.lastUpdate",""
 "EHDSMedicationDispense.dispenseLocation",""
 "EHDSMedicationDispense.receiver[x]",""
 "EHDSMedicationDispense.relatedRequest",""

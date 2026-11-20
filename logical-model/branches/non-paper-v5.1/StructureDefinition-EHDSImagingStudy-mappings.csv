@@ -13,7 +13,6 @@
 "EHDSImagingStudy.header.attestation.dateTime",""
 "EHDSImagingStudy.header.status",""
 "EHDSImagingStudy.header.language",""
-"EHDSImagingStudy.header.lastUpdate",""
 "EHDSImagingStudy.presentedForm",""
 "EHDSImagingStudy.modality",""
 "EHDSImagingStudy.bodySite",""
@@ -44,5 +43,3 @@
 "EHDSImagingStudy.series.instanceInTheSeries.keyImage",""
 "EHDSImagingStudy.series.instanceInTheSeries.keyImage.flag",""
 "EHDSImagingStudy.series.instanceInTheSeries.keyImage.reason",""
-"EHDSImagingStudy.series.instanceInTheSeries.keyImage.seriesUID",""
-"EHDSImagingStudy.series.instanceInTheSeries.keyImage.instanceUID",""

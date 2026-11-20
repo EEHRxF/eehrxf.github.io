@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSCarePlan.csv)
   "name" : "EHDSCarePlan",
   "title" : "Care plan model",
   "status" : "draft",
-  "date" : "2026-11-20T06:51:49+00:00",
+  "date" : "2026-11-20T06:54:54+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -63,9 +63,24 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSCarePlan.csv)
       "short" : "Identifier for the care plan."
     },
     {
+      "id" : "EHDSCarePlan.header.clinicalEventTime[x]",
+      "path" : "EHDSCarePlan.header.clinicalEventTime[x]",
+      "max" : "0"
+    },
+    {
+      "id" : "EHDSCarePlan.header.version",
+      "path" : "EHDSCarePlan.header.version",
+      "max" : "0"
+    },
+    {
       "id" : "EHDSCarePlan.header.author[x]",
       "path" : "EHDSCarePlan.header.author[x]",
       "short" : "Author of the resource."
+    },
+    {
+      "id" : "EHDSCarePlan.header.attestation",
+      "path" : "EHDSCarePlan.header.attestation",
+      "max" : "0"
     },
     {
       "id" : "EHDSCarePlan.header.status",

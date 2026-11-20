@@ -36,7 +36,7 @@
   <name value="EHDSLaboratoryObservation"/>
   <title value="Model for observation performed by laboratory"/>
   <status value="draft"/>
-  <date value="2026-11-20T06:51:49+00:00"/>
+  <date value="2026-11-20T06:54:54+00:00"/>
   <publisher value="EC"/>
   <contact>
     <name value="EC"/>
@@ -113,11 +113,11 @@
       <short value="Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)."/>
       <definition value="Unique identifier of the resource."/>
       <comment value="Business identifier is unique within the system that assigns them. The same entity may have different unique identifiers assigned by different systems. Therefore, the identifier is always expected to be a pair of a system and a value."/>
-      <min value="1"/>
+      <min value="0"/>
       <max value="*"/>
       <base>
         <path value="EHDSDataSet.header.identifier"/>
-        <min value="1"/>
+        <min value="0"/>
         <max value="*"/>
       </base>
       <type>
@@ -129,7 +129,7 @@
       <short value="Time or period the clinical content applies to (e.g. specimen collection time, onset of a condition, period a medication was taken)."/>
       <definition value="Time or period the clinical content applies to (e.g. specimen collection time, onset of a condition, period a medication was taken)."/>
       <min value="0"/>
-      <max value="1"/>
+      <max value="0"/>
       <base>
         <path value="EHDSDataSet.header.clinicalEventTime[x]"/>
         <min value="0"/>
@@ -147,7 +147,7 @@
       <short value="Version of the resource."/>
       <definition value="Version of the resource."/>
       <min value="0"/>
-      <max value="1"/>
+      <max value="0"/>
       <base>
         <path value="EHDSDataSet.header.version"/>
         <min value="0"/>
@@ -162,11 +162,11 @@
       <short value="Author of the resource."/>
       <definition value="Information describing who authored the resource."/>
       <comment value="Author(s) responsible for the provided information. The exact role of the responsible author varies across use cases and is specific to individual models."/>
-      <min value="1"/>
+      <min value="0"/>
       <max value="*"/>
       <base>
         <path value="EHDSDataSet.header.author[x]"/>
-        <min value="1"/>
+        <min value="0"/>
         <max value="*"/>
       </base>
       <type>
@@ -181,8 +181,9 @@
     </element>
     <element id="EHDSLaboratoryObservation.header.date">
       <path value="EHDSLaboratoryObservation.header.date"/>
-      <short value="Date and optionally time of authoring/issuing."/>
-      <definition value="Date and optionally time of authoring/issuing."/>
+      <short value="Date of finalisation/issuance of the resource."/>
+      <definition value="Date of finalisation/issuance of the resource."/>
+      <comment value="The user explicitly retained content date 0..1 and search date 1..1. The missing-source-date issue remains open; no fallback or derivation rule is defined."/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -199,7 +200,7 @@
       <short value="Resource attestation details."/>
       <definition value="Resource attestation details."/>
       <min value="0"/>
-      <max value="*"/>
+      <max value="0"/>
       <base>
         <path value="EHDSDataSet.header.attestation"/>
         <min value="0"/>
@@ -279,21 +280,6 @@
         <strength value="required"/>
         <description value="BCP 47"/>
       </binding>
-    </element>
-    <element id="EHDSLaboratoryObservation.header.lastUpdate">
-      <path value="EHDSLaboratoryObservation.header.lastUpdate"/>
-      <short value="Date and time of the last system-level update to this resource (system update instant). This is technical metadata and does not represent a clinical event time."/>
-      <definition value="Date and time of the last system-level update to this resource (system update instant). This is technical metadata and does not represent a clinical event time."/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="EHDSDataSet.header.lastUpdate"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="dateTime"/>
-      </type>
     </element>
     <element id="EHDSLaboratoryObservation.header.directSubject[x]">
       <path value="EHDSLaboratoryObservation.header.directSubject[x]"/>

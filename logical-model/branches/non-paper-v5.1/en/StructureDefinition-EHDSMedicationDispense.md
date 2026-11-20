@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSMedicationDis
   "name" : "EHDSMedicationDispense",
   "title" : "Medication dispense model.",
   "status" : "draft",
-  "date" : "2026-11-20T06:51:49+00:00",
+  "date" : "2026-11-20T06:54:54+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -65,18 +65,35 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSMedicationDis
     {
       "id" : "EHDSMedicationDispense.header.identifier",
       "path" : "EHDSMedicationDispense.header.identifier",
-      "short" : "Business identifier for the dispensation."
+      "short" : "Business identifier for the dispensation.",
+      "min" : 1
+    },
+    {
+      "id" : "EHDSMedicationDispense.header.clinicalEventTime[x]",
+      "path" : "EHDSMedicationDispense.header.clinicalEventTime[x]",
+      "max" : "0"
+    },
+    {
+      "id" : "EHDSMedicationDispense.header.version",
+      "path" : "EHDSMedicationDispense.header.version",
+      "max" : "0"
     },
     {
       "id" : "EHDSMedicationDispense.header.author[x]",
       "path" : "EHDSMedicationDispense.header.author[x]",
-      "short" : "Author of the document."
+      "short" : "Author of the document.",
+      "min" : 1
     },
     {
       "id" : "EHDSMedicationDispense.header.date",
       "path" : "EHDSMedicationDispense.header.date",
       "short" : "Date and time of issuance of the dispensation record.",
       "min" : 1
+    },
+    {
+      "id" : "EHDSMedicationDispense.header.attestation",
+      "path" : "EHDSMedicationDispense.header.attestation",
+      "max" : "0"
     },
     {
       "id" : "EHDSMedicationDispense.header.status",
