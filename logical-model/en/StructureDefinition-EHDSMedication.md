@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSMedication.cs
   "name" : "EHDSMedication",
   "title" : "Medication model",
   "status" : "draft",
-  "date" : "2026-11-19T13:36:43+00:00",
+  "date" : "2026-11-20T07:02:16+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -291,19 +291,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSMedication.cs
       "max" : "1",
       "type" : [{
         "code" : "Ratio"
-      }]
-    },
-    {
-      "id" : "EHDSMedication.item.containedQuantity.numerator",
-      "path" : "EHDSMedication.item.containedQuantity.numerator",
-      "binding" : {
-        "strength" : "required",
-        "description" : "UCUM for units of measure / EDQM Standard Terms for units of presentation"
-      }
-    },
-    {
-      "id" : "EHDSMedication.item.containedQuantity.denominator",
-      "path" : "EHDSMedication.item.containedQuantity.denominator",
+      }],
       "binding" : {
         "strength" : "required",
         "description" : "UCUM for units of measure / EDQM Standard Terms for units of presentation"

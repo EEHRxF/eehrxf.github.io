@@ -1,6 +1,6 @@
 {
   "version" : "0.3.0",
   "fhirVersion" : ["5.0.0"],
-  "date" : "20261120065454",
+  "date" : "20261120065522",
   "name" : "eu.ehds.models"
 }

@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingStudy.
   "name" : "EHDSImagingStudy",
   "title" : "Imaging study model.",
   "status" : "draft",
-  "date" : "2026-11-19T13:36:43+00:00",
+  "date" : "2026-11-20T07:02:16+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -60,18 +60,35 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingStudy.
     {
       "id" : "EHDSImagingStudy.header.identifier",
       "path" : "EHDSImagingStudy.header.identifier",
-      "short" : "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)."
+      "short" : "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries).",
+      "min" : 1
+    },
+    {
+      "id" : "EHDSImagingStudy.header.clinicalEventTime[x]",
+      "path" : "EHDSImagingStudy.header.clinicalEventTime[x]",
+      "max" : "0"
+    },
+    {
+      "id" : "EHDSImagingStudy.header.version",
+      "path" : "EHDSImagingStudy.header.version",
+      "max" : "0"
     },
     {
       "id" : "EHDSImagingStudy.header.author[x]",
       "path" : "EHDSImagingStudy.header.author[x]",
-      "short" : "Author of the resource."
+      "short" : "Author of the resource.",
+      "min" : 1
     },
     {
       "id" : "EHDSImagingStudy.header.date",
       "path" : "EHDSImagingStudy.header.date",
       "short" : "Date and optionally time when the imaging study representation or manifest was authored or issued, distinct from the date and time when the imaging study started.",
       "min" : 1
+    },
+    {
+      "id" : "EHDSImagingStudy.header.attestation",
+      "path" : "EHDSImagingStudy.header.attestation",
+      "max" : "0"
     },
     {
       "id" : "EHDSImagingStudy.header.status",
@@ -422,28 +439,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingStudy.
       "max" : "1",
       "type" : [{
         "code" : "string"
-      }]
-    },
-    {
-      "id" : "EHDSImagingStudy.series.instanceInTheSeries.keyImage.seriesUID",
-      "path" : "EHDSImagingStudy.series.instanceInTheSeries.keyImage.seriesUID",
-      "short" : "Series instance UID for the series that contains the instances flagged as significant.",
-      "definition" : "Series instance UID for the series that contains the instances flagged as significant.",
-      "min" : 1,
-      "max" : "*",
-      "type" : [{
-        "code" : "Identifier"
-      }]
-    },
-    {
-      "id" : "EHDSImagingStudy.series.instanceInTheSeries.keyImage.instanceUID",
-      "path" : "EHDSImagingStudy.series.instanceInTheSeries.keyImage.instanceUID",
-      "short" : "SOP Instance UID for the instances flagged as significant by the Key Image Note object (DICOM KOS) that flags this image.",
-      "definition" : "SOP Instance UID for the instances flagged as significant by the Key Image Note object (DICOM KOS) that flags this image.",
-      "min" : 1,
-      "max" : "*",
-      "type" : [{
-        "code" : "Identifier"
       }]
     }]
   }

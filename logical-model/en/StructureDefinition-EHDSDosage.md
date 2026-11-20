@@ -100,7 +100,7 @@ The following example repeats dosageDetails block. Rendered dosage information i
   "name" : "EHDSDosage",
   "title" : "Dosage model",
   "status" : "draft",
-  "date" : "2026-11-19T13:36:43+00:00",
+  "date" : "2026-11-20T07:02:16+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -178,7 +178,7 @@ The following example repeats dosageDetails block. Rendered dosage information i
       "short" : "Amount of medicinal product administered per dose (= one timing).",
       "definition" : "Amount of medicinal product administered per dose (= one timing).",
       "min" : 0,
-      "max" : "1",
+      "max" : "*",
       "type" : [{
         "code" : "Base"
       }]

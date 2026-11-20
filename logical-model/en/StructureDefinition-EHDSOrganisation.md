@@ -4,7 +4,7 @@
 
 **Usages:**
 
-* Use this Logical Model: [DataSet model](StructureDefinition-EHDSDataSet.md), [Discharge report model](StructureDefinition-EHDSDischargeReport.md), [Document model](StructureDefinition-EHDSDocument.md), [Encounter model](StructureDefinition-EHDSEncounter.md)... Show 11 more, [Endpoint model](StructureDefinition-EHDSEndpoint.md), [Health professional model](StructureDefinition-EHDSHealthProfessional.md), [Imaging report model.](StructureDefinition-EHDSImagingReport.md), [Imaging study model.](StructureDefinition-EHDSImagingStudy.md), [Immunisation model](StructureDefinition-EHDSImmunisation.md), [Location model](StructureDefinition-EHDSLocation.md), [Medical test result and report model](StructureDefinition-EHDSMedicalTestReport.md), [Medication dispense model.](StructureDefinition-EHDSMedicationDispense.md), [Observation model](StructureDefinition-EHDSObservation.md), [Organisation model](StructureDefinition-EHDSOrganisation.md) and [Specimen model](StructureDefinition-EHDSSpecimen.md)
+* Use this Logical Model: [DataSet model](StructureDefinition-EHDSDataSet.md), [Discharge report model](StructureDefinition-EHDSDischargeReport.md), [Document model](StructureDefinition-EHDSDocument.md), [Document search metadata model](StructureDefinition-EHDSDocumentSearchMetadata.md)... Show 13 more, [Encounter model](StructureDefinition-EHDSEncounter.md), [Endpoint model](StructureDefinition-EHDSEndpoint.md), [Health professional model](StructureDefinition-EHDSHealthProfessional.md), [Imaging report model.](StructureDefinition-EHDSImagingReport.md), [Imaging study model.](StructureDefinition-EHDSImagingStudy.md), [Immunisation model](StructureDefinition-EHDSImmunisation.md), [Location model](StructureDefinition-EHDSLocation.md), [Medical test result and report model](StructureDefinition-EHDSMedicalTestReport.md), [Medication dispense model.](StructureDefinition-EHDSMedicationDispense.md), [Observation model](StructureDefinition-EHDSObservation.md), [Organisation model](StructureDefinition-EHDSOrganisation.md), [Data group search metadata model](StructureDefinition-EHDSSearchMetadata.md) and [Specimen model](StructureDefinition-EHDSSpecimen.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/eu.ehds.models|current/StructureDefinition/StructureDefinition-EHDSOrganisation.json)
 
@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSOrganisation.
   "name" : "EHDSOrganisation",
   "title" : "Organisation model",
   "status" : "draft",
-  "date" : "2026-11-19T13:36:43+00:00",
+  "date" : "2026-11-20T07:02:16+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",

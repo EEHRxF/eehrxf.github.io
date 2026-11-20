@@ -9,8 +9,8 @@
 ","Order of the dosage instruction, if one treatment consists of several dosage steps. When two schemes share the same sequence number, they are meant to run in parallel.","Order of the dosage instruction, if one treatment consists of several dosage steps. When two schemes share the same sequence number, they are meant to run in parallel.","","","","","","","","","",,,,,"",,,,"EHDSDosage.dosageDetails.sequence",0,1,"",""
 "EHDSAdministeredDosage.dosageDetails.note","EHDSAdministeredDosage.dosageDetails.note","","","",0,1,"","","","string {[]} {[]}
 ","Patient-oriented instructions as free text for this dosage step.","Patient-oriented instructions as free text for this dosage step.","","","","","","","","","",,,,,"",,,,"EHDSDosage.dosageDetails.note",0,1,"",""
-"EHDSAdministeredDosage.dosageDetails.doseAndRate","EHDSAdministeredDosage.dosageDetails.doseAndRate","","","",0,1,"","","","Base {[]} {[]}
-","Amount of medication administered per dose (= one timing).","Amount of medicinal product administered per dose (= one timing).","","","","","","","","","",,,,,"",,,,"EHDSDosage.dosageDetails.doseAndRate",0,1,"",""
+"EHDSAdministeredDosage.dosageDetails.doseAndRate","EHDSAdministeredDosage.dosageDetails.doseAndRate","","","",0,*,"","","","Base {[]} {[]}
+","Amount of medication administered per dose (= one timing).","Amount of medicinal product administered per dose (= one timing).","","","","","","","","","",,,,,"",,,,"EHDSDosage.dosageDetails.doseAndRate",0,*,"",""
 "EHDSAdministeredDosage.dosageDetails.doseAndRate.dose[x]","EHDSAdministeredDosage.dosageDetails.doseAndRate.dose[x]","","","",0,1,"","","","Quantity {[]} {[]}
 Range {[]} {[]}","Amount of medication per dose (1 tablet, 23 tablets, 20 ml).","Amount of medicinal product per one dose (1 tablet, 2-3 tablets, 20 ml).","","","","","","","","","",,"required","UCUM (units of measurement), EDQM Standard Terms (units of presentation)","","",,,,"EHDSDosage.dosageDetails.doseAndRate.dose[x]",0,1,"",""
 "EHDSAdministeredDosage.dosageDetails.doseAndRate.rate[x]","EHDSAdministeredDosage.dosageDetails.doseAndRate.rate[x]","","","",0,1,"","","","Quantity {[]} {[]}

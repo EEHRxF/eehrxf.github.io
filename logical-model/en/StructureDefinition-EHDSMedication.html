@@ -50,7 +50,7 @@
 	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
 	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"18.28"}
+    <style type="text/css">h2{--heading-prefix:"[&quot;18.28&quot;]"}
     h3,h4,h5,h6{--heading-prefix:"18.28"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
@@ -210,7 +210,7 @@
 
 <!-- layouts\layout-profile -->
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">EHDS Logical Information Models, published by EC. This guide is not an authorized publication; it is the continuous build for version 0.3.0  built by the FHIR (HL7&reg; FHIR&reg; Standard) CI Build. This version is based on the current content of <a href='https://github.com/EEHRxF/logical-model/tree/main'>https://github.com/EEHRxF/logical-model/tree/main</a> and changes regularly. See the <a href='http://ehds.eu/fhir/models/history.html'>Directory of published versions</a><br/><span data-smart-ci-extra="1" style="font-size:.85em;">Built from commit <a href="https://github.com/EEHRxF/logical-model/commit/956292b0c26974b81702620f7c9aee25b1a9f260"><code>956292b0</code></a>.</span></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">EHDS Logical Information Models, published by EC. This guide is not an authorized publication; it is the continuous build for version 0.3.0  built by the FHIR (HL7&reg; FHIR&reg; Standard) CI Build. This version is based on the current content of <a href='https://github.com/EEHRxF/logical-model/tree/main'>https://github.com/EEHRxF/logical-model/tree/main</a> and changes regularly. See the <a href='http://ehds.eu/fhir/models/history.html'>Directory of published versions</a><br/><span data-smart-ci-extra="1" style="font-size:.85em;">Built from commit <a href="https://github.com/EEHRxF/logical-model/commit/3f758216b947c131def6b36f21ae06551ee066c3"><code>3f758216</code></a>.</span></p><!--EndReleaseHeader-->
   
 
 
@@ -317,7 +317,7 @@ Medication model
           
 
             as of 
-2026-11-19
+2026-11-20
 
           
         
@@ -510,21 +510,11 @@ Medication model
 <td style="" class="hierarchy xhtCellBorder0">0..1</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept">CodeableConcept</a></td>
 <td style="" class="hierarchy xhtCellBorder0">Unit of presentation for the medicinal product (tablet, vial, tube). Typically, the smallest countable object in the package.<br class="binding"/><span class="xhtPieceBold binding">Binding Description: </span><span class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span class="binding">)</span><span class="binding"> </span><span title="This binding doesn't define a testable ValueSet" class="xhtBindingNotTestable xhtPieceBold binding">⚠</span><span class="binding">: </span><span class="binding">EDQM Standard Terms for units of presentation</span></td></tr>
-<tr fhir="generated-heirarchy" id="agd" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck111.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin-open.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedication.item.</span><a no-external="true" href="StructureDefinition-EHDSMedication-definitions.html#EHDSMedication.item.containedQuantity" title="Packaged item quantity per item (3 ml / one vial)" data-no-external="true">containedQuantity</a><a name="EHDSMedication.item.containedQuantity"> </a></td>
+<tr fhir="generated-heirarchy" id="agd" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedication.item.</span><a no-external="true" href="StructureDefinition-EHDSMedication-definitions.html#EHDSMedication.item.containedQuantity" title="Packaged item quantity per item (3 ml / one vial)" data-no-external="true">containedQuantity</a><a name="EHDSMedication.item.containedQuantity"> </a></td>
 <td style="" class="hierarchy xhtCellBorder0"></td>
 <td style="" class="hierarchy xhtCellBorder0">0..1</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#Ratio">Ratio</a></td>
-<td style="" class="hierarchy xhtCellBorder0">Packaged item quantity per item (3 ml / one vial)</td></tr>
-<tr fhir="generated-heirarchy" id="agda" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedication.item.containedQuantity.</span><a no-external="true" href="StructureDefinition-EHDSMedication-definitions.html#EHDSMedication.item.containedQuantity.numerator" data-no-external="true">numerator</a><a name="EHDSMedication.item.containedQuantity.numerator"> </a></td>
-<td style="" class="hierarchy xhtCellBorder0"></td>
-<td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">1</span></td>
-<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#Quantity" class="xhtPieceDeEmphasized">Quantity</a></td>
-<td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">Numerator value</span><br class="binding"/><span class="xhtPieceBold binding">Binding Description: </span><span class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span class="binding">)</span><span class="binding"> </span><span title="This binding doesn't define a testable ValueSet" class="xhtBindingNotTestable xhtPieceBold binding">⚠</span><span class="binding">: </span><span class="binding">UCUM for units of measure / EDQM Standard Terms for units of presentation</span></td></tr>
-<tr fhir="generated-heirarchy" id="agdb" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedication.item.containedQuantity.</span><a no-external="true" href="StructureDefinition-EHDSMedication-definitions.html#EHDSMedication.item.containedQuantity.denominator" data-no-external="true">denominator</a><a name="EHDSMedication.item.containedQuantity.denominator"> </a></td>
-<td style="" class="hierarchy xhtCellBorder0"></td>
-<td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">1</span></td>
-<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#SimpleQuantity" title="Quantity" class="xhtPieceDeEmphasized">SimpleQuantity(5.0.0)</a></td>
-<td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">Denominator value</span><br class="binding"/><span class="xhtPieceBold binding">Binding Description: </span><span class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span class="binding">)</span><span class="binding"> </span><span title="This binding doesn't define a testable ValueSet" class="xhtBindingNotTestable xhtPieceBold binding">⚠</span><span class="binding">: </span><span class="binding">UCUM for units of measure / EDQM Standard Terms for units of presentation</span></td></tr>
+<td style="" class="hierarchy xhtCellBorder0">Packaged item quantity per item (3 ml / one vial)<br class="binding"/><span class="xhtPieceBold binding">Binding Description: </span><span class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span class="binding">)</span><span class="binding"> </span><span title="This binding doesn't define a testable ValueSet" class="xhtBindingNotTestable xhtPieceBold binding">⚠</span><span class="binding">: </span><span class="binding">UCUM for units of measure / EDQM Standard Terms for units of presentation</span></td></tr>
 <tr fhir="generated-heirarchy" id="age" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedication.item.</span><a no-external="true" href="StructureDefinition-EHDSMedication-definitions.html#EHDSMedication.item.amount" title="Number of such items in this medicinal product (e.g. five vials in the package). The combined amount of all items shall be considered to be the total package size." data-no-external="true">amount</a><a name="EHDSMedication.item.amount"> </a></td>
 <td style="" class="hierarchy xhtCellBorder0"></td>
 <td style="" class="hierarchy xhtCellBorder0">0..1</td>
@@ -620,7 +610,7 @@ Medication model
 <td style="" class="hierarchy xhtCellBorder0">0..1</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">dateTime</a></td>
 <td style="" class="hierarchy xhtCellBorder0">Batch expiry date of the medicinal product.</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 32b37c18-13d3-470f-8b16-d71d4422a847
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 017d2e5c-2241-47ec-9363-a053a5dc6d9c
 document.getElementById('cbEHDSMedicationD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('EHDSMedicationD'), 'binding', document.getElementById('cbEHDSMedicationD-binding').checked, document.getElementById('ppEHDSMedicationD'));
 document.getElementById('cbEHDSMedicationD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -654,6 +644,9 @@ filterDesc(document.getElementById('EHDSMedicationD'), 'obligation', document.ge
     <td>
       <b>Source</b>
     </td>
+    <td>
+      <b>Documentation</b>
+    </td>
   </tr>
   <tr>
     <td>EHDSMedication.identifyingCode[x]</td>
@@ -664,6 +657,13 @@ filterDesc(document.getElementById('EHDSMedicationD'), 'obligation', document.ge
     <td title="SNOMED GPS, EMA PMS ID or a national coding system"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>SNOMED GPS, EMA PMS ID or a national coding system</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSMedication.classification</td>
@@ -674,6 +674,13 @@ filterDesc(document.getElementById('EHDSMedicationD'), 'obligation', document.ge
     <td title="WHO ATC, non-binding coding systems for other classifications"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>WHO ATC, non-binding coding systems for other classifications</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSMedication.doseForm</td>
@@ -684,6 +691,13 @@ filterDesc(document.getElementById('EHDSMedicationD'), 'obligation', document.ge
     <td title="EDQM Standard Terms"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>EDQM Standard Terms</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSMedication.item.​doseForm</td>
@@ -694,6 +708,13 @@ filterDesc(document.getElementById('EHDSMedicationD'), 'obligation', document.ge
     <td title="EDQM Standard Terms"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>EDQM Standard Terms</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSMedication.item.​ingredient.substance</td>
@@ -704,6 +725,13 @@ filterDesc(document.getElementById('EHDSMedicationD'), 'obligation', document.ge
     <td title="EMA SPOR SMS"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>EMA SPOR SMS</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSMedication.item.​ingredient.strengthInfo.​strength[x]</td>
@@ -714,6 +742,13 @@ filterDesc(document.getElementById('EHDSMedicationD'), 'obligation', document.ge
     <td title="UCUM for units of measure / EDQM Standard Terms for units of presentation"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>UCUM for units of measure / EDQM Standard Terms for units of presentation</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSMedication.item.​ingredient.strengthInfo.​basisOfStrengthSubstance</td>
@@ -724,6 +759,13 @@ filterDesc(document.getElementById('EHDSMedicationD'), 'obligation', document.ge
     <td title="EMA SPOR SMS"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>EMA SPOR SMS</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSMedication.item.​unitOfPresentation</td>
@@ -734,9 +776,16 @@ filterDesc(document.getElementById('EHDSMedicationD'), 'obligation', document.ge
     <td title="EDQM Standard Terms for units of presentation"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>EDQM Standard Terms for units of presentation</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
-    <td>EHDSMedication.item.​containedQuantity.numerator</td>
+    <td>EHDSMedication.item.​containedQuantity</td>
     <td>Base</td>
     <td>
       <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]">required</a>
@@ -744,16 +793,13 @@ filterDesc(document.getElementById('EHDSMedicationD'), 'obligation', document.ge
     <td title="UCUM for units of measure / EDQM Standard Terms for units of presentation"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
-  </tr>
-  <tr>
-    <td>EHDSMedication.item.​containedQuantity.denominator</td>
-    <td>Base</td>
     <td>
-      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]">required</a>
+      <div>
+        <p>UCUM for units of measure / EDQM Standard Terms for units of presentation</p>
+
+
+      </div>
     </td>
-    <td title="UCUM for units of measure / EDQM Standard Terms for units of presentation"></td>
-    <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
-    <td>Unknown</td>
   </tr>
   <tr>
     <td>EHDSMedication.item.​amount</td>
@@ -764,6 +810,13 @@ filterDesc(document.getElementById('EHDSMedicationD'), 'obligation', document.ge
     <td title="UCUM for units of measure / EDQM Standard Terms for units of presentation"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>UCUM for units of measure / EDQM Standard Terms for units of presentation</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSMedication.item.​packageType</td>
@@ -774,6 +827,13 @@ filterDesc(document.getElementById('EHDSMedicationD'), 'obligation', document.ge
     <td title="EDQM Standard Terms for packaging"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>EDQM Standard Terms for packaging</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSMedication.device.​device</td>
@@ -784,6 +844,13 @@ filterDesc(document.getElementById('EHDSMedicationD'), 'obligation', document.ge
     <td title="EDQM Standard Terms"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>EDQM Standard Terms</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSMedication.characteristic.​type</td>
@@ -794,6 +861,13 @@ filterDesc(document.getElementById('EHDSMedicationD'), 'obligation', document.ge
     <td title="Not defined"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>Not defined</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSMedication.characteristic.​value[x]</td>
@@ -804,6 +878,13 @@ filterDesc(document.getElementById('EHDSMedicationD'), 'obligation', document.ge
     <td title="UCUM for units of measure"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>UCUM for units of measure</p>
+
+
+      </div>
+    </td>
   </tr>
 </table>
 
@@ -929,31 +1010,11 @@ filterDesc(document.getElementById('EHDSMedicationD'), 'obligation', document.ge
 <td style="" class="hierarchy xhtCellBorder0">0..1</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept">CodeableConcept</a></td>
 <td style="" class="hierarchy xhtCellBorder0">Unit of presentation for the medicinal product (tablet, vial, tube). Typically, the smallest countable object in the package.<br class="binding"/><span class="xhtPieceBold binding">Binding Description: </span><span class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span class="binding">)</span><span class="binding"> </span><span title="This binding doesn't define a testable ValueSet" class="xhtBindingNotTestable xhtPieceBold binding">⚠</span><span class="binding">: </span><span class="binding">EDQM Standard Terms for units of presentation</span></td></tr>
-<tr fhir="generated-heirarchy" id="s-agd" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck111.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin-open.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedication.item.</span><a no-external="true" href="StructureDefinition-EHDSMedication-definitions.html#EHDSMedication.item.containedQuantity" title="Packaged item quantity per item (3 ml / one vial)" data-no-external="true">containedQuantity</a><a name="s-EHDSMedication.item.containedQuantity"> </a></td>
-<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/conformance-rules.html#constraints" title="This element has or is affected by constraints ( rat-1 )" class="xhtConstraintStyle">C</a></td>
+<tr fhir="generated-heirarchy" id="s-agd" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedication.item.</span><a no-external="true" href="StructureDefinition-EHDSMedication-definitions.html#EHDSMedication.item.containedQuantity" title="Packaged item quantity per item (3 ml / one vial)" data-no-external="true">containedQuantity</a><a name="s-EHDSMedication.item.containedQuantity"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
 <td style="" class="hierarchy xhtCellBorder0">0..1</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#Ratio">Ratio</a></td>
-<td style="" class="hierarchy xhtCellBorder0">Packaged item quantity per item (3 ml / one vial)<br class="constraint"/><span class="constraint">Constraints: </span><span title="Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present" class="xhtPieceBold constraint">rat-1</span></td></tr>
-<tr fhir="generated-heirarchy" id="s-agda" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedication.item.containedQuantity.</span><a no-external="true" href="StructureDefinition-EHDSMedication-definitions.html#EHDSMedication.item.containedQuantity.id" title="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." data-no-external="true">@id</a><a name="s-EHDSMedication.item.containedQuantity.id"> </a></td>
-<td style="" class="hierarchy xhtCellBorder0"></td>
-<td style="" class="hierarchy xhtCellBorder0">0..1</td>
-<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#id">id</a></td>
-<td style="" class="hierarchy xhtCellBorder0">Unique id for inter-element referencing</td></tr>
-<tr fhir="generated-heirarchy" id="s-agdb" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1112.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_extension_simple.png" alt="" style="background-color: white; background-color: inherit" title="Simple Extension" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedication.item.containedQuantity.</span><a no-external="true" href="StructureDefinition-EHDSMedication-definitions.html#EHDSMedication.item.containedQuantity.extension" title="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." data-no-external="true">extension</a><a name="s-EHDSMedication.item.containedQuantity.extension"> </a></td>
-<td style="" class="hierarchy xhtCellBorder0"></td>
-<td style="" class="hierarchy xhtCellBorder0">0..*</td>
-<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/extensibility.html#Extension">Extension</a></td>
-<td style="" class="hierarchy xhtCellBorder0">Additional content defined by implementations<br/><span class="xhtPieceBold">Slice: </span>Unordered, Open by value:url<br/></td></tr>
-<tr fhir="generated-heirarchy" id="s-agdc" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedication.item.containedQuantity.</span><a no-external="true" href="StructureDefinition-EHDSMedication-definitions.html#EHDSMedication.item.containedQuantity.numerator" title="The value of the numerator." data-no-external="true">numerator</a><a name="s-EHDSMedication.item.containedQuantity.numerator"> </a></td>
-<td style="" class="hierarchy xhtCellBorder0"><span aria-hidden="true" style="padding-left: 3px; padding-right: 3px; color: black; background-color: white" title="This element is included in summaries">Σ</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> This element is included in summaries. </span><a href="http://hl7.org/fhir/R5/conformance-rules.html#constraints" title="This element has or is affected by constraints ( rat-1 )" class="xhtConstraintStyle">C</a></td>
-<td style="" class="hierarchy xhtCellBorder0">0..1</td>
-<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#Quantity">Quantity</a></td>
-<td style="" class="hierarchy xhtCellBorder0">Numerator value<br class="binding"/><span class="xhtPieceBold binding">Binding Description: </span><span class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span class="binding">)</span><span class="binding"> </span><span title="This binding doesn't define a testable ValueSet" class="xhtBindingNotTestable xhtPieceBold binding">⚠</span><span class="binding">: </span><span class="binding">UCUM for units of measure / EDQM Standard Terms for units of presentation</span></td></tr>
-<tr fhir="generated-heirarchy" id="s-agdd" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedication.item.containedQuantity.</span><a no-external="true" href="StructureDefinition-EHDSMedication-definitions.html#EHDSMedication.item.containedQuantity.denominator" title="The value of the denominator." data-no-external="true">denominator</a><a name="s-EHDSMedication.item.containedQuantity.denominator"> </a></td>
-<td style="" class="hierarchy xhtCellBorder0"><span aria-hidden="true" style="padding-left: 3px; padding-right: 3px; color: black; background-color: white" title="This element is included in summaries">Σ</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> This element is included in summaries. </span><a href="http://hl7.org/fhir/R5/conformance-rules.html#constraints" title="This element has or is affected by constraints ( sqty-1, rat-1 )" class="xhtConstraintStyle">C</a></td>
-<td style="" class="hierarchy xhtCellBorder0">0..1</td>
-<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#SimpleQuantity" title="Quantity">SimpleQuantity(5.0.0)</a></td>
-<td style="" class="hierarchy xhtCellBorder0">Denominator value<br class="binding"/><span class="xhtPieceBold binding">Binding Description: </span><span class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span class="binding">)</span><span class="binding"> </span><span title="This binding doesn't define a testable ValueSet" class="xhtBindingNotTestable xhtPieceBold binding">⚠</span><span class="binding">: </span><span class="binding">UCUM for units of measure / EDQM Standard Terms for units of presentation</span><br class="constraint"/><span class="constraint">Constraints: </span><span title="The comparator is not used on a SimpleQuantity" class="xhtPieceBold constraint">sqty-1</span></td></tr>
+<td style="" class="hierarchy xhtCellBorder0">Packaged item quantity per item (3 ml / one vial)<br class="binding"/><span class="xhtPieceBold binding">Binding Description: </span><span class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span class="binding">)</span><span class="binding"> </span><span title="This binding doesn't define a testable ValueSet" class="xhtBindingNotTestable xhtPieceBold binding">⚠</span><span class="binding">: </span><span class="binding">UCUM for units of measure / EDQM Standard Terms for units of presentation</span></td></tr>
 <tr fhir="generated-heirarchy" id="s-age" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedication.item.</span><a no-external="true" href="StructureDefinition-EHDSMedication-definitions.html#EHDSMedication.item.amount" title="Number of such items in this medicinal product (e.g. five vials in the package). The combined amount of all items shall be considered to be the total package size." data-no-external="true">amount</a><a name="s-EHDSMedication.item.amount"> </a></td>
 <td style="" class="hierarchy xhtCellBorder0"></td>
 <td style="" class="hierarchy xhtCellBorder0">0..1</td>
@@ -1049,7 +1110,7 @@ filterDesc(document.getElementById('EHDSMedicationD'), 'obligation', document.ge
 <td style="" class="hierarchy xhtCellBorder0">0..1</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">dateTime</a></td>
 <td style="" class="hierarchy xhtCellBorder0">Batch expiry date of the medicinal product.</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 32b37c18-13d3-470f-8b16-d71d4422a847
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 017d2e5c-2241-47ec-9363-a053a5dc6d9c
 document.getElementById('cbEHDSMedicationS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('EHDSMedicationS'), 'binding', document.getElementById('cbEHDSMedicationS-binding').checked, document.getElementById('ppEHDSMedicationS'));
 document.getElementById('cbEHDSMedicationS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1082,6 +1143,9 @@ filterDesc(document.getElementById('EHDSMedicationS'), 'obligation', document.ge
     <td>
       <b>Source</b>
     </td>
+    <td>
+      <b>Documentation</b>
+    </td>
   </tr>
   <tr>
     <td>EHDSMedication.identifyingCode[x]</td>
@@ -1092,6 +1156,13 @@ filterDesc(document.getElementById('EHDSMedicationS'), 'obligation', document.ge
     <td title="SNOMED GPS, EMA PMS ID or a national coding system"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>SNOMED GPS, EMA PMS ID or a national coding system</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSMedication.classification</td>
@@ -1102,6 +1173,13 @@ filterDesc(document.getElementById('EHDSMedicationS'), 'obligation', document.ge
     <td title="WHO ATC, non-binding coding systems for other classifications"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>WHO ATC, non-binding coding systems for other classifications</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSMedication.doseForm</td>
@@ -1112,6 +1190,13 @@ filterDesc(document.getElementById('EHDSMedicationS'), 'obligation', document.ge
     <td title="EDQM Standard Terms"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>EDQM Standard Terms</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSMedication.item.​doseForm</td>
@@ -1122,6 +1207,13 @@ filterDesc(document.getElementById('EHDSMedicationS'), 'obligation', document.ge
     <td title="EDQM Standard Terms"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>EDQM Standard Terms</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSMedication.item.​ingredient.substance</td>
@@ -1132,6 +1224,13 @@ filterDesc(document.getElementById('EHDSMedicationS'), 'obligation', document.ge
     <td title="EMA SPOR SMS"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>EMA SPOR SMS</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSMedication.item.​ingredient.strengthInfo.​strength[x]</td>
@@ -1142,6 +1241,13 @@ filterDesc(document.getElementById('EHDSMedicationS'), 'obligation', document.ge
     <td title="UCUM for units of measure / EDQM Standard Terms for units of presentation"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>UCUM for units of measure / EDQM Standard Terms for units of presentation</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSMedication.item.​ingredient.strengthInfo.​basisOfStrengthSubstance</td>
@@ -1152,6 +1258,13 @@ filterDesc(document.getElementById('EHDSMedicationS'), 'obligation', document.ge
     <td title="EMA SPOR SMS"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>EMA SPOR SMS</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSMedication.item.​unitOfPresentation</td>
@@ -1162,9 +1275,16 @@ filterDesc(document.getElementById('EHDSMedicationS'), 'obligation', document.ge
     <td title="EDQM Standard Terms for units of presentation"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>EDQM Standard Terms for units of presentation</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
-    <td>EHDSMedication.item.​containedQuantity.numerator</td>
+    <td>EHDSMedication.item.​containedQuantity</td>
     <td>Base</td>
     <td>
       <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]">required</a>
@@ -1172,16 +1292,13 @@ filterDesc(document.getElementById('EHDSMedicationS'), 'obligation', document.ge
     <td title="UCUM for units of measure / EDQM Standard Terms for units of presentation"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
-  </tr>
-  <tr>
-    <td>EHDSMedication.item.​containedQuantity.denominator</td>
-    <td>Base</td>
     <td>
-      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]">required</a>
+      <div>
+        <p>UCUM for units of measure / EDQM Standard Terms for units of presentation</p>
+
+
+      </div>
     </td>
-    <td title="UCUM for units of measure / EDQM Standard Terms for units of presentation"></td>
-    <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
-    <td>Unknown</td>
   </tr>
   <tr>
     <td>EHDSMedication.item.​amount</td>
@@ -1192,6 +1309,13 @@ filterDesc(document.getElementById('EHDSMedicationS'), 'obligation', document.ge
     <td title="UCUM for units of measure / EDQM Standard Terms for units of presentation"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>UCUM for units of measure / EDQM Standard Terms for units of presentation</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSMedication.item.​packageType</td>
@@ -1202,6 +1326,13 @@ filterDesc(document.getElementById('EHDSMedicationS'), 'obligation', document.ge
     <td title="EDQM Standard Terms for packaging"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>EDQM Standard Terms for packaging</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSMedication.device.​device</td>
@@ -1212,6 +1343,13 @@ filterDesc(document.getElementById('EHDSMedicationS'), 'obligation', document.ge
     <td title="EDQM Standard Terms"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>EDQM Standard Terms</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSMedication.characteristic.​type</td>
@@ -1222,6 +1360,13 @@ filterDesc(document.getElementById('EHDSMedicationS'), 'obligation', document.ge
     <td title="Not defined"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>Not defined</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSMedication.characteristic.​value[x]</td>
@@ -1232,76 +1377,19 @@ filterDesc(document.getElementById('EHDSMedicationS'), 'obligation', document.ge
     <td title="UCUM for units of measure"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>UCUM for units of measure</p>
+
+
+      </div>
+    </td>
   </tr>
 </table>
 
         
           
           <!-- 218 is size of empty table -->
-          
-            <a name="inv-snap"> </a>
-            <!--Constraints  heading in the fragment -->
-            <h4>Constraints</h4>
-<table class="list presentation" data-fhir="generated-heirarchy">
-  <tr>
-    <td width="60">
-      <b>Id</b>
-    </td>
-    <td>
-      <b>Grade</b>
-    </td>
-    <td>
-      <b>Path(s)</b>
-    </td>
-    <td>
-      <b>Description</b>
-    </td>
-    <td>
-      <b>Expression</b>
-    </td>
-  </tr>
-  <tr>
-    <td>ele-1</td>
-    <td>error</td>
-    <td>
-      <b>**ALL** elements</b>
-    </td>
-    <td>All FHIR elements must have a @value or children</td>
-    <td>
-      <code>hasValue() or (children().count() &gt; id.count())</code>
-    </td>
-  </tr>
-  <tr>
-    <td>ext-1</td>
-    <td>error</td>
-    <td>
-      <b>**ALL** extensions</b>
-    </td>
-    <td>Must have either extensions or value[x], not both</td>
-    <td>
-      <code>extension.exists() != value.exists()</code>
-    </td>
-  </tr>
-  <tr>
-    <td>rat-1</td>
-    <td>error</td>
-    <td>EHDSMedication.item.containedQuantity</td>
-    <td>Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present</td>
-    <td>
-      <code>(numerator.exists() and denominator.exists()) or (numerator.empty() and denominator.empty() and extension.exists())</code>
-    </td>
-  </tr>
-  <tr>
-    <td>sqty-1</td>
-    <td>error</td>
-    <td>EHDSMedication.item.containedQuantity.denominator</td>
-    <td>The comparator is not used on a SimpleQuantity</td>
-    <td>
-      <code>comparator.empty()</code>
-    </td>
-  </tr>
-</table>
-
           
         </div>
       </div>
@@ -1352,12 +1440,7 @@ filterDesc(document.getElementById('EHDSMedicationS'), 'obligation', document.ge
         }
       }],
       "<a href="StructureDefinition-EHDSMedication.html#EHDSMedication.item.unitOfPresentation" title="Unit of presentation for the medicinal product (tablet, vial, tube). Typically, the smallest countable object in the package" class="dict"><span style="text-decoration: underline">unitOfPresentation</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept">CodeableConcept</a></span>}, <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Unit of presentation for the medicinal product (tablet, vial, tube). Typically, the smallest countable object in the package.</span>
-      "<a href="StructureDefinition-EHDSMedication.html#EHDSMedication.item.containedQuantity" title="Packaged item quantity per item (3 ml / one vial)" class="dict"><span style="text-decoration: underline">containedQuantity</span></a>" : { <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children; rat-1: Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Packaged item quantity per item (3 ml / one vial)</span>
-        "extension": [
-        ],
-        "<a href="StructureDefinition-EHDSMedication.html#EHDSMedication.item.containedQuantity.numerator" title="The value of the numerator" class="dict"><span style="text-decoration: underline">numerator</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#Quantity">Quantity</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Numerator value</span>
-        "<a href="StructureDefinition-EHDSMedication.html#EHDSMedication.item.containedQuantity.denominator" title="The value of the denominator" class="dict"><span style="text-decoration: underline">denominator</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#Quantity">Quantity</a></span> (as <span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#SimpleQuantity#Quantity">SimpleQuantity</a></span>)} <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children; sqty-1: The comparator is not used on a SimpleQuantity"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Denominator value</span>
-      },
+      "<a href="StructureDefinition-EHDSMedication.html#EHDSMedication.item.containedQuantity" title="Packaged item quantity per item (3 ml / one vial)" class="dict"><span style="text-decoration: underline">containedQuantity</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#Ratio">Ratio</a></span>}, <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Packaged item quantity per item (3 ml / one vial)</span>
       "<a href="StructureDefinition-EHDSMedication.html#EHDSMedication.item.amount" title="Number of such items in this medicinal product (e.g. five vials in the package). The combined amount of all items shall be considered to be the total package size" class="dict"><span style="text-decoration: underline">amount</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#Quantity">Quantity</a></span>}, <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Number of such items in this medicinal product (e.g. five vials in the package). The combined amount of all items shall be considered to be the total package size.</span>
       "<a href="StructureDefinition-EHDSMedication.html#EHDSMedication.item.packageType" title="Type of package of the medicinal product item" class="dict"><span style="text-decoration: underline">packageType</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept">CodeableConcept</a></span>} <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Type of package of the medicinal product item.</span>
     }],
@@ -1536,21 +1619,11 @@ Summary
 <td style="" class="hierarchy xhtCellBorder0">0..1</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept">CodeableConcept</a></td>
 <td style="" class="hierarchy xhtCellBorder0">Unit of presentation for the medicinal product (tablet, vial, tube). Typically, the smallest countable object in the package.<br class="binding"/><span class="xhtPieceBold binding">Binding Description: </span><span class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span class="binding">)</span><span class="binding"> </span><span title="This binding doesn't define a testable ValueSet" class="xhtBindingNotTestable xhtPieceBold binding">⚠</span><span class="binding">: </span><span class="binding">EDQM Standard Terms for units of presentation</span></td></tr>
-<tr fhir="generated-heirarchy" id="a-agd" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck111.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin-open.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedication.item.</span><a no-external="true" href="StructureDefinition-EHDSMedication-definitions.html#EHDSMedication.item.containedQuantity" title="Packaged item quantity per item (3 ml / one vial)" data-no-external="true">containedQuantity</a><a name="a-EHDSMedication.item.containedQuantity"> </a></td>
+<tr fhir="generated-heirarchy" id="a-agd" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedication.item.</span><a no-external="true" href="StructureDefinition-EHDSMedication-definitions.html#EHDSMedication.item.containedQuantity" title="Packaged item quantity per item (3 ml / one vial)" data-no-external="true">containedQuantity</a><a name="a-EHDSMedication.item.containedQuantity"> </a></td>
 <td style="" class="hierarchy xhtCellBorder0"></td>
 <td style="" class="hierarchy xhtCellBorder0">0..1</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#Ratio">Ratio</a></td>
-<td style="" class="hierarchy xhtCellBorder0">Packaged item quantity per item (3 ml / one vial)</td></tr>
-<tr fhir="generated-heirarchy" id="a-agda" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedication.item.containedQuantity.</span><a no-external="true" href="StructureDefinition-EHDSMedication-definitions.html#EHDSMedication.item.containedQuantity.numerator" data-no-external="true">numerator</a><a name="a-EHDSMedication.item.containedQuantity.numerator"> </a></td>
-<td style="" class="hierarchy xhtCellBorder0"></td>
-<td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">1</span></td>
-<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#Quantity" class="xhtPieceDeEmphasized">Quantity</a></td>
-<td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">Numerator value</span><br class="binding"/><span class="xhtPieceBold binding">Binding Description: </span><span class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span class="binding">)</span><span class="binding"> </span><span title="This binding doesn't define a testable ValueSet" class="xhtBindingNotTestable xhtPieceBold binding">⚠</span><span class="binding">: </span><span class="binding">UCUM for units of measure / EDQM Standard Terms for units of presentation</span></td></tr>
-<tr fhir="generated-heirarchy" id="a-agdb" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedication.item.containedQuantity.</span><a no-external="true" href="StructureDefinition-EHDSMedication-definitions.html#EHDSMedication.item.containedQuantity.denominator" data-no-external="true">denominator</a><a name="a-EHDSMedication.item.containedQuantity.denominator"> </a></td>
-<td style="" class="hierarchy xhtCellBorder0"></td>
-<td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">1</span></td>
-<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#SimpleQuantity" title="Quantity" class="xhtPieceDeEmphasized">SimpleQuantity(5.0.0)</a></td>
-<td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">Denominator value</span><br class="binding"/><span class="xhtPieceBold binding">Binding Description: </span><span class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span class="binding">)</span><span class="binding"> </span><span title="This binding doesn't define a testable ValueSet" class="xhtBindingNotTestable xhtPieceBold binding">⚠</span><span class="binding">: </span><span class="binding">UCUM for units of measure / EDQM Standard Terms for units of presentation</span></td></tr>
+<td style="" class="hierarchy xhtCellBorder0">Packaged item quantity per item (3 ml / one vial)<br class="binding"/><span class="xhtPieceBold binding">Binding Description: </span><span class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span class="binding">)</span><span class="binding"> </span><span title="This binding doesn't define a testable ValueSet" class="xhtBindingNotTestable xhtPieceBold binding">⚠</span><span class="binding">: </span><span class="binding">UCUM for units of measure / EDQM Standard Terms for units of presentation</span></td></tr>
 <tr fhir="generated-heirarchy" id="a-age" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedication.item.</span><a no-external="true" href="StructureDefinition-EHDSMedication-definitions.html#EHDSMedication.item.amount" title="Number of such items in this medicinal product (e.g. five vials in the package). The combined amount of all items shall be considered to be the total package size." data-no-external="true">amount</a><a name="a-EHDSMedication.item.amount"> </a></td>
 <td style="" class="hierarchy xhtCellBorder0"></td>
 <td style="" class="hierarchy xhtCellBorder0">0..1</td>
@@ -1646,7 +1719,7 @@ Summary
 <td style="" class="hierarchy xhtCellBorder0">0..1</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">dateTime</a></td>
 <td style="" class="hierarchy xhtCellBorder0">Batch expiry date of the medicinal product.</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 32b37c18-13d3-470f-8b16-d71d4422a847
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 017d2e5c-2241-47ec-9363-a053a5dc6d9c
 document.getElementById('cbEHDSMedicationDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('EHDSMedicationDA'), 'binding', document.getElementById('cbEHDSMedicationDA-binding').checked, document.getElementById('ppEHDSMedicationDA'));
 document.getElementById('cbEHDSMedicationDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1677,6 +1750,9 @@ filterDesc(document.getElementById('EHDSMedicationDA'), 'obligation', document.g
     <td>
       <b>Source</b>
     </td>
+    <td>
+      <b>Documentation</b>
+    </td>
   </tr>
   <tr>
     <td>EHDSMedication.identifyingCode[x]</td>
@@ -1687,6 +1763,13 @@ filterDesc(document.getElementById('EHDSMedicationDA'), 'obligation', document.g
     <td title="SNOMED GPS, EMA PMS ID or a national coding system"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>SNOMED GPS, EMA PMS ID or a national coding system</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSMedication.classification</td>
@@ -1697,6 +1780,13 @@ filterDesc(document.getElementById('EHDSMedicationDA'), 'obligation', document.g
     <td title="WHO ATC, non-binding coding systems for other classifications"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>WHO ATC, non-binding coding systems for other classifications</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSMedication.doseForm</td>
@@ -1707,6 +1797,13 @@ filterDesc(document.getElementById('EHDSMedicationDA'), 'obligation', document.g
     <td title="EDQM Standard Terms"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>EDQM Standard Terms</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSMedication.item.​doseForm</td>
@@ -1717,6 +1814,13 @@ filterDesc(document.getElementById('EHDSMedicationDA'), 'obligation', document.g
     <td title="EDQM Standard Terms"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>EDQM Standard Terms</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSMedication.item.​ingredient.substance</td>
@@ -1727,6 +1831,13 @@ filterDesc(document.getElementById('EHDSMedicationDA'), 'obligation', document.g
     <td title="EMA SPOR SMS"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>EMA SPOR SMS</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSMedication.item.​ingredient.strengthInfo.​strength[x]</td>
@@ -1737,6 +1848,13 @@ filterDesc(document.getElementById('EHDSMedicationDA'), 'obligation', document.g
     <td title="UCUM for units of measure / EDQM Standard Terms for units of presentation"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>UCUM for units of measure / EDQM Standard Terms for units of presentation</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSMedication.item.​ingredient.strengthInfo.​basisOfStrengthSubstance</td>
@@ -1747,6 +1865,13 @@ filterDesc(document.getElementById('EHDSMedicationDA'), 'obligation', document.g
     <td title="EMA SPOR SMS"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>EMA SPOR SMS</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSMedication.item.​unitOfPresentation</td>
@@ -1757,9 +1882,16 @@ filterDesc(document.getElementById('EHDSMedicationDA'), 'obligation', document.g
     <td title="EDQM Standard Terms for units of presentation"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>EDQM Standard Terms for units of presentation</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
-    <td>EHDSMedication.item.​containedQuantity.numerator</td>
+    <td>EHDSMedication.item.​containedQuantity</td>
     <td>Base</td>
     <td>
       <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]">required</a>
@@ -1767,16 +1899,13 @@ filterDesc(document.getElementById('EHDSMedicationDA'), 'obligation', document.g
     <td title="UCUM for units of measure / EDQM Standard Terms for units of presentation"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
-  </tr>
-  <tr>
-    <td>EHDSMedication.item.​containedQuantity.denominator</td>
-    <td>Base</td>
     <td>
-      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]">required</a>
+      <div>
+        <p>UCUM for units of measure / EDQM Standard Terms for units of presentation</p>
+
+
+      </div>
     </td>
-    <td title="UCUM for units of measure / EDQM Standard Terms for units of presentation"></td>
-    <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
-    <td>Unknown</td>
   </tr>
   <tr>
     <td>EHDSMedication.item.​amount</td>
@@ -1787,6 +1916,13 @@ filterDesc(document.getElementById('EHDSMedicationDA'), 'obligation', document.g
     <td title="UCUM for units of measure / EDQM Standard Terms for units of presentation"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>UCUM for units of measure / EDQM Standard Terms for units of presentation</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSMedication.item.​packageType</td>
@@ -1797,6 +1933,13 @@ filterDesc(document.getElementById('EHDSMedicationDA'), 'obligation', document.g
     <td title="EDQM Standard Terms for packaging"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>EDQM Standard Terms for packaging</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSMedication.device.​device</td>
@@ -1807,6 +1950,13 @@ filterDesc(document.getElementById('EHDSMedicationDA'), 'obligation', document.g
     <td title="EDQM Standard Terms"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>EDQM Standard Terms</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSMedication.characteristic.​type</td>
@@ -1817,6 +1967,13 @@ filterDesc(document.getElementById('EHDSMedicationDA'), 'obligation', document.g
     <td title="Not defined"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>Not defined</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSMedication.characteristic.​value[x]</td>
@@ -1827,6 +1984,13 @@ filterDesc(document.getElementById('EHDSMedicationDA'), 'obligation', document.g
     <td title="UCUM for units of measure"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>UCUM for units of measure</p>
+
+
+      </div>
+    </td>
   </tr>
 </table>
 
@@ -1952,31 +2116,11 @@ filterDesc(document.getElementById('EHDSMedicationDA'), 'obligation', document.g
 <td style="" class="hierarchy xhtCellBorder0">0..1</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept">CodeableConcept</a></td>
 <td style="" class="hierarchy xhtCellBorder0">Unit of presentation for the medicinal product (tablet, vial, tube). Typically, the smallest countable object in the package.<br class="binding"/><span class="xhtPieceBold binding">Binding Description: </span><span class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span class="binding">)</span><span class="binding"> </span><span title="This binding doesn't define a testable ValueSet" class="xhtBindingNotTestable xhtPieceBold binding">⚠</span><span class="binding">: </span><span class="binding">EDQM Standard Terms for units of presentation</span></td></tr>
-<tr fhir="generated-heirarchy" id="sa-agd" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck111.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin-open.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedication.item.</span><a no-external="true" href="StructureDefinition-EHDSMedication-definitions.html#EHDSMedication.item.containedQuantity" title="Packaged item quantity per item (3 ml / one vial)" data-no-external="true">containedQuantity</a><a name="sa-EHDSMedication.item.containedQuantity"> </a></td>
-<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/conformance-rules.html#constraints" title="This element has or is affected by constraints ( rat-1 )" class="xhtConstraintStyle">C</a></td>
+<tr fhir="generated-heirarchy" id="sa-agd" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedication.item.</span><a no-external="true" href="StructureDefinition-EHDSMedication-definitions.html#EHDSMedication.item.containedQuantity" title="Packaged item quantity per item (3 ml / one vial)" data-no-external="true">containedQuantity</a><a name="sa-EHDSMedication.item.containedQuantity"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0"></td>
 <td style="" class="hierarchy xhtCellBorder0">0..1</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#Ratio">Ratio</a></td>
-<td style="" class="hierarchy xhtCellBorder0">Packaged item quantity per item (3 ml / one vial)<br class="constraint"/><span class="constraint">Constraints: </span><span title="Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present" class="xhtPieceBold constraint">rat-1</span></td></tr>
-<tr fhir="generated-heirarchy" id="sa-agda" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedication.item.containedQuantity.</span><a no-external="true" href="StructureDefinition-EHDSMedication-definitions.html#EHDSMedication.item.containedQuantity.id" title="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." data-no-external="true">@id</a><a name="sa-EHDSMedication.item.containedQuantity.id"> </a></td>
-<td style="" class="hierarchy xhtCellBorder0"></td>
-<td style="" class="hierarchy xhtCellBorder0">0..1</td>
-<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#id">id</a></td>
-<td style="" class="hierarchy xhtCellBorder0">Unique id for inter-element referencing</td></tr>
-<tr fhir="generated-heirarchy" id="sa-agdb" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1112.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_extension_simple.png" alt="" style="background-color: white; background-color: inherit" title="Simple Extension" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedication.item.containedQuantity.</span><a no-external="true" href="StructureDefinition-EHDSMedication-definitions.html#EHDSMedication.item.containedQuantity.extension" title="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." data-no-external="true">extension</a><a name="sa-EHDSMedication.item.containedQuantity.extension"> </a></td>
-<td style="" class="hierarchy xhtCellBorder0"></td>
-<td style="" class="hierarchy xhtCellBorder0">0..*</td>
-<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/extensibility.html#Extension">Extension</a></td>
-<td style="" class="hierarchy xhtCellBorder0">Additional content defined by implementations<br/><span class="xhtPieceBold">Slice: </span>Unordered, Open by value:url<br/></td></tr>
-<tr fhir="generated-heirarchy" id="sa-agdc" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedication.item.containedQuantity.</span><a no-external="true" href="StructureDefinition-EHDSMedication-definitions.html#EHDSMedication.item.containedQuantity.numerator" title="The value of the numerator." data-no-external="true">numerator</a><a name="sa-EHDSMedication.item.containedQuantity.numerator"> </a></td>
-<td style="" class="hierarchy xhtCellBorder0"><span aria-hidden="true" style="padding-left: 3px; padding-right: 3px; color: black; background-color: white" title="This element is included in summaries">Σ</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> This element is included in summaries. </span><a href="http://hl7.org/fhir/R5/conformance-rules.html#constraints" title="This element has or is affected by constraints ( rat-1 )" class="xhtConstraintStyle">C</a></td>
-<td style="" class="hierarchy xhtCellBorder0">0..1</td>
-<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#Quantity">Quantity</a></td>
-<td style="" class="hierarchy xhtCellBorder0">Numerator value<br class="binding"/><span class="xhtPieceBold binding">Binding Description: </span><span class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span class="binding">)</span><span class="binding"> </span><span title="This binding doesn't define a testable ValueSet" class="xhtBindingNotTestable xhtPieceBold binding">⚠</span><span class="binding">: </span><span class="binding">UCUM for units of measure / EDQM Standard Terms for units of presentation</span></td></tr>
-<tr fhir="generated-heirarchy" id="sa-agdd" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedication.item.containedQuantity.</span><a no-external="true" href="StructureDefinition-EHDSMedication-definitions.html#EHDSMedication.item.containedQuantity.denominator" title="The value of the denominator." data-no-external="true">denominator</a><a name="sa-EHDSMedication.item.containedQuantity.denominator"> </a></td>
-<td style="" class="hierarchy xhtCellBorder0"><span aria-hidden="true" style="padding-left: 3px; padding-right: 3px; color: black; background-color: white" title="This element is included in summaries">Σ</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> This element is included in summaries. </span><a href="http://hl7.org/fhir/R5/conformance-rules.html#constraints" title="This element has or is affected by constraints ( sqty-1, rat-1 )" class="xhtConstraintStyle">C</a></td>
-<td style="" class="hierarchy xhtCellBorder0">0..1</td>
-<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#SimpleQuantity" title="Quantity">SimpleQuantity(5.0.0)</a></td>
-<td style="" class="hierarchy xhtCellBorder0">Denominator value<br class="binding"/><span class="xhtPieceBold binding">Binding Description: </span><span class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span class="binding">)</span><span class="binding"> </span><span title="This binding doesn't define a testable ValueSet" class="xhtBindingNotTestable xhtPieceBold binding">⚠</span><span class="binding">: </span><span class="binding">UCUM for units of measure / EDQM Standard Terms for units of presentation</span><br class="constraint"/><span class="constraint">Constraints: </span><span title="The comparator is not used on a SimpleQuantity" class="xhtPieceBold constraint">sqty-1</span></td></tr>
+<td style="" class="hierarchy xhtCellBorder0">Packaged item quantity per item (3 ml / one vial)<br class="binding"/><span class="xhtPieceBold binding">Binding Description: </span><span class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span class="binding">)</span><span class="binding"> </span><span title="This binding doesn't define a testable ValueSet" class="xhtBindingNotTestable xhtPieceBold binding">⚠</span><span class="binding">: </span><span class="binding">UCUM for units of measure / EDQM Standard Terms for units of presentation</span></td></tr>
 <tr fhir="generated-heirarchy" id="sa-age" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedication.item.</span><a no-external="true" href="StructureDefinition-EHDSMedication-definitions.html#EHDSMedication.item.amount" title="Number of such items in this medicinal product (e.g. five vials in the package). The combined amount of all items shall be considered to be the total package size." data-no-external="true">amount</a><a name="sa-EHDSMedication.item.amount"> </a></td>
 <td style="" class="hierarchy xhtCellBorder0"></td>
 <td style="" class="hierarchy xhtCellBorder0">0..1</td>
@@ -2072,7 +2216,7 @@ filterDesc(document.getElementById('EHDSMedicationDA'), 'obligation', document.g
 <td style="" class="hierarchy xhtCellBorder0">0..1</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">dateTime</a></td>
 <td style="" class="hierarchy xhtCellBorder0">Batch expiry date of the medicinal product.</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 32b37c18-13d3-470f-8b16-d71d4422a847
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 017d2e5c-2241-47ec-9363-a053a5dc6d9c
 document.getElementById('cbEHDSMedicationSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('EHDSMedicationSA'), 'binding', document.getElementById('cbEHDSMedicationSA-binding').checked, document.getElementById('ppEHDSMedicationSA'));
 document.getElementById('cbEHDSMedicationSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -2103,6 +2247,9 @@ filterDesc(document.getElementById('EHDSMedicationSA'), 'obligation', document.g
     <td>
       <b>Source</b>
     </td>
+    <td>
+      <b>Documentation</b>
+    </td>
   </tr>
   <tr>
     <td>EHDSMedication.identifyingCode[x]</td>
@@ -2113,6 +2260,13 @@ filterDesc(document.getElementById('EHDSMedicationSA'), 'obligation', document.g
     <td title="SNOMED GPS, EMA PMS ID or a national coding system"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>SNOMED GPS, EMA PMS ID or a national coding system</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSMedication.classification</td>
@@ -2123,6 +2277,13 @@ filterDesc(document.getElementById('EHDSMedicationSA'), 'obligation', document.g
     <td title="WHO ATC, non-binding coding systems for other classifications"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>WHO ATC, non-binding coding systems for other classifications</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSMedication.doseForm</td>
@@ -2133,6 +2294,13 @@ filterDesc(document.getElementById('EHDSMedicationSA'), 'obligation', document.g
     <td title="EDQM Standard Terms"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>EDQM Standard Terms</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSMedication.item.​doseForm</td>
@@ -2143,6 +2311,13 @@ filterDesc(document.getElementById('EHDSMedicationSA'), 'obligation', document.g
     <td title="EDQM Standard Terms"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>EDQM Standard Terms</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSMedication.item.​ingredient.substance</td>
@@ -2153,6 +2328,13 @@ filterDesc(document.getElementById('EHDSMedicationSA'), 'obligation', document.g
     <td title="EMA SPOR SMS"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>EMA SPOR SMS</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSMedication.item.​ingredient.strengthInfo.​strength[x]</td>
@@ -2163,6 +2345,13 @@ filterDesc(document.getElementById('EHDSMedicationSA'), 'obligation', document.g
     <td title="UCUM for units of measure / EDQM Standard Terms for units of presentation"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>UCUM for units of measure / EDQM Standard Terms for units of presentation</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSMedication.item.​ingredient.strengthInfo.​basisOfStrengthSubstance</td>
@@ -2173,6 +2362,13 @@ filterDesc(document.getElementById('EHDSMedicationSA'), 'obligation', document.g
     <td title="EMA SPOR SMS"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>EMA SPOR SMS</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSMedication.item.​unitOfPresentation</td>
@@ -2183,9 +2379,16 @@ filterDesc(document.getElementById('EHDSMedicationSA'), 'obligation', document.g
     <td title="EDQM Standard Terms for units of presentation"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>EDQM Standard Terms for units of presentation</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
-    <td>EHDSMedication.item.​containedQuantity.numerator</td>
+    <td>EHDSMedication.item.​containedQuantity</td>
     <td>Base</td>
     <td>
       <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]">required</a>
@@ -2193,16 +2396,13 @@ filterDesc(document.getElementById('EHDSMedicationSA'), 'obligation', document.g
     <td title="UCUM for units of measure / EDQM Standard Terms for units of presentation"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
-  </tr>
-  <tr>
-    <td>EHDSMedication.item.​containedQuantity.denominator</td>
-    <td>Base</td>
     <td>
-      <a href="http://hl7.org/fhir/R5/terminologies.html#Enumeration[required]">required</a>
+      <div>
+        <p>UCUM for units of measure / EDQM Standard Terms for units of presentation</p>
+
+
+      </div>
     </td>
-    <td title="UCUM for units of measure / EDQM Standard Terms for units of presentation"></td>
-    <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
-    <td>Unknown</td>
   </tr>
   <tr>
     <td>EHDSMedication.item.​amount</td>
@@ -2213,6 +2413,13 @@ filterDesc(document.getElementById('EHDSMedicationSA'), 'obligation', document.g
     <td title="UCUM for units of measure / EDQM Standard Terms for units of presentation"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>UCUM for units of measure / EDQM Standard Terms for units of presentation</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSMedication.item.​packageType</td>
@@ -2223,6 +2430,13 @@ filterDesc(document.getElementById('EHDSMedicationSA'), 'obligation', document.g
     <td title="EDQM Standard Terms for packaging"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>EDQM Standard Terms for packaging</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSMedication.device.​device</td>
@@ -2233,6 +2447,13 @@ filterDesc(document.getElementById('EHDSMedicationSA'), 'obligation', document.g
     <td title="EDQM Standard Terms"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>EDQM Standard Terms</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSMedication.characteristic.​type</td>
@@ -2243,6 +2464,13 @@ filterDesc(document.getElementById('EHDSMedicationSA'), 'obligation', document.g
     <td title="Not defined"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>Not defined</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSMedication.characteristic.​value[x]</td>
@@ -2253,76 +2481,19 @@ filterDesc(document.getElementById('EHDSMedicationSA'), 'obligation', document.g
     <td title="UCUM for units of measure"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>UCUM for units of measure</p>
+
+
+      </div>
+    </td>
   </tr>
 </table>
 
         
           
           <!-- 218 is size of empty table -->
-          
-            <a name="inv-all-snap"> </a>
-            <!--Constraints  heading in the fragment -->
-            <h4>Constraints</h4>
-<table class="list presentation" data-fhir="generated-heirarchy">
-  <tr>
-    <td width="60">
-      <b>Id</b>
-    </td>
-    <td>
-      <b>Grade</b>
-    </td>
-    <td>
-      <b>Path(s)</b>
-    </td>
-    <td>
-      <b>Description</b>
-    </td>
-    <td>
-      <b>Expression</b>
-    </td>
-  </tr>
-  <tr>
-    <td>ele-1</td>
-    <td>error</td>
-    <td>
-      <b>**ALL** elements</b>
-    </td>
-    <td>All FHIR elements must have a @value or children</td>
-    <td>
-      <code>hasValue() or (children().count() &gt; id.count())</code>
-    </td>
-  </tr>
-  <tr>
-    <td>ext-1</td>
-    <td>error</td>
-    <td>
-      <b>**ALL** extensions</b>
-    </td>
-    <td>Must have either extensions or value[x], not both</td>
-    <td>
-      <code>extension.exists() != value.exists()</code>
-    </td>
-  </tr>
-  <tr>
-    <td>rat-1</td>
-    <td>error</td>
-    <td>EHDSMedication.item.containedQuantity</td>
-    <td>Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present</td>
-    <td>
-      <code>(numerator.exists() and denominator.exists()) or (numerator.empty() and denominator.empty() and extension.exists())</code>
-    </td>
-  </tr>
-  <tr>
-    <td>sqty-1</td>
-    <td>error</td>
-    <td>EHDSMedication.item.containedQuantity.denominator</td>
-    <td>The comparator is not used on a SimpleQuantity</td>
-    <td>
-      <code>comparator.empty()</code>
-    </td>
-  </tr>
-</table>
-
           
         </div>
       </div>
@@ -2373,12 +2544,7 @@ filterDesc(document.getElementById('EHDSMedicationSA'), 'obligation', document.g
         }
       }],
       "<a href="StructureDefinition-EHDSMedication.html#EHDSMedication.item.unitOfPresentation" title="Unit of presentation for the medicinal product (tablet, vial, tube). Typically, the smallest countable object in the package" class="dict"><span style="text-decoration: underline">unitOfPresentation</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept">CodeableConcept</a></span>}, <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Unit of presentation for the medicinal product (tablet, vial, tube). Typically, the smallest countable object in the package.</span>
-      "<a href="StructureDefinition-EHDSMedication.html#EHDSMedication.item.containedQuantity" title="Packaged item quantity per item (3 ml / one vial)" class="dict"><span style="text-decoration: underline">containedQuantity</span></a>" : { <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children; rat-1: Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Packaged item quantity per item (3 ml / one vial)</span>
-        "extension": [
-        ],
-        "<a href="StructureDefinition-EHDSMedication.html#EHDSMedication.item.containedQuantity.numerator" title="The value of the numerator" class="dict"><span style="text-decoration: underline">numerator</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#Quantity">Quantity</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Numerator value</span>
-        "<a href="StructureDefinition-EHDSMedication.html#EHDSMedication.item.containedQuantity.denominator" title="The value of the denominator" class="dict"><span style="text-decoration: underline">denominator</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#Quantity">Quantity</a></span> (as <span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#SimpleQuantity#Quantity">SimpleQuantity</a></span>)} <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children; sqty-1: The comparator is not used on a SimpleQuantity"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Denominator value</span>
-      },
+      "<a href="StructureDefinition-EHDSMedication.html#EHDSMedication.item.containedQuantity" title="Packaged item quantity per item (3 ml / one vial)" class="dict"><span style="text-decoration: underline">containedQuantity</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#Ratio">Ratio</a></span>}, <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Packaged item quantity per item (3 ml / one vial)</span>
       "<a href="StructureDefinition-EHDSMedication.html#EHDSMedication.item.amount" title="Number of such items in this medicinal product (e.g. five vials in the package). The combined amount of all items shall be considered to be the total package size" class="dict"><span style="text-decoration: underline">amount</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#Quantity">Quantity</a></span>}, <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Number of such items in this medicinal product (e.g. five vials in the package). The combined amount of all items shall be considered to be the total package size.</span>
       "<a href="StructureDefinition-EHDSMedication.html#EHDSMedication.item.packageType" title="Type of package of the medicinal product item" class="dict"><span style="text-decoration: underline">packageType</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept">CodeableConcept</a></span>} <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Type of package of the medicinal product item.</span>
     }],
@@ -2471,8 +2637,8 @@ Summary
           IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="http://commission.europa.eu/">EC</a>.  
           Package eu.ehds.models#0.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>.
           Generated 
-  <span title="2026-11-19 13:36:00 +0000">
-    2026-11-19
+  <span title="2026-11-20 07:02:00 +0000">
+    2026-11-20
   </span>
 
           <br/>

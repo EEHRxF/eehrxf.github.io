@@ -111,6 +111,13 @@
   "name" : "EHDSDocument"
 },
 {
+  "id" : "EHDSDocumentSearchMetadata",
+  "type" : "StructureDefinition",
+  "url" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSDocumentSearchMetadata",
+  "version" : "0.3.0",
+  "name" : "EHDSDocumentSearchMetadata"
+},
+{
   "id" : "EHDSDosage",
   "type" : "StructureDefinition",
   "url" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSDosage",
@@ -270,6 +277,13 @@
   "url" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSRelatedPerson",
   "version" : "0.3.0",
   "name" : "EHDSRelatedPerson"
+},
+{
+  "id" : "EHDSSearchMetadata",
+  "type" : "StructureDefinition",
+  "url" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSSearchMetadata",
+  "version" : "0.3.0",
+  "name" : "EHDSSearchMetadata"
 },
 {
   "id" : "EHDSServiceRequest",

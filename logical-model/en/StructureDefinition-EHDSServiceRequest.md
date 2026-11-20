@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSServiceReques
   "name" : "EHDSServiceRequest",
   "title" : "Service request model",
   "status" : "draft",
-  "date" : "2026-11-19T13:36:43+00:00",
+  "date" : "2026-11-20T07:02:16+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -63,9 +63,24 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSServiceReques
       "short" : "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)."
     },
     {
+      "id" : "EHDSServiceRequest.header.clinicalEventTime[x]",
+      "path" : "EHDSServiceRequest.header.clinicalEventTime[x]",
+      "max" : "0"
+    },
+    {
+      "id" : "EHDSServiceRequest.header.version",
+      "path" : "EHDSServiceRequest.header.version",
+      "max" : "0"
+    },
+    {
       "id" : "EHDSServiceRequest.header.author[x]",
       "path" : "EHDSServiceRequest.header.author[x]",
       "short" : "Author of the resource."
+    },
+    {
+      "id" : "EHDSServiceRequest.header.attestation",
+      "path" : "EHDSServiceRequest.header.attestation",
+      "max" : "0"
     },
     {
       "id" : "EHDSServiceRequest.header.status",

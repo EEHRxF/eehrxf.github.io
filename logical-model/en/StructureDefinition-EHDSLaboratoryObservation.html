@@ -50,7 +50,7 @@
 	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
 	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"18.26"}
+    <style type="text/css">h2{--heading-prefix:"[&quot;18.26&quot;]"}
     h3,h4,h5,h6{--heading-prefix:"18.26"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
@@ -210,7 +210,7 @@
 
 <!-- layouts\layout-profile -->
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">EHDS Logical Information Models, published by EC. This guide is not an authorized publication; it is the continuous build for version 0.3.0  built by the FHIR (HL7&reg; FHIR&reg; Standard) CI Build. This version is based on the current content of <a href='https://github.com/EEHRxF/logical-model/tree/main'>https://github.com/EEHRxF/logical-model/tree/main</a> and changes regularly. See the <a href='http://ehds.eu/fhir/models/history.html'>Directory of published versions</a><br/><span data-smart-ci-extra="1" style="font-size:.85em;">Built from commit <a href="https://github.com/EEHRxF/logical-model/commit/956292b0c26974b81702620f7c9aee25b1a9f260"><code>956292b0</code></a>.</span></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">EHDS Logical Information Models, published by EC. This guide is not an authorized publication; it is the continuous build for version 0.3.0  built by the FHIR (HL7&reg; FHIR&reg; Standard) CI Build. This version is based on the current content of <a href='https://github.com/EEHRxF/logical-model/tree/main'>https://github.com/EEHRxF/logical-model/tree/main</a> and changes regularly. See the <a href='http://ehds.eu/fhir/models/history.html'>Directory of published versions</a><br/><span data-smart-ci-extra="1" style="font-size:.85em;">Built from commit <a href="https://github.com/EEHRxF/logical-model/commit/3f758216b947c131def6b36f21ae06551ee066c3"><code>3f758216</code></a>.</span></p><!--EndReleaseHeader-->
   
 
 
@@ -317,7 +317,7 @@ Model for observation performed by laboratory
           
 
             as of 
-2026-11-19
+2026-11-20
 
           
         
@@ -525,7 +525,7 @@ Model for observation performed by laboratory
 <td style="" class="hierarchy xhtCellBorder0">0..1</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#boolean">boolean</a></td>
 <td style="" class="hierarchy xhtCellBorder0">Examination performed near or at the site of a patient.</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 32b37c18-13d3-470f-8b16-d71d4422a847
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 017d2e5c-2241-47ec-9363-a053a5dc6d9c
 document.getElementById('cbEHDSLaboratoryObservationD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('EHDSLaboratoryObservationD'), 'binding', document.getElementById('cbEHDSLaboratoryObservationD-binding').checked, document.getElementById('ppEHDSLaboratoryObservationD'));
 document.getElementById('cbEHDSLaboratoryObservationD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -559,6 +559,9 @@ filterDesc(document.getElementById('EHDSLaboratoryObservationD'), 'obligation', 
     <td>
       <b>Source</b>
     </td>
+    <td>
+      <b>Documentation</b>
+    </td>
   </tr>
   <tr>
     <td>EHDSLaboratoryObservation.​result.uncertainty.type</td>
@@ -569,6 +572,13 @@ filterDesc(document.getElementById('EHDSLaboratoryObservationD'), 'obligation', 
     <td title="HL7 Probability Distribution Type"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>HL7 Probability Distribution Type</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSLaboratoryObservation.​component.result.uncertainty.​type</td>
@@ -579,6 +589,13 @@ filterDesc(document.getElementById('EHDSLaboratoryObservationD'), 'obligation', 
     <td title="HL7 Probability Distribution Type"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>HL7 Probability Distribution Type</p>
+
+
+      </div>
+    </td>
   </tr>
 </table>
 
@@ -611,120 +628,70 @@ filterDesc(document.getElementById('EHDSLaboratoryObservationD'), 'obligation', 
 <td style="" class="hierarchy xhtCellBorder0">Patient/subject information.</td></tr>
 <tr fhir="generated-heirarchy" id="s-aab" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.</span><a no-external="true" href="StructureDefinition-EHDSLaboratoryObservation-definitions.html#EHDSLaboratoryObservation.header.identifier" title="Unique identifier of the resource." data-no-external="true">identifier</a><a name="s-EHDSLaboratoryObservation.header.identifier"> </a></td>
 <td style="" class="hierarchy xhtCellBorder0"></td>
-<td style="" class="hierarchy xhtCellBorder0">1..*</td>
+<td style="" class="hierarchy xhtCellBorder0">0..*</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#Identifier">Identifier</a></td>
 <td style="" class="hierarchy xhtCellBorder0">Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries).<br/></td></tr>
-<tr fhir="generated-heirarchy" id="s-aac" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck111.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin-open.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_choice.gif" alt="" style="background-color: white; background-color: inherit" title="Choice of Types" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.</span><a no-external="true" href="StructureDefinition-EHDSLaboratoryObservation-definitions.html#EHDSLaboratoryObservation.header.clinicalEventTime[x]" title="Time or period the clinical content applies to (e.g. specimen collection time, onset of a condition, period a medication was taken)." data-no-external="true">clinicalEventTime[x]</a><a name="s-EHDSLaboratoryObservation.header.clinicalEventTime_x_"> </a></td>
+<tr fhir="generated-heirarchy" id="s-aac" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck111.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin-open.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_choice.gif" alt="" style="background-color: white; background-color: inherit" title="Choice of Types" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.</span><a no-external="true" href="StructureDefinition-EHDSLaboratoryObservation-definitions.html#EHDSLaboratoryObservation.header.author[x]" title="Information describing who authored the resource." data-no-external="true">author[x]</a><a name="s-EHDSLaboratoryObservation.header.author_x_"> </a></td>
 <td style="" class="hierarchy xhtCellBorder0"></td>
-<td style="" class="hierarchy xhtCellBorder0">0..1</td>
-<td style="" class="hierarchy xhtCellBorder0"></td>
-<td style="" class="hierarchy xhtCellBorder0">Time or period the clinical content applies to (e.g. specimen collection time, onset of a condition, period a medication was taken).</td></tr>
-<tr fhir="generated-heirarchy" id="s-aaca" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.clinicalEventTime[x].</span><span title="dateTime Type: A date, date-time or partial date (e.g. just year or year + month).  If hours and minutes are specified, a UTC offset SHALL be populated. The format is a union of the schema types gYear, gYearMonth, date and dateTime. Seconds must be provided due to schema type constraints but may be zero-filled and may be ignored.                 Dates SHALL be valid dates.">clinicalEventTimeDateTime</span></td>
-<td style="" class="hierarchy xhtCellBorder0"></td>
-<td style="" class="hierarchy xhtCellBorder0"></td>
-<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">dateTime</a></td>
-<td style="" class="hierarchy xhtCellBorder0"></td></tr>
-<tr fhir="generated-heirarchy" id="s-aacb" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.clinicalEventTime[x].</span><span title="Period Type: A time period defined by a start and end date and optionally time.">clinicalEventTimePeriod</span></td>
-<td style="" class="hierarchy xhtCellBorder0"></td>
-<td style="" class="hierarchy xhtCellBorder0"></td>
-<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#Period">Period</a></td>
-<td style="" class="hierarchy xhtCellBorder0"></td></tr>
-<tr fhir="generated-heirarchy" id="s-aad" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.</span><a no-external="true" href="StructureDefinition-EHDSLaboratoryObservation-definitions.html#EHDSLaboratoryObservation.header.version" title="Version of the resource." data-no-external="true">version</a><a name="s-EHDSLaboratoryObservation.header.version"> </a></td>
-<td style="" class="hierarchy xhtCellBorder0"></td>
-<td style="" class="hierarchy xhtCellBorder0">0..1</td>
-<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td>
-<td style="" class="hierarchy xhtCellBorder0">Version of the resource.</td></tr>
-<tr fhir="generated-heirarchy" id="s-aae" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck111.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin-open.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_choice.gif" alt="" style="background-color: white; background-color: inherit" title="Choice of Types" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.</span><a no-external="true" href="StructureDefinition-EHDSLaboratoryObservation-definitions.html#EHDSLaboratoryObservation.header.author[x]" title="Information describing who authored the resource." data-no-external="true">author[x]</a><a name="s-EHDSLaboratoryObservation.header.author_x_"> </a></td>
-<td style="" class="hierarchy xhtCellBorder0"></td>
-<td style="" class="hierarchy xhtCellBorder0">1..*</td>
+<td style="" class="hierarchy xhtCellBorder0">0..*</td>
 <td style="" class="hierarchy xhtCellBorder0"></td>
 <td style="" class="hierarchy xhtCellBorder0">Author of the resource.<br/></td></tr>
-<tr fhir="generated-heirarchy" id="s-aaea" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.author[x].</span><span title="EHDSHealthProfessional means a structured set of data elements describing a health professional.">authorEHDSHealthProfessional</span></td>
+<tr fhir="generated-heirarchy" id="s-aaca" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.author[x].</span><span title="EHDSHealthProfessional means a structured set of data elements describing a health professional.">authorEHDSHealthProfessional</span></td>
 <td style="" class="hierarchy xhtCellBorder0"></td>
 <td style="" class="hierarchy xhtCellBorder0"></td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-EHDSHealthProfessional.html">EHDSHealthProfessional</a></td>
 <td style="" class="hierarchy xhtCellBorder0"></td></tr>
-<tr fhir="generated-heirarchy" id="s-aaeb" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.author[x].</span><span title="EHDSOrganisation means a structured set of data elements describing an organisation.">authorEHDSOrganisation</span></td>
+<tr fhir="generated-heirarchy" id="s-aacb" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.author[x].</span><span title="EHDSOrganisation means a structured set of data elements describing an organisation.">authorEHDSOrganisation</span></td>
 <td style="" class="hierarchy xhtCellBorder0"></td>
 <td style="" class="hierarchy xhtCellBorder0"></td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-EHDSOrganisation.html">EHDSOrganisation</a></td>
 <td style="" class="hierarchy xhtCellBorder0"></td></tr>
-<tr fhir="generated-heirarchy" id="s-aaec" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.author[x].</span><span title="EHDSDevice means a structured set of data elements describing a medical device or implant.">authorEHDSDevice</span></td>
+<tr fhir="generated-heirarchy" id="s-aacc" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.author[x].</span><span title="EHDSDevice means a structured set of data elements describing a medical device or implant.">authorEHDSDevice</span></td>
 <td style="" class="hierarchy xhtCellBorder0"></td>
 <td style="" class="hierarchy xhtCellBorder0"></td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-EHDSDevice.html">EHDSDevice</a></td>
 <td style="" class="hierarchy xhtCellBorder0"></td></tr>
-<tr fhir="generated-heirarchy" id="s-aaf" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.</span><a no-external="true" href="StructureDefinition-EHDSLaboratoryObservation-definitions.html#EHDSLaboratoryObservation.header.date" title="Date and optionally time of authoring/issuing." data-no-external="true">date</a><a name="s-EHDSLaboratoryObservation.header.date"> </a></td>
+<tr fhir="generated-heirarchy" id="s-aad" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.</span><a no-external="true" href="StructureDefinition-EHDSLaboratoryObservation-definitions.html#EHDSLaboratoryObservation.header.date" title="Date of finalisation/issuance of the resource." data-no-external="true">date</a><a name="s-EHDSLaboratoryObservation.header.date"> </a></td>
 <td style="" class="hierarchy xhtCellBorder0"></td>
 <td style="" class="hierarchy xhtCellBorder0">0..1</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">dateTime</a></td>
-<td style="" class="hierarchy xhtCellBorder0">Date and optionally time of authoring/issuing.</td></tr>
-<tr fhir="generated-heirarchy" id="s-aag" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck111.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin-open.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.</span><a no-external="true" href="StructureDefinition-EHDSLaboratoryObservation-definitions.html#EHDSLaboratoryObservation.header.attestation" title="Resource attestation details." data-no-external="true">attestation</a><a name="s-EHDSLaboratoryObservation.header.attestation"> </a></td>
-<td style="" class="hierarchy xhtCellBorder0"></td>
-<td style="" class="hierarchy xhtCellBorder0">0..*</td>
-<td style="" class="hierarchy xhtCellBorder0">Base</td>
-<td style="" class="hierarchy xhtCellBorder0">Resource attestation details.<br/></td></tr>
-<tr fhir="generated-heirarchy" id="s-aaga" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1111.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin-open.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_choice.gif" alt="" style="background-color: white; background-color: inherit" title="Choice of Types" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.attestation.</span><a no-external="true" href="StructureDefinition-EHDSLaboratoryObservation-definitions.html#EHDSLaboratoryObservation.header.attestation.attester[x]" title="Attester who validated the resource." data-no-external="true">attester[x]</a><a name="s-EHDSLaboratoryObservation.header.attestation.attester_x_"> </a></td>
-<td style="" class="hierarchy xhtCellBorder0"></td>
-<td style="" class="hierarchy xhtCellBorder0">1..1</td>
-<td style="" class="hierarchy xhtCellBorder0"></td>
-<td style="" class="hierarchy xhtCellBorder0">Attester who validated the resource.</td></tr>
-<tr fhir="generated-heirarchy" id="s-aagaa" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck11110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.attestation.attester[x].</span><span title="EHDSHealthProfessional means a structured set of data elements describing a health professional.">attesterEHDSHealthProfessional</span></td>
-<td style="" class="hierarchy xhtCellBorder0"></td>
-<td style="" class="hierarchy xhtCellBorder0"></td>
-<td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-EHDSHealthProfessional.html">EHDSHealthProfessional</a></td>
-<td style="" class="hierarchy xhtCellBorder0"></td></tr>
-<tr fhir="generated-heirarchy" id="s-aagab" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck11100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.attestation.attester[x].</span><span title="EHDSDevice means a structured set of data elements describing a medical device or implant.">attesterEHDSDevice</span></td>
-<td style="" class="hierarchy xhtCellBorder0"></td>
-<td style="" class="hierarchy xhtCellBorder0"></td>
-<td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-EHDSDevice.html">EHDSDevice</a></td>
-<td style="" class="hierarchy xhtCellBorder0"></td></tr>
-<tr fhir="generated-heirarchy" id="s-aagb" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.attestation.</span><a no-external="true" href="StructureDefinition-EHDSLaboratoryObservation-definitions.html#EHDSLaboratoryObservation.header.attestation.dateTime" title="Date and time of the approval of the resource by the attester." data-no-external="true">dateTime</a><a name="s-EHDSLaboratoryObservation.header.attestation.dateTime"> </a></td>
-<td style="" class="hierarchy xhtCellBorder0"></td>
-<td style="" class="hierarchy xhtCellBorder0">1..1</td>
-<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">dateTime</a></td>
-<td style="" class="hierarchy xhtCellBorder0">Date and time of the approval of the resource by the attester.</td></tr>
-<tr fhir="generated-heirarchy" id="s-aah" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.</span><a no-external="true" href="StructureDefinition-EHDSLaboratoryObservation-definitions.html#EHDSLaboratoryObservation.header.status" title="Status of the resource." data-no-external="true">status</a><a name="s-EHDSLaboratoryObservation.header.status"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">Date of finalisation/issuance of the resource.</td></tr>
+<tr fhir="generated-heirarchy" id="s-aae" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.</span><a no-external="true" href="StructureDefinition-EHDSLaboratoryObservation-definitions.html#EHDSLaboratoryObservation.header.status" title="Status of the resource." data-no-external="true">status</a><a name="s-EHDSLaboratoryObservation.header.status"> </a></td>
 <td style="" class="hierarchy xhtCellBorder0"></td>
 <td style="" class="hierarchy xhtCellBorder0">1..1</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept">CodeableConcept</a></td>
 <td style="" class="hierarchy xhtCellBorder0">Status of the resource.<br class="binding"/><span class="xhtPieceBold binding">Binding Description: </span><span class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span class="binding">)</span><span class="binding"> </span><span title="This binding doesn't define a testable ValueSet" class="xhtBindingNotTestable xhtPieceBold binding">⚠</span><span class="binding">: </span><span class="binding">HL7 Observation Status</span></td></tr>
-<tr fhir="generated-heirarchy" id="s-aai" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.</span><a no-external="true" href="StructureDefinition-EHDSLaboratoryObservation-definitions.html#EHDSLaboratoryObservation.header.language" title="Language in which the resource is written. Language is expressed by the IETF language tag." data-no-external="true">language</a><a name="s-EHDSLaboratoryObservation.header.language"> </a></td>
+<tr fhir="generated-heirarchy" id="s-aaf" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.</span><a no-external="true" href="StructureDefinition-EHDSLaboratoryObservation-definitions.html#EHDSLaboratoryObservation.header.language" title="Language in which the resource is written. Language is expressed by the IETF language tag." data-no-external="true">language</a><a name="s-EHDSLaboratoryObservation.header.language"> </a></td>
 <td style="" class="hierarchy xhtCellBorder0"></td>
 <td style="" class="hierarchy xhtCellBorder0">0..*</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept">CodeableConcept</a></td>
 <td style="" class="hierarchy xhtCellBorder0">Language in which the resource is written. Language is expressed by the IETF language tag.<br class="binding"/><span class="xhtPieceBold binding">Binding Description: </span><span class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span class="binding">)</span><span class="binding"> </span><span title="This binding doesn't define a testable ValueSet" class="xhtBindingNotTestable xhtPieceBold binding">⚠</span><span class="binding">: </span><span class="binding">BCP 47</span><br/></td></tr>
-<tr fhir="generated-heirarchy" id="s-aaj" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.</span><a no-external="true" href="StructureDefinition-EHDSLaboratoryObservation-definitions.html#EHDSLaboratoryObservation.header.lastUpdate" title="Date and time of the last system-level update to this resource (system update instant). This is technical metadata and does not represent a clinical event time." data-no-external="true">lastUpdate</a><a name="s-EHDSLaboratoryObservation.header.lastUpdate"> </a></td>
-<td style="" class="hierarchy xhtCellBorder0"></td>
-<td style="" class="hierarchy xhtCellBorder0">0..1</td>
-<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">dateTime</a></td>
-<td style="" class="hierarchy xhtCellBorder0">Date and time of the last system-level update to this resource (system update instant). This is technical metadata and does not represent a clinical event time.</td></tr>
-<tr fhir="generated-heirarchy" id="s-aak" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck101.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin_end-open.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_choice.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Choice of Types" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.</span><a no-external="true" href="StructureDefinition-EHDSLaboratoryObservation-definitions.html#EHDSLaboratoryObservation.header.directSubject[x]" title="The direct subject of the observation if different from the patient (subject of care), e.g. an observation of an implanted device. Additional types of subjects may be allowed in implementations." data-no-external="true">directSubject[x]</a><a name="s-EHDSLaboratoryObservation.header.directSubject_x_"> </a></td>
+<tr fhir="generated-heirarchy" id="s-aag" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck101.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin_end-open.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_choice.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Choice of Types" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.</span><a no-external="true" href="StructureDefinition-EHDSLaboratoryObservation-definitions.html#EHDSLaboratoryObservation.header.directSubject[x]" title="The direct subject of the observation if different from the patient (subject of care), e.g. an observation of an implanted device. Additional types of subjects may be allowed in implementations." data-no-external="true">directSubject[x]</a><a name="s-EHDSLaboratoryObservation.header.directSubject_x_"> </a></td>
 <td style="" class="hierarchy xhtCellBorder0"></td>
 <td style="" class="hierarchy xhtCellBorder0">0..1</td>
 <td style="" class="hierarchy xhtCellBorder0"></td>
 <td style="" class="hierarchy xhtCellBorder0">The direct subject of the observation if different from the patient (subject of care), e.g. an implanted device, a location or another person.</td></tr>
-<tr fhir="generated-heirarchy" id="s-aaka" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1010.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.directSubject[x].</span><span title="EHDSPatient means a structured set of data elements describing a subject of care.">directSubjectEHDSPatient</span></td>
+<tr fhir="generated-heirarchy" id="s-aaga" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1010.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.directSubject[x].</span><span title="EHDSPatient means a structured set of data elements describing a subject of care.">directSubjectEHDSPatient</span></td>
 <td style="" class="hierarchy xhtCellBorder0"></td>
 <td style="" class="hierarchy xhtCellBorder0"></td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-EHDSPatient.html">EHDSPatient</a></td>
 <td style="" class="hierarchy xhtCellBorder0"></td></tr>
-<tr fhir="generated-heirarchy" id="s-aakb" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1010.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.directSubject[x].</span><span title="EHDSLocation means a structured set of data elements describing a place where health services are provided or resources and participants are accommodated.">directSubjectEHDSLocation</span></td>
+<tr fhir="generated-heirarchy" id="s-aagb" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1010.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.directSubject[x].</span><span title="EHDSLocation means a structured set of data elements describing a place where health services are provided or resources and participants are accommodated.">directSubjectEHDSLocation</span></td>
 <td style="" class="hierarchy xhtCellBorder0"></td>
 <td style="" class="hierarchy xhtCellBorder0"></td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-EHDSLocation.html">EHDSLocation</a></td>
 <td style="" class="hierarchy xhtCellBorder0"></td></tr>
-<tr fhir="generated-heirarchy" id="s-aakc" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1010.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.directSubject[x].</span><span title="EHDSDevice means a structured set of data elements describing a medical device or implant.">directSubjectEHDSDevice</span></td>
+<tr fhir="generated-heirarchy" id="s-aagc" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1010.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.directSubject[x].</span><span title="EHDSDevice means a structured set of data elements describing a medical device or implant.">directSubjectEHDSDevice</span></td>
 <td style="" class="hierarchy xhtCellBorder0"></td>
 <td style="" class="hierarchy xhtCellBorder0"></td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-EHDSDevice.html">EHDSDevice</a></td>
 <td style="" class="hierarchy xhtCellBorder0"></td></tr>
-<tr fhir="generated-heirarchy" id="s-aakd" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1010.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.directSubject[x].</span><span title="EHDSProcedure means a structured set of data elements describing a procedure performed on or for a patient, including surgical, therapeutic, and diagnostic procedures and specimen collection, but excluding procedures in the planning stage.">directSubjectEHDSProcedure</span></td>
+<tr fhir="generated-heirarchy" id="s-aagd" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1010.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.directSubject[x].</span><span title="EHDSProcedure means a structured set of data elements describing a procedure performed on or for a patient, including surgical, therapeutic, and diagnostic procedures and specimen collection, but excluding procedures in the planning stage.">directSubjectEHDSProcedure</span></td>
 <td style="" class="hierarchy xhtCellBorder0"></td>
 <td style="" class="hierarchy xhtCellBorder0"></td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-EHDSProcedure.html">EHDSProcedure</a></td>
 <td style="" class="hierarchy xhtCellBorder0"></td></tr>
-<tr fhir="generated-heirarchy" id="s-aake" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1000.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.directSubject[x].</span><span title="string Type: A sequence of Unicode characters">directSubjectString</span></td>
+<tr fhir="generated-heirarchy" id="s-aage" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1000.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.directSubject[x].</span><span title="string Type: A sequence of Unicode characters">directSubjectString</span></td>
 <td style="" class="hierarchy xhtCellBorder0"></td>
 <td style="" class="hierarchy xhtCellBorder0"></td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td>
@@ -1094,7 +1061,7 @@ filterDesc(document.getElementById('EHDSLaboratoryObservationD'), 'obligation', 
 <td style="" class="hierarchy xhtCellBorder0">0..1</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#boolean">boolean</a></td>
 <td style="" class="hierarchy xhtCellBorder0">Examination performed near or at the site of a patient.</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 32b37c18-13d3-470f-8b16-d71d4422a847
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 017d2e5c-2241-47ec-9363-a053a5dc6d9c
 document.getElementById('cbEHDSLaboratoryObservationS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('EHDSLaboratoryObservationS'), 'binding', document.getElementById('cbEHDSLaboratoryObservationS-binding').checked, document.getElementById('ppEHDSLaboratoryObservationS'));
 document.getElementById('cbEHDSLaboratoryObservationS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1127,6 +1094,9 @@ filterDesc(document.getElementById('EHDSLaboratoryObservationS'), 'obligation', 
     <td>
       <b>Source</b>
     </td>
+    <td>
+      <b>Documentation</b>
+    </td>
   </tr>
   <tr>
     <td>EHDSLaboratoryObservation.​header.status</td>
@@ -1137,6 +1107,13 @@ filterDesc(document.getElementById('EHDSLaboratoryObservationS'), 'obligation', 
     <td title="HL7 Observation Status"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>HL7 Observation Status</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSLaboratoryObservation.​header.language</td>
@@ -1147,6 +1124,13 @@ filterDesc(document.getElementById('EHDSLaboratoryObservationS'), 'obligation', 
     <td title="BCP 47"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>BCP 47</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSLaboratoryObservation.​type</td>
@@ -1157,6 +1141,13 @@ filterDesc(document.getElementById('EHDSLaboratoryObservationS'), 'obligation', 
     <td title="SNOMED GPS, LOINC (preferred), NPU"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>SNOMED GPS, LOINC (preferred), NPU</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSLaboratoryObservation.​method</td>
@@ -1167,6 +1158,13 @@ filterDesc(document.getElementById('EHDSLaboratoryObservationS'), 'obligation', 
     <td title="SNOMED GPS"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>SNOMED GPS</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSLaboratoryObservation.​result.value[x]</td>
@@ -1177,6 +1175,13 @@ filterDesc(document.getElementById('EHDSLaboratoryObservationS'), 'obligation', 
     <td title="UCUM for units, SNOMED GPS"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>UCUM for units, SNOMED GPS</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSLaboratoryObservation.​result.uncertainty.type</td>
@@ -1187,6 +1192,13 @@ filterDesc(document.getElementById('EHDSLaboratoryObservationS'), 'obligation', 
     <td title="HL7 Probability Distribution Type"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>HL7 Probability Distribution Type</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSLaboratoryObservation.​result.dataAbsentReason</td>
@@ -1197,6 +1209,13 @@ filterDesc(document.getElementById('EHDSLaboratoryObservationS'), 'obligation', 
     <td title="HL7 Data Absent Reason"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>HL7 Data Absent Reason</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSLaboratoryObservation.​referenceRange.low</td>
@@ -1207,6 +1226,13 @@ filterDesc(document.getElementById('EHDSLaboratoryObservationS'), 'obligation', 
     <td title="UCUM for units"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>UCUM for units</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSLaboratoryObservation.​referenceRange.high</td>
@@ -1217,6 +1243,13 @@ filterDesc(document.getElementById('EHDSLaboratoryObservationS'), 'obligation', 
     <td title="UCUM for units"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>UCUM for units</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSLaboratoryObservation.​referenceRange.normalValue</td>
@@ -1227,6 +1260,13 @@ filterDesc(document.getElementById('EHDSLaboratoryObservationS'), 'obligation', 
     <td title="SNOMED GPS"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>SNOMED GPS</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSLaboratoryObservation.​referenceRange.type</td>
@@ -1237,6 +1277,13 @@ filterDesc(document.getElementById('EHDSLaboratoryObservationS'), 'obligation', 
     <td title="HL7 Observation Reference Range Meaning Codes"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>HL7 Observation Reference Range Meaning Codes</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSLaboratoryObservation.​referenceRange.appliesTo</td>
@@ -1247,6 +1294,13 @@ filterDesc(document.getElementById('EHDSLaboratoryObservationS'), 'obligation', 
     <td title="SNOMED GPS"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>SNOMED GPS</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSLaboratoryObservation.​referenceRange.age</td>
@@ -1257,6 +1311,13 @@ filterDesc(document.getElementById('EHDSLaboratoryObservationS'), 'obligation', 
     <td title="UCUM for units"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>UCUM for units</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSLaboratoryObservation.​interpretation</td>
@@ -1267,6 +1328,13 @@ filterDesc(document.getElementById('EHDSLaboratoryObservationS'), 'obligation', 
     <td title="SNOMED GPS"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>SNOMED GPS</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSLaboratoryObservation.​component.type</td>
@@ -1277,6 +1345,13 @@ filterDesc(document.getElementById('EHDSLaboratoryObservationS'), 'obligation', 
     <td title="SNOMED GPS, LOINC (preferred), NPU"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>SNOMED GPS, LOINC (preferred), NPU</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSLaboratoryObservation.​component.result.value[x]</td>
@@ -1287,6 +1362,13 @@ filterDesc(document.getElementById('EHDSLaboratoryObservationS'), 'obligation', 
     <td title="UCUM for units, SNOMED GPS"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>UCUM for units, SNOMED GPS</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSLaboratoryObservation.​component.result.uncertainty.​type</td>
@@ -1297,6 +1379,13 @@ filterDesc(document.getElementById('EHDSLaboratoryObservationS'), 'obligation', 
     <td title="HL7 Probability Distribution Type"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>HL7 Probability Distribution Type</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSLaboratoryObservation.​component.result.dataAbsentReason</td>
@@ -1307,6 +1396,13 @@ filterDesc(document.getElementById('EHDSLaboratoryObservationS'), 'obligation', 
     <td title="HL7 Data Absent Reason"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>HL7 Data Absent Reason</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSLaboratoryObservation.​component.referenceRange.​low</td>
@@ -1317,6 +1413,13 @@ filterDesc(document.getElementById('EHDSLaboratoryObservationS'), 'obligation', 
     <td title="UCUM for units"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>UCUM for units</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSLaboratoryObservation.​component.referenceRange.​high</td>
@@ -1327,6 +1430,13 @@ filterDesc(document.getElementById('EHDSLaboratoryObservationS'), 'obligation', 
     <td title="UCUM for units"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>UCUM for units</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSLaboratoryObservation.​component.referenceRange.​normalValue</td>
@@ -1337,6 +1447,13 @@ filterDesc(document.getElementById('EHDSLaboratoryObservationS'), 'obligation', 
     <td title="SNOMED GPS"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>SNOMED GPS</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSLaboratoryObservation.​component.referenceRange.​type</td>
@@ -1347,6 +1464,13 @@ filterDesc(document.getElementById('EHDSLaboratoryObservationS'), 'obligation', 
     <td title="HL7 Observation Reference Range Meaning Codes"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>HL7 Observation Reference Range Meaning Codes</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSLaboratoryObservation.​component.referenceRange.​appliesTo</td>
@@ -1357,6 +1481,13 @@ filterDesc(document.getElementById('EHDSLaboratoryObservationS'), 'obligation', 
     <td title="SNOMED GPS"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>SNOMED GPS</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSLaboratoryObservation.​component.referenceRange.​age</td>
@@ -1367,6 +1498,13 @@ filterDesc(document.getElementById('EHDSLaboratoryObservationS'), 'obligation', 
     <td title="UCUM for units"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>UCUM for units</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSLaboratoryObservation.​component.interpretation</td>
@@ -1377,6 +1515,13 @@ filterDesc(document.getElementById('EHDSLaboratoryObservationS'), 'obligation', 
     <td title="SNOMED GPS"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>SNOMED GPS</p>
+
+
+      </div>
+    </td>
   </tr>
 </table>
 
@@ -1411,25 +1556,14 @@ filterDesc(document.getElementById('EHDSLaboratoryObservationS'), 'obligation', 
 // from Element: <a href="http://hl7.org/fhir/R5/extensibility.html">extension</a>
     "<a href="StructureDefinition-EHDSLaboratoryObservation.html#EHDSLaboratoryObservation.header" title="Basic metadata for this information" class="dict"><span style="text-decoration: underline">header</span></a>" : { <span style="color: Gray">//</span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Basic metadata for this information.</span>
       "<a href="StructureDefinition-EHDSLaboratoryObservation.html#EHDSLaboratoryObservation.header.subject" title="Patient/subject information" class="dict"><span style="text-decoration: underline">subject</span></a>" : {<span style="color: darkgreen"><a href="StructureDefinition-EHDSPatient.html#http://ehds.eu/fhir/models/StructureDefinition/EHDSPatient">http://ehds.eu/fhir/models/StructureDefinition/EHDSPatient</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Patient/subject information.</span>
-      "<a href="StructureDefinition-EHDSLaboratoryObservation.html#EHDSLaboratoryObservation.header.identifier" title="Unique identifier of the resource" class="dict"><span style="text-decoration: underline">identifier</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#Identifier">Identifier</a></span>}], <span style="color: Gray">//</span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries).</span>
-<span style="color: Gray">// value[x]: <span style="color: navy; opacity: 0.8">Time or period the clinical content applies to (e.g. specimen collection time, onset of a condition, period a medication was taken).</span>. One of these 2:</span>
-      "<a href="StructureDefinition-EHDSLaboratoryObservation.html#EHDSLaboratoryObservation.header.clinicalEventTimeDateTime" title="Time or period the clinical content applies to (e.g. specimen collection time, onset of a condition, period a medication was taken)" class="dict"><span style="text-decoration: underline">clinicalEventTimeDateTime</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">dateTime</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Time or period the clinical content applies to (e.g. specimen collection time, onset of a condition, period a medication was taken).</span>
-      "<a href="StructureDefinition-EHDSLaboratoryObservation.html#EHDSLaboratoryObservation.header.clinicalEventTimePeriod" title="Time or period the clinical content applies to (e.g. specimen collection time, onset of a condition, period a medication was taken)" class="dict"><span style="text-decoration: underline">clinicalEventTimePeriod</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#Period">Period</a></span>}, <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Time or period the clinical content applies to (e.g. specimen collection time, onset of a condition, period a medication was taken).</span>
-      "<a href="StructureDefinition-EHDSLaboratoryObservation.html#EHDSLaboratoryObservation.header.version" title="Version of the resource" class="dict"><span style="text-decoration: underline">version</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Version of the resource.</span>
+      "<a href="StructureDefinition-EHDSLaboratoryObservation.html#EHDSLaboratoryObservation.header.identifier" title="Unique identifier of the resource" class="dict"><span style="text-decoration: underline">identifier</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#Identifier">Identifier</a></span>}], <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries).</span>
 <span style="color: Gray">// value[x]: <span style="color: navy; opacity: 0.8">Author of the resource.</span>. One of these 3:</span>
-      "<a href="StructureDefinition-EHDSLaboratoryObservation.html#EHDSLaboratoryObservation.header.authorHttp://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional" title="Information describing who authored the resource" class="dict"><span style="text-decoration: underline">authorHttp://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional</span></a>" : [{<span style="color: darkgreen"><a href="StructureDefinition-EHDSHealthProfessional.html#http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional">http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional</a></span>}], <span style="color: Gray">//</span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Author of the resource.</span>
-      "<a href="StructureDefinition-EHDSLaboratoryObservation.html#EHDSLaboratoryObservation.header.authorHttp://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation" title="Information describing who authored the resource" class="dict"><span style="text-decoration: underline">authorHttp://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation</span></a>" : [{<span style="color: darkgreen"><a href="StructureDefinition-EHDSOrganisation.html#http://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation">http://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation</a></span>}], <span style="color: Gray">//</span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Author of the resource.</span>
-      "<a href="StructureDefinition-EHDSLaboratoryObservation.html#EHDSLaboratoryObservation.header.authorHttp://ehds.eu/fhir/models/StructureDefinition/EHDSDevice" title="Information describing who authored the resource" class="dict"><span style="text-decoration: underline">authorHttp://ehds.eu/fhir/models/StructureDefinition/EHDSDevice</span></a>" : [{<span style="color: darkgreen"><a href="StructureDefinition-EHDSDevice.html#http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice">http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice</a></span>}], <span style="color: Gray">//</span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Author of the resource.</span>
-      "<a href="StructureDefinition-EHDSLaboratoryObservation.html#EHDSLaboratoryObservation.header.date" title="Date and optionally time of authoring/issuing" class="dict"><span style="text-decoration: underline">date</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">dateTime</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Date and optionally time of authoring/issuing.</span>
-      "<a href="StructureDefinition-EHDSLaboratoryObservation.html#EHDSLaboratoryObservation.header.attestation" title="Resource attestation details" class="dict"><span style="text-decoration: underline">attestation</span></a>" : [{ <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Resource attestation details.</span>
-<span style="color: Gray">// value[x]: <span style="color: navy; opacity: 0.8">Attester who validated the resource.</span>. One of these 2:</span>
-        "<a href="StructureDefinition-EHDSLaboratoryObservation.html#EHDSLaboratoryObservation.header.attestation.attesterHttp://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional" title="Attester who validated the resource" class="dict"><span style="text-decoration: underline">attesterHttp://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional</span></a>" : {<span style="color: darkgreen"><a href="StructureDefinition-EHDSHealthProfessional.html#http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional">http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Attester who validated the resource.</span>
-        "<a href="StructureDefinition-EHDSLaboratoryObservation.html#EHDSLaboratoryObservation.header.attestation.attesterHttp://ehds.eu/fhir/models/StructureDefinition/EHDSDevice" title="Attester who validated the resource" class="dict"><span style="text-decoration: underline">attesterHttp://ehds.eu/fhir/models/StructureDefinition/EHDSDevice</span></a>" : {<span style="color: darkgreen"><a href="StructureDefinition-EHDSDevice.html#http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice">http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice</a></span>} <span style="color: Gray">//</span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Attester who validated the resource.</span>
-        "<a href="StructureDefinition-EHDSLaboratoryObservation.html#EHDSLaboratoryObservation.header.attestation.dateTime" title="Date and time of the approval of the resource by the attester" class="dict"><span style="text-decoration: underline">dateTime</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">dateTime</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Date and time of the approval of the resource by the attester.</span>
-      }],
-      "<a href="StructureDefinition-EHDSLaboratoryObservation.html#EHDSLaboratoryObservation.header.status" title="Status of the resource" class="dict"><span style="text-decoration: underline">status</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept">CodeableConcept</a></span>} <span style="color: Gray">//</span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Status of the resource.</span>
-      "<a href="StructureDefinition-EHDSLaboratoryObservation.html#EHDSLaboratoryObservation.header.language" title="Language in which the resource is written. Language is expressed by the IETF language tag" class="dict"><span style="text-decoration: underline">language</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept">CodeableConcept</a></span>}], <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Language in which the resource is written. Language is expressed by the IETF language tag.</span>
-      "<a href="StructureDefinition-EHDSLaboratoryObservation.html#EHDSLaboratoryObservation.header.lastUpdate" title="Date and time of the last system-level update to this resource (system update instant). This is technical metadata and does not represent a clinical event time" class="dict"><span style="text-decoration: underline">lastUpdate</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">dateTime</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Date and time of the last system-level update to this resource (system update instant). This is technical metadata and does not represent a clinical event time.</span>
+      "<a href="StructureDefinition-EHDSLaboratoryObservation.html#EHDSLaboratoryObservation.header.authorHttp://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional" title="Information describing who authored the resource" class="dict"><span style="text-decoration: underline">authorHttp://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional</span></a>" : [{<span style="color: darkgreen"><a href="StructureDefinition-EHDSHealthProfessional.html#http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional">http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional</a></span>}], <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Author of the resource.</span>
+      "<a href="StructureDefinition-EHDSLaboratoryObservation.html#EHDSLaboratoryObservation.header.authorHttp://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation" title="Information describing who authored the resource" class="dict"><span style="text-decoration: underline">authorHttp://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation</span></a>" : [{<span style="color: darkgreen"><a href="StructureDefinition-EHDSOrganisation.html#http://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation">http://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation</a></span>}], <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Author of the resource.</span>
+      "<a href="StructureDefinition-EHDSLaboratoryObservation.html#EHDSLaboratoryObservation.header.authorHttp://ehds.eu/fhir/models/StructureDefinition/EHDSDevice" title="Information describing who authored the resource" class="dict"><span style="text-decoration: underline">authorHttp://ehds.eu/fhir/models/StructureDefinition/EHDSDevice</span></a>" : [{<span style="color: darkgreen"><a href="StructureDefinition-EHDSDevice.html#http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice">http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice</a></span>}], <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Author of the resource.</span>
+      "<a href="StructureDefinition-EHDSLaboratoryObservation.html#EHDSLaboratoryObservation.header.date" title="Date of finalisation/issuance of the resource" class="dict"><span style="text-decoration: underline">date</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">dateTime</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Date of finalisation/issuance of the resource.</span>
+      "<a href="StructureDefinition-EHDSLaboratoryObservation.html#EHDSLaboratoryObservation.header.status" title="Status of the resource" class="dict"><span style="text-decoration: underline">status</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept">CodeableConcept</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Status of the resource.</span>
+      "<a href="StructureDefinition-EHDSLaboratoryObservation.html#EHDSLaboratoryObservation.header.language" title="Language in which the resource is written. Language is expressed by the IETF language tag" class="dict"><span style="text-decoration: underline">language</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept">CodeableConcept</a></span>}] <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Language in which the resource is written. Language is expressed by the IETF language tag.</span>
 <span style="color: Gray">// value[x]: <span style="color: navy; opacity: 0.8">The direct subject of the observation if different from the patient (subject of care), e.g. an implanted device, a location or another person.</span>. One of these 5:</span>
       "<a href="StructureDefinition-EHDSLaboratoryObservation.html#EHDSLaboratoryObservation.header.directSubjectHttp://ehds.eu/fhir/models/StructureDefinition/EHDSPatient" title="The direct subject of the observation if different from the patient (subject of care), e.g. an observation of an implanted device. Additional types of subjects may be allowed in implementations" class="dict"><span style="text-decoration: underline">directSubjectHttp://ehds.eu/fhir/models/StructureDefinition/EHDSPatient</span></a>" : {<span style="color: darkgreen"><a href="StructureDefinition-EHDSPatient.html#http://ehds.eu/fhir/models/StructureDefinition/EHDSPatient">http://ehds.eu/fhir/models/StructureDefinition/EHDSPatient</a></span>}, <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">The direct subject of the observation if different from the patient (subject of care), e.g. an implanted device, a location or another person.</span>
       "<a href="StructureDefinition-EHDSLaboratoryObservation.html#EHDSLaboratoryObservation.header.directSubjectHttp://ehds.eu/fhir/models/StructureDefinition/EHDSLocation" title="The direct subject of the observation if different from the patient (subject of care), e.g. an observation of an implanted device. Additional types of subjects may be allowed in implementations" class="dict"><span style="text-decoration: underline">directSubjectHttp://ehds.eu/fhir/models/StructureDefinition/EHDSLocation</span></a>" : {<span style="color: darkgreen"><a href="StructureDefinition-EHDSLocation.html#http://ehds.eu/fhir/models/StructureDefinition/EHDSLocation">http://ehds.eu/fhir/models/StructureDefinition/EHDSLocation</a></span>}, <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">The direct subject of the observation if different from the patient (subject of care), e.g. an implanted device, a location or another person.</span>
@@ -1687,7 +1821,7 @@ Summary
 <td style="" class="hierarchy xhtCellBorder0">0..1</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#boolean">boolean</a></td>
 <td style="" class="hierarchy xhtCellBorder0">Examination performed near or at the site of a patient.</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 32b37c18-13d3-470f-8b16-d71d4422a847
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 017d2e5c-2241-47ec-9363-a053a5dc6d9c
 document.getElementById('cbEHDSLaboratoryObservationDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('EHDSLaboratoryObservationDA'), 'binding', document.getElementById('cbEHDSLaboratoryObservationDA-binding').checked, document.getElementById('ppEHDSLaboratoryObservationDA'));
 document.getElementById('cbEHDSLaboratoryObservationDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1718,6 +1852,9 @@ filterDesc(document.getElementById('EHDSLaboratoryObservationDA'), 'obligation',
     <td>
       <b>Source</b>
     </td>
+    <td>
+      <b>Documentation</b>
+    </td>
   </tr>
   <tr>
     <td>EHDSLaboratoryObservation.​result.uncertainty.type</td>
@@ -1728,6 +1865,13 @@ filterDesc(document.getElementById('EHDSLaboratoryObservationDA'), 'obligation',
     <td title="HL7 Probability Distribution Type"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>HL7 Probability Distribution Type</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSLaboratoryObservation.​component.result.uncertainty.​type</td>
@@ -1738,6 +1882,13 @@ filterDesc(document.getElementById('EHDSLaboratoryObservationDA'), 'obligation',
     <td title="HL7 Probability Distribution Type"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>HL7 Probability Distribution Type</p>
+
+
+      </div>
+    </td>
   </tr>
 </table>
 
@@ -1770,120 +1921,70 @@ filterDesc(document.getElementById('EHDSLaboratoryObservationDA'), 'obligation',
 <td style="" class="hierarchy xhtCellBorder0">Patient/subject information.</td></tr>
 <tr fhir="generated-heirarchy" id="sa-aab" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.</span><a no-external="true" href="StructureDefinition-EHDSLaboratoryObservation-definitions.html#EHDSLaboratoryObservation.header.identifier" title="Unique identifier of the resource." data-no-external="true">identifier</a><a name="sa-EHDSLaboratoryObservation.header.identifier"> </a></td>
 <td style="" class="hierarchy xhtCellBorder0"></td>
-<td style="" class="hierarchy xhtCellBorder0">1..*</td>
+<td style="" class="hierarchy xhtCellBorder0">0..*</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#Identifier">Identifier</a></td>
 <td style="" class="hierarchy xhtCellBorder0">Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries).<br/></td></tr>
-<tr fhir="generated-heirarchy" id="sa-aac" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck111.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin-open.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_choice.gif" alt="" style="background-color: white; background-color: inherit" title="Choice of Types" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.</span><a no-external="true" href="StructureDefinition-EHDSLaboratoryObservation-definitions.html#EHDSLaboratoryObservation.header.clinicalEventTime[x]" title="Time or period the clinical content applies to (e.g. specimen collection time, onset of a condition, period a medication was taken)." data-no-external="true">clinicalEventTime[x]</a><a name="sa-EHDSLaboratoryObservation.header.clinicalEventTime_x_"> </a></td>
+<tr fhir="generated-heirarchy" id="sa-aac" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck111.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin-open.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_choice.gif" alt="" style="background-color: white; background-color: inherit" title="Choice of Types" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.</span><a no-external="true" href="StructureDefinition-EHDSLaboratoryObservation-definitions.html#EHDSLaboratoryObservation.header.author[x]" title="Information describing who authored the resource." data-no-external="true">author[x]</a><a name="sa-EHDSLaboratoryObservation.header.author_x_"> </a></td>
 <td style="" class="hierarchy xhtCellBorder0"></td>
-<td style="" class="hierarchy xhtCellBorder0">0..1</td>
-<td style="" class="hierarchy xhtCellBorder0"></td>
-<td style="" class="hierarchy xhtCellBorder0">Time or period the clinical content applies to (e.g. specimen collection time, onset of a condition, period a medication was taken).</td></tr>
-<tr fhir="generated-heirarchy" id="sa-aaca" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.clinicalEventTime[x].</span><span title="dateTime Type: A date, date-time or partial date (e.g. just year or year + month).  If hours and minutes are specified, a UTC offset SHALL be populated. The format is a union of the schema types gYear, gYearMonth, date and dateTime. Seconds must be provided due to schema type constraints but may be zero-filled and may be ignored.                 Dates SHALL be valid dates.">clinicalEventTimeDateTime</span></td>
-<td style="" class="hierarchy xhtCellBorder0"></td>
-<td style="" class="hierarchy xhtCellBorder0"></td>
-<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">dateTime</a></td>
-<td style="" class="hierarchy xhtCellBorder0"></td></tr>
-<tr fhir="generated-heirarchy" id="sa-aacb" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.clinicalEventTime[x].</span><span title="Period Type: A time period defined by a start and end date and optionally time.">clinicalEventTimePeriod</span></td>
-<td style="" class="hierarchy xhtCellBorder0"></td>
-<td style="" class="hierarchy xhtCellBorder0"></td>
-<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#Period">Period</a></td>
-<td style="" class="hierarchy xhtCellBorder0"></td></tr>
-<tr fhir="generated-heirarchy" id="sa-aad" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.</span><a no-external="true" href="StructureDefinition-EHDSLaboratoryObservation-definitions.html#EHDSLaboratoryObservation.header.version" title="Version of the resource." data-no-external="true">version</a><a name="sa-EHDSLaboratoryObservation.header.version"> </a></td>
-<td style="" class="hierarchy xhtCellBorder0"></td>
-<td style="" class="hierarchy xhtCellBorder0">0..1</td>
-<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td>
-<td style="" class="hierarchy xhtCellBorder0">Version of the resource.</td></tr>
-<tr fhir="generated-heirarchy" id="sa-aae" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck111.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin-open.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_choice.gif" alt="" style="background-color: white; background-color: inherit" title="Choice of Types" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.</span><a no-external="true" href="StructureDefinition-EHDSLaboratoryObservation-definitions.html#EHDSLaboratoryObservation.header.author[x]" title="Information describing who authored the resource." data-no-external="true">author[x]</a><a name="sa-EHDSLaboratoryObservation.header.author_x_"> </a></td>
-<td style="" class="hierarchy xhtCellBorder0"></td>
-<td style="" class="hierarchy xhtCellBorder0">1..*</td>
+<td style="" class="hierarchy xhtCellBorder0">0..*</td>
 <td style="" class="hierarchy xhtCellBorder0"></td>
 <td style="" class="hierarchy xhtCellBorder0">Author of the resource.<br/></td></tr>
-<tr fhir="generated-heirarchy" id="sa-aaea" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.author[x].</span><span title="EHDSHealthProfessional means a structured set of data elements describing a health professional.">authorEHDSHealthProfessional</span></td>
+<tr fhir="generated-heirarchy" id="sa-aaca" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.author[x].</span><span title="EHDSHealthProfessional means a structured set of data elements describing a health professional.">authorEHDSHealthProfessional</span></td>
 <td style="" class="hierarchy xhtCellBorder0"></td>
 <td style="" class="hierarchy xhtCellBorder0"></td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-EHDSHealthProfessional.html">EHDSHealthProfessional</a></td>
 <td style="" class="hierarchy xhtCellBorder0"></td></tr>
-<tr fhir="generated-heirarchy" id="sa-aaeb" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.author[x].</span><span title="EHDSOrganisation means a structured set of data elements describing an organisation.">authorEHDSOrganisation</span></td>
+<tr fhir="generated-heirarchy" id="sa-aacb" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.author[x].</span><span title="EHDSOrganisation means a structured set of data elements describing an organisation.">authorEHDSOrganisation</span></td>
 <td style="" class="hierarchy xhtCellBorder0"></td>
 <td style="" class="hierarchy xhtCellBorder0"></td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-EHDSOrganisation.html">EHDSOrganisation</a></td>
 <td style="" class="hierarchy xhtCellBorder0"></td></tr>
-<tr fhir="generated-heirarchy" id="sa-aaec" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.author[x].</span><span title="EHDSDevice means a structured set of data elements describing a medical device or implant.">authorEHDSDevice</span></td>
+<tr fhir="generated-heirarchy" id="sa-aacc" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.author[x].</span><span title="EHDSDevice means a structured set of data elements describing a medical device or implant.">authorEHDSDevice</span></td>
 <td style="" class="hierarchy xhtCellBorder0"></td>
 <td style="" class="hierarchy xhtCellBorder0"></td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-EHDSDevice.html">EHDSDevice</a></td>
 <td style="" class="hierarchy xhtCellBorder0"></td></tr>
-<tr fhir="generated-heirarchy" id="sa-aaf" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.</span><a no-external="true" href="StructureDefinition-EHDSLaboratoryObservation-definitions.html#EHDSLaboratoryObservation.header.date" title="Date and optionally time of authoring/issuing." data-no-external="true">date</a><a name="sa-EHDSLaboratoryObservation.header.date"> </a></td>
+<tr fhir="generated-heirarchy" id="sa-aad" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.</span><a no-external="true" href="StructureDefinition-EHDSLaboratoryObservation-definitions.html#EHDSLaboratoryObservation.header.date" title="Date of finalisation/issuance of the resource." data-no-external="true">date</a><a name="sa-EHDSLaboratoryObservation.header.date"> </a></td>
 <td style="" class="hierarchy xhtCellBorder0"></td>
 <td style="" class="hierarchy xhtCellBorder0">0..1</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">dateTime</a></td>
-<td style="" class="hierarchy xhtCellBorder0">Date and optionally time of authoring/issuing.</td></tr>
-<tr fhir="generated-heirarchy" id="sa-aag" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck111.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin-open.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.</span><a no-external="true" href="StructureDefinition-EHDSLaboratoryObservation-definitions.html#EHDSLaboratoryObservation.header.attestation" title="Resource attestation details." data-no-external="true">attestation</a><a name="sa-EHDSLaboratoryObservation.header.attestation"> </a></td>
-<td style="" class="hierarchy xhtCellBorder0"></td>
-<td style="" class="hierarchy xhtCellBorder0">0..*</td>
-<td style="" class="hierarchy xhtCellBorder0">Base</td>
-<td style="" class="hierarchy xhtCellBorder0">Resource attestation details.<br/></td></tr>
-<tr fhir="generated-heirarchy" id="sa-aaga" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1111.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin-open.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_choice.gif" alt="" style="background-color: white; background-color: inherit" title="Choice of Types" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.attestation.</span><a no-external="true" href="StructureDefinition-EHDSLaboratoryObservation-definitions.html#EHDSLaboratoryObservation.header.attestation.attester[x]" title="Attester who validated the resource." data-no-external="true">attester[x]</a><a name="sa-EHDSLaboratoryObservation.header.attestation.attester_x_"> </a></td>
-<td style="" class="hierarchy xhtCellBorder0"></td>
-<td style="" class="hierarchy xhtCellBorder0">1..1</td>
-<td style="" class="hierarchy xhtCellBorder0"></td>
-<td style="" class="hierarchy xhtCellBorder0">Attester who validated the resource.</td></tr>
-<tr fhir="generated-heirarchy" id="sa-aagaa" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck11110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.attestation.attester[x].</span><span title="EHDSHealthProfessional means a structured set of data elements describing a health professional.">attesterEHDSHealthProfessional</span></td>
-<td style="" class="hierarchy xhtCellBorder0"></td>
-<td style="" class="hierarchy xhtCellBorder0"></td>
-<td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-EHDSHealthProfessional.html">EHDSHealthProfessional</a></td>
-<td style="" class="hierarchy xhtCellBorder0"></td></tr>
-<tr fhir="generated-heirarchy" id="sa-aagab" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck11100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.attestation.attester[x].</span><span title="EHDSDevice means a structured set of data elements describing a medical device or implant.">attesterEHDSDevice</span></td>
-<td style="" class="hierarchy xhtCellBorder0"></td>
-<td style="" class="hierarchy xhtCellBorder0"></td>
-<td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-EHDSDevice.html">EHDSDevice</a></td>
-<td style="" class="hierarchy xhtCellBorder0"></td></tr>
-<tr fhir="generated-heirarchy" id="sa-aagb" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.attestation.</span><a no-external="true" href="StructureDefinition-EHDSLaboratoryObservation-definitions.html#EHDSLaboratoryObservation.header.attestation.dateTime" title="Date and time of the approval of the resource by the attester." data-no-external="true">dateTime</a><a name="sa-EHDSLaboratoryObservation.header.attestation.dateTime"> </a></td>
-<td style="" class="hierarchy xhtCellBorder0"></td>
-<td style="" class="hierarchy xhtCellBorder0">1..1</td>
-<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">dateTime</a></td>
-<td style="" class="hierarchy xhtCellBorder0">Date and time of the approval of the resource by the attester.</td></tr>
-<tr fhir="generated-heirarchy" id="sa-aah" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.</span><a no-external="true" href="StructureDefinition-EHDSLaboratoryObservation-definitions.html#EHDSLaboratoryObservation.header.status" title="Status of the resource." data-no-external="true">status</a><a name="sa-EHDSLaboratoryObservation.header.status"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">Date of finalisation/issuance of the resource.</td></tr>
+<tr fhir="generated-heirarchy" id="sa-aae" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.</span><a no-external="true" href="StructureDefinition-EHDSLaboratoryObservation-definitions.html#EHDSLaboratoryObservation.header.status" title="Status of the resource." data-no-external="true">status</a><a name="sa-EHDSLaboratoryObservation.header.status"> </a></td>
 <td style="" class="hierarchy xhtCellBorder0"></td>
 <td style="" class="hierarchy xhtCellBorder0">1..1</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept">CodeableConcept</a></td>
 <td style="" class="hierarchy xhtCellBorder0">Status of the resource.<br class="binding"/><span class="xhtPieceBold binding">Binding Description: </span><span class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span class="binding">)</span><span class="binding"> </span><span title="This binding doesn't define a testable ValueSet" class="xhtBindingNotTestable xhtPieceBold binding">⚠</span><span class="binding">: </span><span class="binding">HL7 Observation Status</span></td></tr>
-<tr fhir="generated-heirarchy" id="sa-aai" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.</span><a no-external="true" href="StructureDefinition-EHDSLaboratoryObservation-definitions.html#EHDSLaboratoryObservation.header.language" title="Language in which the resource is written. Language is expressed by the IETF language tag." data-no-external="true">language</a><a name="sa-EHDSLaboratoryObservation.header.language"> </a></td>
+<tr fhir="generated-heirarchy" id="sa-aaf" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.</span><a no-external="true" href="StructureDefinition-EHDSLaboratoryObservation-definitions.html#EHDSLaboratoryObservation.header.language" title="Language in which the resource is written. Language is expressed by the IETF language tag." data-no-external="true">language</a><a name="sa-EHDSLaboratoryObservation.header.language"> </a></td>
 <td style="" class="hierarchy xhtCellBorder0"></td>
 <td style="" class="hierarchy xhtCellBorder0">0..*</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept">CodeableConcept</a></td>
 <td style="" class="hierarchy xhtCellBorder0">Language in which the resource is written. Language is expressed by the IETF language tag.<br class="binding"/><span class="xhtPieceBold binding">Binding Description: </span><span class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span class="binding">)</span><span class="binding"> </span><span title="This binding doesn't define a testable ValueSet" class="xhtBindingNotTestable xhtPieceBold binding">⚠</span><span class="binding">: </span><span class="binding">BCP 47</span><br/></td></tr>
-<tr fhir="generated-heirarchy" id="sa-aaj" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.</span><a no-external="true" href="StructureDefinition-EHDSLaboratoryObservation-definitions.html#EHDSLaboratoryObservation.header.lastUpdate" title="Date and time of the last system-level update to this resource (system update instant). This is technical metadata and does not represent a clinical event time." data-no-external="true">lastUpdate</a><a name="sa-EHDSLaboratoryObservation.header.lastUpdate"> </a></td>
-<td style="" class="hierarchy xhtCellBorder0"></td>
-<td style="" class="hierarchy xhtCellBorder0">0..1</td>
-<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">dateTime</a></td>
-<td style="" class="hierarchy xhtCellBorder0">Date and time of the last system-level update to this resource (system update instant). This is technical metadata and does not represent a clinical event time.</td></tr>
-<tr fhir="generated-heirarchy" id="sa-aak" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck101.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin_end-open.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_choice.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Choice of Types" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.</span><a no-external="true" href="StructureDefinition-EHDSLaboratoryObservation-definitions.html#EHDSLaboratoryObservation.header.directSubject[x]" title="The direct subject of the observation if different from the patient (subject of care), e.g. an observation of an implanted device. Additional types of subjects may be allowed in implementations." data-no-external="true">directSubject[x]</a><a name="sa-EHDSLaboratoryObservation.header.directSubject_x_"> </a></td>
+<tr fhir="generated-heirarchy" id="sa-aag" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck101.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin_end-open.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_choice.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Choice of Types" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.</span><a no-external="true" href="StructureDefinition-EHDSLaboratoryObservation-definitions.html#EHDSLaboratoryObservation.header.directSubject[x]" title="The direct subject of the observation if different from the patient (subject of care), e.g. an observation of an implanted device. Additional types of subjects may be allowed in implementations." data-no-external="true">directSubject[x]</a><a name="sa-EHDSLaboratoryObservation.header.directSubject_x_"> </a></td>
 <td style="" class="hierarchy xhtCellBorder0"></td>
 <td style="" class="hierarchy xhtCellBorder0">0..1</td>
 <td style="" class="hierarchy xhtCellBorder0"></td>
 <td style="" class="hierarchy xhtCellBorder0">The direct subject of the observation if different from the patient (subject of care), e.g. an implanted device, a location or another person.</td></tr>
-<tr fhir="generated-heirarchy" id="sa-aaka" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1010.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.directSubject[x].</span><span title="EHDSPatient means a structured set of data elements describing a subject of care.">directSubjectEHDSPatient</span></td>
+<tr fhir="generated-heirarchy" id="sa-aaga" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1010.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.directSubject[x].</span><span title="EHDSPatient means a structured set of data elements describing a subject of care.">directSubjectEHDSPatient</span></td>
 <td style="" class="hierarchy xhtCellBorder0"></td>
 <td style="" class="hierarchy xhtCellBorder0"></td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-EHDSPatient.html">EHDSPatient</a></td>
 <td style="" class="hierarchy xhtCellBorder0"></td></tr>
-<tr fhir="generated-heirarchy" id="sa-aakb" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1010.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.directSubject[x].</span><span title="EHDSLocation means a structured set of data elements describing a place where health services are provided or resources and participants are accommodated.">directSubjectEHDSLocation</span></td>
+<tr fhir="generated-heirarchy" id="sa-aagb" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1010.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.directSubject[x].</span><span title="EHDSLocation means a structured set of data elements describing a place where health services are provided or resources and participants are accommodated.">directSubjectEHDSLocation</span></td>
 <td style="" class="hierarchy xhtCellBorder0"></td>
 <td style="" class="hierarchy xhtCellBorder0"></td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-EHDSLocation.html">EHDSLocation</a></td>
 <td style="" class="hierarchy xhtCellBorder0"></td></tr>
-<tr fhir="generated-heirarchy" id="sa-aakc" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1010.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.directSubject[x].</span><span title="EHDSDevice means a structured set of data elements describing a medical device or implant.">directSubjectEHDSDevice</span></td>
+<tr fhir="generated-heirarchy" id="sa-aagc" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1010.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.directSubject[x].</span><span title="EHDSDevice means a structured set of data elements describing a medical device or implant.">directSubjectEHDSDevice</span></td>
 <td style="" class="hierarchy xhtCellBorder0"></td>
 <td style="" class="hierarchy xhtCellBorder0"></td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-EHDSDevice.html">EHDSDevice</a></td>
 <td style="" class="hierarchy xhtCellBorder0"></td></tr>
-<tr fhir="generated-heirarchy" id="sa-aakd" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1010.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.directSubject[x].</span><span title="EHDSProcedure means a structured set of data elements describing a procedure performed on or for a patient, including surgical, therapeutic, and diagnostic procedures and specimen collection, but excluding procedures in the planning stage.">directSubjectEHDSProcedure</span></td>
+<tr fhir="generated-heirarchy" id="sa-aagd" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1010.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.directSubject[x].</span><span title="EHDSProcedure means a structured set of data elements describing a procedure performed on or for a patient, including surgical, therapeutic, and diagnostic procedures and specimen collection, but excluding procedures in the planning stage.">directSubjectEHDSProcedure</span></td>
 <td style="" class="hierarchy xhtCellBorder0"></td>
 <td style="" class="hierarchy xhtCellBorder0"></td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-EHDSProcedure.html">EHDSProcedure</a></td>
 <td style="" class="hierarchy xhtCellBorder0"></td></tr>
-<tr fhir="generated-heirarchy" id="sa-aake" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1000.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.directSubject[x].</span><span title="string Type: A sequence of Unicode characters">directSubjectString</span></td>
+<tr fhir="generated-heirarchy" id="sa-aage" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1000.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.directSubject[x].</span><span title="string Type: A sequence of Unicode characters">directSubjectString</span></td>
 <td style="" class="hierarchy xhtCellBorder0"></td>
 <td style="" class="hierarchy xhtCellBorder0"></td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td>
@@ -2253,7 +2354,7 @@ filterDesc(document.getElementById('EHDSLaboratoryObservationDA'), 'obligation',
 <td style="" class="hierarchy xhtCellBorder0">0..1</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#boolean">boolean</a></td>
 <td style="" class="hierarchy xhtCellBorder0">Examination performed near or at the site of a patient.</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 32b37c18-13d3-470f-8b16-d71d4422a847
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R5/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 017d2e5c-2241-47ec-9363-a053a5dc6d9c
 document.getElementById('cbEHDSLaboratoryObservationSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('EHDSLaboratoryObservationSA'), 'binding', document.getElementById('cbEHDSLaboratoryObservationSA-binding').checked, document.getElementById('ppEHDSLaboratoryObservationSA'));
 document.getElementById('cbEHDSLaboratoryObservationSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -2284,6 +2385,9 @@ filterDesc(document.getElementById('EHDSLaboratoryObservationSA'), 'obligation',
     <td>
       <b>Source</b>
     </td>
+    <td>
+      <b>Documentation</b>
+    </td>
   </tr>
   <tr>
     <td>EHDSLaboratoryObservation.​header.status</td>
@@ -2294,6 +2398,13 @@ filterDesc(document.getElementById('EHDSLaboratoryObservationSA'), 'obligation',
     <td title="HL7 Observation Status"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>HL7 Observation Status</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSLaboratoryObservation.​header.language</td>
@@ -2304,6 +2415,13 @@ filterDesc(document.getElementById('EHDSLaboratoryObservationSA'), 'obligation',
     <td title="BCP 47"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>BCP 47</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSLaboratoryObservation.​type</td>
@@ -2314,6 +2432,13 @@ filterDesc(document.getElementById('EHDSLaboratoryObservationSA'), 'obligation',
     <td title="SNOMED GPS, LOINC (preferred), NPU"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>SNOMED GPS, LOINC (preferred), NPU</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSLaboratoryObservation.​method</td>
@@ -2324,6 +2449,13 @@ filterDesc(document.getElementById('EHDSLaboratoryObservationSA'), 'obligation',
     <td title="SNOMED GPS"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>SNOMED GPS</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSLaboratoryObservation.​result.value[x]</td>
@@ -2334,6 +2466,13 @@ filterDesc(document.getElementById('EHDSLaboratoryObservationSA'), 'obligation',
     <td title="UCUM for units, SNOMED GPS"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>UCUM for units, SNOMED GPS</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSLaboratoryObservation.​result.uncertainty.type</td>
@@ -2344,6 +2483,13 @@ filterDesc(document.getElementById('EHDSLaboratoryObservationSA'), 'obligation',
     <td title="HL7 Probability Distribution Type"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>HL7 Probability Distribution Type</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSLaboratoryObservation.​result.dataAbsentReason</td>
@@ -2354,6 +2500,13 @@ filterDesc(document.getElementById('EHDSLaboratoryObservationSA'), 'obligation',
     <td title="HL7 Data Absent Reason"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>HL7 Data Absent Reason</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSLaboratoryObservation.​referenceRange.low</td>
@@ -2364,6 +2517,13 @@ filterDesc(document.getElementById('EHDSLaboratoryObservationSA'), 'obligation',
     <td title="UCUM for units"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>UCUM for units</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSLaboratoryObservation.​referenceRange.high</td>
@@ -2374,6 +2534,13 @@ filterDesc(document.getElementById('EHDSLaboratoryObservationSA'), 'obligation',
     <td title="UCUM for units"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>UCUM for units</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSLaboratoryObservation.​referenceRange.normalValue</td>
@@ -2384,6 +2551,13 @@ filterDesc(document.getElementById('EHDSLaboratoryObservationSA'), 'obligation',
     <td title="SNOMED GPS"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>SNOMED GPS</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSLaboratoryObservation.​referenceRange.type</td>
@@ -2394,6 +2568,13 @@ filterDesc(document.getElementById('EHDSLaboratoryObservationSA'), 'obligation',
     <td title="HL7 Observation Reference Range Meaning Codes"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>HL7 Observation Reference Range Meaning Codes</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSLaboratoryObservation.​referenceRange.appliesTo</td>
@@ -2404,6 +2585,13 @@ filterDesc(document.getElementById('EHDSLaboratoryObservationSA'), 'obligation',
     <td title="SNOMED GPS"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>SNOMED GPS</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSLaboratoryObservation.​referenceRange.age</td>
@@ -2414,6 +2602,13 @@ filterDesc(document.getElementById('EHDSLaboratoryObservationSA'), 'obligation',
     <td title="UCUM for units"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>UCUM for units</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSLaboratoryObservation.​interpretation</td>
@@ -2424,6 +2619,13 @@ filterDesc(document.getElementById('EHDSLaboratoryObservationSA'), 'obligation',
     <td title="SNOMED GPS"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>SNOMED GPS</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSLaboratoryObservation.​component.type</td>
@@ -2434,6 +2636,13 @@ filterDesc(document.getElementById('EHDSLaboratoryObservationSA'), 'obligation',
     <td title="SNOMED GPS, LOINC (preferred), NPU"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>SNOMED GPS, LOINC (preferred), NPU</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSLaboratoryObservation.​component.result.value[x]</td>
@@ -2444,6 +2653,13 @@ filterDesc(document.getElementById('EHDSLaboratoryObservationSA'), 'obligation',
     <td title="UCUM for units, SNOMED GPS"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>UCUM for units, SNOMED GPS</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSLaboratoryObservation.​component.result.uncertainty.​type</td>
@@ -2454,6 +2670,13 @@ filterDesc(document.getElementById('EHDSLaboratoryObservationSA'), 'obligation',
     <td title="HL7 Probability Distribution Type"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>HL7 Probability Distribution Type</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSLaboratoryObservation.​component.result.dataAbsentReason</td>
@@ -2464,6 +2687,13 @@ filterDesc(document.getElementById('EHDSLaboratoryObservationSA'), 'obligation',
     <td title="HL7 Data Absent Reason"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>HL7 Data Absent Reason</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSLaboratoryObservation.​component.referenceRange.​low</td>
@@ -2474,6 +2704,13 @@ filterDesc(document.getElementById('EHDSLaboratoryObservationSA'), 'obligation',
     <td title="UCUM for units"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>UCUM for units</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSLaboratoryObservation.​component.referenceRange.​high</td>
@@ -2484,6 +2721,13 @@ filterDesc(document.getElementById('EHDSLaboratoryObservationSA'), 'obligation',
     <td title="UCUM for units"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>UCUM for units</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSLaboratoryObservation.​component.referenceRange.​normalValue</td>
@@ -2494,6 +2738,13 @@ filterDesc(document.getElementById('EHDSLaboratoryObservationSA'), 'obligation',
     <td title="SNOMED GPS"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>SNOMED GPS</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSLaboratoryObservation.​component.referenceRange.​type</td>
@@ -2504,6 +2755,13 @@ filterDesc(document.getElementById('EHDSLaboratoryObservationSA'), 'obligation',
     <td title="HL7 Observation Reference Range Meaning Codes"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>HL7 Observation Reference Range Meaning Codes</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSLaboratoryObservation.​component.referenceRange.​appliesTo</td>
@@ -2514,6 +2772,13 @@ filterDesc(document.getElementById('EHDSLaboratoryObservationSA'), 'obligation',
     <td title="SNOMED GPS"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>SNOMED GPS</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSLaboratoryObservation.​component.referenceRange.​age</td>
@@ -2524,6 +2789,13 @@ filterDesc(document.getElementById('EHDSLaboratoryObservationSA'), 'obligation',
     <td title="UCUM for units"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>UCUM for units</p>
+
+
+      </div>
+    </td>
   </tr>
   <tr>
     <td>EHDSLaboratoryObservation.​component.interpretation</td>
@@ -2534,6 +2806,13 @@ filterDesc(document.getElementById('EHDSLaboratoryObservationSA'), 'obligation',
     <td title="SNOMED GPS"></td>
     <td title="Version is not explicitly stated. No matching Value Set found">Not State</td>
     <td>Unknown</td>
+    <td>
+      <div>
+        <p>SNOMED GPS</p>
+
+
+      </div>
+    </td>
   </tr>
 </table>
 
@@ -2568,25 +2847,14 @@ filterDesc(document.getElementById('EHDSLaboratoryObservationSA'), 'obligation',
 // from Element: <a href="http://hl7.org/fhir/R5/extensibility.html">extension</a>
     "<a href="StructureDefinition-EHDSLaboratoryObservation.html#EHDSLaboratoryObservation.header" title="Basic metadata for this information" class="dict"><span style="text-decoration: underline">header</span></a>" : { <span style="color: Gray">//</span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Basic metadata for this information.</span>
       "<a href="StructureDefinition-EHDSLaboratoryObservation.html#EHDSLaboratoryObservation.header.subject" title="Patient/subject information" class="dict"><span style="text-decoration: underline">subject</span></a>" : {<span style="color: darkgreen"><a href="StructureDefinition-EHDSPatient.html#http://ehds.eu/fhir/models/StructureDefinition/EHDSPatient">http://ehds.eu/fhir/models/StructureDefinition/EHDSPatient</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Patient/subject information.</span>
-      "<a href="StructureDefinition-EHDSLaboratoryObservation.html#EHDSLaboratoryObservation.header.identifier" title="Unique identifier of the resource" class="dict"><span style="text-decoration: underline">identifier</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#Identifier">Identifier</a></span>}], <span style="color: Gray">//</span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries).</span>
-<span style="color: Gray">// value[x]: <span style="color: navy; opacity: 0.8">Time or period the clinical content applies to (e.g. specimen collection time, onset of a condition, period a medication was taken).</span>. One of these 2:</span>
-      "<a href="StructureDefinition-EHDSLaboratoryObservation.html#EHDSLaboratoryObservation.header.clinicalEventTimeDateTime" title="Time or period the clinical content applies to (e.g. specimen collection time, onset of a condition, period a medication was taken)" class="dict"><span style="text-decoration: underline">clinicalEventTimeDateTime</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">dateTime</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Time or period the clinical content applies to (e.g. specimen collection time, onset of a condition, period a medication was taken).</span>
-      "<a href="StructureDefinition-EHDSLaboratoryObservation.html#EHDSLaboratoryObservation.header.clinicalEventTimePeriod" title="Time or period the clinical content applies to (e.g. specimen collection time, onset of a condition, period a medication was taken)" class="dict"><span style="text-decoration: underline">clinicalEventTimePeriod</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#Period">Period</a></span>}, <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Time or period the clinical content applies to (e.g. specimen collection time, onset of a condition, period a medication was taken).</span>
-      "<a href="StructureDefinition-EHDSLaboratoryObservation.html#EHDSLaboratoryObservation.header.version" title="Version of the resource" class="dict"><span style="text-decoration: underline">version</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Version of the resource.</span>
+      "<a href="StructureDefinition-EHDSLaboratoryObservation.html#EHDSLaboratoryObservation.header.identifier" title="Unique identifier of the resource" class="dict"><span style="text-decoration: underline">identifier</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#Identifier">Identifier</a></span>}], <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries).</span>
 <span style="color: Gray">// value[x]: <span style="color: navy; opacity: 0.8">Author of the resource.</span>. One of these 3:</span>
-      "<a href="StructureDefinition-EHDSLaboratoryObservation.html#EHDSLaboratoryObservation.header.authorHttp://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional" title="Information describing who authored the resource" class="dict"><span style="text-decoration: underline">authorHttp://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional</span></a>" : [{<span style="color: darkgreen"><a href="StructureDefinition-EHDSHealthProfessional.html#http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional">http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional</a></span>}], <span style="color: Gray">//</span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Author of the resource.</span>
-      "<a href="StructureDefinition-EHDSLaboratoryObservation.html#EHDSLaboratoryObservation.header.authorHttp://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation" title="Information describing who authored the resource" class="dict"><span style="text-decoration: underline">authorHttp://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation</span></a>" : [{<span style="color: darkgreen"><a href="StructureDefinition-EHDSOrganisation.html#http://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation">http://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation</a></span>}], <span style="color: Gray">//</span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Author of the resource.</span>
-      "<a href="StructureDefinition-EHDSLaboratoryObservation.html#EHDSLaboratoryObservation.header.authorHttp://ehds.eu/fhir/models/StructureDefinition/EHDSDevice" title="Information describing who authored the resource" class="dict"><span style="text-decoration: underline">authorHttp://ehds.eu/fhir/models/StructureDefinition/EHDSDevice</span></a>" : [{<span style="color: darkgreen"><a href="StructureDefinition-EHDSDevice.html#http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice">http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice</a></span>}], <span style="color: Gray">//</span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Author of the resource.</span>
-      "<a href="StructureDefinition-EHDSLaboratoryObservation.html#EHDSLaboratoryObservation.header.date" title="Date and optionally time of authoring/issuing" class="dict"><span style="text-decoration: underline">date</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">dateTime</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Date and optionally time of authoring/issuing.</span>
-      "<a href="StructureDefinition-EHDSLaboratoryObservation.html#EHDSLaboratoryObservation.header.attestation" title="Resource attestation details" class="dict"><span style="text-decoration: underline">attestation</span></a>" : [{ <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Resource attestation details.</span>
-<span style="color: Gray">// value[x]: <span style="color: navy; opacity: 0.8">Attester who validated the resource.</span>. One of these 2:</span>
-        "<a href="StructureDefinition-EHDSLaboratoryObservation.html#EHDSLaboratoryObservation.header.attestation.attesterHttp://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional" title="Attester who validated the resource" class="dict"><span style="text-decoration: underline">attesterHttp://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional</span></a>" : {<span style="color: darkgreen"><a href="StructureDefinition-EHDSHealthProfessional.html#http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional">http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Attester who validated the resource.</span>
-        "<a href="StructureDefinition-EHDSLaboratoryObservation.html#EHDSLaboratoryObservation.header.attestation.attesterHttp://ehds.eu/fhir/models/StructureDefinition/EHDSDevice" title="Attester who validated the resource" class="dict"><span style="text-decoration: underline">attesterHttp://ehds.eu/fhir/models/StructureDefinition/EHDSDevice</span></a>" : {<span style="color: darkgreen"><a href="StructureDefinition-EHDSDevice.html#http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice">http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice</a></span>} <span style="color: Gray">//</span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Attester who validated the resource.</span>
-        "<a href="StructureDefinition-EHDSLaboratoryObservation.html#EHDSLaboratoryObservation.header.attestation.dateTime" title="Date and time of the approval of the resource by the attester" class="dict"><span style="text-decoration: underline">dateTime</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">dateTime</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Date and time of the approval of the resource by the attester.</span>
-      }],
-      "<a href="StructureDefinition-EHDSLaboratoryObservation.html#EHDSLaboratoryObservation.header.status" title="Status of the resource" class="dict"><span style="text-decoration: underline">status</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept">CodeableConcept</a></span>} <span style="color: Gray">//</span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Status of the resource.</span>
-      "<a href="StructureDefinition-EHDSLaboratoryObservation.html#EHDSLaboratoryObservation.header.language" title="Language in which the resource is written. Language is expressed by the IETF language tag" class="dict"><span style="text-decoration: underline">language</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept">CodeableConcept</a></span>}], <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Language in which the resource is written. Language is expressed by the IETF language tag.</span>
-      "<a href="StructureDefinition-EHDSLaboratoryObservation.html#EHDSLaboratoryObservation.header.lastUpdate" title="Date and time of the last system-level update to this resource (system update instant). This is technical metadata and does not represent a clinical event time" class="dict"><span style="text-decoration: underline">lastUpdate</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">dateTime</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Date and time of the last system-level update to this resource (system update instant). This is technical metadata and does not represent a clinical event time.</span>
+      "<a href="StructureDefinition-EHDSLaboratoryObservation.html#EHDSLaboratoryObservation.header.authorHttp://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional" title="Information describing who authored the resource" class="dict"><span style="text-decoration: underline">authorHttp://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional</span></a>" : [{<span style="color: darkgreen"><a href="StructureDefinition-EHDSHealthProfessional.html#http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional">http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional</a></span>}], <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Author of the resource.</span>
+      "<a href="StructureDefinition-EHDSLaboratoryObservation.html#EHDSLaboratoryObservation.header.authorHttp://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation" title="Information describing who authored the resource" class="dict"><span style="text-decoration: underline">authorHttp://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation</span></a>" : [{<span style="color: darkgreen"><a href="StructureDefinition-EHDSOrganisation.html#http://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation">http://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation</a></span>}], <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Author of the resource.</span>
+      "<a href="StructureDefinition-EHDSLaboratoryObservation.html#EHDSLaboratoryObservation.header.authorHttp://ehds.eu/fhir/models/StructureDefinition/EHDSDevice" title="Information describing who authored the resource" class="dict"><span style="text-decoration: underline">authorHttp://ehds.eu/fhir/models/StructureDefinition/EHDSDevice</span></a>" : [{<span style="color: darkgreen"><a href="StructureDefinition-EHDSDevice.html#http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice">http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice</a></span>}], <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Author of the resource.</span>
+      "<a href="StructureDefinition-EHDSLaboratoryObservation.html#EHDSLaboratoryObservation.header.date" title="Date of finalisation/issuance of the resource" class="dict"><span style="text-decoration: underline">date</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">dateTime</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Date of finalisation/issuance of the resource.</span>
+      "<a href="StructureDefinition-EHDSLaboratoryObservation.html#EHDSLaboratoryObservation.header.status" title="Status of the resource" class="dict"><span style="text-decoration: underline">status</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept">CodeableConcept</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Status of the resource.</span>
+      "<a href="StructureDefinition-EHDSLaboratoryObservation.html#EHDSLaboratoryObservation.header.language" title="Language in which the resource is written. Language is expressed by the IETF language tag" class="dict"><span style="text-decoration: underline">language</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept">CodeableConcept</a></span>}] <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Language in which the resource is written. Language is expressed by the IETF language tag.</span>
 <span style="color: Gray">// value[x]: <span style="color: navy; opacity: 0.8">The direct subject of the observation if different from the patient (subject of care), e.g. an implanted device, a location or another person.</span>. One of these 5:</span>
       "<a href="StructureDefinition-EHDSLaboratoryObservation.html#EHDSLaboratoryObservation.header.directSubjectHttp://ehds.eu/fhir/models/StructureDefinition/EHDSPatient" title="The direct subject of the observation if different from the patient (subject of care), e.g. an observation of an implanted device. Additional types of subjects may be allowed in implementations" class="dict"><span style="text-decoration: underline">directSubjectHttp://ehds.eu/fhir/models/StructureDefinition/EHDSPatient</span></a>" : {<span style="color: darkgreen"><a href="StructureDefinition-EHDSPatient.html#http://ehds.eu/fhir/models/StructureDefinition/EHDSPatient">http://ehds.eu/fhir/models/StructureDefinition/EHDSPatient</a></span>}, <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">The direct subject of the observation if different from the patient (subject of care), e.g. an implanted device, a location or another person.</span>
       "<a href="StructureDefinition-EHDSLaboratoryObservation.html#EHDSLaboratoryObservation.header.directSubjectHttp://ehds.eu/fhir/models/StructureDefinition/EHDSLocation" title="The direct subject of the observation if different from the patient (subject of care), e.g. an observation of an implanted device. Additional types of subjects may be allowed in implementations" class="dict"><span style="text-decoration: underline">directSubjectHttp://ehds.eu/fhir/models/StructureDefinition/EHDSLocation</span></a>" : {<span style="color: darkgreen"><a href="StructureDefinition-EHDSLocation.html#http://ehds.eu/fhir/models/StructureDefinition/EHDSLocation">http://ehds.eu/fhir/models/StructureDefinition/EHDSLocation</a></span>}, <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">The direct subject of the observation if different from the patient (subject of care), e.g. an implanted device, a location or another person.</span>
@@ -2834,8 +3102,8 @@ Summary
           IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="http://commission.europa.eu/">EC</a>.  
           Package eu.ehds.models#0.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>.
           Generated 
-  <span title="2026-11-19 13:36:00 +0000">
-    2026-11-19
+  <span title="2026-11-20 07:02:00 +0000">
+    2026-11-20
   </span>
 
           <br/>

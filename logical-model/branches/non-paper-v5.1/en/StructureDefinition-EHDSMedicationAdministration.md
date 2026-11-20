@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSMedicationAdm
   "name" : "EHDSMedicationAdministration",
   "title" : "Medication administration model",
   "status" : "draft",
-  "date" : "2026-11-20T06:54:54+00:00",
+  "date" : "2026-11-20T06:55:22+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",

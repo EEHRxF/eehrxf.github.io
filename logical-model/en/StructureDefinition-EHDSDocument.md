@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDocument.csv)
   "name" : "EHDSDocument",
   "title" : "Document model",
   "status" : "draft",
-  "date" : "2026-11-19T13:36:43+00:00",
+  "date" : "2026-11-20T07:02:16+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -38,7 +38,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDocument.csv)
       "value" : "http://commission.europa.eu/"
     }]
   }],
-  "description" : "EHDSDocument means a structured set of data elements common all health documents.",
+  "description" : "EHDSDocument means a structured set of data elements common all health documents. Additional document search metadata is defined separately in EHDSDocumentSearchMetadata.",
   "fhirVersion" : "5.0.0",
   "mapping" : [{
     "identity" : "rim",
@@ -55,7 +55,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDocument.csv)
       "id" : "EHDSDocument",
       "path" : "EHDSDocument",
       "short" : "Document model",
-      "definition" : "EHDSDocument means a structured set of data elements common all health documents."
+      "definition" : "EHDSDocument means a structured set of data elements common all health documents. Additional document search metadata is defined separately in EHDSDocumentSearchMetadata."
     },
     {
       "id" : "EHDSDocument.header",
@@ -65,7 +65,13 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDocument.csv)
     {
       "id" : "EHDSDocument.header.identifier",
       "path" : "EHDSDocument.header.identifier",
-      "short" : "Unique identifier of the document."
+      "short" : "Unique identifier of the document.",
+      "min" : 1
+    },
+    {
+      "id" : "EHDSDocument.header.clinicalEventTime[x]",
+      "path" : "EHDSDocument.header.clinicalEventTime[x]",
+      "max" : "0"
     },
     {
       "id" : "EHDSDocument.header.version",
@@ -76,12 +82,13 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDocument.csv)
     {
       "id" : "EHDSDocument.header.author[x]",
       "path" : "EHDSDocument.header.author[x]",
-      "short" : "Information describing who authored the resource or document."
+      "short" : "Information describing who authored the resource or document.",
+      "min" : 1
     },
     {
       "id" : "EHDSDocument.header.date",
       "path" : "EHDSDocument.header.date",
-      "short" : "Date of finalising/issuing the document.",
+      "short" : "Date of finalisation/issuance of the document.",
       "min" : 1
     },
     {
@@ -112,11 +119,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDocument.csv)
       "id" : "EHDSDocument.header.language",
       "path" : "EHDSDocument.header.language",
       "short" : "Language in which the document is written. Language is expressed by the IETF language tag."
-    },
-    {
-      "id" : "EHDSDocument.header.lastUpdate",
-      "path" : "EHDSDocument.header.lastUpdate",
-      "short" : "Date and time of the last system-level update to this document (system update instant). This is technical metadata and does not represent a clinical event time."
     },
     {
       "id" : "EHDSDocument.header.documentCategory",

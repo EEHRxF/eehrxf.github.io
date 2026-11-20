@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSTravelHistory
   "name" : "EHDSTravelHistory",
   "title" : "Travel history model",
   "status" : "draft",
-  "date" : "2026-11-19T13:36:43+00:00",
+  "date" : "2026-11-20T07:02:16+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -63,9 +63,29 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSTravelHistory
       "short" : "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)."
     },
     {
+      "id" : "EHDSTravelHistory.header.clinicalEventTime[x]",
+      "path" : "EHDSTravelHistory.header.clinicalEventTime[x]",
+      "max" : "0"
+    },
+    {
+      "id" : "EHDSTravelHistory.header.version",
+      "path" : "EHDSTravelHistory.header.version",
+      "max" : "0"
+    },
+    {
       "id" : "EHDSTravelHistory.header.author[x]",
       "path" : "EHDSTravelHistory.header.author[x]",
       "short" : "Author of the resource."
+    },
+    {
+      "id" : "EHDSTravelHistory.header.date",
+      "path" : "EHDSTravelHistory.header.date",
+      "short" : "Date and optionally time of authoring/issuing."
+    },
+    {
+      "id" : "EHDSTravelHistory.header.attestation",
+      "path" : "EHDSTravelHistory.header.attestation",
+      "max" : "0"
     },
     {
       "id" : "EHDSTravelHistory.header.status",
@@ -73,7 +93,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSTravelHistory
       "short" : "Status of the resource or document.",
       "binding" : {
         "strength" : "required",
-        "description" : "Not defined"
+        "description" : "HL7 Observation Status"
       }
     },
     {

@@ -11,7 +11,7 @@
   "name" : "EHDSModels",
   "title" : "EHDS Logical Information Models",
   "status" : "draft",
-  "date" : "2026-11-19T13:36:43+00:00",
+  "date" : "2026-11-20T07:02:16+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -61,7 +61,7 @@
     {
       "id" : "EHDSMetadataModels",
       "name" : "EHDS Metadata Models",
-      "description" : "Information models acting as templates for specialised models."
+      "description" : "Shared resource-content templates and independent search metadata models."
     },
     {
       "id" : "EHDSSupportLevels",
@@ -597,7 +597,7 @@
         "reference" : "StructureDefinition/EHDSDataSet"
       },
       "name" : "DataSet model",
-      "description" : "DataSet model.",
+      "description" : "Common resource-content header used as an implementation parent. Additional search metadata is defined separately in EHDSSearchMetadata.",
       "isExample" : false,
       "groupingId" : "EHDSMetadataModels"
     },
@@ -610,7 +610,33 @@
         "reference" : "StructureDefinition/EHDSDocument"
       },
       "name" : "Document model",
-      "description" : "EHDSDocument means a structured set of data elements common all health documents.",
+      "description" : "EHDSDocument means a structured set of data elements common all health documents. Additional document search metadata is defined separately in EHDSDocumentSearchMetadata.",
+      "isExample" : false,
+      "groupingId" : "EHDSMetadataModels"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EHDSSearchMetadata"
+      },
+      "name" : "Data group search metadata model",
+      "description" : "Metadata for searching individual data groups, based on WP v5 Annex III and the final review instructions. This model is independent of the resource-content model EHDSDataSet.",
+      "isExample" : false,
+      "groupingId" : "EHDSMetadataModels"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EHDSDocumentSearchMetadata"
+      },
+      "name" : "Document search metadata model",
+      "description" : "Metadata for searching documents, based on WP v5 Annex III and the final review instructions. This search-metadata model is separate from EHDSDocument and its resource-content hierarchy.",
       "isExample" : false,
       "groupingId" : "EHDSMetadataModels"
     },
