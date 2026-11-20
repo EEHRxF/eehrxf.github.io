@@ -96,7 +96,7 @@ Use **relationships between observations** when the related observations:
   "name" : "EHDSLaboratoryObservation",
   "title" : "Model for observation performed by laboratory",
   "status" : "draft",
-  "date" : "2026-11-20T11:13:12+00:00",
+  "date" : "2026-11-20T11:19:39+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
