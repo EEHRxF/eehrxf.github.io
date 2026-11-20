@@ -14,7 +14,7 @@
   "version" : "0.3.0",
   "name" : "Full",
   "status" : "active",
-  "date" : "2026-11-20T11:19:39+00:00",
+  "date" : "2026-11-20T11:30:24+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
