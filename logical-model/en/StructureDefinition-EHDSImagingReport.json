@@ -11,7 +11,7 @@
   "name" : "EHDSImagingReport",
   "title" : "Imaging report model.",
   "status" : "draft",
-  "date" : "2026-11-20T10:44:20+00:00",
+  "date" : "2026-11-20T11:18:04+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -161,57 +161,6 @@
       }]
     },
     {
-      "id" : "EHDSImagingReport.header.attestation",
-      "path" : "EHDSImagingReport.header.attestation",
-      "short" : "Document attestation details.",
-      "definition" : "Resource attestation details.",
-      "min" : 0,
-      "max" : "*",
-      "base" : {
-        "path" : "EHDSDataSet.header.attestation",
-        "min" : 0,
-        "max" : "*"
-      },
-      "type" : [{
-        "code" : "Base"
-      }]
-    },
-    {
-      "id" : "EHDSImagingReport.header.attestation.attester[x]",
-      "path" : "EHDSImagingReport.header.attestation.attester[x]",
-      "short" : "Attester who validated the document.",
-      "definition" : "Attester who validated the resource.",
-      "min" : 1,
-      "max" : "1",
-      "base" : {
-        "path" : "EHDSDataSet.header.attestation.attester[x]",
-        "min" : 1,
-        "max" : "1"
-      },
-      "type" : [{
-        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"
-      },
-      {
-        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice"
-      }]
-    },
-    {
-      "id" : "EHDSImagingReport.header.attestation.dateTime",
-      "path" : "EHDSImagingReport.header.attestation.dateTime",
-      "short" : "Date and time of the approval of the document by the attester.",
-      "definition" : "Date and time of the approval of the resource by the attester.",
-      "min" : 1,
-      "max" : "1",
-      "base" : {
-        "path" : "EHDSDataSet.header.attestation.dateTime",
-        "min" : 1,
-        "max" : "1"
-      },
-      "type" : [{
-        "code" : "dateTime"
-      }]
-    },
-    {
       "id" : "EHDSImagingReport.header.status",
       "path" : "EHDSImagingReport.header.status",
       "short" : "Status of the document.",
@@ -321,6 +270,57 @@
       },
       "type" : [{
         "code" : "Period"
+      }]
+    },
+    {
+      "id" : "EHDSImagingReport.header.attestation",
+      "path" : "EHDSImagingReport.header.attestation",
+      "short" : "Document attestation details.",
+      "definition" : "Document attestation details.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "EHDSDocument.header.attestation",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Base"
+      }]
+    },
+    {
+      "id" : "EHDSImagingReport.header.attestation.attester[x]",
+      "path" : "EHDSImagingReport.header.attestation.attester[x]",
+      "short" : "Attester who validated the document.",
+      "definition" : "Attester who validated the document.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSDocument.header.attestation.attester[x]",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"
+      },
+      {
+        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice"
+      }]
+    },
+    {
+      "id" : "EHDSImagingReport.header.attestation.dateTime",
+      "path" : "EHDSImagingReport.header.attestation.dateTime",
+      "short" : "Date and time of the approval of the document by the attester.",
+      "definition" : "Date and time of the approval of the document by the attester.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSDocument.header.attestation.dateTime",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "dateTime"
       }]
     },
     {

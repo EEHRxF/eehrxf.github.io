@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSPatientSummar
   "name" : "EHDSPatientSummary",
   "title" : "Patient summary model",
   "status" : "draft",
-  "date" : "2026-11-20T10:44:20+00:00",
+  "date" : "2026-11-20T11:18:04+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",

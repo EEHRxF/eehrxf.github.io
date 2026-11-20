@@ -109,7 +109,7 @@ Use **relationships between observations** when the related observations:
   "name" : "EHDSObservation",
   "title" : "Observation model",
   "status" : "draft",
-  "date" : "2026-11-20T11:13:01+00:00",
+  "date" : "2026-11-20T11:13:12+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",

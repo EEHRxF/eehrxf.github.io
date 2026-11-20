@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDataSet.csv),
   "name" : "EHDSDataSet",
   "title" : "DataSet model",
   "status" : "draft",
-  "date" : "2026-11-20T10:44:20+00:00",
+  "date" : "2026-11-20T11:18:04+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -127,42 +127,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDataSet.csv),
       "definition" : "Date of finalisation/issuance of the resource.",
       "comment" : "The user explicitly retained content date 0..1 and search date 1..1. The missing-source-date issue remains open; no fallback or derivation rule is defined.",
       "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "dateTime"
-      }]
-    },
-    {
-      "id" : "EHDSDataSet.header.attestation",
-      "path" : "EHDSDataSet.header.attestation",
-      "short" : "Resource attestation details.",
-      "definition" : "Resource attestation details.",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "Base"
-      }]
-    },
-    {
-      "id" : "EHDSDataSet.header.attestation.attester[x]",
-      "path" : "EHDSDataSet.header.attestation.attester[x]",
-      "short" : "Attester who validated the resource.",
-      "definition" : "Attester who validated the resource.",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"
-      },
-      {
-        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice"
-      }]
-    },
-    {
-      "id" : "EHDSDataSet.header.attestation.dateTime",
-      "path" : "EHDSDataSet.header.attestation.dateTime",
-      "short" : "Date and time of the approval of the resource by the attester.",
-      "definition" : "Date and time of the approval of the resource by the attester.",
-      "min" : 1,
       "max" : "1",
       "type" : [{
         "code" : "dateTime"

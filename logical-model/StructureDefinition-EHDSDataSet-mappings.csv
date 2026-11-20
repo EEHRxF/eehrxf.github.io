@@ -7,8 +7,5 @@
 "EHDSDataSet.header.version",""
 "EHDSDataSet.header.author[x]",""
 "EHDSDataSet.header.date",""
-"EHDSDataSet.header.attestation",""
-"EHDSDataSet.header.attestation.attester[x]",""
-"EHDSDataSet.header.attestation.dateTime",""
 "EHDSDataSet.header.status",""
 "EHDSDataSet.header.language",""

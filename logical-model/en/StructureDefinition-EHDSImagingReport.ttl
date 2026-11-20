@@ -19,7 +19,7 @@
   fhir:name [ fhir:v "EHDSImagingReport"] ; # 
   fhir:title [ fhir:v "Imaging report model."] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-11-20T10:44:20+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-11-20T11:18:04+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "EC"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "EC" ] ;
@@ -166,53 +166,6 @@
          fhir:code [ fhir:v "dateTime"^^xsd:anyURI ]
        ] )
      ] [
-       fhir:id [ fhir:v "EHDSImagingReport.header.attestation" ] ;
-       fhir:path [ fhir:v "EHDSImagingReport.header.attestation" ] ;
-       fhir:short [ fhir:v "Document attestation details." ] ;
-       fhir:definition [ fhir:v "Resource attestation details." ] ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "*" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "EHDSDataSet.header.attestation" ] ;
-         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "*" ]
-       ] ;
-       fhir:type ( [
-         fhir:code [ fhir:v "Base"^^xsd:anyURI ]
-       ] )
-     ] [
-       fhir:id [ fhir:v "EHDSImagingReport.header.attestation.attester[x]" ] ;
-       fhir:path [ fhir:v "EHDSImagingReport.header.attestation.attester[x]" ] ;
-       fhir:short [ fhir:v "Attester who validated the document." ] ;
-       fhir:definition [ fhir:v "Attester who validated the resource." ] ;
-       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "EHDSDataSet.header.attestation.attester[x]" ] ;
-         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "1" ]
-       ] ;
-       fhir:type ( [
-         fhir:code [ fhir:v "http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"^^xsd:anyURI ]
-       ] [
-         fhir:code [ fhir:v "http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice"^^xsd:anyURI ]
-       ] )
-     ] [
-       fhir:id [ fhir:v "EHDSImagingReport.header.attestation.dateTime" ] ;
-       fhir:path [ fhir:v "EHDSImagingReport.header.attestation.dateTime" ] ;
-       fhir:short [ fhir:v "Date and time of the approval of the document by the attester." ] ;
-       fhir:definition [ fhir:v "Date and time of the approval of the resource by the attester." ] ;
-       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "EHDSDataSet.header.attestation.dateTime" ] ;
-         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "1" ]
-       ] ;
-       fhir:type ( [
-         fhir:code [ fhir:v "dateTime"^^xsd:anyURI ]
-       ] )
-     ] [
        fhir:id [ fhir:v "EHDSImagingReport.header.status" ] ;
        fhir:path [ fhir:v "EHDSImagingReport.header.status" ] ;
        fhir:short [ fhir:v "Status of the document." ] ;
@@ -317,6 +270,53 @@
        ] ;
        fhir:type ( [
          fhir:code [ fhir:v "Period"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "EHDSImagingReport.header.attestation" ] ;
+       fhir:path [ fhir:v "EHDSImagingReport.header.attestation" ] ;
+       fhir:short [ fhir:v "Document attestation details." ] ;
+       fhir:definition [ fhir:v "Document attestation details." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "EHDSDocument.header.attestation" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Base"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "EHDSImagingReport.header.attestation.attester[x]" ] ;
+       fhir:path [ fhir:v "EHDSImagingReport.header.attestation.attester[x]" ] ;
+       fhir:short [ fhir:v "Attester who validated the document." ] ;
+       fhir:definition [ fhir:v "Attester who validated the document." ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "EHDSDocument.header.attestation.attester[x]" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"^^xsd:anyURI ]
+       ] [
+         fhir:code [ fhir:v "http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "EHDSImagingReport.header.attestation.dateTime" ] ;
+       fhir:path [ fhir:v "EHDSImagingReport.header.attestation.dateTime" ] ;
+       fhir:short [ fhir:v "Date and time of the approval of the document by the attester." ] ;
+       fhir:definition [ fhir:v "Date and time of the approval of the document by the attester." ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "EHDSDocument.header.attestation.dateTime" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "dateTime"^^xsd:anyURI ]
        ] )
      ] [
        fhir:id [ fhir:v "EHDSImagingReport.header.legalAuthentication" ] ;

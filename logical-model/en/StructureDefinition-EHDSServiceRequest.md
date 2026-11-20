@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSServiceReques
   "name" : "EHDSServiceRequest",
   "title" : "Service request model",
   "status" : "draft",
-  "date" : "2026-11-20T10:44:20+00:00",
+  "date" : "2026-11-20T11:18:04+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -71,11 +71,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSServiceReques
       "id" : "EHDSServiceRequest.header.author[x]",
       "path" : "EHDSServiceRequest.header.author[x]",
       "short" : "Author of the resource."
-    },
-    {
-      "id" : "EHDSServiceRequest.header.attestation",
-      "path" : "EHDSServiceRequest.header.attestation",
-      "max" : "0"
     },
     {
       "id" : "EHDSServiceRequest.header.status",
