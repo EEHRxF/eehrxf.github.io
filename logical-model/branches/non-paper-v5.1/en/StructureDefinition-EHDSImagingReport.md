@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSImagingReport
   "name" : "EHDSImagingReport",
   "title" : "Imaging report model.",
   "status" : "draft",
-  "date" : "2026-11-20T11:30:24+00:00",
+  "date" : "2026-11-20T11:33:53+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
