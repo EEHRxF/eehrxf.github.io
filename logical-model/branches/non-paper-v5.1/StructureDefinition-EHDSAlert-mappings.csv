@@ -4,7 +4,6 @@
 "EHDSAlert.header",""
 "EHDSAlert.header.subject",""
 "EHDSAlert.header.identifier",""
-"EHDSAlert.header.clinicalEventTime[x]",""
 "EHDSAlert.header.version",""
 "EHDSAlert.header.author[x]",""
 "EHDSAlert.header.date",""

@@ -4,7 +4,6 @@
 "EHDSPatientSummary.header",""
 "EHDSPatientSummary.header.subject",""
 "EHDSPatientSummary.header.identifier",""
-"EHDSPatientSummary.header.clinicalEventTime[x]",""
 "EHDSPatientSummary.header.version",""
 "EHDSPatientSummary.header.author[x]",""
 "EHDSPatientSummary.header.date",""

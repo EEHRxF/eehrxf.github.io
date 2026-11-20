@@ -4,7 +4,6 @@
 "EHDSObservation.header",""
 "EHDSObservation.header.subject",""
 "EHDSObservation.header.identifier",""
-"EHDSObservation.header.clinicalEventTime[x]",""
 "EHDSObservation.header.version",""
 "EHDSObservation.header.author[x]",""
 "EHDSObservation.header.date",""

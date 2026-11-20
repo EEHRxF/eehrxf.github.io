@@ -4,7 +4,6 @@
 "EHDSEncounter.header",""
 "EHDSEncounter.header.subject",""
 "EHDSEncounter.header.identifier",""
-"EHDSEncounter.header.clinicalEventTime[x]",""
 "EHDSEncounter.header.version",""
 "EHDSEncounter.header.author[x]",""
 "EHDSEncounter.header.date",""

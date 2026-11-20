@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAdvanceDirect
   "name" : "EHDSAdvanceDirective",
   "title" : "Advance directive model",
   "status" : "draft",
-  "date" : "2026-11-20T10:07:51+00:00",
+  "date" : "2026-11-20T10:37:29+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -61,11 +61,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAdvanceDirect
       "id" : "EHDSAdvanceDirective.header.identifier",
       "path" : "EHDSAdvanceDirective.header.identifier",
       "short" : "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)."
-    },
-    {
-      "id" : "EHDSAdvanceDirective.header.clinicalEventTime[x]",
-      "path" : "EHDSAdvanceDirective.header.clinicalEventTime[x]",
-      "max" : "0"
     },
     {
       "id" : "EHDSAdvanceDirective.header.version",

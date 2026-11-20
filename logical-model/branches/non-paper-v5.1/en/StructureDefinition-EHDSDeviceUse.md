@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDeviceUse.csv
   "name" : "EHDSDeviceUse",
   "title" : "Device use model",
   "status" : "draft",
-  "date" : "2026-11-20T10:07:51+00:00",
+  "date" : "2026-11-20T10:37:29+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -61,11 +61,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDeviceUse.csv
       "id" : "EHDSDeviceUse.header.identifier",
       "path" : "EHDSDeviceUse.header.identifier",
       "short" : "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)."
-    },
-    {
-      "id" : "EHDSDeviceUse.header.clinicalEventTime[x]",
-      "path" : "EHDSDeviceUse.header.clinicalEventTime[x]",
-      "max" : "0"
     },
     {
       "id" : "EHDSDeviceUse.header.version",

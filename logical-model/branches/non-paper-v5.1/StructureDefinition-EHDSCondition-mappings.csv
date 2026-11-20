@@ -4,7 +4,6 @@
 "EHDSCondition.header",""
 "EHDSCondition.header.subject",""
 "EHDSCondition.header.identifier",""
-"EHDSCondition.header.clinicalEventTime[x]",""
 "EHDSCondition.header.version",""
 "EHDSCondition.header.author[x]",""
 "EHDSCondition.header.date",""

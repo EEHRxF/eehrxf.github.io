@@ -4,7 +4,6 @@
 "EHDSMedicalTestReport.header",""
 "EHDSMedicalTestReport.header.subject",""
 "EHDSMedicalTestReport.header.identifier",""
-"EHDSMedicalTestReport.header.clinicalEventTime[x]",""
 "EHDSMedicalTestReport.header.version",""
 "EHDSMedicalTestReport.header.author[x]",""
 "EHDSMedicalTestReport.header.date",""

@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAttachment.cs
   "name" : "EHDSAttachment",
   "title" : "Attachment model",
   "status" : "draft",
-  "date" : "2026-11-20T10:07:51+00:00",
+  "date" : "2026-11-20T10:37:29+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",

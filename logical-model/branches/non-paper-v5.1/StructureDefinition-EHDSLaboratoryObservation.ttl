@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "EHDSLaboratoryObservation"] ; # 
   fhir:title [ fhir:v "Model for observation performed by laboratory"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-11-20T10:07:51+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-11-20T10:37:29+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "EC"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "EC" ] ;
@@ -112,23 +112,6 @@
        ] ;
        fhir:type ( [
          fhir:code [ fhir:v "Identifier"^^xsd:anyURI ]
-       ] )
-     ] [
-       fhir:id [ fhir:v "EHDSLaboratoryObservation.header.clinicalEventTime[x]" ] ;
-       fhir:path [ fhir:v "EHDSLaboratoryObservation.header.clinicalEventTime[x]" ] ;
-       fhir:short [ fhir:v "Time or period the clinical content applies to (e.g. specimen collection time, onset of a condition, period a medication was taken)." ] ;
-       fhir:definition [ fhir:v "Time or period the clinical content applies to (e.g. specimen collection time, onset of a condition, period a medication was taken)." ] ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "0" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "EHDSDataSet.header.clinicalEventTime[x]" ] ;
-         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "1" ]
-       ] ;
-       fhir:type ( [
-         fhir:code [ fhir:v "dateTime"^^xsd:anyURI ]
-       ] [
-         fhir:code [ fhir:v "Period"^^xsd:anyURI ]
        ] )
      ] [
        fhir:id [ fhir:v "EHDSLaboratoryObservation.header.version" ] ;

@@ -4,7 +4,6 @@
 "EHDSServiceRequest.header",""
 "EHDSServiceRequest.header.subject",""
 "EHDSServiceRequest.header.identifier",""
-"EHDSServiceRequest.header.clinicalEventTime[x]",""
 "EHDSServiceRequest.header.version",""
 "EHDSServiceRequest.header.author[x]",""
 "EHDSServiceRequest.header.date",""
