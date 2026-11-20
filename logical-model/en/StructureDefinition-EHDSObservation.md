@@ -109,7 +109,7 @@ Use **relationships between observations** when the related observations:
   "name" : "EHDSObservation",
   "title" : "Observation model",
   "status" : "draft",
-  "date" : "2026-11-20T10:17:03+00:00",
+  "date" : "2026-11-20T10:44:20+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -141,11 +141,6 @@ Use **relationships between observations** when the related observations:
       "id" : "EHDSObservation.header.identifier",
       "path" : "EHDSObservation.header.identifier",
       "short" : "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)."
-    },
-    {
-      "id" : "EHDSObservation.header.clinicalEventTime[x]",
-      "path" : "EHDSObservation.header.clinicalEventTime[x]",
-      "max" : "0"
     },
     {
       "id" : "EHDSObservation.header.version",

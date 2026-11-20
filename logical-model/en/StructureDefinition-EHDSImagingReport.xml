@@ -78,7 +78,7 @@
   <name value="EHDSImagingReport"/>
   <title value="Imaging report model."/>
   <status value="draft"/>
-  <date value="2026-11-20T10:17:03+00:00"/>
+  <date value="2026-11-20T10:44:20+00:00"/>
   <publisher value="EC"/>
   <contact>
     <name value="EC"/>
@@ -164,24 +164,6 @@
       </base>
       <type>
         <code value="Identifier"/>
-      </type>
-    </element>
-    <element id="EHDSImagingReport.header.clinicalEventTime[x]">
-      <path value="EHDSImagingReport.header.clinicalEventTime[x]"/>
-      <short value="Time or period the clinical content applies to (e.g. specimen collection time, onset of a condition, period a medication was taken)."/>
-      <definition value="Time or period the clinical content applies to (e.g. specimen collection time, onset of a condition, period a medication was taken)."/>
-      <min value="0"/>
-      <max value="0"/>
-      <base>
-        <path value="EHDSDataSet.header.clinicalEventTime[x]"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="dateTime"/>
-      </type>
-      <type>
-        <code value="Period"/>
       </type>
     </element>
     <element id="EHDSImagingReport.header.version">

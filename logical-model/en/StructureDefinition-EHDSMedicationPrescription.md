@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSMedicationPre
   "name" : "EHDSMedicationPrescription",
   "title" : "Electronic prescription model",
   "status" : "draft",
-  "date" : "2026-11-20T10:17:03+00:00",
+  "date" : "2026-11-20T10:44:20+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -72,11 +72,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSMedicationPre
       "path" : "EHDSMedicationPrescription.header.identifier",
       "short" : "Business identifier(s) for the prescription.",
       "min" : 1
-    },
-    {
-      "id" : "EHDSMedicationPrescription.header.clinicalEventTime[x]",
-      "path" : "EHDSMedicationPrescription.header.clinicalEventTime[x]",
-      "max" : "0"
     },
     {
       "id" : "EHDSMedicationPrescription.header.version",

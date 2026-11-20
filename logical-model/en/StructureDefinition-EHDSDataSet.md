@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDataSet.csv),
   "name" : "EHDSDataSet",
   "title" : "DataSet model",
   "status" : "draft",
-  "date" : "2026-11-20T10:17:03+00:00",
+  "date" : "2026-11-20T10:44:20+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -89,20 +89,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDataSet.csv),
       "max" : "*",
       "type" : [{
         "code" : "Identifier"
-      }]
-    },
-    {
-      "id" : "EHDSDataSet.header.clinicalEventTime[x]",
-      "path" : "EHDSDataSet.header.clinicalEventTime[x]",
-      "short" : "Time or period the clinical content applies to (e.g. specimen collection time, onset of a condition, period a medication was taken).",
-      "definition" : "Time or period the clinical content applies to (e.g. specimen collection time, onset of a condition, period a medication was taken).",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "dateTime"
-      },
-      {
-        "code" : "Period"
       }]
     },
     {

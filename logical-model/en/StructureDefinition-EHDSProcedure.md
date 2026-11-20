@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSProcedure.csv
   "name" : "EHDSProcedure",
   "title" : "Procedure model",
   "status" : "draft",
-  "date" : "2026-11-20T10:17:03+00:00",
+  "date" : "2026-11-20T10:44:20+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -61,11 +61,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSProcedure.csv
       "id" : "EHDSProcedure.header.identifier",
       "path" : "EHDSProcedure.header.identifier",
       "short" : "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)."
-    },
-    {
-      "id" : "EHDSProcedure.header.clinicalEventTime[x]",
-      "path" : "EHDSProcedure.header.clinicalEventTime[x]",
-      "max" : "0"
     },
     {
       "id" : "EHDSProcedure.header.version",

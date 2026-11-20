@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSMedicationAdm
   "name" : "EHDSMedicationAdministration",
   "title" : "Medication administration model",
   "status" : "draft",
-  "date" : "2026-11-20T10:17:03+00:00",
+  "date" : "2026-11-20T10:44:20+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -61,11 +61,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSMedicationAdm
       "id" : "EHDSMedicationAdministration.header.identifier",
       "path" : "EHDSMedicationAdministration.header.identifier",
       "short" : "Business identifier for the object, unique within its system."
-    },
-    {
-      "id" : "EHDSMedicationAdministration.header.clinicalEventTime[x]",
-      "path" : "EHDSMedicationAdministration.header.clinicalEventTime[x]",
-      "max" : "0"
     },
     {
       "id" : "EHDSMedicationAdministration.header.version",

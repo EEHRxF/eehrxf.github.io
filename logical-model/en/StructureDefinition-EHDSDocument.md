@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDocument.csv)
   "name" : "EHDSDocument",
   "title" : "Document model",
   "status" : "draft",
-  "date" : "2026-11-20T10:17:03+00:00",
+  "date" : "2026-11-20T10:44:20+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -67,11 +67,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDocument.csv)
       "path" : "EHDSDocument.header.identifier",
       "short" : "Unique identifier of the document.",
       "min" : 1
-    },
-    {
-      "id" : "EHDSDocument.header.clinicalEventTime[x]",
-      "path" : "EHDSDocument.header.clinicalEventTime[x]",
-      "max" : "0"
     },
     {
       "id" : "EHDSDocument.header.version",

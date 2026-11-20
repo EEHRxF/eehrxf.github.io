@@ -4,7 +4,6 @@
 "EHDSMedicationUse.header",""
 "EHDSMedicationUse.header.subject",""
 "EHDSMedicationUse.header.identifier",""
-"EHDSMedicationUse.header.clinicalEventTime[x]",""
 "EHDSMedicationUse.header.version",""
 "EHDSMedicationUse.header.author[x]",""
 "EHDSMedicationUse.header.date",""

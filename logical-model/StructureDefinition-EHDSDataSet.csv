@@ -7,8 +7,6 @@
 ","Patient/subject information.","Patient/subject information.","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.subject",1,1,"",""
 "EHDSDataSet.header.identifier","EHDSDataSet.header.identifier","","","",0,*,"","","","Identifier {[]} {[]}
 ","Unique identifier of the resource.","Unique identifier of the resource.","Business identifier is unique within the system that assigns them. The same entity may have different unique identifiers assigned by different systems. Therefore, the identifier is always expected to be a pair of a system and a value.","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.identifier",0,*,"",""
-"EHDSDataSet.header.clinicalEventTime[x]","EHDSDataSet.header.clinicalEventTime[x]","","","",0,1,"","","","dateTime {[]} {[]}
-Period {[]} {[]}","Time or period the clinical content applies to (e.g. specimen collection time, onset of a condition, period a medication was taken).","Time or period the clinical content applies to (e.g. specimen collection time, onset of a condition, period a medication was taken).","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.clinicalEventTime[x]",0,1,"",""
 "EHDSDataSet.header.version","EHDSDataSet.header.version","","","",0,1,"","","","string {[]} {[]}
 ","Version of the resource.","Version of the resource.","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.version",0,1,"",""
 "EHDSDataSet.header.author[x]","EHDSDataSet.header.author[x]","","","",0,*,"","","","http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional {[]} {[]}

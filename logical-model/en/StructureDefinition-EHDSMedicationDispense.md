@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSMedicationDis
   "name" : "EHDSMedicationDispense",
   "title" : "Medication dispense model.",
   "status" : "draft",
-  "date" : "2026-11-20T10:17:03+00:00",
+  "date" : "2026-11-20T10:44:20+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -67,11 +67,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSMedicationDis
       "path" : "EHDSMedicationDispense.header.identifier",
       "short" : "Business identifier for the dispensation.",
       "min" : 1
-    },
-    {
-      "id" : "EHDSMedicationDispense.header.clinicalEventTime[x]",
-      "path" : "EHDSMedicationDispense.header.clinicalEventTime[x]",
-      "max" : "0"
     },
     {
       "id" : "EHDSMedicationDispense.header.version",

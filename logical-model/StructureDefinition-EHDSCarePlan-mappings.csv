@@ -4,7 +4,6 @@
 "EHDSCarePlan.header",""
 "EHDSCarePlan.header.subject",""
 "EHDSCarePlan.header.identifier",""
-"EHDSCarePlan.header.clinicalEventTime[x]",""
 "EHDSCarePlan.header.version",""
 "EHDSCarePlan.header.author[x]",""
 "EHDSCarePlan.header.date",""

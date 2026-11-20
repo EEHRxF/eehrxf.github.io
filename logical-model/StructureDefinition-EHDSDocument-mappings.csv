@@ -4,7 +4,6 @@
 "EHDSDocument.header",""
 "EHDSDocument.header.subject",""
 "EHDSDocument.header.identifier",""
-"EHDSDocument.header.clinicalEventTime[x]",""
 "EHDSDocument.header.version",""
 "EHDSDocument.header.author[x]",""
 "EHDSDocument.header.date",""

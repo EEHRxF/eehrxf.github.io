@@ -4,7 +4,6 @@
 "EHDSDataSet.header",""
 "EHDSDataSet.header.subject",""
 "EHDSDataSet.header.identifier",""
-"EHDSDataSet.header.clinicalEventTime[x]",""
 "EHDSDataSet.header.version",""
 "EHDSDataSet.header.author[x]",""
 "EHDSDataSet.header.date",""
