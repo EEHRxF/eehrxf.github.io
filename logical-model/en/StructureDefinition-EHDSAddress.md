@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAddress.csv),
   "name" : "EHDSAddress",
   "title" : "Address model",
   "status" : "draft",
-  "date" : "2026-11-20T11:18:04+00:00",
+  "date" : "2026-11-20T11:39:05+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",

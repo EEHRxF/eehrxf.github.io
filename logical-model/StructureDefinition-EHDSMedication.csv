@@ -36,7 +36,24 @@ string {[]} {[]}","Concentration or presentation strength, e.g ‘100 mg/1 ml’
 "EHDSMedication.item.unitOfPresentation","EHDSMedication.item.unitOfPresentation","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Unit of presentation for the medicinal product (tablet, vial, tube). Typically, the smallest countable object in the package.","Unit of presentation for the medicinal product (tablet, vial, tube). Typically, the smallest countable object in the package.","","","","","","","","","",,"required","EDQM Standard Terms for units of presentation","","",,,,"EHDSMedication.item.unitOfPresentation",0,1,"",""
 "EHDSMedication.item.containedQuantity","EHDSMedication.item.containedQuantity","","","",0,1,"","","","Ratio {[]} {[]}
-","Packaged item quantity per item (3 ml / one vial)","Packaged item quantity per item (3 ml / one vial)","","","","","","","","","",,"required","UCUM for units of measure / EDQM Standard Terms for units of presentation","","",,,,"EHDSMedication.item.containedQuantity",0,1,"",""
+","Packaged item quantity per item (3 ml / one vial)","Packaged item quantity per item (3 ml / one vial)","","","","","","","","","",,,,,"",,,,"EHDSMedication.item.containedQuantity",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+rat-1:Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present {(numerator.exists() and denominator.exists()) or (numerator.empty() and denominator.empty() and extension.exists())}"
+"EHDSMedication.item.containedQuantity.id","EHDSMedication.item.containedQuantity.id","","","",0,1,"","","","id {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"ele-1
+","","n/a"
+"EHDSMedication.item.containedQuantity.extension","EHDSMedication.item.containedQuantity.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
+"EHDSMedication.item.containedQuantity.numerator","EHDSMedication.item.containedQuantity.numerator","","","",0,1,"","","Y","Quantity {[]} {[]}
+","Numerator value","The value of the numerator.","","","","","","","","","",,"required","UCUM for units of measure / EDQM Standard Terms for units of presentation","","",,,,"Ratio.numerator",0,1,"rat-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+",".numerator"
+"EHDSMedication.item.containedQuantity.denominator","EHDSMedication.item.containedQuantity.denominator","","","",0,1,"","","Y","Quantity {[CanonicalType[http://hl7.org/fhir/StructureDefinition/SimpleQuantity|5.0.0]]} {[]}
+","Denominator value","The value of the denominator.","","","","","","","","","",,"required","UCUM for units of measure / EDQM Standard Terms for units of presentation","","",,,,"Ratio.denominator",0,1,"rat-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+sqty-1:The comparator is not used on a SimpleQuantity {comparator.empty()}",".denominator"
 "EHDSMedication.item.amount","EHDSMedication.item.amount","","","",0,1,"","","","Quantity {[]} {[]}
 ","Number of such items in this medicinal product (e.g. five vials in the package). The combined amount of all items shall be considered to be the total package size.","Number of such items in this medicinal product (e.g. five vials in the package). The combined amount of all items shall be considered to be the total package size.","","","","","","","","","",,"required","UCUM for units of measure / EDQM Standard Terms for units of presentation","","",,,,"EHDSMedication.item.amount",0,1,"",""
 "EHDSMedication.item.packageType","EHDSMedication.item.packageType","","","",0,1,"","","","CodeableConcept {[]} {[]}
