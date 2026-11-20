@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAdministeredD
   "name" : "EHDSAdministeredDosage",
   "title" : "Administered dosage model",
   "status" : "draft",
-  "date" : "2026-11-20T06:55:22+00:00",
+  "date" : "2026-11-20T10:07:23+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",

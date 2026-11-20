@@ -100,7 +100,7 @@ The following example repeats dosageDetails block. Rendered dosage information i
   "name" : "EHDSDosage",
   "title" : "Dosage model",
   "status" : "draft",
-  "date" : "2026-11-20T06:55:22+00:00",
+  "date" : "2026-11-20T10:07:23+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",

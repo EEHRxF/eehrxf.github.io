@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAllergyIntole
   "name" : "EHDSAllergyIntolerance",
   "title" : "Allergy intolerance model",
   "status" : "draft",
-  "date" : "2026-11-20T06:55:22+00:00",
+  "date" : "2026-11-20T10:07:23+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -89,6 +89,21 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSAllergyIntole
       "binding" : {
         "strength" : "required",
         "description" : "HL7 AllergyIntolerance Clinical Status Codes"
+      }
+    },
+    {
+      "id" : "EHDSAllergyIntolerance.type",
+      "path" : "EHDSAllergyIntolerance.type",
+      "short" : "Type of propensity (indicating allergy or intolerance). The type element may be omitted from the resource when there is insufficient information to classify the reaction as either an allergy or an intolerance.",
+      "definition" : "Type of propensity (indicating allergy or intolerance). The type element may be omitted from the resource when there is insufficient information to classify the reaction as either an allergy or an intolerance.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "description" : "HL7 AllergyIntoleranceType"
       }
     },
     {
