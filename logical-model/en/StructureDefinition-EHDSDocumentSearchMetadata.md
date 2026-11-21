@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDocumentSearc
   "name" : "EHDSDocumentSearchMetadata",
   "title" : "Document search metadata model",
   "status" : "draft",
-  "date" : "2026-11-20T11:39:05+00:00",
+  "date" : "2026-11-21T16:14:41+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
@@ -115,11 +115,6 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSDocumentSearc
       "id" : "EHDSDocumentSearchMetadata.language",
       "path" : "EHDSDocumentSearchMetadata.language",
       "short" : "Language in which the document is written. Language is expressed by the IETF language tag."
-    },
-    {
-      "id" : "EHDSDocumentSearchMetadata.lastUpdate",
-      "path" : "EHDSDocumentSearchMetadata.lastUpdate",
-      "short" : "Date and time of the last system-level update to this document (system update instant). This is technical metadata and does not represent a clinical event time."
     },
     {
       "id" : "EHDSDocumentSearchMetadata.documentCategory",

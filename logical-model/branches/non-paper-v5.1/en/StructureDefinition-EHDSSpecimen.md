@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-EHDSSpecimen.csv)
   "name" : "EHDSSpecimen",
   "title" : "Specimen model",
   "status" : "draft",
-  "date" : "2026-11-21T16:12:37+00:00",
+  "date" : "2026-11-21T16:13:39+00:00",
   "publisher" : "EC",
   "contact" : [{
     "name" : "EC",
